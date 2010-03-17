@@ -1,0 +1,74 @@
+\documentclass[11pt]{article}
+\usepackage{geometry}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amstext}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage[ngerman]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{units}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\geometry{a4paper,left=20mm,right=10mm, top=13mm, bottom=20mm}
+\newcommand{\ff}{\triangleright}
+\author{Robert Hartmann}
+\begin{document}
+$$L\triangleright W = \bigcup_{u\in L} u\triangleright W$$
+\vspace{5mm}
+$$u\triangleright W := Min_{\sqsubseteq} \{w:w\in W \wedge u\sqsubseteq w\}$$
+$$ V = \{v:\forall w(w\in W \to w\not\sqsubseteq v)\}\qquad pref(V)=\{u:\exists v (u\sqsubseteq v\wedge v\in V)\}$$\\
+\textbf{\large{Eigenschaften:}}\\\\
+$$u\in L \to u\in (u\ff L)$$
+$$u\in L \to (u\ff L=\{u\})$$
+$$L\ff L = L$$
+$$U\ff L \subseteq L$$
+$$L\ff (U\cup V)\neq (L\ff U) \cup (L\ff V)$$
+$$L\ff (U\cap V)\neq (L\ff U) \cap (L\ff V)$$
+$$L\ff (U\cdot V)\neq (L\ff U) \cdot (L\ff V)$$
+$$(L_1 \ff L_2) \ff L_3 \neq L_1 \ff (L_2 \ff L_3)$$
+$$L_1\text{ ist regulär},L_2\text{ ist regulär}\to L_1\ff L_2\text{ ist regulär}$$
+$$W\ff V = \emptyset$$
+$$W\ff pref(V) = \emptyset$$
+$$W\ff W\cdot X^* = W$$
+$$W\cdot X^* \ff V = \emptyset$$
+$$W\cdot X^*\ff X^* = W\cdot X^*$$
+$$W\cdot X^*\ff W = W$$
+$$W\cdot X^* \ff pref(V) = \emptyset$$
+$$pref(V)\ff W\cdot X^* = $$
+$$L_1\subseteq L_2 \to L_1\ff L_2 = L_1$$
+%Detail Nachweise
+\newpage
+$$L\ff (U\cup V)\neq (L\ff U) \cup (L\ff V),$$
+$$\text{Gegenbeispiel: } A=\{abb,aaba\}\quad B=\{aab,aba\} $$
+$$L\ff (A\cup B) = \{abb,aba,aab\}\text{ ,aber } L\ff A \cup L\ff B =
+\{abb,aaba\} \cup \{aab,aba\} = \{abb,aaba,aab,aba\} $$
+\vspace{5mm}
+$$L\ff (U\cap V)\neq (L\ff U) \cap (L\ff V),$$
+$$\text{Gegenbeispiel: } A=\{abb,ab\}\quad B=\{abb,aab\} $$
+$$L\ff (A\cap B) = \{abb\}\text{ ,aber } L\ff A \cap L\ff B =
+\{ab\} \cap \{abb,aab\} = \emptyset $$
+\vspace{5mm}
+$$L\ff (U\cdot V)\neq (L\ff U) \cdot (L\ff V),$$
+$$\text{Gegenbeispiel: } A=\{aa\}\quad B=\{b,bb\} $$
+$$L\ff (A\cdot B) = \{aab\}\text{ ,aber } L\ff A \cdot L\ff B =
+\{aa\} \cdot \emptyset = \{aa\} $$
+
+%umformungen
+\newpage
+$$L\ff (W\cup V)= \bigcup_{l\in L} l\ff (W\cup V)$$
+$$=\bigcup_{l\in L} ( \min_{\sqsubseteq} \{w:w\in(W\cup V) \wedge l\sqsubseteq
+w \} )$$
+$$=\bigcup_{l\in L} ( \min_{\sqsubseteq} \{w: (w\in W \vee w\in V) \wedge
+l\sqsubseteq w \} )$$
+$$=\bigcup_{l\in L} ( \min_{\sqsubseteq} \{w: w\in W \wedge l\sqsubseteq w \vee
+w\in V \wedge l\sqsubseteq w \} )$$
+$$=\bigcup_{l\in L} ( \min ( \{l\}\cdot X^* \cap \{w: w\in W \wedge l\sqsubseteq
+w \vee w\in V \wedge l\sqsubseteq w \}) )$$
+$$=\bigcup_{l\in L} ( \min ( \{l\}\cdot X^* \cap \{w: w\in W \wedge l\sqsubseteq
+w\} \cup \{l\}\cdot X^* \cap \{w:w\in V \wedge l\sqsubseteq w \}) )$$
+$$=\bigcup_{l\in L} ( \min ( l\ff W \cup l\ff V) )$$
+
+$$=\min((L\ff W)\cup(L\ff V))$$
+\end{document}

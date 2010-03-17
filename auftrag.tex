@@ -1,0 +1,34 @@
+\documentclass[11pt]{article}
+\usepackage{geometry}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amstext}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage[ngerman]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{units}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\geometry{a4paper,left=20mm,right=10mm, top=13mm, bottom=20mm}
+\newcommand{\ff}{\triangleright}
+\author{Robert Hartmann}
+\begin{document}
+Vorschlag Prof. Staiger\\
+$$L\subseteq X^*\qquad \cup, \cap, \cdot, {}^*, X^*\backslash$$
+$$L\triangleright W = \bigcup_{u\in L} u\triangleright W$$
+\vspace{5mm}
+$$u\triangleright W := Min_{\sqsubseteq} \{w:w\in W \wedge u\sqsubseteq w\}$$
+mögliche Fragestellungen:
+$$L\ff (W\cup V)$$
+$$L\ff (W\cap V)$$
+$$L\ff (W\cdot V)$$
+$$\vdots$$
+Ausserdem:
+$$W\ff V\qquad\text{W und V (nicht) entscheidbar}$$
+$$W\ff V\qquad\text{W und V (nicht) regulaer}$$
+$$\vdots$$
+
+
+\end{document}
