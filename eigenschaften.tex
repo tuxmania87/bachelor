@@ -24,10 +24,14 @@ $$u\in L \to u\in (u\ff L)$$
 $$u\in L \to (u\ff L=\{u\})$$
 $$L\ff L = L$$
 $$U\ff L \subseteq L$$
-$$L\ff (U\cup V)\neq (L\ff U) \cup (L\ff V)$$
-$$L\ff (U\cap V)\neq (L\ff U) \cap (L\ff V)$$
-$$L\ff (U\cdot V)\neq (L\ff U) \cdot (L\ff V)$$
-$$(L_1 \ff L_2) \ff L_3 \neq L_1 \ff (L_2 \ff L_3)$$
+$$L\ff (U\cup V)\nsupseteq (L\ff U) \cup (L\ff V)$$
+$$L\ff (U\cup V)\subseteq^? (L\ff U) \cup (L\ff V)$$
+$$L\ff (U\cap V)\nsubseteq (L\ff U) \cap (L\ff V)$$
+$$L\ff (U\cap V)\supseteq^? (L\ff U) \cap (L\ff V)$$
+$$L\ff (U\cdot V)\nsubseteq (L\ff U) \cdot (L\ff V)$$
+$$L\ff (U\cdot V)\nsupseteq (L\ff U) \cdot (L\ff V)$$
+$$(L_1 \ff L_2) \ff L_3 \nsupseteq L_1 \ff (L_2 \ff L_3)$$
+$$(L_1 \ff L_2) \ff L_3 \subseteq^? L_1 \ff (L_2 \ff L_3)$$
 $$L_1\text{ ist regulär},L_2\text{ ist regulär}\to L_1\ff L_2\text{ ist regulär}$$
 $$W\ff V = \emptyset$$
 $$W\ff pref(V) = \emptyset$$
@@ -40,21 +44,26 @@ $$pref(V)\ff W\cdot X^* = $$
 $$L_1\subseteq L_2 \to L_1\ff L_2 = L_1$$
 %Detail Nachweise
 \newpage
-$$L\ff (U\cup V)\neq (L\ff U) \cup (L\ff V),$$
-$$\text{Gegenbeispiel: } A=\{abb,aaba\}\quad B=\{aab,aba\} $$
+$$L\ff (U\cup V) \nsupseteq (L\ff U) \cup (L\ff V),$$
+$$\text{Gegenbeispiel: } L=\{a\}\quad A=\{abb,aaba\}\quad B=\{aab,aba\} $$
 $$L\ff (A\cup B) = \{abb,aba,aab\}\text{ ,aber } L\ff A \cup L\ff B =
 \{abb,aaba\} \cup \{aab,aba\} = \{abb,aaba,aab,aba\} $$
 \vspace{5mm}
-$$L\ff (U\cap V)\neq (L\ff U) \cap (L\ff V),$$
-$$\text{Gegenbeispiel: } A=\{abb,ab\}\quad B=\{abb,aab\} $$
-$$L\ff (A\cap B) = \{abb\}\text{ ,aber } L\ff A \cap L\ff B =
-\{ab\} \cap \{abb,aab\} = \emptyset $$
+$$L\ff (U\cap V)\nsubseteq (L\ff U) \cap (L\ff V),$$
+$$\text{Gegenbeispiel: } L=\{a,b\}\quad A=\{a,aa\}\quad B=\{aa,b\} $$
+$$L\ff (A\cap B) = \{aa\}\text{ ,aber } L\ff A \cap L\ff B =
+\{a\} \cap \{b\} = \emptyset $$
 \vspace{5mm}
-$$L\ff (U\cdot V)\neq (L\ff U) \cdot (L\ff V),$$
+$$L\ff (U\cdot V)\nsupseteq (L\ff U) \cdot (L\ff V),$$
+$$L\ff (U\cdot V)\nsubseteq (L\ff U) \cdot (L\ff V),$$
 $$\text{Gegenbeispiel: } A=\{aa\}\quad B=\{b,bb\} $$
 $$L\ff (A\cdot B) = \{aab\}\text{ ,aber } L\ff A \cdot L\ff B =
 \{aa\} \cdot \emptyset = \{aa\} $$
-
+\vspace{5mm}
+$$(L_1 \ff L_2) \ff L_3 \nsupseteq L_1 \ff (L_2 \ff L_3)$$
+$$\text{Gegenbeispiel: } L_1=\{ab,aa\}\quad L_2=\{a,ab\}\quad L_3=\{aa\}$$
+$$(L_1 \ff L_2) \ff L_3 = \{ab\} \ff \{aa\} = \emptyset\text{ ,aber } 
+\{ab,aa\} \ff \{aa\} = \{aa\} $$
 %umformungen
 \newpage
 $$L\ff (W\cup V)= \bigcup_{l\in L} l\ff (W\cup V)$$
