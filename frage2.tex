@@ -17,25 +17,7 @@
 \begin{document}
 
 $$ V = \{v:\forall w(w\in W \to w\not\sqsubseteq v)\}\qquad pref(V)=\{u:\exists v (u\sqsubseteq v\wedge v\in V)\}$$\\
-$$W\ff V = \bigcup_{x\in W} x\ff V = \bigcup \min_{\sqsubseteq } \{v:v\in V \wedge x\sqsubseteq v\}$$
-Wegen $x\in W$ und $x\sqsubseteq v$ gilt $\{v:v\in V \wedge x\sqsubseteq v\} = \emptyset \Rightarrow \bigcup \min_{\sqsubseteq} \{v:v\in V \wedge x\sqsubseteq v\} = \emptyset$\\\\
-$$ W\cdot X^* \ff V = \bigcup_{x\in W\cdot X^*} x\ff V = \bigcup_{x\in W\cdot X^*} \min_{\sqsubseteq} \{v:v\in V \wedge x\sqsubseteq v\} = \emptyset$$
-Begründung analog Fall $W\ff V$\\\\
-$$ W \ff pref(V) = \bigcup_{w\in W} w\ff pref(V) = \bigcup_{w\in W} \{v:v\in pref(V) \wedge w\sqsubseteq v\} = \emptyset$$
-$w\sqsubseteq v$ ist nie erfuellt. Angenommen $v\in pref(V) \wedge w\sqsubseteq v$, dann kann man $v$ wie folgt verlaengern $v'=v\cdot v''$ mit $v'\in V$, dann waere $v'=w\cdot w' \cdot v''$ mit $w\cdot w' = v$.
-Dadurch gilt aber $v'\in V\wedge w\sqsubseteq v' \wedge w\in W \Rightarrow$ Widerspruch zur Definition.\\\\
-$$W\cdot X^* \ff X^* = \bigcup_{u\in W\cdot X^*} u\ff X^* = \bigcup_{u\in W\cdot X^*} \min_{\sqsubseteq} \{w:w\in X^*\wedge u\sqsubseteq w\}$$ 
-$$= \bigcup_{u\in W\cdot X^*} \min(X^* \cap u\cdot X^*)=\bigcup_{u\in W\cdot X^*} \min(u) = \bigcup_{u\in W\cdot X^*} u = W\cdot X^*$$\\
 
-$$W\cdot X^* \ff W = \bigcup_{u\in W\cdot X^*} u\ff W = \bigcup_{u\in W\cdot X^*} \min_{\sqsubseteq} \{w:w\in W \wedge u\sqsubseteq w\} = \bigcup_{u\in W\cdot X^*} \min(W\cap u\cdot X^*) $$
-1. Fall: $u\in W \Rightarrow W\cap u\cdot X^* = u$\\
-2. Fall: $u\in  W\cdot X^+ \Rightarrow W\cap u\cdot X^* = \emptyset$ oder $W\cap u\cdot X^* = u$ wenn $u\in W$\\
-$$\bigcup_{u\in W\cdot X^*} \min(u) = W$$
 
-$$pref(V) \ff W\cdot X^* = \bigcup_{u\in pref(V)} u\ff W\cdot X^* = \bigcup_{u\in pref(V)} \min_{\sqsubseteq} \{w:w\in W\cdot X^* \wedge u\sqsubseteq w\}$$
-$$ =  \bigcup_{u\in pref(V)} \min(W\cdot X^* \cap u\cdot X^*) =  \bigcup_{u\in pref(V)} \min(\{w:w\in W \wedge u\sqsubseteq w\})$$\\
-$$W\cdot X^* \ff pref(V) = \bigcup_{u\in W\cdot X^*} u\ff pref(V) = \bigcup_{u\in W\cdot X^*} \min_{\sqsubseteq} \{w:w\in pref(V) \wedge u\sqsubseteq w\}$$
-$$ = \bigcup_{u\in W\cdot X^*} \min(pref(V)\cap u\cdot X^*)$$
-$pref(V)\cap u\cdot X^* = \emptyset$, Begründung siehe oben $\Rightarrow  \bigcup_{u\in W\cdot X^*} \min(\emptyset) = \emptyset$
 
 \end{document}

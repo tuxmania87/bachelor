@@ -15,19 +15,6 @@
 \newcommand{\ff}{\triangleright}
 \author{Robert Hartmann}
 \begin{document}
-Sei $L$ und $W$ regul\"ar, so ist auch $L\ff W$ regul\"ar.\\\\
-Automat $A_L= (X,Z,z_{0},\delta_L,Z_f)$ akzeptiere $L$, Automat $A_W = (X,S,s_{0},\delta_W,S_{f})$ akzeptiere $W$.
-Automat $A$ akzeptiert $L\ff W$, \\\\Vorgehensweise:\\
-$A_L$ und $A_W$ lesen das Wort $w$ parallel. $A_L$ akzeptiert und $A$ wählt nicht-deterministisch aus ob Schritt 2 aktiviert wird oder nicht.
-Schritt 2: $A_W$ liest das Wort $w$ zu Ende, sollte $A_W$ auf diesem Weg kein Mal oder mehr als einmal akzeptieren, so akzeptiert $A$ nicht, ansonsten akzeptiert $A$.
-
-$A = (X,Z\cup \{ z_f'\}\times S\cup \{ s_x\}, (z_{0},s_{0} ), \delta , \{ (z_f',s') : s'\in S_f \} )$
-mit\\\\
-$\delta = \{ ((z_i,s_i),x,(z_j,s_j)) : (z_i,x,z_j) \in \delta_L \wedge (s_i,x,s_j) \in \delta_W \} \cup \\
- \{ ((z_i,s_i),x,(z_f',s_j)) : (z_i,x,z') \in \delta_L \wedge z'\in Z_f \wedge (s_i,x,s_j) \in \delta_W \} \cup \\
- \{ ((z_f',s_i),x,(z_f',s_j)) : (s_i,x,s_j) \in \delta_W \wedge s_i \notin S_f\} \cup  \\
- \{ ((z_f',s_i),x,(z_f',s_x)) : (s_i,x,s_j) \in \delta_W \wedge s_i \in S_f\} 
- $
 
 
 \end{document}
