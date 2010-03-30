@@ -1,0 +1,8 @@
+\select@language {ngerman}
+\contentsline {section}{\numberline {1}Einleitung}{3}
+\contentsline {section}{\numberline {2}allgemeine Eigenschaften}{3}
+\contentsline {section}{\numberline {3}Eigenschaften bei speziellen Sprachen}{6}
+\contentsline {section}{\numberline {4}spezielle Sprachen}{7}
+\contentsline {subsection}{\numberline {4.1}Regularit\"at}{7}
+\contentsline {section}{\numberline {5}Schlusswort}{8}
+\contentsline {section}{\numberline {6}Quellen und Literatur}{8}

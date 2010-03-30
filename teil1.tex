@@ -1,0 +1,59 @@
+$$u\in L \to u\in (u\ff L)$$
+$$u\in L \to (u\ff L=\{u\})$$
+$$L\ff L = L$$
+$$U\ff L \subseteq L$$
+$$L\ff (U\cup V)\nsupseteq (L\ff U) \cup (L\ff V)$$
+$$L\ff (U\cup V)\subseteq (L\ff U) \cup (L\ff V)$$
+$$L\ff (U\cap V)\nsubseteq (L\ff U) \cap (L\ff V)$$
+$$L\ff (U\cap V)\supseteq (L\ff U) \cap (L\ff V)$$
+$$L\ff (U\cdot V)\nsubseteq (L\ff U) \cdot (L\ff V)$$
+$$L\ff (U\cdot V)\nsupseteq (L\ff U) \cdot (L\ff V)$$
+$$(L_1 \ff L_2) \ff L_3 \nsupseteq L_1 \ff (L_2 \ff L_3)$$
+$$(L_1 \ff L_2) \ff L_3 \subseteq^? L_1 \ff (L_2 \ff L_3)$$
+$$L_1\subseteq L_2 \to L_1\ff L_2 = L_1$$
+$$L_2\subseteq L_1 \to L_1\ff L_2 = L_2$$
+$$L\ff L\cdot X^* = L$$
+$$L\cdot X^*\ff X^* = L\cdot X^*$$
+$$L\cdot X^*\ff L = L$$
+
+\newpage
+$$L\ff (U\cup V) \nsupseteq (L\ff U) \cup (L\ff V),$$
+$$\text{Gegenbeispiel: } L=\{a\}\quad A=\{abb,aaba\}\quad B=\{aab,aba\} $$
+$$L\ff (A\cup B) = \{abb,aba,aab\}\text{ ,aber } L\ff A \cup L\ff B =
+\{abb,aaba\} \cup \{aab,aba\} = \{abb,aaba,aab,aba\} $$
+\vspace{5mm}
+$$L\ff (U\cap V)\nsubseteq (L\ff U) \cap (L\ff V),$$
+$$\text{Gegenbeispiel: } L=\{a,b\}\quad A=\{a,aa\}\quad B=\{aa,b\} $$
+$$L\ff (A\cap B) = \{aa\}\text{ ,aber } L\ff A \cap L\ff B =
+\{a\} \cap \{b\} = \emptyset $$
+\vspace{5mm}
+$$L\ff (U\cdot V)\nsupseteq (L\ff U) \cdot (L\ff V),$$
+$$L\ff (U\cdot V)\nsubseteq (L\ff U) \cdot (L\ff V),$$
+$$\text{Gegenbeispiel: } A=\{aa\}\quad B=\{b,bb\} $$
+$$L\ff (A\cdot B) = \{aab\}\text{ ,aber } L\ff A \cdot L\ff B =
+\{aa\} \cdot \emptyset = \{aa\} $$
+\vspace{5mm}
+$$(L_1 \ff L_2) \ff L_3 \nsupseteq L_1 \ff (L_2 \ff L_3)$$
+$$\text{Gegenbeispiel: } L_1=\{ab,aa\}\quad L_2=\{a,ab\}\quad L_3=\{aa\}$$
+$$(L_1 \ff L_2) \ff L_3 = \{ab\} \ff \{aa\} = \emptyset\text{ ,aber } 
+\{ab,aa\} \ff \{aa\} = \{aa\} $$
+\vspace{5mm}
+
+$$L\cdot X^* \ff X^* = \bigcup_{u\in L\cdot X^*} u\ff X^* = \bigcup_{u\in L\cdot X^*} \min_{\sqsubseteq} \{L:L\in X^*\wedge u\sqsubseteq L\}$$ 
+$$= \bigcup_{u\in L\cdot X^*} \min(X^* \cap u\cdot X^*)=\bigcup_{u\in L\cdot X^*} \min(u) = \bigcup_{u\in L\cdot X^*} u = L\cdot X^*$$\\
+
+$$L\cdot X^* \ff L = \bigcup_{u\in L\cdot X^*} u\ff L = \bigcup_{u\in L\cdot X^*} \min_{\sqsubseteq} \{L:L\in L \wedge u\sqsubseteq L\} = \bigcup_{u\in L\cdot X^*} \min(L\cap u\cdot X^*) $$
+1. Fall: $u\in L \Rightarrow L\cap u\cdot X^* = u$\\
+2. Fall: $u\in  L\cdot X^+ \Rightarrow L\cap u\cdot X^* = \emptyset$ oder $L\cap u\cdot X^* = u$ Lenn $u\in L$\\
+$$\bigcup_{u\in L\cdot X^*} \min(u) = L$$
+
+
+%umformungen
+\newpage
+Lemma: $\min (A\cup B) \subseteq \min A \cup \min B$
+$$L\ff (W\cup V)= \bigcup_{l\in L} l\ff (W\cup V)$$
+$$=\bigcup_{l\in L} \min (l\cdot X^* \cap (W\cup V))$$
+$$=\bigcup_{l\in L} \min ((l\cdot X^* \cap W) \cup (l\cdot X^* \cap V))$$
+$$\subseteq \bigcup_{l\in L} (\min (l\cdot X^* \cap W) \cup \min (l\cdot X^* \cap V))$$
+$$=\bigcup_{l\in L} \min (l\cdot X^*\cap W) \cup \bigcup_{l\in L} \min(l\cdot X^* \cap V)$$
+$$=(L\ff W)\cup (L\ff V)$$
