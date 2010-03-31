@@ -39,12 +39,12 @@ $$(L_1 \ff L_2) \ff L_3 = \{ab\} \ff \{aa\} = \emptyset\text{ ,aber }
 \{ab,aa\} \ff \{aa\} = \{aa\} $$
 \vspace{5mm}
 
-$$L\cdot X^* \ff X^* = \bigcup_{u\in L\cdot X^*} u\ff X^* = \bigcup_{u\in L\cdot X^*} \min_{\sqsubseteq} \{L:L\in X^*\wedge u\sqsubseteq L\}$$ 
+$$L\cdot X^* \ff X^* = \bigcup_{u\in L\cdot X^*} u\ff X^* = \bigcup_{u\in L\cdot X^*} \min_{\sqsubseteq} \{l:l\in X^*\wedge u\sqsubseteq L\}$$ 
 $$= \bigcup_{u\in L\cdot X^*} \min(X^* \cap u\cdot X^*)=\bigcup_{u\in L\cdot X^*} \min(u) = \bigcup_{u\in L\cdot X^*} u = L\cdot X^*$$\\
 
-$$L\cdot X^* \ff L = \bigcup_{u\in L\cdot X^*} u\ff L = \bigcup_{u\in L\cdot X^*} \min_{\sqsubseteq} \{L:L\in L \wedge u\sqsubseteq L\} = \bigcup_{u\in L\cdot X^*} \min(L\cap u\cdot X^*) $$
-1. Fall: $u\in L \Rightarrow L\cap u\cdot X^* = u$\\
-2. Fall: $u\in  L\cdot X^+ \Rightarrow L\cap u\cdot X^* = \emptyset$ oder $L\cap u\cdot X^* = u$ Lenn $u\in L$\\
+$$L\cdot X^* \ff L = \bigcup_{u\in L\cdot X^*} u\ff L = \bigcup_{u\in L\cdot X^*} \min_{\sqsubseteq} \{l:l\in L \wedge u\sqsubseteq L\} = \bigcup_{u\in L\cdot X^*} \min(l\cap u\cdot X^*) $$
+1. Fall: $u\in L \Rightarrow l\cap u\cdot X^* = u$\\
+2. Fall: $u\in  L\cdot X^+ \Rightarrow l\cap u\cdot X^* = \emptyset$ oder $l\cap u\cdot X^* = u$ wenn $u\in L$\\
 $$\bigcup_{u\in L\cdot X^*} \min(u) = L$$
 
 
