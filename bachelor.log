@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2009.11.29)  30 MAR 2010 19:01
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2009.11.29)  28 APR 2010 17:22
 entering extended mode
 **C:/Users/Robert/Desktop/bachelor/bachelor.tex
 (C:/Users/Robert/Desktop/bachelor/bachelor.tex
@@ -365,37 +365,37 @@ Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)            on input line 3.
 Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)           `sectioning' that is an alias of element `disposition'
-(scrartcl)            on input line 4.
-Class scrartcl Info: You've told me to use the font selection of the element
-(scrartcl)           `sectioning' that is an alias of element `disposition'
-(scrartcl)            on input line 5.
-Class scrartcl Info: You've told me to use the font selection of the element
-(scrartcl)           `sectioning' that is an alias of element `disposition'
 (scrartcl)            on input line 7.
 Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)           `sectioning' that is an alias of element `disposition'
 (scrartcl)            on input line 8.
+Class scrartcl Info: You've told me to use the font selection of the element
+(scrartcl)           `sectioning' that is an alias of element `disposition'
+(scrartcl)            on input line 10.
+Class scrartcl Info: You've told me to use the font selection of the element
+(scrartcl)           `sectioning' that is an alias of element `disposition'
+(scrartcl)            on input line 11.
 )
 \tf@toc=\write3
  [2]
 (C:\Users\Robert\Desktop\bachelor\teil1.tex [3]
-Overfull \hbox (25.44563pt too wide) detected at line 23
-\OML/cmm/m/it/10.95 L . \OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 A \OMS/cmsy/m/n
-/10.95 [ \OML/cmm/m/it/10.95 B\OT1/cmr/m/n/10.95 ) = \OMS/cmsy/m/n/10.95 f\OML/
-cmm/m/it/10.95 abb; aba; aab\OMS/cmsy/m/n/10.95 g[]\OML/cmm/m/it/10.95 L . A \O
-MS/cmsy/m/n/10.95 [ \OML/cmm/m/it/10.95 L . B \OT1/cmr/m/n/10.95 = \OMS/cmsy/m/
+Overfull \hbox (26.29268pt too wide) detected at line 34
+\OML/cmm/m/it/10.95 L . \OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 U \OMS/cmsy/m/n
+/10.95 [ \OML/cmm/m/it/10.95 V\OT1/cmr/m/n/10.95 ) = \OMS/cmsy/m/n/10.95 f\OML/
+cmm/m/it/10.95 abb; aba; aab\OMS/cmsy/m/n/10.95 g[]\OML/cmm/m/it/10.95 L . U \O
+MS/cmsy/m/n/10.95 [ \OML/cmm/m/it/10.95 L . V \OT1/cmr/m/n/10.95 = \OMS/cmsy/m/
 n/10.95 f\OML/cmm/m/it/10.95 abb; aaba\OMS/cmsy/m/n/10.95 g [ f\OML/cmm/m/it/10
 .95 aab; aba\OMS/cmsy/m/n/10.95 g \OT1/cmr/m/n/10.95 = \OMS/cmsy/m/n/10.95 f\OM
 L/cmm/m/it/10.95 abb; aaba; aab; aba\OMS/cmsy/m/n/10.95 g
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--48
+Underfull \hbox (badness 10000) in paragraph at lines 55--58
 
  []
 
@@ -456,30 +456,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--38
 
 [7] [8] (C:\Users\Robert\Desktop\bachelor\bachelor.aux) ) 
 Here is how much of TeX's memory you used:
- 3881 strings out of 495269
- 54067 string characters out of 3179644
+ 3887 strings out of 495269
+ 54150 string characters out of 3179644
  134213 words of memory out of 3000000
- 7023 multiletter control sequences out of 15000+200000
- 13415 words of font info for 51 fonts, out of 3000000 for 9000
+ 7029 multiletter control sequences out of 15000+200000
+ 14960 words of font info for 57 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  35i,8n,35p,288b,223s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86
 )/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/
 MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/Mi
-KTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTe
-X 2.8/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2
-.8/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.8/
-fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.8/font
-s/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files (x86)/MiKTeX 2.8/font
-s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/
-type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/typ
-e1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/
-public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/pu
-blic/amsfonts/cm/cmti8.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/publi
-c/amsfonts/symbols/msbm10.pfb>
-Output written on bachelor.pdf (8 pages, 143243 bytes).
+KTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/MiKT
+eX 2.8/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 
+2.8/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.8
+/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.8/fo
+nts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/
+type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/ty
+pe1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1
+/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/publ
+ic/amsfonts/cm/cmti8.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/
+amsfonts/symbols/msbm10.pfb>
+Output written on bachelor.pdf (8 pages, 153746 bytes).
 PDF statistics:
- 81 PDF objects out of 1000 (max. 8388607)
+ 85 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,37 +1,47 @@
-$$u\in L \to u\in (u\ff L)$$
+\subsection{Gilt für alle Sprachen}
 $$u\in L \to (u\ff L=\{u\})$$
 $$L\ff L = L$$
 $$U\ff L \subseteq L$$
-$$L\ff (U\cup V)\nsupseteq (L\ff U) \cup (L\ff V)$$
 $$L\ff (U\cup V)\subseteq (L\ff U) \cup (L\ff V)$$
-$$L\ff (U\cap V)\nsubseteq (L\ff U) \cap (L\ff V)$$
 $$L\ff (U\cap V)\supseteq (L\ff U) \cap (L\ff V)$$
-$$L\ff (U\cdot V)\nsubseteq (L\ff U) \cdot (L\ff V)$$
-$$L\ff (U\cdot V)\nsupseteq (L\ff U) \cdot (L\ff V)$$
-$$(L_1 \ff L_2) \ff L_3 \nsupseteq L_1 \ff (L_2 \ff L_3)$$
-$$(L_1 \ff L_2) \ff L_3 \subseteq^? L_1 \ff (L_2 \ff L_3)$$
+$$(L\cup U)\ff V = (L\ff V) \cup (U\ff V)$$
+$$(L\cap U) \ff V \subseteq (L\ff V) \cap (U\ff V)$$
+
+
+\subsection{Gilt für einige Sprachen $\exists L,U,V \subseteq X^*:$}
+$$L_2\subseteq L_1 \to L_2\ff W \subseteq L_1 \ff W$$
+$$W_2\subseteq W_1 \to L\ff W_2 \subseteq L \ff W_1$$
 $$L_1\subseteq L_2 \to L_1\ff L_2 = L_1$$
 $$L_2\subseteq L_1 \to L_1\ff L_2 = L_2$$
+$$L\ff (U\cdot V) = (L\ff U) \cdot (L\ff V)$$
+$$L\ff (U\cdot V) \supset (L\ff U) \cdot (L\ff V)$$
+$$(L_1 \ff L_2) \ff L_3 \nsupseteq L_1 \ff (L_2 \ff L_3)$$
+$$(L_1 \ff L_2) \ff L_3 \subseteq^? L_1 \ff (L_2 \ff L_3)$$
 $$L\ff L\cdot X^* = L$$
 $$L\cdot X^*\ff X^* = L\cdot X^*$$
 $$L\cdot X^*\ff L = L$$
 
+\subsection{Gilt nicht...}
+$$L\ff (U\cup V)\supset (L\ff U) \cup (L\ff V)$$
+$$L\ff (U\cap V)\subset (L\ff U) \cap (L\ff V)$$
+$$L\ff (U\cdot V)\subset (L\ff U) \cdot (L\ff V)$$
+
+
 \newpage
-$$L\ff (U\cup V) \nsupseteq (L\ff U) \cup (L\ff V),$$
-$$\text{Gegenbeispiel: } L=\{a\}\quad A=\{abb,aaba\}\quad B=\{aab,aba\} $$
-$$L\ff (A\cup B) = \{abb,aba,aab\}\text{ ,aber } L\ff A \cup L\ff B =
+$$L\ff (U\cup V) \not\supset (L\ff U) \cup (L\ff V),$$
+$$\text{Gegenbeispiel: } L=\{a\}\quad U=\{abb,aaba\}\quad V=\{aab,aba\} $$
+$$L\ff (U\cup V) = \{abb,aba,aab\}\text{ ,aber } L\ff U \cup L\ff V =
 \{abb,aaba\} \cup \{aab,aba\} = \{abb,aaba,aab,aba\} $$
 \vspace{5mm}
-$$L\ff (U\cap V)\nsubseteq (L\ff U) \cap (L\ff V),$$
-$$\text{Gegenbeispiel: } L=\{a,b\}\quad A=\{a,aa\}\quad B=\{aa,b\} $$
-$$L\ff (A\cap B) = \{aa\}\text{ ,aber } L\ff A \cap L\ff B =
+$$L\ff (U\cap V) \not\subset (L\ff U) \cap (L\ff V),$$
+$$\text{Gegenbeispiel: } L=\{a,b\}\quad U=\{a,aa\}\quad V=\{aa,b\} $$
+$$L\ff (U\cap V) = \{aa\}\text{ ,aber } L\ff U \cap L\ff V =
 \{a\} \cap \{b\} = \emptyset $$
 \vspace{5mm}
-$$L\ff (U\cdot V)\nsupseteq (L\ff U) \cdot (L\ff V),$$
-$$L\ff (U\cdot V)\nsubseteq (L\ff U) \cdot (L\ff V),$$
-$$\text{Gegenbeispiel: } A=\{aa\}\quad B=\{b,bb\} $$
-$$L\ff (A\cdot B) = \{aab\}\text{ ,aber } L\ff A \cdot L\ff B =
-\{aa\} \cdot \emptyset = \{aa\} $$
+$$L\ff (U\cdot V)= (L\ff U) \cdot (L\ff V),$$
+$$\text{Beispiel: } L=\{e\}\quad U=\{a\}\quad V=\{b\} $$
+$$L\ff (U\cdot V) \supset (L\ff U) \cdot (L\ff V),$$
+$$\text{Beispiel: } L=\{a\}\quad U=\{aa\}\quad V=\{b,a\} $$
 \vspace{5mm}
 $$(L_1 \ff L_2) \ff L_3 \nsupseteq L_1 \ff (L_2 \ff L_3)$$
 $$\text{Gegenbeispiel: } L_1=\{ab,aa\}\quad L_2=\{a,ab\}\quad L_3=\{aa\}$$
@@ -57,3 +67,7 @@ $$=\bigcup_{l\in L} \min ((l\cdot X^* \cap W) \cup (l\cdot X^* \cap V))$$
 $$\subseteq \bigcup_{l\in L} (\min (l\cdot X^* \cap W) \cup \min (l\cdot X^* \cap V))$$
 $$=\bigcup_{l\in L} \min (l\cdot X^*\cap W) \cup \bigcup_{l\in L} \min(l\cdot X^* \cap V)$$
 $$=(L\ff W)\cup (L\ff V)$$
+\vspace{5mm}
+$$(L\cup U) \ff V = \bigcup_{l\in L\cup U} \min(l\cdot X^* \cap V)$$
+$$ =\bigcup_{l\in L} \min(l\cdot X^* \cap V) \cup \bigcup_{l\in U} \min(l\cdot X^* \cap V)$$
+$$ = (L\ff V) \cup (U\ff V)$$
