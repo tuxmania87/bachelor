@@ -24,10 +24,21 @@ $$L\ff (U\cdot V)\subset (L\ff U) \cdot (L\ff V)$$
 $$(L\cap U) \ff V \supset (L\ff V) \cap (U\ff V)$$
 
 \newpage
+$$L\ff (U\cup V)\subset (L\ff U) \cup (L\ff V)$$
+$$L= \{a,b\} U =\{aaa\} V = \{bb,aa\}$$\\
+$$L\ff (U\cup V) = (L\ff U) \cup (L\ff V)$$
+$$L= \{a,b\} U =\{aaa\} V = \{aaa\}$$\\
+$$L\ff (U\cap V)\supset (L\ff U) \cap (L\ff V)$$
+$$L= \{a,b\} U =\{aaa,b,bb\} V = \{bb,aaa\}$$\\
+$$L\ff (U\cap V)= (L\ff U) \cap (L\ff V)$$
+$$L= \{a\} U =\{aaa\} V = \{aaa\}$$\\
+$$(L\cap U) \ff V \subset (L\ff V) \cap (U\ff V)$$
+$$(L\cap U) \ff V = (L\ff V) \cap (U\ff V)$$
+$$L= \{aaa\} U =\{aaa\} V = \{aaa\}$$\\
+\vspace{5mm}
 $$L\ff (U\cup V) \not\supset (L\ff U) \cup (L\ff V),$$
 $$\text{Gegenbeispiel: } L=\{a\}\quad U=\{abb,aaba\}\quad V=\{aab,aba\} $$
-$$L\ff (U\cup V) = \{abb,aba,aab\}\text{ ,aber } L\ff U \cup L\ff V =
-\{abb,aaba\} \cup \{aab,aba\} = \{abb,aaba,aab,aba\} $$
+$$L\ff (U\cup V) = \{abb,aba,aab\}\text{ ,aber } L\ff U \cup L\ff V = \{abb,aaba\} \cup \{aab,aba\} = \{abb,aaba,aab,aba\} $$
 \vspace{5mm}
 $$L\ff (U\cap V) \not\subset (L\ff U) \cap (L\ff V),$$
 $$\text{Gegenbeispiel: } L=\{a,b\}\quad U=\{a,aa\}\quad V=\{aa,b\} $$
@@ -44,7 +55,6 @@ $$\text{Gegenbeispiel: } L_1=\{ab,aa\}\quad L_2=\{a,ab\}\quad L_3=\{aa\}$$
 $$(L_1 \ff L_2) \ff L_3 = \{ab\} \ff \{aa\} = \emptyset\text{ ,aber } 
 \{ab,aa\} \ff \{aa\} = \{aa\} $$
 \vspace{5mm}
-
 $$L\cdot X^* \ff X^* = \bigcup_{u\in L\cdot X^*} u\ff X^* = \bigcup_{u\in L\cdot X^*} \min_{\sqsubseteq} \{l:l\in X^*\wedge u\sqsubseteq L\}$$ 
 $$= \bigcup_{u\in L\cdot X^*} \min(X^* \cap u\cdot X^*)=\bigcup_{u\in L\cdot X^*} \min(u) = \bigcup_{u\in L\cdot X^*} u = L\cdot X^*$$\\
 

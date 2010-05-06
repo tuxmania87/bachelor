@@ -1,5 +1,5 @@
 \subsection{Regularität}
-Sei $L$ und $W$ regul\"ar, so ist auch $L\ff W$ regul\"ar.\\\\
+Seien $L$ und $W$ regul\"ar, so ist auch $L\ff W$ regul\"ar.\\\\
 Automat $A_L= (X,Z,z_{0},\delta_L,Z_f)$ akzeptiere $L$, Automat $A_W = (X,S,s_{0},f,S_{f})$ akzeptiere $W$.
 Automat $A$ akzeptiert $L\ff W$, \\\\Vorgehensweise:\\
 $A_L$ und $A_W$ lesen das Wort $w$ parallel. $A_L$ akzeptiert und $A$ wählt nicht-deterministisch aus ob Schritt 2 aktiviert wird oder nicht.
@@ -11,4 +11,38 @@ $\delta = \{ ((z_i,s_i),x,(z_j,s_j)) : (z_i,x,z_j) \in \delta_L \wedge f(s_i,x)=
  \{ ((z_i,s_i),x,(z_f',s_j)) : (z_i,x,z') \in \delta_L \wedge z'\in Z_f \wedge f(s_i,x)=s_j  \} \cup \\
  \{ ((z_f',s_i),x,(z_f',s_j)) : f(s_i,x)=s_j  \wedge s_i \notin S_f\} \cup  \\
  \{ ((z_f',s_i),x,(z_f',s_x)) : f(s_i,x)=s_j  \wedge s_i \in S_f\} 
- $
+ $\\\\
+\subsection{Entscheidbarkeit}
+Seien $L$ und $W$ (Turing)entscheidbar, so ist auch $L\ff W$ entscheidbar.\\\\
+Seien die Turing Maschinen $T_L$ und $T_W$.\\
+Die Turing Maschine $T$ entscheidet $L\ff W$ nach folgendem Algorithmus:\\
+
+\begin{algorithm}
+\caption{verfeinere(Menge X,int stufe) }
+\label{split}
+\begin{algorithmic}
+%\REQUIRE Menge X, int stufe
+%Input: w
+\IF{($T_W$ entscheidet $w \wedge T_L$ entscheidet $w$)}
+\STATE $T$ entscheidet mit JA
+\ENDIF
+\STATE $w' = w$
+\STATE $b = $\FALSE
+\IF{($\neg T_W$ entscheidet $w$)}  
+\RETURN \FALSE
+\ENDIF
+\REPEAT
+\STATE $w' \leftarrow \mathit{cut}(w')$
+\IF{($T_W$ entscheidet $w'$)}
+\IF{($b == $\FALSE)}
+\STATE $T$ entscheidet mit NEIN
+\ENDIF
+\ELSE
+\IF{($T_L$ entscheidet $w'$)}
+\STATE $b=$\TRUE
+\ENDIF
+\ENDIF
+\UNTIL{($w'==e$)}
+\STATE $T$ entscheidet nach $b$
+\end{algorithmic}
+\end{algorithm}
