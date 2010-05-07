@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.4.29)  6 MAY 2010 19:25
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.5.7)  7 MAY 2010 11:42
 entering extended mode
  file:line:error style messages enabled.
  %&-line parsing enabled.
@@ -250,20 +250,31 @@ Package: nicefrac 1998/08/04 v0.9b Nice fractions
 \L@UnitsRaiseTextstyle=\skip51
 \L@UnitsRaiseScriptstyle=\skip52
 ))
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/ulem.sty
+\UL@box=\box29
+\UL@hyphenbox=\box30
+\UL@skip=\skip53
+\UL@hook=\toks24
+\UL@pe=\count105
+\UL@pixel=\dimen119
+\ULC@box=\box31
+Package: ulem 2000/05/26
+\ULdepth=\dimen120
+)
 (/home/robert/texmf/tex/latex/algorithms/algorithm.sty
 Package: algorithm 
 
 Document Style `algorithm' - floating environment
 (/usr/share/texmf-texlive/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count105
-\float@exts=\toks24
-\float@box=\box29
-\@float@everytoks=\toks25
-\@floatcapt=\box30
+\c@float@type=\count106
+\float@exts=\toks25
+\float@box=\box32
+\@float@everytoks=\toks26
+\@floatcapt=\box33
 )
-\@float@every@algorithm=\toks26
-\c@algorithm=\count106
+\@float@every@algorithm=\toks27
+\c@algorithm=\count107
 )
 (/home/robert/texmf/tex/latex/algorithms/algorithmic.sty
 Package: algorithmic 2006/06/02
@@ -271,37 +282,37 @@ Package: algorithmic 2006/06/02
 Document Style `algorithmic' - environment
 (/usr/share/texmf-texlive/tex/latex/tools/calc.sty
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count107
-\calc@Bcount=\count108
-\calc@Adimen=\dimen119
-\calc@Bdimen=\dimen120
-\calc@Askip=\skip53
-\calc@Bskip=\skip54
+\calc@Acount=\count108
+\calc@Bcount=\count109
+\calc@Adimen=\dimen121
+\calc@Bdimen=\dimen122
+\calc@Askip=\skip54
+\calc@Bskip=\skip55
 LaTeX Info: Redefining \setlength on input line 76.
 LaTeX Info: Redefining \addtolength on input line 77.
-\calc@Ccount=\count109
-\calc@Cskip=\skip55
+\calc@Ccount=\count110
+\calc@Cskip=\skip56
 )
-\c@ALC@line=\count110
-\c@ALC@rem=\count111
-\c@ALC@depth=\count112
-\ALC@tlm=\skip56
-\algorithmicindent=\skip57
+\c@ALC@line=\count111
+\c@ALC@rem=\count112
+\c@ALC@depth=\count113
+\ALC@tlm=\skip57
+\algorithmicindent=\skip58
 ) (./bachelor.aux)
 \openout1 = `bachelor.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 
 *geometry auto-detecting driver*
 *geometry detected driver: pdftex*
@@ -346,29 +357,48 @@ driver: pdftex
 -----------------------
 (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count113
-\scratchdimen=\dimen121
-\scratchbox=\box31
-\nofMPsegments=\count114
-\nofMParguments=\count115
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count116
-\MPscratchDim=\dimen122
-\MPnumerator=\count117
-\everyMPtoPDFconversion=\toks28
+\scratchcounter=\count114
+\scratchdimen=\dimen123
+\scratchbox=\box34
+\nofMPsegments=\count115
+\nofMParguments=\count116
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count117
+\MPscratchDim=\dimen124
+\MPnumerator=\count118
+\everyMPtoPDFconversion=\toks29
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 22.
+LaTeX Font Info:    Try loading font information for U+msa on input line 23.
  (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 22.
+LaTeX Font Info:    Try loading font information for U+msb on input line 23.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 ) [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./bachelor.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./bachelor.toc
+Class scrartcl Info: You've told me to use the font selection of the element
+(scrartcl)           `sectioning' that is an alias of element `disposition'
+(scrartcl)            on input line 2.
+Class scrartcl Info: You've told me to use the font selection of the element
+(scrartcl)           `sectioning' that is an alias of element `disposition'
+(scrartcl)            on input line 3.
+Class scrartcl Info: You've told me to use the font selection of the element
+(scrartcl)           `sectioning' that is an alias of element `disposition'
+(scrartcl)            on input line 7.
+Class scrartcl Info: You've told me to use the font selection of the element
+(scrartcl)           `sectioning' that is an alias of element `disposition'
+(scrartcl)            on input line 8.
+Class scrartcl Info: You've told me to use the font selection of the element
+(scrartcl)           `sectioning' that is an alias of element `disposition'
+(scrartcl)            on input line 11.
+Class scrartcl Info: You've told me to use the font selection of the element
+(scrartcl)           `sectioning' that is an alias of element `disposition'
+(scrartcl)            on input line 12.
+)
 \tf@toc=\write3
 \openout3 = `bachelor.toc'.
 
@@ -393,7 +423,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--35
  []
 
 
-Overfull \hbox (26.29268pt too wide) detected at line 41
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+
+ []
+
+
+Overfull \hbox (26.29268pt too wide) detected at line 42
 \OML/cmm/m/it/10.95 L . \OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 U \OMS/cmsy/m/n
 /10.95 [ \OML/cmm/m/it/10.95 V\OT1/cmr/m/n/10.95 ) = \OMS/cmsy/m/n/10.95 f\OML/
 cmm/m/it/10.95 abb; aba; aab\OMS/cmsy/m/n/10.95 g[]\OML/cmm/m/it/10.95 L . U \O
@@ -404,12 +439,12 @@ L/cmm/m/it/10.95 abb; aaba; aab; aba\OMS/cmsy/m/n/10.95 g
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 59--60
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--64
+Underfull \hbox (badness 10000) in paragraph at lines 62--65
 
  []
 
@@ -488,33 +523,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--19
 
  []
 
-) [9] [10] [11] (./bachelor.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+) [9] [10] [11] (./bachelor.aux) ) 
 Here is how much of TeX's memory you used:
- 3958 strings out of 95061
- 53340 string characters out of 1182621
- 136462 words of memory out of 256000000
- 7060 multiletter control sequences out of 15000+50000
- 15268 words of font info for 58 fonts, out of 1200000 for 2000
+ 4039 strings out of 95061
+ 54148 string characters out of 1182622
+ 137482 words of memory out of 256000000
+ 7136 multiletter control sequences out of 15000+50000
+ 15374 words of font info for 59 fonts, out of 1200000 for 2000
  28 hyphenation exceptions out of 8191
  35i,8n,35p,255b,580s stack positions out of 5000i,500n,10000p,200000b,5000s
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-te
-xlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts
-/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/publ
-ic/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
-cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb
-></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/
-texmf-texlive/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-tex
-live/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/
-type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-texlive/fonts/type1/public
-/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
-/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on bachelor.pdf (11 pages, 171034 bytes).
+</usr/share/texmf-texlive/fonts/type1/public/
+amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
+/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
+e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texl
+ive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/ty
+pe1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/a
+msfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
+ssbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/
+texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texliv
+e/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/typ
+e1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf-texlive/fonts/type1/public/am
+sfonts/symbols/msbm10.pfb>
+Output written on bachelor.pdf (11 pages, 172367 bytes).
 PDF statistics:
  98 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
