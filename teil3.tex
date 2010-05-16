@@ -12,6 +12,19 @@ $\delta = \{ ((z_i,s_i),x,(z_j,s_j)) : (z_i,x,z_j) \in \delta_L \wedge f(s_i,x)=
  \{ ((z_f',s_i),x,(z_f',s_j)) : f(s_i,x)=s_j  \wedge s_i \notin S_f\} \cup  \\
  \{ ((z_f',s_i),x,(z_f',s_x)) : f(s_i,x)=s_j  \wedge s_i \in S_f\} 
  $\\\\
+
+\subsection{Kontextfreiheit}
+
+\subsection{kontextfrei}
+
+\subsubsection{deterministisch kontextfrei}
+
+Es existieren deterministisch kontextfreie Sprachen $L,W$, sodass $L\ff W$ nicht deterministisch kontextfrei ist!
+
+$$L=\{a^nb^nc^i:i,n>0\}\qquad W=\{a^ib^nc^n:i,n>0\}$$
+So ist $$L\ff W = \bigcup_{l\in L} \min_{\sqsubseteq}\{w:w\in W \wedge l\sqsubseteq w\} = \{a^nb^nc^n:n>0\} = U$$
+Und von $U$ wissen wir, dass es nicht kontextfrei, also auch nicht deterministisch kontextfrei ist.
+
 \subsection{Entscheidbarkeit}
 Seien $L$ und $W$ (Turing)entscheidbar, so ist auch $L\ff W$ entscheidbar.\\\\
 Seien die Turing Maschinen $T_L$ und $T_W$.\\
@@ -23,26 +36,22 @@ Die Turing Maschine $T$ entscheidet $L\ff W$ nach folgendem Algorithmus:\\
 \begin{algorithmic}
 %\REQUIRE Menge X, int stufe
 %Input: w
-\IF{($T_W$ entscheidet $w \wedge T_L$ entscheidet $w$)}
-\STATE $T$ entscheidet mit JA
+\IF{($w \in W \wedge w \in L$)}
+\STATE $T$ accepts
 \ENDIF
 \STATE $w' = w$
-\STATE $b = $\FALSE
-\IF{($\neg T_W$ entscheidet $w$)}  
+\IF{($w \in W$)}  
 \RETURN \FALSE
 \ENDIF
 \REPEAT
 \STATE $w' \leftarrow \mathit{cut}(w')$
-\IF{($T_W$ entscheidet $w'$)}
-\IF{($b == $\FALSE)}
-\STATE $T$ entscheidet mit NEIN
+\IF{($w'\in W$)}
+\STATE $T$ rejects
 \ENDIF
-\ELSE
-\IF{($T_L$ entscheidet $w'$)}
-\STATE $b=$\TRUE
-\ENDIF
+\IF{($w' \in L$)}
+\STATE $T$ accepts
 \ENDIF
 \UNTIL{($w'==e$)}
-\STATE $T$ entscheidet nach $b$
+\STATE $T$ rejects
 \end{algorithmic}
 \end{algorithm}
