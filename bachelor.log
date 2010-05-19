@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.5.7)  16 MAY 2010 16:45
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.5.7)  19 MAY 2010 13:53
 entering extended mode
  file:line:error style messages enabled.
  %&-line parsing enabled.
@@ -394,10 +394,10 @@ Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)            on input line 8.
 Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)           `sectioning' that is an alias of element `disposition'
-(scrartcl)            on input line 11.
+(scrartcl)            on input line 14.
 Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)           `sectioning' that is an alias of element `disposition'
-(scrartcl)            on input line 12.
+(scrartcl)            on input line 15.
 )
 \tf@toc=\write3
 \openout3 = `bachelor.toc'.
@@ -438,57 +438,67 @@ n/10.95 f\OML/cmm/m/it/10.95 abb; aaba\OMS/cmsy/m/n/10.95 g [ f\OML/cmm/m/it/10
 L/cmm/m/it/10.95 abb; aaba; aab; aba\OMS/cmsy/m/n/10.95 g
  []
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
+[4] [5]) [6] (./teil2.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--15
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--65
-
- []
-
-[5]) [6] (./teil2.tex
-Underfull \hbox (badness 10000) in paragraph at lines 1--2
+Underfull \hbox (badness 10000) in paragraph at lines 2--15
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--14
+Underfull \hbox (badness 10000) in paragraph at lines 2--15
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--14
+Underfull \hbox (badness 10000) in paragraph at lines 2--15
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--16
+Underfull \hbox (badness 10000) in paragraph at lines 25--27
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--16
+Underfull \hbox (badness 10000) in paragraph at lines 25--27
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--19
+Underfull \hbox (badness 10000) in paragraph at lines 27--29
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--19
+Underfull \hbox (badness 10000) in paragraph at lines 27--29
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--22
+Underfull \hbox (badness 10000) in paragraph at lines 29--32
 
  []
 
-[7]) [8] (./teil3.tex
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+) [8] (./teil3.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--7
 
  []
@@ -514,16 +524,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--15
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--30
+Underfull \hbox (badness 10000) in paragraph at lines 29--32
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--30
+Underfull \hbox (badness 10000) in paragraph at lines 29--32
 
  []
 
-) [9] [10] (./bachelor.aux) ) 
+[9]) [10] [11] (./bachelor.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
  4039 strings out of 95061
  54148 string characters out of 1182622
@@ -532,23 +546,22 @@ Here is how much of TeX's memory you used:
  15374 words of font info for 59 fonts, out of 1200000 for 2000
  28 hyphenation exceptions out of 8191
  35i,8n,35p,255b,500s stack positions out of 5000i,500n,10000p,200000b,5000s
-</usr/share/texmf-texlive/fonts/type1/public/amsfo
-nts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex
-10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/tex
-mf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/f
-onts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/p
-ublic/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
-ts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmssbx1
-0.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
-/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf
--texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fon
-ts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/pu
-blic/amsfonts/cm/cmti8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfont
-s/symbols/msbm10.pfb>
-Output written on bachelor.pdf (10 pages, 173957 bytes).
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-te
+xlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts
+/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/publ
+ic/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
+cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb
+></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/
+texmf-texlive/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-tex
+live/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/
+type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-texlive/fonts/type1/public
+/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
+/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti8.pfb>
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on bachelor.pdf (11 pages, 174876 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
+ 98 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

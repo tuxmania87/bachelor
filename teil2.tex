@@ -1,3 +1,19 @@
+
+$pref(V)\ff W$\\
+$\forall W\forall V(w\in W\wedge v\in V \wedge w_0\neq v_0 \to pref(V)\ff W = \emptyset$\\\\
+$W\ff pref(V)$\\
+$\bigcup_{w\in W} \min_{\sqsubseteq} \{v:v\in pref(V) \wedge w\sqsubseteq v\}$\\
+$v\in pref(V) \wedge w\sqsubseteq v \to w\in pref(V)$\\\\
+$V\cdot X^* \ff W$\\
+$\bigcup_{v\in VX^*} \min_{\sqsubseteq} \{w:w\in W \wedge v\sqsubseteq w\}$\\
+$w\in W \wedge v\sqsubseteq w = v'\sqsubseteq v \sqsubseteq w \wedge v'\in V \to v'\sqsubseteq w$\\
+$=\bigcup_{v\in V} \{w:w\in W \wedge v\sqsubseteq w\}$\\\\
+$W\ff V\cdot X^*$\\
+1.Fall: $w\in W\wedge v\in V \wedge w\sqsubseteq v \to v\in W\ff V\cdot X^*$\\
+2.Fall: $w\in W\wedge v\in V \wedge v\sqsubseteq w \to w\in W\ff V\cdot X^*$\\
+$\to W\ff V\cdot X^* = \{v:v\in V \wedge w\in W\wedge w\sqsubseteq v\} \cup \{w: w\in W\wedge v\in V \wedge v\sqsubseteq w\}$\\
+
+\newpage
 $$ V = \{v:\forall w(w\in W \to w\not\sqsubseteq v)\}\qquad \mathit{pref}(V)=\{u:\exists v (u\sqsubseteq v\wedge v\in V)\}$$\\
 
 $$W\ff V = \emptyset$$
@@ -5,9 +21,6 @@ $$W\ff \mathit{pref}(V) = \emptyset$$
 $$W\cdot X^* \ff V = \emptyset$$
 $$W\cdot X^* \ff \mathit{pref}(V) = \emptyset$$
 $$\mathit{pref}(V)\ff W\cdot X^* = $$
-$$(L\ff L\cdot X^* = L)$$
-$$(L\cdot X^*\ff X^* = L\cdot X^*)$$
-$$(L\cdot X^*\ff L = L)$$
 
 $$W\ff V = \bigcup_{x\in W} x\ff V = \bigcup \min_{\sqsubseteq } \{v:v\in V \wedge x\sqsubseteq v\}$$
 Wegen $x\in W$ und $x\sqsubseteq v$ gilt $\{v:v\in V \wedge x\sqsubseteq v\} = \emptyset \Rightarrow \bigcup \min_{\sqsubseteq} \{v:v\in V \wedge x\sqsubseteq v\} = \emptyset$\\\\
