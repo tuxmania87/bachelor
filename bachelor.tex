@@ -5,6 +5,8 @@
 \usepackage{graphicx}
 \usepackage{amssymb}
 \usepackage{amstext}
+\usepackage{amsmath}
+\usepackage{amsthm}
 \usepackage{color}
 \usepackage{amsmath}
 \usepackage[ngerman]{babel}
@@ -18,23 +20,30 @@
 \author{Robert Hartmann}
 \title{Über die Operation Fortsetzung bei formalen Sprachen}
 \date{24. September 2010}
+\parindent 0pt
 \begin{document}
+
+\newtheorem{def1}{Definition} 
+\newtheorem{satz}{Satz}
+\newtheorem{lem}{Lemma}  
+\newtheorem{bew}{Beweis} 
+
 \maketitle
 \newpage
 \tableofcontents
 \newpage
 \section{Einleitung}
-
+\input{einleitung}
 
 \section{allgemeine Eigenschaften}
 \input{teil1}
 \newpage
 
-\section{Eigenschaften bei speziellen Sprachen}
+\section{Eigenschaften bei Sprachen spezieller Gestalt}
 \input{teil2}
 \newpage
 
-\section{spezielle Sprachen}
+\section{Abgeschlossenheit in der CHOMSKY-Hierachie}
 \input{teil3}
 \newpage
 

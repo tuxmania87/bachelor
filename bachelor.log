@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.5.7)  19 MAY 2010 13:53
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.5.7)  2 JUN 2010 14:14
 entering extended mode
  file:line:error style messages enabled.
  %&-line parsing enabled.
@@ -153,14 +153,6 @@ File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks17
 \ex@=\dimen109
 ))
-(/usr/share/texmf-texlive/tex/latex/graphics/color.sty
-Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
-
-(/etc/texmf/tex/latex/config/color.cfg
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
-)
-Package color Info: Driver file: pdftex.def on input line 130.
-)
 (/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip47
@@ -211,6 +203,26 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
+(/usr/share/texmf-texlive/tex/latex/amscls/amsthm.sty
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks22
+\thm@bodyfont=\toks23
+\thm@headfont=\toks24
+\thm@notefont=\toks25
+\thm@headpunct=\toks26
+\thm@preskip=\skip50
+\thm@postskip=\skip51
+\thm@headsep=\skip52
+\dth@everypar=\toks27
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/etc/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
 (/usr/share/texmf-texlive/tex/generic/babel/babel.sty
 Package: babel 2008/07/06 v3.8l The Babel package
 
@@ -232,8 +244,8 @@ Package babel Warning: No hyphenation patterns were loaded for
 Package babel Info: Making " an active character on input line 92.
 )) (/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
-\inpenc@prehook=\toks22
-\inpenc@posthook=\toks23
+\inpenc@prehook=\toks28
+\inpenc@posthook=\toks29
 
 (/usr/share/texmf-texlive/tex/latex/base/latin1.def
 File: latin1.def 2008/03/30 v1.1d Input encoding file
@@ -246,15 +258,15 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 (/usr/share/texmf-texlive/tex/latex/units/nicefrac.sty
 Package: nicefrac 1998/08/04 v0.9b Nice fractions
-\L@UnitsRaiseDisplaystyle=\skip50
-\L@UnitsRaiseTextstyle=\skip51
-\L@UnitsRaiseScriptstyle=\skip52
+\L@UnitsRaiseDisplaystyle=\skip53
+\L@UnitsRaiseTextstyle=\skip54
+\L@UnitsRaiseScriptstyle=\skip55
 ))
 (/usr/share/texmf-texlive/tex/latex/ltxmisc/ulem.sty
 \UL@box=\box29
 \UL@hyphenbox=\box30
-\UL@skip=\skip53
-\UL@hook=\toks24
+\UL@skip=\skip56
+\UL@hook=\toks30
 \UL@pe=\count105
 \UL@pixel=\dimen119
 \ULC@box=\box31
@@ -268,12 +280,12 @@ Document Style `algorithm' - floating environment
 (/usr/share/texmf-texlive/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count106
-\float@exts=\toks25
+\float@exts=\toks31
 \float@box=\box32
-\@float@everytoks=\toks26
+\@float@everytoks=\toks32
 \@floatcapt=\box33
 )
-\@float@every@algorithm=\toks27
+\@float@every@algorithm=\toks33
 \c@algorithm=\count107
 )
 (/home/robert/texmf/tex/latex/algorithms/algorithmic.sty
@@ -286,33 +298,33 @@ Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Bcount=\count109
 \calc@Adimen=\dimen121
 \calc@Bdimen=\dimen122
-\calc@Askip=\skip54
-\calc@Bskip=\skip55
+\calc@Askip=\skip57
+\calc@Bskip=\skip58
 LaTeX Info: Redefining \setlength on input line 76.
 LaTeX Info: Redefining \addtolength on input line 77.
 \calc@Ccount=\count110
-\calc@Cskip=\skip56
+\calc@Cskip=\skip59
 )
 \c@ALC@line=\count111
 \c@ALC@rem=\count112
 \c@ALC@depth=\count113
-\ALC@tlm=\skip57
-\algorithmicindent=\skip58
+\ALC@tlm=\skip60
+\algorithmicindent=\skip61
 ) (./bachelor.aux)
 \openout1 = `bachelor.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 
 *geometry auto-detecting driver*
 *geometry detected driver: pdftex*
@@ -362,17 +374,21 @@ driver: pdftex
 \scratchbox=\box34
 \nofMPsegments=\count115
 \nofMParguments=\count116
-\everyMPshowfont=\toks28
+\everyMPshowfont=\toks34
 \MPscratchCnt=\count117
 \MPscratchDim=\dimen124
 \MPnumerator=\count118
-\everyMPtoPDFconversion=\toks29
+\everyMPtoPDFconversion=\toks35
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 23.
+\c@def1=\count119
+\c@satz=\count120
+\c@lem=\count121
+\c@bew=\count122
+LaTeX Font Info:    Try loading font information for U+msa on input line 32.
  (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 23.
+LaTeX Font Info:    Try loading font information for U+msb on input line 32.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
@@ -394,15 +410,25 @@ Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)            on input line 8.
 Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)           `sectioning' that is an alias of element `disposition'
-(scrartcl)            on input line 14.
+(scrartcl)            on input line 13.
 Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)           `sectioning' that is an alias of element `disposition'
-(scrartcl)            on input line 15.
+(scrartcl)            on input line 14.
 )
 \tf@toc=\write3
 \openout3 = `bachelor.toc'.
 
- [2] (./teil1.tex [3]
+ [2] (./einleitung.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+
+ []
+
+[3]) (./teil1.tex [4] [5]
 Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
  []
@@ -438,7 +464,7 @@ n/10.95 f\OML/cmm/m/it/10.95 abb; aaba\OMS/cmsy/m/n/10.95 g [ f\OML/cmm/m/it/10
 L/cmm/m/it/10.95 abb; aaba; aab; aba\OMS/cmsy/m/n/10.95 g
  []
 
-[4] [5]) [6] (./teil2.tex
+[6] [7]) [8] (./teil2.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--15
 
  []
@@ -458,7 +484,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--15
 
  []
 
-[7]
+[9]
 Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
@@ -498,7 +524,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--35
 
  []
 
-) [8] (./teil3.tex
+) [10] (./teil3.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--7
 
  []
@@ -524,44 +550,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--15
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--32
+Underfull \hbox (badness 10000) in paragraph at lines 27--30
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--32
+Underfull \hbox (badness 10000) in paragraph at lines 27--30
 
  []
 
-[9]) [10] [11] (./bachelor.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+) [11] [12] (./bachelor.aux) ) 
 Here is how much of TeX's memory you used:
- 4039 strings out of 95061
- 54148 string characters out of 1182622
- 138482 words of memory out of 256000000
- 7136 multiletter control sequences out of 15000+50000
- 15374 words of font info for 59 fonts, out of 1200000 for 2000
+ 4160 strings out of 95061
+ 55453 string characters out of 1182622
+ 139681 words of memory out of 256000000
+ 7244 multiletter control sequences out of 15000+50000
+ 17564 words of font info for 68 fonts, out of 1200000 for 2000
  28 hyphenation exceptions out of 8191
- 35i,8n,35p,255b,500s stack positions out of 5000i,500n,10000p,200000b,5000s
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-te
-xlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts
-/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/publ
-ic/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
-cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb
-></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/
-texmf-texlive/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-tex
-live/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/
-type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-texlive/fonts/type1/public
-/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
-/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on bachelor.pdf (11 pages, 174876 bytes).
+ 35i,8n,35p,255b,498s stack positions out of 5000i,500n,10000p,200000b,5000s
+</usr/share/texmf-texlive/fonts/type1/public/amsf
+onts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cme
+x10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/te
+xmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/
+fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/
+public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
+nts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.p
+fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/shar
+e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-t
+exlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/font
+s/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-texlive/fonts/type1/publ
+ic/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
+cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti8.pf
+b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on bachelor.pdf (12 pages, 210212 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
+ 109 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

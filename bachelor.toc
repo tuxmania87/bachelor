@@ -1,15 +1,14 @@
 \select@language {ngerman}
 \contentsline {section}{\numberline {1}Einleitung}{3}
-\contentsline {section}{\numberline {2}allgemeine Eigenschaften}{3}
-\contentsline {subsection}{\numberline {2.1}Gilt f\"ur alle Sprachen}{3}
-\contentsline {subsection}{\numberline {2.2}Gilt f\"ur einige Sprachen $\exists L,U,V \subseteq X^*:$}{3}
-\contentsline {subsection}{\numberline {2.3}Gilt nicht...}{3}
-\contentsline {section}{\numberline {3}Eigenschaften bei speziellen Sprachen}{7}
-\contentsline {section}{\numberline {4}spezielle Sprachen}{9}
-\contentsline {subsection}{\numberline {4.1}Regularit\"at}{9}
-\contentsline {subsection}{\numberline {4.2}Kontextfreiheit}{9}
-\contentsline {subsection}{\numberline {4.3}kontextfrei}{9}
-\contentsline {subsubsection}{\numberline {4.3.1}deterministisch kontextfrei}{9}
-\contentsline {subsection}{\numberline {4.4}Entscheidbarkeit}{9}
-\contentsline {section}{\numberline {5}Schlusswort}{11}
-\contentsline {section}{\numberline {6}Quellen und Literatur}{11}
+\contentsline {section}{\numberline {2}allgemeine Eigenschaften}{4}
+\contentsline {subsection}{\numberline {2.1}Gilt f\"ur alle Sprachen}{4}
+\contentsline {subsection}{\numberline {2.2}Gilt f\"ur einige Sprachen $\exists L,U,V \subseteq X^*:$}{4}
+\contentsline {subsection}{\numberline {2.3}Gilt nicht...}{5}
+\contentsline {section}{\numberline {3}Eigenschaften bei Sprachen spezieller Gestalt}{9}
+\contentsline {section}{\numberline {4}Abgeschlossenheit in der CHOMSKY-Hierachie}{11}
+\contentsline {subsection}{\numberline {4.1}Regularit\"at}{11}
+\contentsline {subsection}{\numberline {4.2}Kontextfreiheit}{11}
+\contentsline {subsubsection}{\numberline {4.2.1}deterministisch kontextfrei}{11}
+\contentsline {subsection}{\numberline {4.3}Entscheidbarkeit}{11}
+\contentsline {section}{\numberline {5}Schlusswort}{12}
+\contentsline {section}{\numberline {6}Quellen und Literatur}{12}
