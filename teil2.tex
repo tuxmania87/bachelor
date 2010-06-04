@@ -1,17 +1,26 @@
 
-$pref(V)\ff W$\\
-$\forall W\forall V(w\in W\wedge v\in V \wedge w_0\neq v_0 \to pref(V)\ff W = \emptyset$\\\\
-$W\ff pref(V)$\\
+\underline{$\textit{pref}(V)\ff W$}\\
+1. Fall: $w\in W \cap pref(V) \to w\in \textit{pref}(V)\ff W$\\
+2. Fall: $w\in W\backslash \textit{pref}(V) \to $muss im Einzelfall geprüft werden.\\
+$\to pref(V)\ff W = \underbrace{W\cap \textit{pref}(V)}_A \cup  \textit{pref(V)}\backslash A \ff W$\\\\
+
+
+\underline{$W\ff \textit{pref}(V) = W \cap \textit{pref}(V)$}\\
+"'$\rightarrow$"'\\
 $\bigcup_{w\in W} \min_{\sqsubseteq} \{v:v\in pref(V) \wedge w\sqsubseteq v\}$\\
-$v\in pref(V) \wedge w\sqsubseteq v \to w\in pref(V)$\\\\
-$V\cdot X^* \ff W$\\
+$v\in pref(V) \wedge w\sqsubseteq v \to w\in pref(V)$\\
+$\bigcup_{w\in W} \{w\in pref(V)\} = W\cap \textit{pref}(V)$\\
+\\
+%"'$\leftarrow$"'\\
+%$w\in \textit{pref}(V) \wedge w\in W \to w\sqsubseteq v\in \textit{pref}(V)$\\\\
+\underline{$V\cdot X^* \ff W$}\\
 $\bigcup_{v\in VX^*} \min_{\sqsubseteq} \{w:w\in W \wedge v\sqsubseteq w\}$\\
-$w\in W \wedge v\sqsubseteq w = v'\sqsubseteq v \sqsubseteq w \wedge v'\in V \to v'\sqsubseteq w$\\
-$=\bigcup_{v\in V} \{w:w\in W \wedge v\sqsubseteq w\}$\\\\
-$W\ff V\cdot X^*$\\
-1.Fall: $w\in W\wedge v\in V \wedge w\sqsubseteq v \to v\in W\ff V\cdot X^*$\\
-2.Fall: $w\in W\wedge v\in V \wedge v\sqsubseteq w \to w\in W\ff V\cdot X^*$\\
-$\to W\ff V\cdot X^* = \{v:v\in V \wedge w\in W\wedge w\sqsubseteq v\} \cup \{w: w\in W\wedge v\in V \wedge v\sqsubseteq w\}$\\
+$v\in VX^* \wedge v\sqsubseteq w \to w\in VX^*$\\
+$=\{w:w\in W \wedge w\in VX^*\} = W\cap VX^*$\\\\
+%$=\bigcup_{v\in V} \{w:w\in W \wedge v\sqsubseteq w\}$\\\\
+\underline{$W\ff V\cdot X^*$}\\
+1.Fall: $w\in W\wedge w\in VX^* \to \{w\} \ff VX^* = \{w\} \cap VX^*$\\
+1.Fall: $w\in W\wedge w\notin VX^* \to \{w\} \ff VX^* = \emptyset$\\
 
 \newpage
 $$ V = \{v:\forall w(w\in W \to w\not\sqsubseteq v)\}\qquad \mathit{pref}(V)=\{u:\exists v (u\sqsubseteq v\wedge v\in V)\}$$\\
