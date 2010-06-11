@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.5.7)  4 JUN 2010 11:42
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.5.7)  11 JUN 2010 11:26
 entering extended mode
  file:line:error style messages enabled.
  %&-line parsing enabled.
@@ -313,18 +313,18 @@ LaTeX Info: Redefining \addtolength on input line 77.
 ) (./bachelor.aux)
 \openout1 = `bachelor.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
 
 *geometry auto-detecting driver*
 *geometry detected driver: pdftex*
@@ -384,11 +384,13 @@ driver: pdftex
 \c@satz=\count120
 \c@lem=\count121
 \c@bew=\count122
-LaTeX Font Info:    Try loading font information for U+msa on input line 32.
+\c@gleich=\count123
+\c@eigen=\count124
+LaTeX Font Info:    Try loading font information for U+msa on input line 35.
  (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 32.
+LaTeX Font Info:    Try loading font information for U+msb on input line 35.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
@@ -428,33 +430,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-[3]) (./teil1.tex [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 28--29
+[3]) [4] (./teil1.tex [5]
+Overfull \hbox (20.17973pt too wide) detected at line 67
+\OMS/cmsy/m/n/10.95 ! [] ^ []
+ []
+
+[6] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
 
-Overfull \hbox (26.29268pt too wide) detected at line 42
+Overfull \hbox (26.29268pt too wide) detected at line 127
 \OML/cmm/m/it/10.95 L . \OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 U \OMS/cmsy/m/n
 /10.95 [ \OML/cmm/m/it/10.95 V\OT1/cmr/m/n/10.95 ) = \OMS/cmsy/m/n/10.95 f\OML/
 cmm/m/it/10.95 abb; aba; aab\OMS/cmsy/m/n/10.95 g[]\OML/cmm/m/it/10.95 L . U \O
@@ -464,7 +471,7 @@ n/10.95 f\OML/cmm/m/it/10.95 abb; aaba\OMS/cmsy/m/n/10.95 g [ f\OML/cmm/m/it/10
 L/cmm/m/it/10.95 abb; aaba; aab; aba\OMS/cmsy/m/n/10.95 g
  []
 
-[6] [7]) [8] (./teil2.tex
+[8]) [9] (./teil2.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--6
 
  []
@@ -489,47 +496,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--24
 
  []
 
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 34--36
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 34--36
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--38
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--38
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 38--41
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 38--41
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
-
- []
-
-) [10] (./teil3.tex
+[10]) [11] (./teil3.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--7
 
  []
@@ -564,15 +531,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--30
 
  []
 
-) [11] [12] (./bachelor.aux) ) 
+) [12] [13] (./bachelor.aux) ) 
 Here is how much of TeX's memory you used:
- 4160 strings out of 95061
- 55453 string characters out of 1182622
- 139681 words of memory out of 256000000
- 7244 multiletter control sequences out of 15000+50000
- 17564 words of font info for 68 fonts, out of 1200000 for 2000
+ 4178 strings out of 95061
+ 55603 string characters out of 1182622
+ 139694 words of memory out of 256000000
+ 7260 multiletter control sequences out of 15000+50000
+ 18605 words of font info for 71 fonts, out of 1200000 for 2000
  28 hyphenation exceptions out of 8191
- 35i,11n,35p,255b,498s stack positions out of 5000i,500n,10000p,200000b,5000s
+ 35i,10n,35p,250b,498s stack positions out of 5000i,500n,10000p,200000b,5000s
 </usr/share/texmf-texlive/fonts/type1/public/amsf
 onts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cme
 x10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
@@ -586,9 +553,9 @@ e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-t
 exlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/font
 s/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-texlive/fonts/type1/publ
 ic/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
-cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti8.pf
-b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on bachelor.pdf (12 pages, 211667 bytes).
+cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msb
+m10.pfb>
+Output written on bachelor.pdf (13 pages, 206039 bytes).
 PDF statistics:
  109 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

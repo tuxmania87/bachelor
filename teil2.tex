@@ -1,18 +1,18 @@
 
-\underline{$\textit{pref}(V)\ff W$}\\
-1. Fall: $w\in W \cap pref(V) \to w\in \textit{pref}(V)\ff W$\\
-2. Fall: $w\in W\backslash \textit{pref}(V) \to $muss im Einzelfall geprüft werden.\\
-$\to pref(V)\ff W = \underbrace{W\cap \textit{pref}(V)}_A \cup  \textit{pref(V)}\backslash A \ff W$\\\\
+\underline{$\pref(V)\ff W$}\\
+1. Fall: $w\in W \cap \pref(V) \to w\in \pref(V)\ff W$\\
+2. Fall: $w\in W\backslash \pref(V) \to $muss im Einzelfall geprüft werden.\\
+$\to \pref(V)\ff W = \underbrace{W\cap \pref(V)}_A \cup  \textit{pref(V)}\backslash A \ff W$\\\\
 
 
-\underline{$W\ff \textit{pref}(V) = W \cap \textit{pref}(V)$}\\
+\underline{$W\ff \pref(V) = W \cap \pref(V)$}\\
 "'$\rightarrow$"'\\
-$\bigcup_{w\in W} \min_{\sqsubseteq} \{v:v\in pref(V) \wedge w\sqsubseteq v\}$\\
-$v\in pref(V) \wedge w\sqsubseteq v \to w\in pref(V)$\\
-$\bigcup_{w\in W} \{w\in pref(V)\} = W\cap \textit{pref}(V)$\\
+$\bigcup_{w\in W} \min_{\sqsubseteq} \{v:v\in \pref(V) \wedge w\sqsubseteq v\}$\\
+$v\in \pref(V) \wedge w\sqsubseteq v \to w\in \pref(V)$\\
+$\bigcup_{w\in W} \{w\in \pref(V)\} = W\cap \pref(V)$\\
 \\
 %"'$\leftarrow$"'\\
-%$w\in \textit{pref}(V) \wedge w\in W \to w\sqsubseteq v\in \textit{pref}(V)$\\\\
+%$w\in \pref(V) \wedge w\in W \to w\sqsubseteq v\in \pref(V)$\\\\
 \underline{$V\cdot X^* \ff W$}\\
 $\bigcup_{v\in VX^*} \min_{\sqsubseteq} \{w:w\in W \wedge v\sqsubseteq w\}$\\
 $v\in VX^* \wedge v\sqsubseteq w \to w\in VX^*$\\
@@ -23,24 +23,31 @@ $=\{w:w\in W \wedge w\in VX^*\} = W\cap VX^*$\\\\
 1.Fall: $w\in W\wedge w\notin VX^* \to \{w\} \ff VX^* = \emptyset$\\
 
 \newpage
-$$ V = \{v:\forall w(w\in W \to w\not\sqsubseteq v)\}\qquad \mathit{pref}(V)=\{u:\exists v (u\sqsubseteq v\wedge v\in V)\}$$\\
+$$V\subseteq X^*\backslash W\cdot X^*$$
 
 $$W\ff V = \emptyset$$
-$$W\ff \mathit{pref}(V) = \emptyset$$
-$$W\cdot X^* \ff V = \emptyset$$
-$$W\cdot X^* \ff \mathit{pref}(V) = \emptyset$$
-$$\mathit{pref}(V)\ff W\cdot X^* = $$
+$$W\ff pref(V) = \emptyset$$
+$$W\cdot X^*\ff V = \emptyset$$
+$$V\ff W\cdot X^* = V\ff W = \max(V)\ff \min(W)$$
 
-$$W\ff V = \bigcup_{x\in W} x\ff V = \bigcup \min_{\sqsubseteq } \{v:v\in V \wedge x\sqsubseteq v\}$$
-Wegen $x\in W$ und $x\sqsubseteq v$ gilt $\{v:v\in V \wedge x\sqsubseteq v\} = \emptyset \Rightarrow \bigcup \min_{\sqsubseteq} \{v:v\in V \wedge x\sqsubseteq v\} = \emptyset$\\\\
-$$ W\cdot X^* \ff V = \bigcup_{x\in W\cdot X^*} x\ff V = \bigcup_{x\in W\cdot X^*} \min_{\sqsubseteq} \{v:v\in V \wedge x\sqsubseteq v\} = \emptyset$$
-Begründung analog Fall $W\ff V$\\\\
-$$ W \ff \mathit{pref}(V) = \bigcup_{w\in W} w\ff \mathit{pref}(V) = \bigcup_{w\in W} \{v:v\in \mathit{pref}(V) \wedge w\sqsubseteq v\} = \emptyset$$
-$w\sqsubseteq v$ ist nie erfuellt. Angenommen $v\in \mathit{pref}(V) \wedge w\sqsubseteq v$, dann kann man $v$ wie folgt verlaengern $v'=v\cdot v''$ mit $v'\in V$, dann waere $v'=w\cdot w' \cdot v''$ mit $w\cdot w' = v$.
-Dadurch gilt aber $v'\in V\wedge w\sqsubseteq v' \wedge w\in W \Rightarrow$ Widerspruch zur Definition.\\\\
+%\newpage
+%$$ V = \{v:\forall w(w\in W \to w\not\sqsubseteq v)\}\qquad \mathit{pref}(V)=\{u:\exists v (u\sqsubseteq v\wedge v\in V)\}$$\\
+%$$W\ff V = \emptyset$$
+%$$W\ff \mathit{pref}(V) = \emptyset$$
+%$$W\cdot X^* \ff V = \emptyset$$
+%$$W\cdot X^* \ff \mathit{pref}(V) = \emptyset$$
+%$$\mathit{pref}(V)\ff W\cdot X^* = $$
 
-$$\mathit{pref}(V) \ff W\cdot X^* = \bigcup_{u\in \mathit{pref}(V)} u\ff W\cdot X^* = \bigcup_{u\in \mathit{pref}(V)} \min_{\sqsubseteq} \{w:w\in W\cdot X^* \wedge u\sqsubseteq w\}$$
-$$ =  \bigcup_{u\in \mathit{pref}(V)} \min(W\cdot X^* \cap u\cdot X^*) =  \bigcup_{u\in \mathit{pref}(V)} \min(\{w:w\in W \wedge u\sqsubseteq w\})$$\\
-$$W\cdot X^* \ff \mathit{pref}(V) = \bigcup_{u\in W\cdot X^*} u\ff \mathit{pref}(V) = \bigcup_{u\in W\cdot X^*} \min_{\sqsubseteq} \{w:w\in \mathit{pref}(V) \wedge u\sqsubseteq w\}$$
-$$ = \bigcup_{u\in W\cdot X^*} \min(\mathit{pref}(V)\cap u\cdot X^*)$$
-$\mathit{pref}(V)\cap u\cdot X^* = \emptyset$, Begründung siehe oben $\Rightarrow  \bigcup_{u\in W\cdot X^*} \min(\emptyset) = \emptyset$
+%$$W\ff V = \bigcup_{x\in W} x\ff V = \bigcup \min_{\sqsubseteq } \{v:v\in V \wedge x\sqsubseteq v\}$$
+%Wegen $x\in W$ und $x\sqsubseteq v$ gilt $\{v:v\in V \wedge x\sqsubseteq v\} = \emptyset \Rightarrow \bigcup \min_{\sqsubseteq} \{v:v\in V \wedge x\sqsubseteq v\} = \emptyset$\\\\
+%$$ W\cdot X^* \ff V = \bigcup_{x\in W\cdot X^*} x\ff V = \bigcup_{x\in W\cdot X^*} \min_{\sqsubseteq} \{v:v\in V \wedge x\sqsubseteq v\} = \emptyset$$
+%Begründung analog Fall $W\ff V$\\\\
+%$$ W \ff \mathit{pref}(V) = \bigcup_{w\in W} w\ff \mathit{pref}(V) = \bigcup_{w\in W} \{v:v\in \mathit{pref}(V) \wedge w\sqsubseteq v\} = \emptyset$$
+%$w\sqsubseteq v$ ist nie erfuellt. Angenommen $v\in \mathit{pref}(V) \wedge w\sqsubseteq v$, dann kann man $v$ wie folgt verlaengern $v'=v\cdot v''$ mit $v'\in V$, dann waere $v'=w\cdot w' \cdot v''$ mit $w\cdot w' = v$.
+%Dadurch gilt aber $v'\in V\wedge w\sqsubseteq v' \wedge w\in W \Rightarrow$ Widerspruch zur Definition.\\\\
+
+%$$\mathit{pref}(V) \ff W\cdot X^* = \bigcup_{u\in \mathit{pref}(V)} u\ff W\cdot X^* = \bigcup_{u\in \mathit{pref}(V)} \min_{\sqsubseteq} \{w:w\in W\cdot X^* \wedge u\sqsubseteq w\}$$
+%$$ =  \bigcup_{u\in \mathit{pref}(V)} \min(W\cdot X^* \cap u\cdot X^*) =  \bigcup_{u\in \mathit{pref}(V)} \min(\{w:w\in W \wedge u\sqsubseteq w\})$$\\
+%$$W\cdot X^* \ff \mathit{pref}(V) = \bigcup_{u\in W\cdot X^*} u\ff \mathit{pref}(V) = \bigcup_{u\in W\cdot X^*} \min_{\sqsubseteq} \{w:w\in \mathit{pref}(V) \wedge u\sqsubseteq w\}$$
+%$$ = \bigcup_{u\in W\cdot X^*} \min(\mathit{pref}(V)\cap u\cdot X^*)$$
+%$\mathit{pref}(V)\cap u\cdot X^* = \emptyset$, Begründung siehe oben $\Rightarrow  \bigcup_{u\in W\cdot X^*} \min(\emptyset) = \emptyset$

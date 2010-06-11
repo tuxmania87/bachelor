@@ -1,18 +1,103 @@
 \subsection{Gilt für alle Sprachen}
+\begin{gleich}
 $$u\in L \to (u\ff L=\{u\})$$
+\end{gleich}
+\begin{proof}
+\end{proof}
+\begin{gleich}
 $$L\ff L = L$$
+\end{gleich}
+\begin{proof}
+\end{proof}
+
+\begin{gleich}
 $$U\ff L \subseteq L$$
+\end{gleich}
+\begin{proof}
+\end{proof}
+
+\begin{gleich}
 $$L\ff (U\cup V)\subseteq (L\ff U) \cup (L\ff V)$$
+\end{gleich}
+\begin{lem}
+$$\min (A\cup B) \subseteq \min A \cup \min B$$
+\end{lem}
+\begin{proof}
+$$L\ff (W\cup V)= \bigcup_{l\in L} l\ff (W\cup V)$$
+$$=\bigcup_{l\in L} \min (l\cdot X^* \cap (W\cup V))$$
+$$=\bigcup_{l\in L} \min ((l\cdot X^* \cap W) \cup (l\cdot X^* \cap V))$$
+$$\subseteq \bigcup_{l\in L} (\min (l\cdot X^* \cap W) \cup \min (l\cdot X^* \cap V))$$
+$$=\bigcup_{l\in L} \min (l\cdot X^*\cap W) \cup \bigcup_{l\in L} \min(l\cdot X^* \cap V)$$
+$$=(L\ff W)\cup (L\ff V)$$
+\end{proof}
+
+\begin{gleich}
 $$L\ff (U\cap V)\supseteq (L\ff U) \cap (L\ff V)$$
+\end{gleich}
+\begin{lem}
+$$\min(A\cap B) \supseteq \min A \cap \min B$$
+\end{lem}
+\begin{lem}
+$$L\ff U \cap L \ff V \stackrel{!}{=} \bigcup_{l\in L} (l\ff U \cap l\ff V)$$
+\end{lem}
+\begin{proof}
+$$L\ff (U\cap V) = \bigcup_{l\in L} \min(l\cdot X^* \cap (U \cap V))$$
+$$=\bigcup_{l\in L} \min((l\cdot X^* \cap U) \cap (l\cdot X^* \cap V))$$
+$$\supseteq \bigcup_{l\in L} (\min(l\cdot X^* \cap U) \cap \min(l\cdot X^* \cap V))$$
+$$= \bigcup_{l\in L} \min(l\cdot X^* \cap U) \cap \bigcup_{l\in L} \min(l\cdot X^* \cap V)$$
+$$=(L\ff U) \cap (L\ff V)$$
+\end{proof}
+
+\begin{gleich}
 $$(L\cup U)\ff V = (L\ff V) \cup (U\ff V)$$
+\end{gleich}
+\begin{proof}
+$$(L\cup U) \ff V = \bigcup_{l\in L\cup U} \min(l\cdot X^* \cap V)$$
+$$ =\bigcup_{l\in L} \min(l\cdot X^* \cap V) \cup \bigcup_{l\in U} \min(l\cdot X^* \cap V)$$
+$$ = (L\ff V) \cup (U\ff V)$$
+\end{proof}
+
+\begin{gleich}
 $$(L\cap U) \ff V \subseteq (L\ff V) \cap (U\ff V)$$
+\end{gleich}
+\begin{proof}
+$$w\in  (L\cap U)\ff V \to w\in V \wedge \exists p: p\sqsubseteq w \wedge p\in L \wedge p\in U \wedge p\textit{ ist minimal}$$
+$$\to \underbrace{w\in V \wedge \exists p: p\sqsubseteq w \wedge p\in L \wedge p\textit{ ist minimal}}_{w\in L\ff V} 
+\wedge \underbrace{w\in V \wedge \exists p: p\sqsubseteq w \wedge p\in U \wedge p\textit{ ist minimal}}_{w\in U\ff V} 
+$$
+\end{proof}
+
+\begin{gleich}
+$$L_1\subseteq L_2 \to L_1\ff L_2 = L_1$$
+\end{gleich}
+\begin{eigen}
+$$l\in L \to l\ff L = \{l\}$$
+\end{eigen}
+\begin{proof}
+$$L_1\ff L_2 = \bigcup_{l\in L_1} l\ff L_2$$
+$$\textit{wegen } L_1\subseteq L_2: l\ff L_2 = \{l\}$$
+$$ = \bigcup_{l\in L_1} \{l\} = L_1$$
+\end{proof}
+
+\begin{gleich}
+$$L_2\subseteq L_1 \to L_1\ff L_2 = L_2$$
+\end{gleich}
+\begin{proof}
+$$\textit{Da }L_2\subseteq L_1\textit{ gilt für alle }l\in L_2 \wedge l\in L_1: l\ff L_2=\{l\}$$
+$$\bigcup_{l\in L_1} l\ff L_2 = \bigcup_{l\in L_1} \{l\} = L_2$$
+\end{proof}
+
+\begin{gleich}
+$$L_2\subseteq L_1 \to L_2\ff W \subseteq L_1 \ff W$$
+\end{gleich}
+\begin{proof}
+$$L_1\ff W = \bigcup_{l\in L_1} l\ff W$$
+$$=\bigcup_{l\in L_2} l\ff W \cup \bigcup_{l\in L_1\backslash L_2} l\ff W$$
+$$\supseteq \bigcup_{l\in L_2} l\ff W = L_2\ff W$$
+\end{proof}
 
 
 \subsection{Gilt für einige Sprachen $\exists L,U,V \subseteq X^*:$}
-$$L_2\subseteq L_1 \to L_2\ff W \subseteq L_1 \ff W$$
-$$\xout{W_2\subseteq W_1 \to L\ff W_2 \subseteq L \ff W_1}$$
-$$L_1\subseteq L_2 \to L_1\ff L_2 = L_1$$
-$$L_2\subseteq L_1 \to L_1\ff L_2 = L_2$$
 $$L\ff (U\cdot V) = (L\ff U) \cdot (L\ff V)$$
 $$L\ff (U\cdot V) \supset (L\ff U) \cdot (L\ff V)$$
 
@@ -55,18 +140,3 @@ $$(L_1 \ff L_2) \ff L_3 \nsupseteq L_1 \ff (L_2 \ff L_3)$$
 $$\text{Gegenbeispiel: } L_1=\{ab,aa\}\quad L_2=\{a,ab\}\quad L_3=\{aa\}$$
 $$(L_1 \ff L_2) \ff L_3 = \{ab\} \ff \{aa\} = \emptyset\text{ ,aber } 
 \{ab,aa\} \ff \{aa\} = \{aa\} $$
-
-
-%umformungen
-\newpage
-Lemma: $\min (A\cup B) \subseteq \min A \cup \min B$
-$$L\ff (W\cup V)= \bigcup_{l\in L} l\ff (W\cup V)$$
-$$=\bigcup_{l\in L} \min (l\cdot X^* \cap (W\cup V))$$
-$$=\bigcup_{l\in L} \min ((l\cdot X^* \cap W) \cup (l\cdot X^* \cap V))$$
-$$\subseteq \bigcup_{l\in L} (\min (l\cdot X^* \cap W) \cup \min (l\cdot X^* \cap V))$$
-$$=\bigcup_{l\in L} \min (l\cdot X^*\cap W) \cup \bigcup_{l\in L} \min(l\cdot X^* \cap V)$$
-$$=(L\ff W)\cup (L\ff V)$$
-\vspace{5mm}
-$$(L\cup U) \ff V = \bigcup_{l\in L\cup U} \min(l\cdot X^* \cap V)$$
-$$ =\bigcup_{l\in L} \min(l\cdot X^* \cap V) \cup \bigcup_{l\in U} \min(l\cdot X^* \cap V)$$
-$$ = (L\ff V) \cup (U\ff V)$$
