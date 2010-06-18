@@ -1,40 +1,40 @@
 %einleitung
-In dieser Arbeit wird die Operation Fortsetzung bei formalen Sprachen untersucht.
-Im Folgenden wird erläutert warum die Operation in [St87] eingeführt wurde und welchen Nutzen sie birgt.\\\\
+In dieser Arbeit untersuchen wir die Operation Fortsetzung bei formalen Sprachen.
+Diese Operation wird in der Arbeit [St87] eingeführt.\\\\
 Wir bezeichnen die Menge $X^*$ als Menge aller endlichen Wörter über dem Alphabet $X$. 
 \\Wir bezeichnen weiterhin die Menge $X^\omega$ als Menge aller unendlichen Wörter über dem Alphabet $X$.
-\\Sei ferner die Relation $\sqsubseteq$ wie üblicherweise definiert:
+\\Sei ferner die Präfixrelation $\sqsubseteq$ wie üblich definiert:
 \begin{def1}
 $$w\sqsubseteq b \Leftrightarrow w\cdot b' = b,\textit{ f{\"u}r ein }b'\in X^*$$
 $$\pref(L) = \{v:v\sqsubseteq w \wedge w\in L\}$$
 \end{def1}
-Sei nun $W ^\delta$ definiert \footnote{St87]}
+Es wird nun der $\delta$-Limes einer Wortmenge $W ^\delta$ definiert (s. [St87, Seite X])
 \begin{def1}
 $$W^\delta = \{\beta : \beta \in X^\omega \textit{ und }\pref(\beta)\cap W \textit{ ist unendlich}\}$$
 \end{def1}
 % also eine unendliche Aneinanderreihung von Wörtern aus ....
-Folgende Eigenschaft wurde nun bereits in \footnote{[St87, Gleichung 13]} bewiesen:
+Die folgende Eigenschaft ((13) aus [St87] ist leich einzusehen:
 $$(U \cup W)^\delta = U^\delta \cup W^\delta $$
 	\begin{def1}
 	Eine Sprache nennen wir eine $(\sigma,\delta)$-Teilmenge von $X^*$ genau dann, wenn für alle $\beta \in X^\omega$ entweder $\pref(\beta)\cap W$ oder $\pref(\beta)\backslash W$ endlich ist.	
 	\end{def1}
 Beispiele für $(\sigma,\delta)$-Teilmengen sind alle endlichen Sprachen und deren Komplemente. Weitere Beispiele sind Sprachen der Form $\pref(U)$ oder $W\cdot X^*$.\\
-Eine Eigenschaft für diese Teilmengen lautet wiefolgt:
-\begin{satz}
+Eine Eigenschaft für diese Teilmengen ergibt sich wiefolgt :
+\begin{satz}[[St87]
 $\text{Sei }U\text{ eine }(\sigma,\delta)-\text{Teilmenge von }X^*, \text{ dann gilt:}$\\
 $$(U\cap W)^\delta = U^\delta \cap W^\delta,\qquad \text{für alle }W\subseteq X^*$$
 \end{satz}
 
-Nun wird die Operation "'Fortsetzung"' eingeführt \footnote{[St87, S.170]}, im nachfolgenden als $\ff$ bezeichnet.
-Die Fortsetzung eines Wortes $w$ in $V$ sei definiert als:
+Nun wird die Operation "'Fortsetzung"' wie in [St87] eingeführt, im nachfolgenden als $\ff$ bezeichnet.
+Die Fortsetzung eines Wortes $w$ in eine Sprache $V\subseteq X^*$ sei definiert als:
 \begin{def1}
 $$w\ff V := \min_{\sqsubseteq} \{v:v\in V \wedge w\sqsubseteq v\} = \min(w\cdot X^* \cap V)$$
 \end{def1}
-Man kann diese Definition nun ausdehnen auf Sprachen. Die Fortsetzung zweier Sprachen W und V ergibt sich somit zu:
+Diese Operation wird wie folgt auf Sprachen ausgedehnt, dabei bezeichnen wir die Fortsetzung einer Sprache W in eien Sprache $V\subseteq X^*$ mit:
 \begin{def1}
 $$W\ff V := \bigcup_{w\in W} w\ff V$$
 \end{def1}
-Diese Operation hat nun folgende interessante Eigenschaft bezüglich der oben genannten Definitionen:
-Während $$(W\cap U)^\delta = W^\delta \cap U^\delta$$ nur für $(\sigma,\delta)$-Teilemgen gilt, so gilt aber
-$$(W\ff U)^\delta = W^\delta \cap U^\delta$$ für sämtliche Sprachen \footnote{[St87, Gleichung 20]}\\
-Daher wird nun im Verlauf der Arbeit die Operation Fortsetzung gründlich analysiert und all ihre Eigenschaften dokumentiert.
+Diese Operation hat nun folgende Eigenschaft bezüglich des $\delta$-Limes:
+Während $$(W\cap U)^\delta = W^\delta \cap U^\delta$$ nur für $(\sigma,\delta)$-Teilemgen gilt, so gilt
+$$(W\ff U)^\delta = W^\delta \cap U^\delta$$ für sämtliche Sprachen\\
+Daher wird nun im Verlauf der Arbeit die Operation Fortsetzung untersucht.

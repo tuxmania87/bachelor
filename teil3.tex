@@ -2,10 +2,10 @@
 Seien $L$ und $W$ regul\"ar, so ist auch $L\ff W$ regul\"ar.\\\\
 Automat $A_L= (X,Z,z_{0},\delta_L,Z_f)$ akzeptiere $L$, Automat $A_W = (X,S,s_{0},f,S_{f})$ akzeptiere $W$.
 Automat $A$ akzeptiert $L\ff W$, \\\\Vorgehensweise:\\
-$A_L$ und $A_W$ lesen das Wort $w$ parallel. $A_L$ akzeptiert und $A$ wählt nicht-deterministisch aus ob Schritt 2 aktiviert wird oder nicht.
-Schritt 2: $A_W$ liest das Wort $w$ zu Ende, sollte $A_W$ auf diesem Weg kein Mal oder mehr als einmal akzeptieren, so akzeptiert $A$ nicht, ansonsten akzeptiert $A$.
+$A_L$ und $A_W$ lesen das Wort $w$ parallel. Falls $A_L$ akzeptiert und wählt $A$ nicht-deterministisch aus ob Schritt 2 aktiviert wird oder nicht.\\
+Schritt 2: $A_W$ liest das Wort $w$ zu Ende, w\"ahrend $A_L$ im Zustand $z_f'$ verweilt. Sollte $A_W$ auf diesem mehr als einmal akzeptieren, so akzeptiert $A$ nicht indem $A_W$ im Stoppzustand $s_x$ stehen bleibt, ansonsten akzeptiert $A$.\\
 
-$A = (X,Z\cup \{ z_f'\}\times S\cup \{ s_x\}, (z_{0},s_{0} ), \delta , \{ (z_f',s') : s'\in S_f \} )$
+$A = (X,Z\cup \{ z_f'\}\times S\cup \{ s_x\}, (z_{0},s_{0} ), \delta , \{ (z_f',s') : s'\in S_f \} ), s_x\notin S$
 mit\\\\
 $\delta = \{ ((z_i,s_i),x,(z_j,s_j)) : (z_i,x,z_j) \in \delta_L \wedge f(s_i,x)=s_j  \} \cup \\
  \{ ((z_i,s_i),x,(z_f',s_j)) : (z_i,x,z') \in \delta_L \wedge z'\in Z_f \wedge f(s_i,x)=s_j  \} \cup \\

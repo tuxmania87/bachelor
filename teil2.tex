@@ -1,34 +1,75 @@
+Bedingung: $$V\subseteq X^*\backslash W\cdot X^*$$
 
-\underline{$\pref(V)\ff W$}\\
+\begin{eigen}
+$$V\ff W\cdot X^* = V\ff W $$
+\end{eigen}
+
+Es genügt die Eigenschaft zu zeigen für $L=\{v\}$:
+\begin{proof}
+$$V\ff W\cdot X^* = \{v\} \ff W\cdot X^*$$
+Nach Definition der Operation Fortsetzung ergibt sich:
+$$ = min_{\sqsubseteq} \{w:w\in W\cdot X^* \wedge v\sqsubseteq w\}$$
+Wir wissen aus der Vorrausetzung, dass $v\notin W\cdot X^*$, daraus folgt unmittelbar, dass $v\in pref(W)\backslash W$.\\
+Angenommen es existiert ein $w\in W\cdot X^+$ in $min_{\sqsubseteq} \{w:w\in W\cdot X^* \wedge v\sqsubseteq w\}$, so ist $w'$ mit $w=w'\cdot r\wedge w'\in W$ ein kürzeres Wort, daher gilt:
+$$min_{\sqsubseteq} \{w:w\in W\cdot X^* \wedge v\sqsubseteq w\} = min_{\sqsubseteq} \{w:w\in W \wedge v\sqsubseteq w\}$$
+\end{proof}
+
+\begin{eigen}
+$$V\ff W = V\ff \min(W)$$
+\end{eigen}
+
+\newpage
+
+\begin{eigen}
+$\pref(V)\ff W$
+\end{eigen}
+\begin{proof}
 1. Fall: $w\in W \cap \pref(V) \to w\in \pref(V)\ff W$\\
-2. Fall: $w\in W\backslash \pref(V) \to $muss im Einzelfall geprüft werden.\\
-$\to \pref(V)\ff W = \underbrace{W\cap \pref(V)}_A \cup  \textit{pref(V)}\backslash A \ff W$\\\\
+2. Fall: $w\in W\backslash \pref(V) \to w\in V\ff Min(W)$\\
+$\to \pref(V)\ff W = (\pref(V)\cap W) \cup (\pref(V)\ff \min(W))$\\\\
+\end{proof}
 
-
-\underline{$W\ff \pref(V) = W \cap \pref(V)$}\\
-"'$\rightarrow$"'\\
-$\bigcup_{w\in W} \min_{\sqsubseteq} \{v:v\in \pref(V) \wedge w\sqsubseteq v\}$\\
-$v\in \pref(V) \wedge w\sqsubseteq v \to w\in \pref(V)$\\
-$\bigcup_{w\in W} \{w\in \pref(V)\} = W\cap \pref(V)$\\
-\\
+\begin{eigen}
+$W\ff \pref(V) = W \cap \pref(V)$
+\end{eigen}
+Es genügt die Eigenschaft für $W=\{w\}$ zu zeigen:
+\begin{proof}
+$$W\ff \pref(V) = \{w\}\ff\pref(V)$$
+$$=min_{\sqsubseteq} \{v:v\in \pref(V) \wedge w\sqsubseteq v\}$$
+Aus $v\in \pref(V) \wedge w\sqsubseteq v$ folgt direkt, dass $w\in pref(V)$. Damit ergibt sich :
+$$min_{\sqsubseteq} \{v:v\in \pref(V) \wedge w\sqsubseteq v\} = \{v:v\in\pref(V)\wedge w=v\} = \{w\} \cap \pref(V)$$
+\end{proof}
 %"'$\leftarrow$"'\\
 %$w\in \pref(V) \wedge w\in W \to w\sqsubseteq v\in \pref(V)$\\\\
-\underline{$V\cdot X^* \ff W$}\\
+\begin{eigen}
+$V\cdot X^* \ff W$
+\end{eigen}
+\begin{proof}
 $\bigcup_{v\in VX^*} \min_{\sqsubseteq} \{w:w\in W \wedge v\sqsubseteq w\}$\\
 $v\in VX^* \wedge v\sqsubseteq w \to w\in VX^*$\\
 $=\{w:w\in W \wedge w\in VX^*\} = W\cap VX^*$\\\\
 %$=\bigcup_{v\in V} \{w:w\in W \wedge v\sqsubseteq w\}$\\\\
-\underline{$W\ff V\cdot X^*$}\\
-1.Fall: $w\in W\wedge w\in VX^* \to \{w\} \ff VX^* = \{w\} \cap VX^*$\\
-1.Fall: $w\in W\wedge w\notin VX^* \to \{w\} \ff VX^* = \emptyset$\\
+\end{proof}
 
-\newpage
-$$V\subseteq X^*\backslash W\cdot X^*$$
+\begin{eigen}
+$$W\ff V\cdot X^*$$
+\end{eigen}
+\begin{proof}
+Die Aussage lässt sich in 2 Fälle aufteilen:\\\\
+Fall a) $W\subseteq X^* \backslash V\cdot X^*$\\
+Fall b) $W\subseteq V\cdot X^*$\\\\
+Es genügt die Eigenschaft zu zeigen für $W=\{w\}$.\\
+zu a): Wie in Eigenschaft 3.2 und 3.3 bereits gezeigt folgt aus der der Bedingung in Fall a): $W\subseteq X^* \backslash V\cdot X^*\to W\ff V\cdot X^* = W\ff\min(V)$\\
+zu b): zu betrachten $\{w\}\ff V\cdot X^*$
+$$\{w\}\ff V\cdot X^* = min_{\sqsubseteq} \{ v:v\in V\cdot X^* \wedge w\sqsubseteq  \}$$
+Da wir aus der Bedingung von Fall b) wissen, dass $w\in V\cdot X^*$, so folgt aus:\\
+$min_{\sqsubseteq} \{ v:v\in V\cdot X^* \wedge w\sqsubseteq v\}$ unmittelbar, dass es sich um die Menge\\ $\{v:v\in V\cdot X^* \wedge w=v\} = \{w\} \cap V\cdot X^*$ handelt.\\
+\\Daraus folgt direkt: $$W\ff V\cdot X^* = (W\ff\min(V)) \cup (W\cap V\cdot X^*)$$
+\end{proof}
 
-$$W\ff V = \emptyset$$
-$$W\ff pref(V) = \emptyset$$
-$$W\cdot X^*\ff V = \emptyset$$
-$$V\ff W\cdot X^* = V\ff W = \max(V)\ff \min(W)$$
+
+
+
 
 %\newpage
 %$$ V = \{v:\forall w(w\in W \to w\not\sqsubseteq v)\}\qquad \mathit{pref}(V)=\{u:\exists v (u\sqsubseteq v\wedge v\in V)\}$$\\

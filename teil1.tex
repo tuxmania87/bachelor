@@ -1,53 +1,19 @@
 \subsection{Gilt für alle Sprachen}
+
+Folgende Eigenschaft ist direkt aus der Definition einsehbar:
 \begin{gleich}
 $$u\in L \to (u\ff L=\{u\})$$
 \end{gleich}
-\begin{proof}
-\end{proof}
+
+Aus 2.1.1 folgt direkt
 \begin{gleich}
 $$L\ff L = L$$
 \end{gleich}
-\begin{proof}
-\end{proof}
-
 \begin{gleich}
 $$U\ff L \subseteq L$$
 \end{gleich}
-\begin{proof}
-\end{proof}
 
-\begin{gleich}
-$$L\ff (U\cup V)\subseteq (L\ff U) \cup (L\ff V)$$
-\end{gleich}
-\begin{lem}
-$$\min (A\cup B) \subseteq \min A \cup \min B$$
-\end{lem}
-\begin{proof}
-$$L\ff (W\cup V)= \bigcup_{l\in L} l\ff (W\cup V)$$
-$$=\bigcup_{l\in L} \min (l\cdot X^* \cap (W\cup V))$$
-$$=\bigcup_{l\in L} \min ((l\cdot X^* \cap W) \cup (l\cdot X^* \cap V))$$
-$$\subseteq \bigcup_{l\in L} (\min (l\cdot X^* \cap W) \cup \min (l\cdot X^* \cap V))$$
-$$=\bigcup_{l\in L} \min (l\cdot X^*\cap W) \cup \bigcup_{l\in L} \min(l\cdot X^* \cap V)$$
-$$=(L\ff W)\cup (L\ff V)$$
-\end{proof}
-
-\begin{gleich}
-$$L\ff (U\cap V)\supseteq (L\ff U) \cap (L\ff V)$$
-\end{gleich}
-\begin{lem}
-$$\min(A\cap B) \supseteq \min A \cap \min B$$
-\end{lem}
-\begin{lem}
-$$L\ff U \cap L \ff V \stackrel{!}{=} \bigcup_{l\in L} (l\ff U \cap l\ff V)$$
-\end{lem}
-\begin{proof}
-$$L\ff (U\cap V) = \bigcup_{l\in L} \min(l\cdot X^* \cap (U \cap V))$$
-$$=\bigcup_{l\in L} \min((l\cdot X^* \cap U) \cap (l\cdot X^* \cap V))$$
-$$\supseteq \bigcup_{l\in L} (\min(l\cdot X^* \cap U) \cap \min(l\cdot X^* \cap V))$$
-$$= \bigcup_{l\in L} \min(l\cdot X^* \cap U) \cap \bigcup_{l\in L} \min(l\cdot X^* \cap V)$$
-$$=(L\ff U) \cap (L\ff V)$$
-\end{proof}
-
+Eine unmittelbare Folgerung aus der Definition 1.5 ergibt sich:
 \begin{gleich}
 $$(L\cup U)\ff V = (L\ff V) \cup (U\ff V)$$
 \end{gleich}
@@ -57,6 +23,19 @@ $$ =\bigcup_{l\in L} \min(l\cdot X^* \cap V) \cup \bigcup_{l\in U} \min(l\cdot X
 $$ = (L\ff V) \cup (U\ff V)$$
 \end{proof}
 
+Aus dieser Gleichung 2.1.4 folgt wiederum direkt:
+
+\begin{gleich}
+$$L_2\subseteq L_1 \to L_2\ff W \subseteq L_1 \ff W$$
+\end{gleich}
+\begin{proof}
+$$L_1\ff W = \bigcup_{l\in L_1} l\ff W$$
+$$=\bigcup_{l\in L_2} l\ff W \cup \bigcup_{l\in L_1\backslash L_2} l\ff W$$
+$$\supseteq \bigcup_{l\in L_2} l\ff W = L_2\ff W$$
+\end{proof}
+
+Auf Gleichung 2.1.5 folgt direkt:
+
 \begin{gleich}
 $$(L\cap U) \ff V \subseteq (L\ff V) \cap (U\ff V)$$
 \end{gleich}
@@ -65,6 +44,43 @@ $$w\in  (L\cap U)\ff V \to w\in V \wedge \exists p: p\sqsubseteq w \wedge p\in L
 $$\to \underbrace{w\in V \wedge \exists p: p\sqsubseteq w \wedge p\in L \wedge p\textit{ ist minimal}}_{w\in L\ff V} 
 \wedge \underbrace{w\in V \wedge \exists p: p\sqsubseteq w \wedge p\in U \wedge p\textit{ ist minimal}}_{w\in U\ff V} 
 $$
+\end{proof}
+
+
+\begin{gleich}
+$$L\ff (U\cup V)\subseteq (L\ff U) \cup (L\ff V)$$
+\end{gleich}
+\begin{lem}
+$$\min (A\cup B) \subseteq \min A \cup \min B$$
+\end{lem}
+Es genügt, die Eigenschaft für $L=\{w\}$ zu zeigen.
+\begin{proof}
+$$L\ff (W\cup V)= w \ff (W\cup V)$$
+$$=\min (w\cdot X^* \cap (W\cup V))$$
+Nach Anwenden der Distributivgesetze ergibt sicht:
+$$=\min ((w\cdot X^* \cap W) \cup (w\cdot X^* \cap V))$$
+Anwendung von Lemma 1:
+$$\subseteq \min (w\cdot X^* \cap W) \cup \min (w\cdot X^* \cap V)$$
+$$=(L\ff W)\cup (L\ff V)$$
+\end{proof}
+
+\begin{gleich}
+$$L\ff (U\cap V)\supseteq (L\ff U) \cap (L\ff V)$$
+\end{gleich}
+\begin{lem}
+$$\min(A\cap B) \supseteq \min A \cap \min B$$
+\end{lem}
+Es genügt die Eigenschaft für $L=\{w\}$ zu zeigen.
+%\begin{lem}
+%$$L\ff U \cap L \ff V \stackrel{!}{=} \bigcup_{l\in L} (l\ff U \cap l\ff V)$$
+%\end{lem}
+\begin{proof}
+$$L\ff (U\cap V) = \min(w\cdot X^* \cap (U \cap V))$$
+Nach Anwenden der Distributivgesetze ergibt sicht:
+$$= \min((w\cdot X^* \cap U) \cap (w\cdot X^* \cap V))$$
+Anwendung von Lemma 2:
+$$\supseteq \min(w\cdot X^* \cap U) \cap \min(w\cdot X^* \cap V)$$
+$$=(L\ff U) \cap (L\ff V)$$
 \end{proof}
 
 \begin{gleich}
@@ -87,22 +103,13 @@ $$\textit{Da }L_2\subseteq L_1\textit{ gilt für alle }l\in L_2 \wedge l\in L_1: 
 $$\bigcup_{l\in L_1} l\ff L_2 = \bigcup_{l\in L_1} \{l\} = L_2$$
 \end{proof}
 
-\begin{gleich}
-$$L_2\subseteq L_1 \to L_2\ff W \subseteq L_1 \ff W$$
-\end{gleich}
-\begin{proof}
-$$L_1\ff W = \bigcup_{l\in L_1} l\ff W$$
-$$=\bigcup_{l\in L_2} l\ff W \cup \bigcup_{l\in L_1\backslash L_2} l\ff W$$
-$$\supseteq \bigcup_{l\in L_2} l\ff W = L_2\ff W$$
-\end{proof}
-
-
 \subsection{Gilt für einige Sprachen $\exists L,U,V \subseteq X^*:$}
 $$L\ff (U\cdot V) = (L\ff U) \cdot (L\ff V)$$
 $$L\ff (U\cdot V) \supset (L\ff U) \cdot (L\ff V)$$
 
 
 \subsection{Gilt nicht...}
+Folgt direkt aus den Gleichungen in 2.1
 $$L\ff (U\cup V)\supset (L\ff U) \cup (L\ff V)$$
 $$L\ff (U\cap V)\subset (L\ff U) \cap (L\ff V)$$
 $$L\ff (U\cdot V)\subset (L\ff U) \cdot (L\ff V)$$
