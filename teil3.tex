@@ -11,7 +11,15 @@ $\delta = \{ ((z_i,s_i),x,(z_j,s_j)) : (z_i,x,z_j) \in \delta_L \wedge f(s_i,x)=
  \{ ((z_i,s_i),x,(z_f',s_j)) : (z_i,x,z') \in \delta_L \wedge z'\in Z_f \wedge f(s_i,x)=s_j  \} \cup \\
  \{ ((z_f',s_i),x,(z_f',s_j)) : f(s_i,x)=s_j  \wedge s_i \notin S_f\} \cup  \\
  \{ ((z_f',s_i),x,(z_f',s_x)) : f(s_i,x)=s_j  \wedge s_i \in S_f\} 
- $\\\\
+ $\\
+\begin{proof}
+Der konstruierte Automat $A$ akzeptiert nur in einem Zustand $(z_f',s'), s'\in S_f$
+Nach Konstruktion gelangt $A$ bei Eingabe $w$ genau dann in $(z_f',s)$, wenn ein Wort $l\in L$ mit $l\sqsubseteq w$ existiert.
+In solch einem Fall kann der Automat umschalten. Wenn dies der Fall ist, so arbeitet $A$ weiter auf der Eingabe $w$ wie $A_W$ es tut.
+Sollte $A_W$ nun akzeptieren und $w$ ist noch nicht zu Ende gelesen, so wird $A$ nach Konstruktion in einen Stoppzustand $(z_f',s_x)$ geleitet, in dem er nie wieder akzeptiert.
+$A$ akzeptiert also nur wenn $A_L$ akzeptiert hat (es existiert ein $l\in L \wedge l\sqsubseteq w$) und wenn für alle $v'$ mit $l\sqsubseteq v' \sqsubset w$ gilt $v'\notin W$.\\\\
+Demnach akzeptiert $A$ die Eingabe $w$ genau dann, wenn $w\in L\ff W$
+\end{proof}
 
 \subsection{Kontextfreiheit}
 
@@ -34,13 +42,14 @@ Die Turing Maschine $T$ entscheidet $L\ff W$ nach folgendem Algorithmus:\\
 \begin{algorithmic}
 %\REQUIRE Menge X, int stufe
 %Input: w
-\IF{($w \in W \wedge w \in L$)}
+\IF{($w \notin W$)}  
+\STATE $T$ rejects
+\ELSE
+\IF{($w \in L$)}
 \STATE $T$ accepts
 \ENDIF
-\STATE $w' = w$
-\IF{($w \in W$)}  
-\RETURN \FALSE
 \ENDIF
+\STATE $w' = w$
 \REPEAT
 \STATE $w' \leftarrow \mathit{cut}(w')$
 \IF{($w'\in W$)}

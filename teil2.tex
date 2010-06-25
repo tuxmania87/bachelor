@@ -1,22 +1,37 @@
-Bedingung: $$V\subseteq X^*\backslash W\cdot X^*$$
+%\begin{eigen}
+%$$V\ff W\cdot X^* = V\ff W $$
+%\end{eigen}
 
-\begin{eigen}
-$$V\ff W\cdot X^* = V\ff W $$
-\end{eigen}
+%Es genügt die Eigenschaft zu zeigen für $L=\{v\}$:
+%\begin{proof}
+%$$V\ff W\cdot X^* = \{v\} \ff W\cdot X^*$$
+%Nach Definition der Operation Fortsetzung ergibt sich:
+%$$ = min_{\sqsubseteq} \{w:w\in W\cdot X^* \wedge v\sqsubseteq w\}$$
+%Wir wissen aus der Vorrausetzung, dass $v\notin W\cdot X^*$, daraus folgt unmittelbar, dass $v\in pref(W)\backslash W$.\\
+%Angenommen es existiert ein $w\in W\cdot X^+$ in $min_{\sqsubseteq} \{w:w\in W\cdot X^* \wedge v\sqsubseteq w\}$, so ist $w'$ mit $w=w'\cdot r\wedge w'\in W$ ein kürzeres Wort, daher gilt:
+%$$min_{\sqsubseteq} \{w:w\in W\cdot X^* \wedge v\sqsubseteq w\} = min_{\sqsubseteq} \{w:w\in W \wedge v\sqsubseteq w\}$$
+%\end{proof}
 
-Es genügt die Eigenschaft zu zeigen für $L=\{v\}$:
+%\begin{eigen}
+%$$V\ff W = V\ff \min(W)$$
+%\end{eigen}
+
+\begin{lem}\label{eingeschr1}
+Sei $V\subseteq X^*\backslash W\cdot X^*$, so gilt $V\ff W\cdot X^* = V\ff \min(W) $
+\end{lem}
+z.z:\\\\
+1. $V\ff W\cdot X^* \subseteq V\ff \min(W) $\\
+2. $V\ff W\cdot X^* \supseteq V\ff \min(W) $\\
+
+\textbf{zu 1.} Es genügt die Eigenschaft zu zeigen für $V=\{v\}$\\
 \begin{proof}
-$$V\ff W\cdot X^* = \{v\} \ff W\cdot X^*$$
-Nach Definition der Operation Fortsetzung ergibt sich:
-$$ = min_{\sqsubseteq} \{w:w\in W\cdot X^* \wedge v\sqsubseteq w\}$$
-Wir wissen aus der Vorrausetzung, dass $v\notin W\cdot X^*$, daraus folgt unmittelbar, dass $v\in pref(W)\backslash W$.\\
-Angenommen es existiert ein $w\in W\cdot X^+$ in $min_{\sqsubseteq} \{w:w\in W\cdot X^* \wedge v\sqsubseteq w\}$, so ist $w'$ mit $w=w'\cdot r\wedge w'\in W$ ein kürzeres Wort, daher gilt:
-$$min_{\sqsubseteq} \{w:w\in W\cdot X^* \wedge v\sqsubseteq w\} = min_{\sqsubseteq} \{w:w\in W \wedge v\sqsubseteq w\}$$
+$$v \ff W\cdot X^* = \min_{\sqsubseteq} \{w:w\in W\cdot X^* \wedge v\sqsubseteq w\}$$
+$$w\in W\cdot X^* \wedge v\sqsubseteq w \wedge v\not\in W\cdot X^* \to ( w'\in (\min(v\cdot X^* \cap W\cdot X^*) \to w'\in  (\min(v\cdot X^* \cap \min(W)))) )$$
 \end{proof}
 
-\begin{eigen}
-$$V\ff W = V\ff \min(W)$$
-\end{eigen}
+\textbf{zu 2.} klar, weil $W\cdot X^* \supseteq \min(W)$
+
+
 
 \newpage
 
@@ -44,10 +59,11 @@ $$min_{\sqsubseteq} \{v:v\in \pref(V) \wedge w\sqsubseteq v\} = \{v:v\in\pref(V)
 \begin{eigen}
 $V\cdot X^* \ff W$
 \end{eigen}
+Es genügt die Eigenschaft für ein $v\in V\cdot X^*$ zu zeigen:
 \begin{proof}
-$\bigcup_{v\in VX^*} \min_{\sqsubseteq} \{w:w\in W \wedge v\sqsubseteq w\}$\\
-$v\in VX^* \wedge v\sqsubseteq w \to w\in VX^*$\\
-$=\{w:w\in W \wedge w\in VX^*\} = W\cap VX^*$\\\\
+$$\min_{\sqsubseteq} \{w:w\in W \wedge v\sqsubseteq w\}$$
+$$v\in VX^* \wedge v\sqsubseteq w \to w\in VX^*$$
+$$=\min_{\sqsubseteq} \{w:w\in W \wedge w\in V\cdot X^* \wedge v=w\} = \{v\}\cap W$$
 %$=\bigcup_{v\in V} \{w:w\in W \wedge v\sqsubseteq w\}$\\\\
 \end{proof}
 
@@ -55,16 +71,14 @@ $=\{w:w\in W \wedge w\in VX^*\} = W\cap VX^*$\\\\
 $$W\ff V\cdot X^*$$
 \end{eigen}
 \begin{proof}
-Die Aussage lässt sich in 2 Fälle aufteilen:\\\\
-Fall a) $W\subseteq X^* \backslash V\cdot X^*$\\
-Fall b) $W\subseteq V\cdot X^*$\\\\
-Es genügt die Eigenschaft zu zeigen für $W=\{w\}$.\\
-zu a): Wie in Eigenschaft 3.2 und 3.3 bereits gezeigt folgt aus der der Bedingung in Fall a): $W\subseteq X^* \backslash V\cdot X^*\to W\ff V\cdot X^* = W\ff\min(V)$\\
-zu b): zu betrachten $\{w\}\ff V\cdot X^*$
-$$\{w\}\ff V\cdot X^* = min_{\sqsubseteq} \{ v:v\in V\cdot X^* \wedge w\sqsubseteq  \}$$
-Da wir aus der Bedingung von Fall b) wissen, dass $w\in V\cdot X^*$, so folgt aus:\\
-$min_{\sqsubseteq} \{ v:v\in V\cdot X^* \wedge w\sqsubseteq v\}$ unmittelbar, dass es sich um die Menge\\ $\{v:v\in V\cdot X^* \wedge w=v\} = \{w\} \cap V\cdot X^*$ handelt.\\
-\\Daraus folgt direkt: $$W\ff V\cdot X^* = (W\ff\min(V)) \cup (W\cap V\cdot X^*)$$
+$W$ lässt sich in 2 Teile aufspliten: $W= (W\cap V\cdot X^*) \cup (W\backslash V\cdot X^*)$
+Nun betrachten wir folgende 2 Fälle:\\\\
+Fall a) $w\in W\cap V\cdot X^*$\\
+Fall b) $w\in W\backslash V\cdot X^*$\\\\
+zu a): $w\ff V\cdot X^* \to w\in (W\cap V\cdot X^*)$\\
+zu b): Es gilt nach Vorraussetzung $\{w\} \subseteq X^*\backslash V\cdot X^*$ und mit Hilfe von Lemma~\ref{eingeschr1}
+erhalten wir $\{w\} \ff V\cdot X^* = \{w\} \ff \min(V)$
+\\Daraus folgt: $$W\ff V\cdot X^* = (W\ff\min(V)) \cup (W\cap V\cdot X^*)$$
 \end{proof}
 
 

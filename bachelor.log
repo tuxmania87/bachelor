@@ -1,19 +1,12 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.6.17)  18 JUN 2010 12:12
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.5.7)  25 JUN 2010 11:10
 entering extended mode
- restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **bachelor.tex
 (./bachelor.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
-ak, danish, dutch, finnish, french, basque, ngerman, german, german-x-2009-06-1
-9, ngerman-x-2009-06-19, ibycus, monogreek, greek, ancientgreek, hungarian, san
-skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
-orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
-, estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, polish, po
-rtuguese, spanish, galician, catalan, swedish, ukenglish, pinyin, loaded.
+yphenation, loaded.
 (/usr/share/texmf-texlive/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2009/07/24 v3.04a KOMA-Script document class (article)
 
@@ -120,8 +113,7 @@ Package ifvtex Info: VTeX not detected.
 \Gm@odd@mp=\dimen105
 \Gm@even@mp=\dimen106
 \Gm@dimlist=\toks15
-
-(/usr/share/texmf-texlive/tex/xelatex/xetexconfig/geometry.cfg))
+)
 (/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
@@ -231,7 +223,7 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 )
-(/var/lib/texmf/tex/generic/babel/babel.sty
+(/usr/share/texmf-texlive/tex/generic/babel/babel.sty
 Package: babel 2008/07/06 v3.8l The Babel package
 
 (/usr/share/texmf-texlive/tex/generic/babel/ngermanb.ldf
@@ -242,10 +234,15 @@ File: babel.def 2008/07/06 v3.8l Babel common definitions
 \babel@savecnt=\count104
 \U@D=\dimen118
 )
+
+Package babel Warning: No hyphenation patterns were loaded for
+(babel)                the language `ngerman'
+(babel)                I will use the patterns loaded for \language=0 instead.
+
+\l@ngerman = a dialect from \language0
 \l@naustrian = a dialect from \language\l@ngerman 
 Package babel Info: Making " an active character on input line 92.
-))
-(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+)) (/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks28
 \inpenc@posthook=\toks29
@@ -276,10 +273,10 @@ Package: nicefrac 1998/08/04 v0.9b Nice fractions
 Package: ulem 2000/05/26
 \ULdepth=\dimen120
 )
-(/usr/share/texmf-texlive/tex/latex/algorithms/algorithm.sty
-Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
-nment
+(/home/robert/texmf/tex/latex/algorithms/algorithm.sty
+Package: algorithm 
 
+Document Style `algorithm' - floating environment
 (/usr/share/texmf-texlive/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count106
@@ -291,14 +288,28 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@every@algorithm=\toks33
 \c@algorithm=\count107
 )
-(/usr/share/texmf-texlive/tex/latex/algorithms/algorithmic.sty
-Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count108
-\c@ALC@line=\count109
-\c@ALC@rem=\count110
-\c@ALC@depth=\count111
-\ALC@tlm=\skip57
-\algorithmicindent=\skip58
+(/home/robert/texmf/tex/latex/algorithms/algorithmic.sty
+Package: algorithmic 2006/06/02
+
+Document Style `algorithmic' - environment
+(/usr/share/texmf-texlive/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count108
+\calc@Bcount=\count109
+\calc@Adimen=\dimen121
+\calc@Bdimen=\dimen122
+\calc@Askip=\skip57
+\calc@Bskip=\skip58
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count110
+\calc@Cskip=\skip59
+)
+\c@ALC@line=\count111
+\c@ALC@rem=\count112
+\c@ALC@depth=\count113
+\ALC@tlm=\skip60
+\algorithmicindent=\skip61
 ) (./bachelor.aux)
 \openout1 = `bachelor.aux'.
 
@@ -356,25 +367,25 @@ driver: pdftex
 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
-(/usr/share/texmf/tex/context/base/supp-pdf.mkii
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count112
-\scratchdimen=\dimen121
+\scratchcounter=\count114
+\scratchdimen=\dimen123
 \scratchbox=\box34
-\nofMPsegments=\count113
-\nofMParguments=\count114
+\nofMPsegments=\count115
+\nofMParguments=\count116
 \everyMPshowfont=\toks34
-\MPscratchCnt=\count115
-\MPscratchDim=\dimen122
-\MPnumerator=\count116
+\MPscratchCnt=\count117
+\MPscratchDim=\dimen124
+\MPnumerator=\count118
 \everyMPtoPDFconversion=\toks35
 )
-\c@def1=\count117
-\c@satz=\count118
-\c@lem=\count119
-\c@bew=\count120
-\c@gleich=\count121
-\c@eigen=\count122
+\c@def1=\count119
+\c@satz=\count120
+\c@lem=\count121
+\c@bew=\count122
+\c@gleich=\count123
+\c@eigen=\count124
 LaTeX Font Info:    Try loading font information for U+msa on input line 36.
  (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
@@ -419,73 +430,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-[3]) [4] (./teil1.tex
-Overfull \hbox (20.17973pt too wide) detected at line 46
-\OMS/cmsy/m/n/10.95 ! [] ^ []
- []
-
-[5] [6] [7] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
+[3]) [4] (./teil1.tex [5] [6] [7]) [8] (./teil2.tex
+Underfull \hbox (badness 10000) in paragraph at lines 22--25
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
+Underfull \hbox (badness 10000) in paragraph at lines 22--25
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--125
+Underfull \hbox (badness 10000) in paragraph at lines 26--28
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
+Overfull \hbox (30.902pt too wide) detected at line 29
+\OML/cmm/m/it/10.95 w \OMS/cmsy/m/n/10.95 2 \OML/cmm/m/it/10.95 W \OMS/cmsy/m/n
+/10.95 ^^A \OML/cmm/m/it/10.95 X[] \OMS/cmsy/m/n/10.95 ^ \OML/cmm/m/it/10.95 v 
+\OMS/cmsy/m/n/10.95 v \OML/cmm/m/it/10.95 w \OMS/cmsy/m/n/10.95 ^ \OML/cmm/m/it
+/10.95 v \OMS/cmsy/m/n/10.95 62 \OML/cmm/m/it/10.95 W \OMS/cmsy/m/n/10.95 ^^A \
+OML/cmm/m/it/10.95 X[] \OMS/cmsy/m/n/10.95 ! \OT1/cmr/m/n/10.95 (\OML/cmm/m/it/
+10.95 w[] \OMS/cmsy/m/n/10.95 2 \OT1/cmr/m/n/10.95 ([] (\OML/cmm/m/it/10.95 v \
+OMS/cmsy/m/n/10.95 ^^A \OML/cmm/m/it/10.95 X[] \OMS/cmsy/m/n/10.95 \ \OML/cmm/m
+/it/10.95 W \OMS/cmsy/m/n/10.95 ^^A \OML/cmm/m/it/10.95 X[]\OT1/cmr/m/n/10.95 )
+ \OMS/cmsy/m/n/10.95 ! \OML/cmm/m/it/10.95 w[] \OMS/cmsy/m/n/10.95 2 \OT1/cmr/m
+/n/10.95 ([] (\OML/cmm/m/it/10.95 v \OMS/cmsy/m/n/10.95 ^^A \OML/cmm/m/it/10.95
+ X[] \OMS/cmsy/m/n/10.95 \ [] \OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 W\OT1/cmr
+/m/n/10.95 )))))
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 42--45
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--129
+Underfull \hbox (badness 10000) in paragraph at lines 74--81
 
  []
 
 
-Overfull \hbox (26.29268pt too wide) detected at line 134
-\OML/cmm/m/it/10.95 L . \OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 U \OMS/cmsy/m/n
-/10.95 [ \OML/cmm/m/it/10.95 V\OT1/cmr/m/n/10.95 ) = \OMS/cmsy/m/n/10.95 f\OML/
-cmm/m/it/10.95 abb; aba; aab\OMS/cmsy/m/n/10.95 g[]\OML/cmm/m/it/10.95 L . U \O
-MS/cmsy/m/n/10.95 [ \OML/cmm/m/it/10.95 L . V \OT1/cmr/m/n/10.95 = \OMS/cmsy/m/
-n/10.95 f\OML/cmm/m/it/10.95 abb; aaba\OMS/cmsy/m/n/10.95 g [ f\OML/cmm/m/it/10
-.95 aab; aba\OMS/cmsy/m/n/10.95 g \OT1/cmr/m/n/10.95 = \OMS/cmsy/m/n/10.95 f\OM
-L/cmm/m/it/10.95 abb; aaba; aab; aba\OMS/cmsy/m/n/10.95 g
- []
-
-[9]) [10] (./teil2.tex [11]
-Underfull \hbox (badness 10000) in paragraph at lines 27--30
+Underfull \hbox (badness 10000) in paragraph at lines 74--81
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--52
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--64
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--64
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--67
-
- []
-
-[12]) [13] (./teil3.tex
+) [10] (./teil3.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--7
 
  []
@@ -498,9 +489,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--7
 
 Overfull \hbox (13.61893pt too wide) in paragraph at lines 2--7
 \OML/cmm/m/it/10.95 A[]$ \OT1/cmr/m/n/10.95 und $\OML/cmm/m/it/10.95 A[]$ \OT1/
-cmr/m/n/10.95 le-sen das Wort $\OML/cmm/m/it/10.95 w$ \OT1/cmr/m/n/10.95 par-al
--lel. Falls $\OML/cmm/m/it/10.95 A[]$ \OT1/cmr/m/n/10.95 ak-zep-tiert und w[]ah
-lt $\OML/cmm/m/it/10.95 A$ \OT1/cmr/m/n/10.95 nicht-deterministisch
+cmr/m/n/10.95 lesen das Wort $\OML/cmm/m/it/10.95 w$ \OT1/cmr/m/n/10.95 par-al-
+lel. Falls $\OML/cmm/m/it/10.95 A[]$ \OT1/cmr/m/n/10.95 akzep-tiert und w[]ahlt
+ $\OML/cmm/m/it/10.95 A$ \OT1/cmr/m/n/10.95 nicht-deterministisch
  []
 
 
@@ -509,56 +500,54 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--7
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--15
+Underfull \hbox (badness 10000) in paragraph at lines 8--16
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--15
+Underfull \hbox (badness 10000) in paragraph at lines 8--16
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--15
+Underfull \hbox (badness 10000) in paragraph at lines 16--22
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 35--38
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--30
+Underfull \hbox (badness 10000) in paragraph at lines 35--38
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--30
-
- []
-
-[14]) [15] [16] (./bachelor.aux) ) 
+) [12] [13] (./bachelor.aux) ) 
 Here is how much of TeX's memory you used:
- 4117 strings out of 493848
- 54848 string characters out of 1152823
- 140439 words of memory out of 3000000
- 7305 multiletter control sequences out of 15000+50000
- 15721 words of font info for 60 fonts, out of 3000000 for 9000
- 714 hyphenation exceptions out of 8191
- 35i,10n,35p,280b,509s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/public/
-amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
-/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
-e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texl
-ive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/ty
-pe1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/a
-msfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
-r8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></
-usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/t
-exmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-texlive
-/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1
-/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/ams
-fonts/symbols/msbm10.pfb>
-Output written on bachelor.pdf (16 pages, 197268 bytes).
+ 4156 strings out of 95061
+ 55378 string characters out of 1182622
+ 137701 words of memory out of 256000000
+ 7246 multiletter control sequences out of 15000+50000
+ 13829 words of font info for 53 fonts, out of 1200000 for 2000
+ 28 hyphenation exceptions out of 8191
+ 35i,10n,35p,280b,498s stack positions out of 5000i,500n,10000p,200000b,5000s
+</usr/share/texmf-texlive/fonts/type1/public/amsf
+onts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cme
+x10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/tex
+mf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/f
+onts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/p
+ublic/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfont
+s/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmssbx10
+.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
+share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-
+texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fon
+ts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on bachelor.pdf (13 pages, 181229 bytes).
 PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
+ 97 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
