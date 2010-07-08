@@ -5,7 +5,7 @@ Version=2
 [SessionInfo]
 ActiveTab=0
 FrameCount=7
-ActiveFrame=6
+ActiveFrame=4
 
 [Frame0]
 Columns=1
@@ -32,7 +32,7 @@ cxCur=1258
 cxMin=10
 
 [Frame0_View0,0]
-Cursor.row=29
+Cursor.row=0
 Cursor.column=0
 TopSubLine=9
 
@@ -126,8 +126,8 @@ TopSubLine=0
 [Frame4]
 Columns=1
 Rows=1
-Flags=0
-ShowCmd=1
+Flags=2
+ShowCmd=3
 MinPos.x=-1
 MinPos.y=-1
 MaxPos.x=-8
@@ -140,17 +140,17 @@ Class=CLatexEdit
 Document=teil2.tex
 
 [Frame4_Row0]
-cyCur=343
+cyCur=581
 cyMin=10
 
 [Frame4_Col0]
-cxCur=1237
+cxCur=1453
 cxMin=10
 
 [Frame4_View0,0]
-Cursor.row=20
-Cursor.column=14
-TopSubLine=4
+Cursor.row=41
+Cursor.column=1
+TopSubLine=10
 
 [Frame5]
 Columns=1
@@ -184,8 +184,8 @@ TopSubLine=0
 [Frame6]
 Columns=1
 Rows=1
-Flags=2
-ShowCmd=3
+Flags=0
+ShowCmd=1
 MinPos.x=-1
 MinPos.y=-1
 MaxPos.x=-8
@@ -198,15 +198,15 @@ Class=CLatexEdit
 Document=teil1.tex
 
 [Frame6_Row0]
-cyCur=581
+cyCur=343
 cyMin=10
 
 [Frame6_Col0]
-cxCur=1453
+cxCur=1237
 cxMin=10
 
 [Frame6_View0,0]
 Cursor.row=27
 Cursor.column=0
-TopSubLine=3
+TopSubLine=7
 

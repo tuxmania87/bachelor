@@ -21,11 +21,13 @@ Sei $V\subseteq X^*\backslash W\cdot X^*$, so gilt $V\ff W\cdot X^* = V\ff \min(
 \end{lem}
 zu zeigen:\\\\
 1. $V\ff W\cdot X^* \subseteq V\ff \min(W) $\\
-2. $V\ff W\cdot X^* \supseteq V\ff \min(W) $\\\\
-Die Inklusion $\supseteq$ folg aus $W\cdot X^* \supseteq \min(W)$.\\
-Zum Beweis der der anderen Inklusion genügt es, diese für den Fall $V=\{v\}$ zu zeigen.\\
+2. $V\ff W\cdot X^* \supseteq V\ff \min(W) $\\
+\begin{proof}:\\
+zu 1. Die Inklusion $\supseteq$ folg aus $W\cdot X^* \supseteq \min(W)$.\\
+zu 2. Zum Beweis der der anderen Inklusion genügt es, diese für den Fall $V=\{v\}$ zu zeigen.\\
 Es sei nun $w\in v\ff W\cdot X^*$, wobei nach Vorraussetzung $v\notin W\cdot X^*$ gelte. Dann gilt für kein $u$, $v\sqsubseteq u\sqsubset w$ oder $u\sqsubseteq v$ die Beziehung $u\in W\cdot X^*$.\\
 Also haben wir $w\in\min(W\cdot X^*) = \min(W)$
+\end{proof}
 
 %\textbf{zu 1.} Es genügt die Eigenschaft zu zeigen für $V=\{v\}$\\
 %\begin{proof}
@@ -37,7 +39,7 @@ Also haben wir $w\in\min(W\cdot X^*) = \min(W)$
 
 
 
-\newpage
+%\newpage
 
 \begin{eigen}
 $\pref(V)\ff W$
@@ -48,31 +50,55 @@ $\pref(V)\ff W$
 $\to \pref(V)\ff W = (\pref(V)\cap W) \cup (\pref(V)\ff \min(W))$\\\\
 \end{proof}
 
+
 \begin{eigen}
 $W\ff \pref(V) = W \cap \pref(V)$
 \end{eigen}
-Es genügt die Eigenschaft für $W=\{w\}$ zu zeigen:
 \begin{proof}
-$$W\ff \pref(V) = \{w\}\ff\pref(V)$$
-$$=min_{\sqsubseteq} \{v:v\in \pref(V) \wedge w\sqsubseteq v\}$$
-Aus $v\in \pref(V) \wedge w\sqsubseteq v$ folgt direkt, dass $w\in pref(V)$. Damit ergibt sich :
-$$min_{\sqsubseteq} \{v:v\in \pref(V) \wedge w\sqsubseteq v\} = \{v:v\in\pref(V)\wedge w=v\} = \{w\} \cap \pref(V)$$
-\end{proof}
-%"'$\leftarrow$"'\\
-%$w\in \pref(V) \wedge w\in W \to w\sqsubseteq v\in \pref(V)$\\\\
-\begin{eigen}
-$V\cdot X^* \ff W$
-\end{eigen}
-Es genügt die Eigenschaft für ein $v\in V\cdot X^*$ zu zeigen:
-\begin{proof}
-$$\min_{\sqsubseteq} \{w:w\in W \wedge v\sqsubseteq w\}$$
-$$v\in VX^* \wedge v\sqsubseteq w \to w\in VX^*$$
-$$=\min_{\sqsubseteq} \{w:w\in W \wedge w\in V\cdot X^* \wedge v=w\} = \{v\}\cap W$$
-%$=\bigcup_{v\in V} \{w:w\in W \wedge v\sqsubseteq w\}$\\\\
+Es genügt die Eigenschaft für $W=\{w\}$ zu zeigen:\\
+Aus der Definition wissen wir, dass $w\ff \pref(V)= \min ( \{w\} \cdot X^* \cap \pref(V) )$ entspricht. 
+Sei $w'\in (\{w\} \cdot X^* \cap \pref(V))$, so sieht man leicht, dass $w\sqsubseteq w'$ und demnach $w\in\pref(V)$ gelten muss.
+Daraus folgt sofort $\min ( \{w\} \cdot X^* \cap \pref(V) ) = \{w\} \cap \pref(V)$
+
 \end{proof}
 
+
+%\begin{eigen}
+%%$W\ff \pref(V) = W \cap \pref(V)$%
+%\end{eigen}
+%\begin{proof}
+%Es genügt die Eigenschaft für $W=\{w\}$ zu zeigen:
+%$$W\ff \pref(V) = \{w\}\ff\pref(V)$$
+%$$=min_{\sqsubseteq} \{v:v\in \pref(V) \wedge w\sqsubseteq v\}$$
+%Aus $v\in \pref(V) \wedge w\sqsubseteq v$ folgt direkt, dass $w\in pref(V)$. Damit ergibt sich :
+%$$min_{\sqsubseteq} \{v:v\in \pref(V) \wedge w\sqsubseteq v\} = \{v:v\in\pref(V)\wedge w=v\} = \{w\} \cap \pref(V)$$
+%\end{proof}
+%"'$\leftarrow$"'\\
+%$w\in \pref(V) \wedge w\in W \to w\sqsubseteq v\in \pref(V)$\\\\
+
 \begin{eigen}
-$$W\ff V\cdot X^*$$
+$V\cdot X^* \ff W = V\cdot X^* \cap W$
+\end{eigen}
+\begin{proof}
+Es genügt die Eigenschaft für ein $v\in V\cdot X^*$ zu zeigen:\\
+Aus der Definition wissen wir, dass $v\ff W = \min( \{v\} \cdot X^* \cap W)$ entspricht. Da laut Voraussetzung $v\in V\cdot X^*$, so gilt = $\min( \{v\} \cdot X^* \cap W) = \min( \{v\} \cap W)$.
+Da $\{v\} \cap W$ in jedem Fall einelementig ist, wissen wir, dass $\min( \{v\} \cap W) = \{v\} \cap W$ gilt.
+
+\end{proof}
+
+%\begin{eigen}
+%$V\cdot X^* \ff W$
+%\end{eigen}
+%\begin{proof}
+%Es genügt die Eigenschaft für ein $v\in V\cdot X^*$ zu zeigen:
+%$$\min_{\sqsubseteq} \{w:w\in W \wedge v\sqsubseteq w\}$$
+%$$v\in VX^* \wedge v\sqsubseteq w \to w\in VX^*$$
+%$$=\min_{\sqsubseteq} \{w:w\in W \wedge w\in V\cdot X^* \wedge v=w\} = \{v\}\cap W$$
+%$=\bigcup_{v\in V} \{w:w\in W \wedge v\sqsubseteq w\}$\\\\
+%\end{proof}
+
+\begin{eigen}
+$W\ff V\cdot X^* = (W\ff\min(V)) \cup (W\cap V\cdot X^*)$
 \end{eigen}
 \begin{proof}
 $W$ lässt sich in 2 Teile aufspliten: $W= (W\cap V\cdot X^*) \cup (W\backslash V\cdot X^*)$
