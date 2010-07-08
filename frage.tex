@@ -15,24 +15,28 @@
 \newcommand{\ff}{\triangleright}
 \author{Robert Hartmann}
 \begin{document}
-$$L\triangleright W = \bigcup_{u\in L} u\triangleright W$$
-\vspace{5mm}
-$$u\triangleright W := Min_{\sqsubseteq} \{w:w\in W \wedge u\sqsubseteq w\}$$
-\textbf{\large{Frage: 1}}\\\\
-Sei $$L_1=\{a,ab,aab,aaab,abbb,abb\}$$
-Baum: (bezüglich $\sqsubseteq$)\\
-\begin{center}
-\includegraphics[scale=0.4]{baum.png}
-\end{center}
-Nun gibt es die Frage was der Ausdruck $a\ff L_1$ ist.\\\\
-Erste Idee:
-$$a\ff L_1 = \{ab,aaab,aab\}$$
-also quasi die erste Stufe des Baumes.\\
-Bei genauerer Betrachtung steht ja $\sqsubseteq$ da und nicht $\sqsubset$.
-Daher müsste doch eigentlich:
-$$a\ff L_1 = \{a\}$$ sein, weil in dem Fall $a$ das kleinste Präfix von allen
-Wörtern aus $L_1$ ist.\\
-Was davon ist richtig?\\\\
-Sollte der letztere Fall der richtige sein, dann gilt scheinbar generell:
-$$\text{Aus }u\in L\text{ folgt: }u\ff L=\{u\}$$
+
+\newtheorem{bla}{Bla}[section]
+
+\section A
+\begin{bla}
+asdf fdsa
+\end{bla}
+\begin{bla}
+asdf fdsa
+\end{bla}
+\section B
+\begin{bla}
+asdf fdsa
+\end{bla}
+\begin{bla}
+asdf fdsa
+\end{bla}
+Wir hatten Definiert:
+$$W=\{0^{n+1} 1^{n+1} : n\in\mathbb{N} \} \cup \{0^{n+1} 1: n\in A\}$$
+Als Beispiel hatte ich, wie sie vorschlugen $A=\{n:\textit{n ist eine gerade Zahl}\}$ gewählt. Dann kommt meiner Meinung nach folgender Baum Zustande:\\
+\includegraphics[scale=0.66]{entscheidbar.png}\\
+Dabei besteht die Menge $0\ff W$ aus den rot-umrandeten Wörtern, also immer wenn $n\in A$ und $n\in \mathbb{N}$ dann kommt das echte Präfix in die Resultatmenge und wenn $n\in\mathbb{N}$ und $n\notin A$ dann kommt das ganze Wort rein, also:\\
+$$0\ff W= \{0^{n+1} 1^{n+1} : n\in\mathbb{N} \wedge n\notin A\} \cup \{0^{n+1} 1: n\in \mathbb{N} \wedge n\in A\}$$
+\textbf{Sollte} das soweit richtig sein so stelle ich fest, dass $n\notin A$ ja ein Problem ergibt da A nicht entscheidbar ist erfahre ich ja eigentlich nicht wenn $n\notin A$ ist ... soweit meine Gedanken dazu.
 \end{document}

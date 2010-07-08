@@ -19,17 +19,21 @@
 \begin{lem}\label{eingeschr1}
 Sei $V\subseteq X^*\backslash W\cdot X^*$, so gilt $V\ff W\cdot X^* = V\ff \min(W) $
 \end{lem}
-z.z:\\\\
+zu zeigen:\\\\
 1. $V\ff W\cdot X^* \subseteq V\ff \min(W) $\\
-2. $V\ff W\cdot X^* \supseteq V\ff \min(W) $\\
+2. $V\ff W\cdot X^* \supseteq V\ff \min(W) $\\\\
+Die Inklusion $\supseteq$ folg aus $W\cdot X^* \supseteq \min(W)$.\\
+Zum Beweis der der anderen Inklusion genügt es, diese für den Fall $V=\{v\}$ zu zeigen.\\
+Es sei nun $w\in v\ff W\cdot X^*$, wobei nach Vorraussetzung $v\notin W\cdot X^*$ gelte. Dann gilt für kein $u$, $v\sqsubseteq u\sqsubset w$ oder $u\sqsubseteq v$ die Beziehung $u\in W\cdot X^*$.\\
+Also haben wir $w\in\min(W\cdot X^*) = \min(W)$
 
-\textbf{zu 1.} Es genügt die Eigenschaft zu zeigen für $V=\{v\}$\\
-\begin{proof}
-$$v \ff W\cdot X^* = \min_{\sqsubseteq} \{w:w\in W\cdot X^* \wedge v\sqsubseteq w\}$$
-$$w\in W\cdot X^* \wedge v\sqsubseteq w \wedge v\not\in W\cdot X^* \to ( w'\in (\min(v\cdot X^* \cap W\cdot X^*) \to w'\in  (\min(v\cdot X^* \cap \min(W)))) )$$
-\end{proof}
+%\textbf{zu 1.} Es genügt die Eigenschaft zu zeigen für $V=\{v\}$\\
+%\begin{proof}
+%$$v \ff W\cdot X^* = \min_{\sqsubseteq} \{w:w\in W\cdot X^* \wedge v\sqsubseteq w\}$$
+%$$w\in W\cdot X^* \wedge v\sqsubseteq w \wedge v\not\in W\cdot X^* \to ( w'\in (\min(v\cdot X^* \cap W\cdot X^*) \to w'\in  (\min(v\cdot X^* \cap \min(W)))) )$$
+%\end{proof}
 
-\textbf{zu 2.} klar, weil $W\cdot X^* \supseteq \min(W)$
+%\textbf{zu 2.} klar, weil $W\cdot X^* \supseteq \min(W)$
 
 
 

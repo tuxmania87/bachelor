@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.5.7)  25 JUN 2010 11:10
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.5.7)  25 JUN 2010 21:53
 entering extended mode
  file:line:error style messages enabled.
  %&-line parsing enabled.
@@ -431,48 +431,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
  []
 
 [3]) [4] (./teil1.tex [5] [6] [7]) [8] (./teil2.tex
-Underfull \hbox (badness 10000) in paragraph at lines 22--25
+Underfull \hbox (badness 10000) in paragraph at lines 22--29
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--25
+Underfull \hbox (badness 10000) in paragraph at lines 22--29
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--28
-
- []
-
-
-Overfull \hbox (30.902pt too wide) detected at line 29
-\OML/cmm/m/it/10.95 w \OMS/cmsy/m/n/10.95 2 \OML/cmm/m/it/10.95 W \OMS/cmsy/m/n
-/10.95 ^^A \OML/cmm/m/it/10.95 X[] \OMS/cmsy/m/n/10.95 ^ \OML/cmm/m/it/10.95 v 
-\OMS/cmsy/m/n/10.95 v \OML/cmm/m/it/10.95 w \OMS/cmsy/m/n/10.95 ^ \OML/cmm/m/it
-/10.95 v \OMS/cmsy/m/n/10.95 62 \OML/cmm/m/it/10.95 W \OMS/cmsy/m/n/10.95 ^^A \
-OML/cmm/m/it/10.95 X[] \OMS/cmsy/m/n/10.95 ! \OT1/cmr/m/n/10.95 (\OML/cmm/m/it/
-10.95 w[] \OMS/cmsy/m/n/10.95 2 \OT1/cmr/m/n/10.95 ([] (\OML/cmm/m/it/10.95 v \
-OMS/cmsy/m/n/10.95 ^^A \OML/cmm/m/it/10.95 X[] \OMS/cmsy/m/n/10.95 \ \OML/cmm/m
-/it/10.95 W \OMS/cmsy/m/n/10.95 ^^A \OML/cmm/m/it/10.95 X[]\OT1/cmr/m/n/10.95 )
- \OMS/cmsy/m/n/10.95 ! \OML/cmm/m/it/10.95 w[] \OMS/cmsy/m/n/10.95 2 \OT1/cmr/m
-/n/10.95 ([] (\OML/cmm/m/it/10.95 v \OMS/cmsy/m/n/10.95 ^^A \OML/cmm/m/it/10.95
- X[] \OMS/cmsy/m/n/10.95 \ [] \OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 W\OT1/cmr
-/m/n/10.95 )))))
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 42--45
+Underfull \hbox (badness 10000) in paragraph at lines 46--49
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--81
+Underfull \hbox (badness 10000) in paragraph at lines 78--85
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--81
+Underfull \hbox (badness 10000) in paragraph at lines 78--85
 
  []
 
@@ -545,7 +524,7 @@ s/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmssbx10
 share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-
 texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fon
 ts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on bachelor.pdf (13 pages, 181229 bytes).
+Output written on bachelor.pdf (13 pages, 181254 bytes).
 PDF statistics:
  97 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
