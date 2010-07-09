@@ -99,17 +99,16 @@ $$L_1\subseteq L_2 \to L_1\ff L_2 = L_1$$
 $$l\in L \to l\ff L = \{l\}$$
 \end{eigen}
 \begin{proof}
-$$L_1\ff L_2 = \bigcup_{l\in L_1} l\ff L_2$$
-$$\textit{wegen } L_1\subseteq L_2: l\ff L_2 = \{l\}$$
-$$ = \bigcup_{l\in L_1} \{l\} = L_1$$
+Nach Definition ist $L_1\ff L_2 = \bigcup_{l\in L_1} l\ff L_2$. Laut Vorbedinung gilt für jedes $l\in L_1$, dass $l\ff L_2 = \{l\}$ ist.
+Damit ergibt sich $  \bigcup_{l\in L_1} \{l\} = L_1$
 \end{proof}
 
 \begin{gleich}
 $$L_2\subseteq L_1 \to L_1\ff L_2 = L_2$$
 \end{gleich}
 \begin{proof}
-$$\textit{Da }L_2\subseteq L_1\textit{ gilt für alle }l\in L_2 \wedge l\in L_1: l\ff L_2=\{l\}$$
-$$\bigcup_{l\in L_1} l\ff L_2 = \bigcup_{l\in L_1} \{l\} = L_2$$
+$\textit{Da }L_2\subseteq L_1\textit{ gilt für alle }l\in L_2 \cap L_1: l\ff L_2=\{l\}$\\
+Demnach ergibt sich dann für $\bigcup_{l\in L_1} l\ff L_2 = \bigcup_{l\in L_1} \{l\} = L_2$
 \end{proof}
 
 \subsection{Konkatenation}

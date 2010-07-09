@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2009.11.29)  8 JUL 2010 15:36
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2009.11.29)  9 JUL 2010 11:37
 entering extended mode
 **C:/Users/Robert/Desktop/ba/bachelor.tex
 (C:/Users/Robert/Desktop/ba/bachelor.tex
@@ -417,7 +417,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-[3]) [4] (C:\Users\Robert\Desktop\ba\teil1.tex [5] [6] [7]) [8]
+[3]) [4] (C:\Users\Robert\Desktop\ba\teil1.tex [5] [6]) [7]
 (C:\Users\Robert\Desktop\ba\teil2.tex
 Underfull \hbox (badness 10000) in paragraph at lines 22--25
 
@@ -429,42 +429,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--25
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--28
+Underfull \hbox (badness 10000) in paragraph at lines 48--51
 
  []
 
 
-Overfull \hbox (30.902pt too wide) detected at line 29
-\OML/cmm/m/it/10.95 w \OMS/cmsy/m/n/10.95 2 \OML/cmm/m/it/10.95 W \OMS/cmsy/m/n
-/10.95  \OML/cmm/m/it/10.95 X[] \OMS/cmsy/m/n/10.95 ^ \OML/cmm/m/it/10.95 v \O
-MS/cmsy/m/n/10.95 v \OML/cmm/m/it/10.95 w \OMS/cmsy/m/n/10.95 ^ \OML/cmm/m/it/1
-0.95 v \OMS/cmsy/m/n/10.95 62 \OML/cmm/m/it/10.95 W \OMS/cmsy/m/n/10.95  \OML/
-cmm/m/it/10.95 X[] \OMS/cmsy/m/n/10.95 ! \OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.9
-5 w[] \OMS/cmsy/m/n/10.95 2 \OT1/cmr/m/n/10.95 ([] (\OML/cmm/m/it/10.95 v \OMS/
-cmsy/m/n/10.95  \OML/cmm/m/it/10.95 X[] \OMS/cmsy/m/n/10.95 \ \OML/cmm/m/it/10
-.95 W \OMS/cmsy/m/n/10.95  \OML/cmm/m/it/10.95 X[]\OT1/cmr/m/n/10.95 ) \OMS/cm
-sy/m/n/10.95 ! \OML/cmm/m/it/10.95 w[] \OMS/cmsy/m/n/10.95 2 \OT1/cmr/m/n/10.95
- ([] (\OML/cmm/m/it/10.95 v \OMS/cmsy/m/n/10.95  \OML/cmm/m/it/10.95 X[] \OMS/
-cmsy/m/n/10.95 \ [] \OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 W\OT1/cmr/m/n/10.95
- )))))
- []
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 42--45
+Underfull \hbox (badness 10000) in paragraph at lines 104--111
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--81
+Underfull \hbox (badness 10000) in paragraph at lines 104--111
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--81
-
- []
-
-) [10] (C:\Users\Robert\Desktop\ba\teil3.tex
+[8]) [9] (C:\Users\Robert\Desktop\ba\teil3.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--7
 
  []
@@ -502,7 +481,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--22
 
  []
 
-[11]
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 35--38
 
  []
@@ -512,11 +491,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--38
 
  []
 
-) [12] [13] (C:\Users\Robert\Desktop\ba\bachelor.aux) ) 
+) [11] [12] (C:\Users\Robert\Desktop\ba\bachelor.aux) ) 
 Here is how much of TeX's memory you used:
  4119 strings out of 495269
  56491 string characters out of 3179644
- 137452 words of memory out of 3000000
+ 138452 words of memory out of 3000000
  7248 multiletter control sequences out of 15000+200000
  13829 words of font info for 53 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -535,9 +514,9 @@ public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/pu
 blic/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/
 amsfonts/symbols/msam10.pfb>
-Output written on bachelor.pdf (13 pages, 181162 bytes).
+Output written on bachelor.pdf (12 pages, 180218 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
+ 93 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
