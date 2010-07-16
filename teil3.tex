@@ -25,13 +25,13 @@ Demnach akzeptiert $A$ die Eingabe $w$ genau dann, wenn $w\in L\ff W$
 
 \subsubsection{deterministisch kontextfrei}
 
-Es existieren deterministisch kontextfreie Sprachen $L,W$, sodass $L\ff W$ nicht deterministisch kontextfrei ist!
-
-$$L=\{a^nb^nc^i:i,n>0\}\qquad W=\{a^ib^nc^n:i,n>0\}$$
-So ist $$L\ff W = \bigcup_{l\in L} \min_{\sqsubseteq}\{w:w\in W \wedge l\sqsubseteq w\} = \{a^nb^nc^n:n>0\} = U$$
-Und von $U$ wissen wir, dass es nicht kontextfrei, also auch nicht deterministisch kontextfrei ist.
+Es existieren deterministisch kontextfreie Sprachen $L,W$, sodass $L\ff W$ nicht deterministisch kontextfrei ist!\\\\
+Sei $L=\{a^nb^nc^i:i,n>0\}$ und $W=\{a^ib^nc^n:i,n>0\}$. Sowohl $L$ als auch $W$ sind deterministische, kontextfreie und auch lineare Sprachen, da es je einen deterministischen Kellerautomaten gibt, der $L$ sowie $W$ akzeptiert und eine es lineare Grammatiken $G_L$ und $G_W$ gibt, sodass $L(G_L) = L$ und $L(G_W) = W$ gilt.\\
+Betrachtet man sich nun ein Wort $u\in L\ff W$ so muss $u$ laut Definition folgende Struktur besitzen $u\in \min( l\cdot X^* \cap W)\textit{ für ein }l \in L$.
+Damit sieht man leicht, dass $L\ff W= \{a^nb^nc^n:n>0\}$ und $\{a^nb^nc^n:n>0\}$ ist bekanntlich nicht kontextfrei, also auch nicht deterministisch kontextfrei
 
 \subsection{Entscheidbarkeit}
+\subsubsection{L und W entscheidbar}
 Seien $L$ und $W$ (Turing)entscheidbar, so ist auch $L\ff W$ entscheidbar.\\\\
 Seien die Turing Maschinen $T_L$ und $T_W$.\\
 Die Turing Maschine $T$ entscheidet $L\ff W$ nach folgendem Algorithmus:\\
@@ -62,3 +62,36 @@ Die Turing Maschine $T$ entscheidet $L\ff W$ nach folgendem Algorithmus:\\
 \STATE $T$ rejects
 \end{algorithmic}
 \end{algorithm}
+
+\subsubsection{L akzeptierbar, W entscheidbar}
+
+Sei $w$ die Eingabe. Es soll $w$ akzeptiert werden, wenn $w\in L\ff W$ ist, wobei $L$ akzeptierbar und $W$ entscheidbar ist.\\\\
+Vorgehensweise:\\
+Zunächst wird geprüft ob $w\notin W$ liegt, falls das der Fall ist, so kann nach Definiton nicht akzeptiert werden.\\
+Nun werden alle Präfixe von $w$ auf jeweils ein Band geschrieben, sodass man bei $\vert w\vert = n$, $n$-Bänder benötigt.
+Dann wird in einer Endlosschleife jeweils auf jedem Band die Maschine die $L$-akzeptiert ausgeführt.\\\\
+
+Notiz: $\vert w\vert = n$\\
+1. wenn $w\notin W$, laufe in Endlosschleife\\
+2. Kopiere alle $u$ mit $u\sqsubset w$ auf jeweils ein Band.\\
+3. \\
+\begin{verbatim}
+while(true) do
+  for(i=1 to n) do 
+    if(T_W accepts on tape i) T rejects
+    do 1 takt with $T_L$ on tape i, if T_W accepts then T accept
+  endfor
+endwhile
+\end{verbatim}
+
+
+\subsubsection{L entscheidbar, W akzeptierbar}
+
+Sei $L$ entscheidbar und $W$ aufzählbar, so ist $L\ff W$ nicht notwendigerweise aufzählbar.\\
+\begin{proof}
+Bemerkung: $A$ ist aufzählbar, aber nicht entscheidbar\\\\
+Sei $W=\{0^{n+1}\ 1^{n+1} : n\in \mathbb{N} \} \cup \{0^{n+1}\ 1 : n\in A \}$, also $W$ ist aufzählbar und sei $L=\{0\}$.\\
+So ist $L\ff W = 0 \ff W = \{0^{n+1}\ 1^{n+1} : n\in\mathbb{N} \wedge n\notin A\} \cup \{0^{n+1}\ 1:n\in \mathbb{N} \wedge n\in A\}$. 
+Angenommen $0\ff W$ wäre aufzählbar, so müsste der Schnitt mit einer aufzählbaren Sprache wieder aufzählbar sein. 
+Sei $L_A = \{0^n\ 1^n : n\in\mathbb{N}\}$ offensichtlich aufzählbar. Dann ergibt sich aber für $0\ff W \cap L_A = \{0^{n+1}\ 1^{n+1} : n\in\mathbb{N} \wedge n\notin A\}$, was nicht aufzählbar ist.
+\end{proof}
