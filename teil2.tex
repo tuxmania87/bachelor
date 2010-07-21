@@ -16,6 +16,8 @@
 %$$V\ff W = V\ff \min(W)$$
 %\end{eigen}
 
+Im nun vorliegenden Abschnitt wird die Operation Fortsetzung im Hinblick auf Sprachen mit spezieller Gestalt untersucht. Dabei geht es hauptsächlich um Sprachen der Form $\pref(L)$ oder $W\cdot X^*$.
+
 \begin{lem}\label{eingeschr1}
 Sei $V\subseteq X^*\backslash W\cdot X^*$, so gilt $V\ff W\cdot X^* = V\ff \min(W) $
 \end{lem}
@@ -42,23 +44,13 @@ Also haben wir $w\in\min(W\cdot X^*) = \min(W)$
 %\newpage
 
 \begin{eigen}
-$\pref(V)\ff W$
-\end{eigen}
-\begin{proof}
-1. Fall: $w\in W \cap \pref(V) \to w\in \pref(V)\ff W$\\
-2. Fall: $w\in W\backslash \pref(V) \to w\in V\ff Min(W)$\\
-$\to \pref(V)\ff W = (\pref(V)\cap W) \cup (\pref(V)\ff \min(W))$\\\\
-\end{proof}
-
-
-\begin{eigen}
 $W\ff \pref(V) = W \cap \pref(V)$
 \end{eigen}
 \begin{proof}
 Es genügt die Eigenschaft für $W=\{w\}$ zu zeigen:\\
-Aus der Definition wissen wir, dass $w\ff \pref(V)= \min ( \{w\} \cdot X^* \cap \pref(V) )$ entspricht. 
-Sei $w'\in (\{w\} \cdot X^* \cap \pref(V))$, so sieht man leicht, dass $w\sqsubseteq w'$ und demnach $w\in\pref(V)$ gelten muss.
-Daraus folgt sofort $\min ( \{w\} \cdot X^* \cap \pref(V) ) = \{w\} \cap \pref(V)$
+Aus der Definition wissen wir, dass $w\ff \pref(V)= \min ( \{w\} \cdot X^* \cap \pref(V) )$ gilt. 
+ist $w'\in (\{w\} \cdot X^* \cap \pref(V))$, so sieht man, dass $w\sqsubseteq w'$ gilt. Also haben wir wegen $w'\in \pref(V)$ auch $w\in\pref(V)$.
+Daraus folgt $\min ( \{w\} \cdot X^* \cap \pref(V) ) = \{w\} \cap \pref(V)$
 
 \end{proof}
 
@@ -80,10 +72,8 @@ Daraus folgt sofort $\min ( \{w\} \cdot X^* \cap \pref(V) ) = \{w\} \cap \pref(V
 $V\cdot X^* \ff W = V\cdot X^* \cap W$
 \end{eigen}
 \begin{proof}
-Es genügt die Eigenschaft für ein $v\in V\cdot X^*$ zu zeigen:\\
-Aus der Definition wissen wir, dass $v\ff W = \min( \{v\} \cdot X^* \cap W)$ entspricht. Da laut Voraussetzung $v\in V\cdot X^*$, so gilt = $\min( \{v\} \cdot X^* \cap W) = \min( \{v\} \cap W)$.
-Da $\{v\} \cap W$ in jedem Fall einelementig ist, wissen wir, dass $\min( \{v\} \cap W) = \{v\} \cap W$ gilt.
-
+Die Inklusion $\supseteq$ folgt aus Eigenschaft \ref{eig1}.
+Zum Beweis der anderen Inklusion betrachten wir $w\in V\cdot X^* \ff W$. Es muss nun ein $v\in V\cdot X^*$ existieren, sodass $w\in \{v\}\ff W$ gilt. Daraus folgt, dass $v$ ein Präfix von $w$ sein muss, was wiederum bedeutet, dass $w\in V\cdot X^*$. Somit gilt die Inklusion $V\cdot X^* \ff W \subseteq W\cap V\cdot X^*$.
 \end{proof}
 
 %\begin{eigen}

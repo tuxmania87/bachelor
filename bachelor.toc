@@ -8,11 +8,11 @@
 \contentsline {section}{\numberline {3}Eigenschaften bei Sprachen spezieller Gestalt}{8}
 \contentsline {section}{\numberline {4}Abgeschlossenheit in der CHOMSKY-Hierachie}{10}
 \contentsline {subsection}{\numberline {4.1}Regularit\"at}{10}
-\contentsline {subsection}{\numberline {4.2}Kontextfreiheit}{10}
-\contentsline {subsubsection}{\numberline {4.2.1}deterministisch kontextfrei}{10}
-\contentsline {subsection}{\numberline {4.3}Entscheidbarkeit}{11}
-\contentsline {subsubsection}{\numberline {4.3.1}L und W entscheidbar}{11}
-\contentsline {subsubsection}{\numberline {4.3.2}L akzeptierbar, W entscheidbar}{11}
-\contentsline {subsubsection}{\numberline {4.3.3}L entscheidbar, W akzeptierbar}{12}
-\contentsline {section}{\numberline {5}Schlusswort}{13}
-\contentsline {section}{\numberline {6}Quellen und Literatur}{13}
+\contentsline {subsection}{\numberline {4.2}Kontextfreiheit}{11}
+\contentsline {subsubsection}{\numberline {4.2.1}deterministisch kontextfrei}{11}
+\contentsline {subsection}{\numberline {4.3}Entscheidbarkeit}{12}
+\contentsline {subsubsection}{\numberline {4.3.1}L und W entscheidbar}{12}
+\contentsline {subsubsection}{\numberline {4.3.2}L akzeptierbar, W entscheidbar}{13}
+\contentsline {subsubsection}{\numberline {4.3.3}L entscheidbar, W akzeptierbar}{13}
+\contentsline {section}{\numberline {5}Schlusswort}{14}
+\contentsline {section}{\numberline {6}Quellen und Literatur}{14}

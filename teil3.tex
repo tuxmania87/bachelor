@@ -1,9 +1,11 @@
 \subsection{Regularität}
-Seien $L$ und $W$ regul\"ar, so ist auch $L\ff W$ regul\"ar.\\\\
-Automat $A_L= (X,Z,z_{0},\delta_L,Z_f)$ akzeptiere $L$, Automat $A_W = (X,S,s_{0},f,S_{f})$ akzeptiere $W$.
-Automat $A$ akzeptiert $L\ff W$, \\\\Vorgehensweise:\\
-$A_L$ und $A_W$ lesen das Wort $w$ parallel. Falls $A_L$ akzeptiert und wählt $A$ nicht-deterministisch aus ob Schritt 2 aktiviert wird oder nicht.\\
-Schritt 2: $A_W$ liest das Wort $w$ zu Ende, w\"ahrend $A_L$ im Zustand $z_f'$ verweilt. Sollte $A_W$ auf diesem mehr als einmal akzeptieren, so akzeptiert $A$ nicht indem $A_W$ im Stoppzustand $s_x$ stehen bleibt, ansonsten akzeptiert $A$.\\
+\begin{satz}
+Sind $L$ und $W$ regul\"ar, so ist auch $L\ff W$ regul\"ar.
+\end{satz}
+Der nicht-deterministische Automat $A_L= (X,Z,z_{0},\delta_L,Z_f)$ akzeptiere $L$, der deterministische Automat $A_W = (X,S,s_{0},f,S_{f})$ akzeptiere $W$.
+Wir konstruieren einen nicht-determninistischen Automaten $A$, der $L\ff W$ akzeptiert \\\\Arbeitsweise:\\
+$A_L$ und $A_W$ lesen das Wort $w$ parallel. Falls $A_L$ ein Präfix $v$ von $w$ akzeptiert, wählt $A$ nicht-deterministisch aus ob Schritt 2 aktiviert wird oder nicht.\\
+Wird Schritt zwei aktiviert, so liest $A_W$ das Wort $w$ weiter, während $A_L$ in einem Ruhezustand $z_f'$ verweilt. Akzeptiert $A_W$ nun ein Präfix $v',\ v\sqsubseteq v'\sqsubset w$, so lehnt $A$ das Eingabewort $w$ ab. Sollte der Automat $A_W$ kein solches Präfix $v'$ akzeptieren, aber das Eingabewort $w$, so akzeptiert auch $A$.\\
 
 $A = (X,Z\cup \{ z_f'\}\times S\cup \{ s_x\}, (z_{0},s_{0} ), \delta , \{ (z_f',s') : s'\in S_f \} ), s_x\notin S$
 mit\\\\
@@ -13,23 +15,19 @@ $\delta = \{ ((z_i,s_i),x,(z_j,s_j)) : (z_i,x,z_j) \in \delta_L \wedge f(s_i,x)=
  \{ ((z_f',s_i),x,(z_f',s_x)) : f(s_i,x)=s_j  \wedge s_i \in S_f\} 
  $\\
 \begin{proof}
-Der konstruierte Automat $A$ akzeptiert nur in einem Zustand $(z_f',s'), s'\in S_f$
-Nach Konstruktion gelangt $A$ bei Eingabe $w$ genau dann in $(z_f',s)$, wenn ein Wort $l\in L$ mit $l\sqsubseteq w$ existiert.
-In solch einem Fall kann der Automat umschalten. Wenn dies der Fall ist, so arbeitet $A$ weiter auf der Eingabe $w$ wie $A_W$ es tut.
-Sollte $A_W$ nun akzeptieren und $w$ ist noch nicht zu Ende gelesen, so wird $A$ nach Konstruktion in einen Stoppzustand $(z_f',s_x)$ geleitet, in dem er nie wieder akzeptiert.
-$A$ akzeptiert also nur wenn $A_L$ akzeptiert hat (es existiert ein $l\in L \wedge l\sqsubseteq w$) und wenn für alle $v'$ mit $l\sqsubseteq v' \sqsubset w$ gilt $v'\notin W$.\\\\
-Demnach akzeptiert $A$ die Eingabe $w$ genau dann, wenn $w\in L\ff W$
+Nach Konstruktion ist klar, dass der Automat $A$ nur Wörter aus $L\ff W$ akzeptiert. Er akzeptiert auch alle Wörter aus $L\ff W$, weil der Automat $A_L$, welcher die Präfixe akzeptiert, nicht-deterministisch entscheidet, ob das gefunden Präfix zum Wort $w$ gehört.
+Damit akzeptiert der Automat $A$ ein Eingabewort $w$ genau dann, wenn $w\in L\ff W$
 \end{proof}
-
+\newpage
 \subsection{Kontextfreiheit}
 
 \subsubsection{deterministisch kontextfrei}
 
-Es existieren deterministisch kontextfreie Sprachen $L,W$, sodass $L\ff W$ nicht deterministisch kontextfrei ist!\\\\
+Es existieren deterministisch kontextfreie Sprachen $L,W$, sodass $L\ff W$ nicht deterministisch kontextfrei ist.\\\\
 Sei $L=\{a^nb^nc^i:i,n>0\}$ und $W=\{a^ib^nc^n:i,n>0\}$. Sowohl $L$ als auch $W$ sind deterministische, kontextfreie und auch lineare Sprachen, da es je einen deterministischen Kellerautomaten gibt, der $L$ sowie $W$ akzeptiert und eine es lineare Grammatiken $G_L$ und $G_W$ gibt, sodass $L(G_L) = L$ und $L(G_W) = W$ gilt.\\
-Betrachtet man sich nun ein Wort $u\in L\ff W$ so muss $u$ laut Definition folgende Struktur besitzen $u\in \min( l\cdot X^* \cap W)\textit{ für ein }l \in L$.
-Damit sieht man leicht, dass $L\ff W= \{a^nb^nc^n:n>0\}$ und $\{a^nb^nc^n:n>0\}$ ist bekanntlich nicht kontextfrei, also auch nicht deterministisch kontextfrei
-
+Betrachtet man sich nun ein Wort $u\in L\ff W$ so muss $u$ laut Definition folgende Struktur besitzen $u\in \min( v\cdot X^* \cap W)\textit{ für ein }v \in L$.
+Damit sieht man leicht, dass $L\ff W= \{a^nb^nc^n:n>0\}$ und diese Sprache ist bekanntlich nicht kontextfrei, also auch nicht deterministisch kontextfrei
+\newpage
 \subsection{Entscheidbarkeit}
 \subsubsection{L und W entscheidbar}
 Seien $L$ und $W$ (Turing)entscheidbar, so ist auch $L\ff W$ entscheidbar.\\\\
@@ -62,7 +60,7 @@ Die Turing Maschine $T$ entscheidet $L\ff W$ nach folgendem Algorithmus:\\
 \STATE $T$ rejects
 \end{algorithmic}
 \end{algorithm}
-
+\newpage
 \subsubsection{L akzeptierbar, W entscheidbar}
 
 Sei $w$ die Eingabe. Es soll $w$ akzeptiert werden, wenn $w\in L\ff W$, wobei $L$ akzeptierbar und nicht entscheidbar und $W$ entscheidbar.\\
@@ -78,17 +76,14 @@ Dazu zählt man $l\in L$ auf und prüft für alle $u$ mit $l\sqsubseteq u\sqsubset 
 \STATE $T$ rejects
 \ENDIF
 \WHILE{true} 
-\STATE zähle ein $l\in L$ auf
-\IF{  l\in\pref(\{w\})$ }
+\STATE zähle ein $u\in L$ auf
+\IF{  $u\in\pref(\{w\})$ }
 \STATE $v := w$
-\WHILE{$v\neq l$}
+\WHILE{$v\neq u$}
 \STATE $v := w'$ mit $w'\cdot x = v,\, x\in X$
-\IF{$v\in W$}
-\STATE break
-\ENDIF
-
+\STATE exit WHEN $v\in W$
 \ENDWHILE
-\IF{$v=l$}
+\IF{$v=u$}
 \STATE $T$ accepts
 \ENDIF
 \ENDIF
@@ -99,11 +94,10 @@ Dazu zählt man $l\in L$ auf und prüft für alle $u$ mit $l\sqsubseteq u\sqsubset 
 
 \subsubsection{L entscheidbar, W akzeptierbar}
 
-Sei $L$ entscheidbar und $W$ aufzählbar, so ist $L\ff W$ nicht notwendigerweise aufzählbar.\\
+Sei $L$ entscheidbar und $W$ aufzählbar, so ist $L\ff W$ nicht notwendig aufzählbar.\\
 \begin{proof}
-Bemerkung: $A$ ist aufzählbar, aber nicht entscheidbar\\\\
-Sei $W=\{0^{n+1}\ 1^{n+1} : n\in \mathbb{N} \} \cup \{0^{n+1}\ 1 : n\in A \}$, also $W$ ist aufzählbar und sei $L=\{0\}$.\\
-So ist $L\ff W = 0 \ff W = \{0^{n+1}\ 1^{n+1} : n\in\mathbb{N} \wedge n\notin A\} \cup \{0^{n+1}\ 1:n\in \mathbb{N} \wedge n\in A\}$. 
-Angenommen $0\ff W$ wäre aufzählbar, so müsste der Schnitt mit einer aufzählbaren Sprache wieder aufzählbar sein. 
-Sei $V = \{0^n\ 1^n : n\in\mathbb{N}\}$ offensichtlich aufzählbar. Dann ergibt sich aber für $0\ff W \cap V = \{0^{n+1}\ 1^{n+1} : n\in\mathbb{N} \wedge n\notin A\}$, was nicht aufzählbar ist.
+Wir wählen ein $A\subseteq \mathbb{N}$ welches aufzählbar, aber nicht entscheidbar ist und
+setzen $W=\{0^{n+1}\ 1^{n+1} : n\in \mathbb{N} \} \cup \{0^{n+1}\ 1 : n\in A \}$. Also ist $W$ aufzählbar.
+Betrachten wir nun $L\ff W = 0 \ff W = \{0^{n+1}\ 1^{n+1} : n\in\mathbb{N} \wedge n\notin A\} \cup \{0^{n+1}\ 1:n\in \mathbb{N} \wedge n\in A\}$. 
+Angenommen $0\ff W$ wäre aufzählbar, so müsste $0\ff W\cap V = \{0^{n+1}\ 1^{n+1} : n\in \mathbb{N} \wedge n\notin A\}$ wiederum aufzählbar sein. Weil aber laut Vorraussetzung $A$ nicht entscheidbar ist, kann $X^*\backslash A$ nicht aufzählbar sein. Widerspruch zur Annahme.
 \end{proof}
