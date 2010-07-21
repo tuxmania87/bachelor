@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2009.11.29)  16 JUL 2010 10:36
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2009.11.29)  21 JUL 2010 11:14
 entering extended mode
 **C:/Users/Robert/Desktop/ba/bachelor.tex
 (C:/Users/Robert/Desktop/ba/bachelor.tex
@@ -373,11 +373,13 @@ driver: pdftex
 \c@bew=\count120
 \c@gleich=\count121
 \c@eigen=\count122
-LaTeX Font Info:    Try loading font information for U+msa on input line 36.
+\c@folg=\count123
+\c@beispiel=\count124
+LaTeX Font Info:    Try loading font information for U+msa on input line 38.
  ("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 36.
+LaTeX Font Info:    Try loading font information for U+msb on input line 38.
 
 ("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
@@ -394,16 +396,16 @@ Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)            on input line 3.
 Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)           `sectioning' that is an alias of element `disposition'
-(scrartcl)            on input line 7.
-Class scrartcl Info: You've told me to use the font selection of the element
-(scrartcl)           `sectioning' that is an alias of element `disposition'
 (scrartcl)            on input line 8.
 Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)           `sectioning' that is an alias of element `disposition'
-(scrartcl)            on input line 16.
+(scrartcl)            on input line 9.
 Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)           `sectioning' that is an alias of element `disposition'
 (scrartcl)            on input line 17.
+Class scrartcl Info: You've told me to use the font selection of the element
+(scrartcl)           `sectioning' that is an alias of element `disposition'
+(scrartcl)            on input line 18.
 )
 \tf@toc=\write3
  [2]
@@ -417,8 +419,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-[3]) [4] (C:\Users\Robert\Desktop\ba\teil1.tex [5] [6]) [7]
-(C:\Users\Robert\Desktop\ba\teil2.tex
+[3]) [4] (C:\Users\Robert\Desktop\ba\teil1.tex [5] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 102--104
+
+ []
+
+) [7] (C:\Users\Robert\Desktop\ba\teil2.tex
 Underfull \hbox (badness 10000) in paragraph at lines 22--25
 
  []
@@ -497,44 +503,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--38
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--73
+Underfull \hbox (badness 10000) in paragraph at lines 68--70
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--73
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--73
+Underfull \hbox (badness 10000) in paragraph at lines 102--104
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 74--78
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 90--92
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 92--97
+Underfull \hbox (badness 10000) in paragraph at lines 104--109
 
  []
 
 ) [12] [13] (C:\Users\Robert\Desktop\ba\bachelor.aux) ) 
 Here is how much of TeX's memory you used:
- 4121 strings out of 495269
- 56515 string characters out of 3179644
- 138452 words of memory out of 3000000
- 7249 multiletter control sequences out of 15000+200000
- 13997 words of font info for 54 fonts, out of 3000000 for 9000
+ 4135 strings out of 495269
+ 56623 string characters out of 3179644
+ 140485 words of memory out of 3000000
+ 7264 multiletter control sequences out of 15000+200000
+ 13829 words of font info for 53 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 35i,10n,35p,383b,509s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 35i,10n,35p,383b,659s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/
 MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files (x86)/Mi
 KTeX 2.8/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/MiKT
@@ -542,18 +533,16 @@ eX 2.8/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX
  2.8/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.
 8/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.8/f
 onts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.8/font
-s/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/ty
-pe1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/
-public/amsfonts/cm/cmssbx10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/
-public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/pu
-blic/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/publi
-c/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/
-amsfonts/cm/cmtt10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/am
-sfonts/symbols/msam10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public
-/amsfonts/symbols/msbm10.pfb>
-Output written on bachelor.pdf (13 pages, 201269 bytes).
+s/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/ty
+pe1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type
+1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/p
+ublic/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/pub
+lic/amsfonts/symbols/msam10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/
+public/amsfonts/symbols/msbm10.pfb>
+Output written on bachelor.pdf (13 pages, 180842 bytes).
 PDF statistics:
- 105 PDF objects out of 1000 (max. 8388607)
+ 97 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

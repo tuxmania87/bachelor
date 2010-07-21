@@ -1,9 +1,10 @@
 \select@language {ngerman}
 \contentsline {section}{\numberline {1}Einleitung}{3}
-\contentsline {section}{\numberline {2}allgemeine Eigenschaften}{5}
-\contentsline {subsection}{\numberline {2.1}Gilt f\"ur alle Sprachen}{5}
-\contentsline {subsection}{\numberline {2.2}Konkatenation}{7}
-\contentsline {subsection}{\numberline {2.3}Gilt nicht...}{7}
+\contentsline {section}{\numberline {2}Eigenschaften}{5}
+\contentsline {subsection}{\numberline {2.1}Allgemeines}{5}
+\contentsline {subsection}{\numberline {2.2}grundlegende Beziehungen}{5}
+\contentsline {subsection}{\numberline {2.3}Konkatenation}{7}
+\contentsline {subsection}{\numberline {2.4}Gilt nicht...}{7}
 \contentsline {section}{\numberline {3}Eigenschaften bei Sprachen spezieller Gestalt}{8}
 \contentsline {section}{\numberline {4}Abgeschlossenheit in der CHOMSKY-Hierachie}{10}
 \contentsline {subsection}{\numberline {4.1}Regularit\"at}{10}

@@ -65,25 +65,37 @@ Die Turing Maschine $T$ entscheidet $L\ff W$ nach folgendem Algorithmus:\\
 
 \subsubsection{L akzeptierbar, W entscheidbar}
 
-Sei $w$ die Eingabe. Es soll $w$ akzeptiert werden, wenn $w\in L\ff W$ ist, wobei $L$ akzeptierbar und $W$ entscheidbar ist.\\\\
-Vorgehensweise:\\
-Zunächst wird geprüft ob $w\notin W$ liegt, falls das der Fall ist, so kann nach Definiton nicht akzeptiert werden.\\
-Nun werden alle Präfixe von $w$ auf jeweils ein Band geschrieben, sodass man bei $\vert w\vert = n$, $n$-Bänder benötigt.
-Dann wird in einer Endlosschleife jeweils auf jedem Band die Maschine die $L$-akzeptiert ausgeführt.\\\\
+Sei $w$ die Eingabe. Es soll $w$ akzeptiert werden, wenn $w\in L\ff W$, wobei $L$ akzeptierbar und nicht entscheidbar und $W$ entscheidbar.\\
+Dazu zählt man $l\in L$ auf und prüft für alle $u$ mit $l\sqsubseteq u\sqsubset w$, ob ein $u \in W$ liegt. Sollte dies der Fall sein, darf man nicht akzeptieren. Dann wird ein weiteres $l$ aufgezählt und der Algorithmus beginnt von vorn.\\
 
-Notiz: $\vert w\vert = n$\\
-1. wenn $w\notin W$, laufe in Endlosschleife\\
-2. Kopiere alle $u$ mit $u\sqsubset w$ auf jeweils ein Band.\\
-3. \\
-\begin{verbatim}
-while(true) do
-  for(i=1 to n) do 
-    if(T_W accepts on tape i) T rejects
-    do 1 takt with $T_L$ on tape i, if T_W accepts then T accept
-  endfor
-endwhile
-\end{verbatim}
+\begin{algorithm}
+\caption{akzeptiere $L\ff W$, Input $w$}
+\label{split2}
+\begin{algorithmic}
+%\REQUIRE Menge X, int stufe
+%Input: w
+\IF{($w \notin W$)}  
+\STATE $T$ rejects
+\ENDIF
+\WHILE{true} 
+\STATE zähle ein $l\in L$ auf
+\IF{  l\in\pref(\{w\})$ }
+\STATE $v := w$
+\WHILE{$v\neq l$}
+\STATE $v := w'$ mit $w'\cdot x = v,\, x\in X$
+\IF{$v\in W$}
+\STATE break
+\ENDIF
 
+\ENDWHILE
+\IF{$v=l$}
+\STATE $T$ accepts
+\ENDIF
+\ENDIF
+\ENDWHILE
+
+\end{algorithmic}
+\end{algorithm}
 
 \subsubsection{L entscheidbar, W akzeptierbar}
 
@@ -93,5 +105,5 @@ Bemerkung: $A$ ist aufzählbar, aber nicht entscheidbar\\\\
 Sei $W=\{0^{n+1}\ 1^{n+1} : n\in \mathbb{N} \} \cup \{0^{n+1}\ 1 : n\in A \}$, also $W$ ist aufzählbar und sei $L=\{0\}$.\\
 So ist $L\ff W = 0 \ff W = \{0^{n+1}\ 1^{n+1} : n\in\mathbb{N} \wedge n\notin A\} \cup \{0^{n+1}\ 1:n\in \mathbb{N} \wedge n\in A\}$. 
 Angenommen $0\ff W$ wäre aufzählbar, so müsste der Schnitt mit einer aufzählbaren Sprache wieder aufzählbar sein. 
-Sei $L_A = \{0^n\ 1^n : n\in\mathbb{N}\}$ offensichtlich aufzählbar. Dann ergibt sich aber für $0\ff W \cap L_A = \{0^{n+1}\ 1^{n+1} : n\in\mathbb{N} \wedge n\notin A\}$, was nicht aufzählbar ist.
+Sei $V = \{0^n\ 1^n : n\in\mathbb{N}\}$ offensichtlich aufzählbar. Dann ergibt sich aber für $0\ff W \cap V = \{0^{n+1}\ 1^{n+1} : n\in\mathbb{N} \wedge n\notin A\}$, was nicht aufzählbar ist.
 \end{proof}
