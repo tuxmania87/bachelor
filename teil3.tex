@@ -1,11 +1,11 @@
 \subsection{Regularität}
 \begin{satz}
-Sind $L$ und $W$ regul\"ar, so ist auch $L\ff W$ regul\"ar.
+Sind $L$ und $W$ regul\"are Sprachen, so ist auch $L\ff W$ regul\"ar.
 \end{satz}
 Der nicht-deterministische Automat $A_L= (X,Z,z_{0},\delta_L,Z_f)$ akzeptiere $L$, der deterministische Automat $A_W = (X,S,s_{0},f,S_{f})$ akzeptiere $W$.
 Wir konstruieren einen nicht-determninistischen Automaten $A$, der $L\ff W$ akzeptiert \\\\Arbeitsweise:\\
-$A_L$ und $A_W$ lesen das Wort $w$ parallel. Falls $A_L$ ein Präfix $v$ von $w$ akzeptiert, wählt $A$ nicht-deterministisch aus ob Schritt 2 aktiviert wird oder nicht.\\
-Wird Schritt zwei aktiviert, so liest $A_W$ das Wort $w$ weiter, während $A_L$ in einem Ruhezustand $z_f'$ verweilt. Akzeptiert $A_W$ nun ein Präfix $v',\ v\sqsubseteq v'\sqsubset w$, so lehnt $A$ das Eingabewort $w$ ab. Sollte der Automat $A_W$ kein solches Präfix $v'$ akzeptieren, aber das Eingabewort $w$, so akzeptiert auch $A$.\\
+$A_L$ und $A_W$ lesen das Wort $w$ parallel. Falls $A_L$ ein Präfix $v$ von $w$ akzeptiert, wählt $A$ nicht-deterministisch aus ob Schritt zwei aktiviert wird oder nicht.\\
+Wird Schritt zwei aktiviert, so liest $A_W$ das Wort $w$ weiter, während $A_L$ in einem Ruhezustand $z_f'$ verweilt. Akzeptiert $A_W$ nun ein Präfix $v',\ v\sqsubseteq v'\sqsubset w$, so lehnt $A$ das Eingabewort $w$ ab. Findet der Automat $A_W$ kein solches Präfix $v'$ und akzeptiert das Eingabewort $w$, so akzeptiert auch $A$.\\
 
 $A = (X,Z\cup \{ z_f'\}\times S\cup \{ s_x\}, (z_{0},s_{0} ), \delta , \{ (z_f',s') : s'\in S_f \} ), s_x\notin S$
 mit\\\\
@@ -30,9 +30,14 @@ Damit sieht man leicht, dass $L\ff W= \{a^nb^nc^n:n>0\}$ und diese Sprache ist b
 \newpage
 \subsection{Entscheidbarkeit}
 \subsubsection{L und W entscheidbar}
-Seien $L$ und $W$ (Turing)entscheidbar, so ist auch $L\ff W$ entscheidbar.\\\\
-Seien die Turing Maschinen $T_L$ und $T_W$.\\
-Die Turing Maschine $T$ entscheidet $L\ff W$ nach folgendem Algorithmus:\\
+
+\begin{satz}
+Sind $L$ und $W$ entscheidbare Sprachen, so ist auch $L\ff W$ entscheidbar.
+\end{satz}
+
+Es gibt die Turing Maschinen $T_L$ mit $L(T_L)=L$ und $T_W$ mit $L(T_W) = W$.\\
+Vom Eingabewort $w$ wird in jedem Schleifendurchlauf ein Buchstabe hinten abgeschnitten und damit werden schrittweise alle Präfixe $v'$ von $w$ untersucht.
+Gilt nun $v'\in W$ so lehnen wir ab, weil ein kürzeres Wort aus $W$ gefunden wurde. Gilt $v'\in L$ so akzeptieren wir.
 
 \begin{algorithm}
 \caption{entscheide $L\ff W$, Input $w$}
@@ -62,9 +67,10 @@ Die Turing Maschine $T$ entscheidet $L\ff W$ nach folgendem Algorithmus:\\
 \end{algorithm}
 \newpage
 \subsubsection{L akzeptierbar, W entscheidbar}
-
-Sei $w$ die Eingabe. Es soll $w$ akzeptiert werden, wenn $w\in L\ff W$, wobei $L$ akzeptierbar und nicht entscheidbar und $W$ entscheidbar.\\
-Dazu zählt man $l\in L$ auf und prüft für alle $u$ mit $l\sqsubseteq u\sqsubset w$, ob ein $u \in W$ liegt. Sollte dies der Fall sein, darf man nicht akzeptieren. Dann wird ein weiteres $l$ aufgezählt und der Algorithmus beginnt von vorn.\\
+\begin{satz}
+Ist $L$ eine aufzählbare Sprache und $W$ eine entscheidbare Sprache, so ist $L\ff W$ aufzählbar.
+\end{satz}
+Sei $w$ die Eingabe. Wir  zählen $v\in L$ auf und prüfen für alle $u$ mit $v\sqsubseteq u\sqsubset w$, ob ein $u \in W$ liegt. Sollte dies der Fall sein, darf man für das aktuelle $v$ nicht akzeptieren, daher wird ein neues $v\in L$ aufgezählt und der Algorithmus läuft weiter. Gilt für kein solches $u$ die Beziehung $u\in W$, so akzeptieren wir.
 
 \begin{algorithm}
 \caption{akzeptiere $L\ff W$, Input $w$}
@@ -94,10 +100,12 @@ Dazu zählt man $l\in L$ auf und prüft für alle $u$ mit $l\sqsubseteq u\sqsubset 
 
 \subsubsection{L entscheidbar, W akzeptierbar}
 
-Sei $L$ entscheidbar und $W$ aufzählbar, so ist $L\ff W$ nicht notwendig aufzählbar.\\
+\begin{satz}
+Sei $L$ eine entscheidbare Sprache und $W$ eine aufzählbare Sprache, so ist $L\ff W$ nicht notwendig aufzählbar.
+\end{satz}
 \begin{proof}
 Wir wählen ein $A\subseteq \mathbb{N}$ welches aufzählbar, aber nicht entscheidbar ist und
 setzen $W=\{0^{n+1}\ 1^{n+1} : n\in \mathbb{N} \} \cup \{0^{n+1}\ 1 : n\in A \}$. Also ist $W$ aufzählbar.
 Betrachten wir nun $L\ff W = 0 \ff W = \{0^{n+1}\ 1^{n+1} : n\in\mathbb{N} \wedge n\notin A\} \cup \{0^{n+1}\ 1:n\in \mathbb{N} \wedge n\in A\}$. 
-Angenommen $0\ff W$ wäre aufzählbar, so müsste $0\ff W\cap V = \{0^{n+1}\ 1^{n+1} : n\in \mathbb{N} \wedge n\notin A\}$ wiederum aufzählbar sein. Weil aber laut Vorraussetzung $A$ nicht entscheidbar ist, kann $X^*\backslash A$ nicht aufzählbar sein. Widerspruch zur Annahme.
+Angenommen $0\ff W$ wäre aufzählbar, so müsste $0\ff W\cap \{0^n\ 1^n : n\in \mathbb{N}\} = \{0^{n+1}\ 1^{n+1} : n\in \mathbb{N} \wedge n\notin A\}$ wiederum aufzählbar sein. Weil aber laut Vorraussetzung $A$ nicht entscheidbar ist, kann $X^*\backslash A$ nicht aufzählbar sein. Widerspruch zur Annahme.
 \end{proof}

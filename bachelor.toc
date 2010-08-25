@@ -2,10 +2,14 @@
 \contentsline {section}{\numberline {1}Einleitung}{3}
 \contentsline {section}{\numberline {2}Eigenschaften}{5}
 \contentsline {subsection}{\numberline {2.1}Allgemeines}{5}
-\contentsline {subsection}{\numberline {2.2}grundlegende Beziehungen}{5}
-\contentsline {subsection}{\numberline {2.3}Konkatenation}{7}
-\contentsline {subsection}{\numberline {2.4}Gilt nicht...}{7}
-\contentsline {section}{\numberline {3}Eigenschaften bei Sprachen spezieller Gestalt}{8}
+\contentsline {subsection}{\numberline {2.2}Eigenschaften der algebraischen Struktur $({2^X}^*,\triangleright )$}{5}
+\contentsline {subsubsection}{\numberline {2.2.1}Kommutativit\"at}{5}
+\contentsline {subsubsection}{\numberline {2.2.2}Assoziativit\"at}{5}
+\contentsline {subsubsection}{\numberline {2.2.3}Einselement}{5}
+\contentsline {subsubsection}{\numberline {2.2.4}Nullelement}{5}
+\contentsline {subsection}{\numberline {2.3}Boolsche Operationen}{6}
+\contentsline {subsection}{\numberline {2.4}Konkatenation}{8}
+\contentsline {section}{\numberline {3}Eigenschaften bei Sprachen spezieller Gestalt}{9}
 \contentsline {section}{\numberline {4}Abgeschlossenheit in der CHOMSKY-Hierachie}{10}
 \contentsline {subsection}{\numberline {4.1}Regularit\"at}{10}
 \contentsline {subsection}{\numberline {4.2}Kontextfreiheit}{11}

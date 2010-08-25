@@ -18,18 +18,6 @@
 
 Im nun vorliegenden Abschnitt wird die Operation Fortsetzung im Hinblick auf Sprachen mit spezieller Gestalt untersucht. Dabei geht es hauptsächlich um Sprachen der Form $\pref(L)$ oder $W\cdot X^*$.
 
-\begin{lem}\label{eingeschr1}
-Sei $V\subseteq X^*\backslash W\cdot X^*$, so gilt $V\ff W\cdot X^* = V\ff \min(W) $
-\end{lem}
-zu zeigen:\\\\
-1. $V\ff W\cdot X^* \subseteq V\ff \min(W) $\\
-2. $V\ff W\cdot X^* \supseteq V\ff \min(W) $\\
-\begin{proof}:\\
-zu 1. Die Inklusion $\supseteq$ folg aus $W\cdot X^* \supseteq \min(W)$.\\
-zu 2. Zum Beweis der der anderen Inklusion genügt es, diese für den Fall $V=\{v\}$ zu zeigen.\\
-Es sei nun $w\in v\ff W\cdot X^*$, wobei nach Vorraussetzung $v\notin W\cdot X^*$ gelte. Dann gilt für kein $u$, $v\sqsubseteq u\sqsubset w$ oder $u\sqsubseteq v$ die Beziehung $u\in W\cdot X^*$.\\
-Also haben wir $w\in\min(W\cdot X^*) = \min(W)$
-\end{proof}
 
 %\textbf{zu 1.} Es genügt die Eigenschaft zu zeigen für $V=\{v\}$\\
 %\begin{proof}
@@ -87,18 +75,24 @@ Zum Beweis der anderen Inklusion betrachten wir $w\in V\cdot X^* \ff W$. Es muss
 %$=\bigcup_{v\in V} \{w:w\in W \wedge v\sqsubseteq w\}$\\\\
 %\end{proof}
 
-\begin{eigen}
+\begin{eigen}\label{fooba}
 $W\ff V\cdot X^* = (W\ff\min(V)) \cup (W\cap V\cdot X^*)$
 \end{eigen}
-\begin{proof}
-$W$ lässt sich in 2 Teile aufspliten: $W= (W\cap V\cdot X^*) \cup (W\backslash V\cdot X^*)$
-Nun betrachten wir folgende 2 Fälle:\\\\
-Fall a) $w\in W\cap V\cdot X^*$\\
-Fall b) $w\in W\backslash V\cdot X^*$\\\\
-zu a): $w\ff V\cdot X^* \to w\in (W\cap V\cdot X^*)$\\
-zu b): Es gilt nach Vorraussetzung $\{w\} \subseteq X^*\backslash V\cdot X^*$ und mit Hilfe von Lemma~\ref{eingeschr1}
-erhalten wir $\{w\} \ff V\cdot X^* = \{w\} \ff \min(V)$
-\\Daraus folgt: $$W\ff V\cdot X^* = (W\ff\min(V)) \cup (W\cap V\cdot X^*)$$
+Zum Beweis von Eigenschaft \ref{fooba} benutzen wir
+\begin{lem}\label{eingeschr1}
+Sei $L\subseteq X^*\backslash W\cdot X^*$, so gilt $L\ff W\cdot X^* = L\ff \min(W) $
+\end{lem}
+\begin{proof}[Beweis Lemma \ref{eingeschr1}]:\\
+Es gilt die grundlegende Beziehung: $\forall w\in \min(W) \not\exists w'\in W\cdot X^* : w'\sqsubset w$ . Aus dieser Beziehung folgt unmittelbar $u\in L\ff \min(W) \to u\in L\ff W\cdot X^*$.\\
+Zum Beweis der der anderen Inklusion genügt es, diese für den Fall $L=\{v\}$ zu zeigen.\\
+Es sei nun $w\in v\ff W\cdot X^*$, wobei nach Vorraussetzung $v\notin W\cdot X^*$ gelte. Dann gilt für kein $u$, $v\sqsubseteq u\sqsubset w$ oder $u\sqsubseteq v$ die Beziehung $u\in W\cdot X^*$.\\
+Also haben wir $w\in\min(W\cdot X^*) = \min(W)$
+\end{proof}
+
+\begin{proof}[Beweis von Eigenschaft \ref{fooba}]
+Die Fortsetzung von $W$ in $\cdot X^*$ lässt sich in zwei Teile aufspalten: $W\ff V\cdot X^* = (W\backslash V\cdot X^*) \ff V\cdot X^* \cup (W\cap V\cdot X^*)$.\\
+Nun setzen wir $V' = W\backslash V\cdot X^*$ so, dass  $V'\subseteq X^*\backslash V\cdot X^*$ gilt. Mit Lemma \ref{eingeschr1} erhalten wir
+$W\ff V\cdot X^* = W\backslash V\cdot X^*  \ff \min(V\cdot X^*) \cup (W\cap V\cdot X^*) = W \ff \min(V) \cup (W\cap V\cdot X^*)$.
 \end{proof}
 
 

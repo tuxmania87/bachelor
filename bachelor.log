@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2009.11.29)  21 JUL 2010 17:58
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2009.11.29)  25 AUG 2010 15:55
 entering extended mode
 **C:/Users/Robert/Desktop/ba/bachelor.tex
 (C:/Users/Robert/Desktop/ba/bachelor.tex
@@ -396,16 +396,16 @@ Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)            on input line 3.
 Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)           `sectioning' that is an alias of element `disposition'
-(scrartcl)            on input line 8.
+(scrartcl)            on input line 12.
 Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)           `sectioning' that is an alias of element `disposition'
-(scrartcl)            on input line 9.
+(scrartcl)            on input line 13.
 Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)           `sectioning' that is an alias of element `disposition'
-(scrartcl)            on input line 17.
+(scrartcl)            on input line 21.
 Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)           `sectioning' that is an alias of element `disposition'
-(scrartcl)            on input line 18.
+(scrartcl)            on input line 22.
 )
 \tf@toc=\write3
  [2]
@@ -419,32 +419,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-[3]) [4] (C:\Users\Robert\Desktop\ba\teil1.tex [5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 102--104
-
- []
-
-) [7] (C:\Users\Robert\Desktop\ba\teil2.tex
-Underfull \hbox (badness 10000) in paragraph at lines 24--27
+[3]) [4] (C:\Users\Robert\Desktop\ba\teil1.tex
+Underfull \hbox (badness 10000) in paragraph at lines 20--23
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--27
+Underfull \hbox (badness 10000) in paragraph at lines 24--26
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 94--101
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 94--101
+[5] [6] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 131--133
 
  []
 
-[8]) [9] (C:\Users\Robert\Desktop\ba\teil3.tex
+) [8] (C:\Users\Robert\Desktop\ba\teil2.tex) [9]
+(C:\Users\Robert\Desktop\ba\teil3.tex
 Underfull \hbox (badness 10000) in paragraph at lines 5--9
 
  []
@@ -469,52 +460,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--30
 
  []
 
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 33--36
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--36
-
- []
-
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 66--68
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--99
-
- []
-
-) [13] [14] (C:\Users\Robert\Desktop\ba\bachelor.aux) ) 
+[11] [12]) [13] [14] (C:\Users\Robert\Desktop\ba\bachelor.aux) ) 
 Here is how much of TeX's memory you used:
- 4136 strings out of 495269
- 56629 string characters out of 3179644
- 138446 words of memory out of 3000000
- 7265 multiletter control sequences out of 15000+200000
- 13829 words of font info for 53 fonts, out of 3000000 for 9000
+ 4145 strings out of 495269
+ 56720 string characters out of 3179644
+ 138490 words of memory out of 3000000
+ 7273 multiletter control sequences out of 15000+200000
+ 15721 words of font info for 60 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 35i,10n,35p,400b,585s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/
-MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files (x86)/Mi
-KTeX 2.8/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/MiKT
-eX 2.8/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX
- 2.8/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.
-8/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.8/f
-onts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.8/font
-s/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/ty
-pe1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type
-1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/p
-ublic/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/pub
-lic/amsfonts/symbols/msam10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/
-public/amsfonts/symbols/msbm10.pfb>
-Output written on bachelor.pdf (14 pages, 180924 bytes).
+ 35i,10n,35p,412b,585s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Fil
+es (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files
+ (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (
+x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x8
+6)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)
+/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/Mi
+KTeX 2.8/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTe
+X 2.8/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2
+.8/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.8/f
+onts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files (x86)/MiKTeX 2.8/f
+onts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fon
+ts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/
+type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/ty
+pe1/public/amsfonts/symbols/msam10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts
+/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on bachelor.pdf (14 pages, 197134 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
+ 104 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

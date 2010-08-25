@@ -1,49 +1,70 @@
 \subsection{Allgemeines}
 
 In diesem Abschnitt betrachten wir Eigenschaften der Operation der Fortsetzung von Sprachen.
-Hierbei werden insbesondere die Stabilität bzw. Monotonie bezüglich mengentheoretischen Operationen betrachtet.
+Hierbei wird zunächst die algebraische Struktur $({2^X}^*,\ff)$ untersucht. Anschliessend werden insbesondere die Stabilität bzw. Monotonie bezüglich mengentheoretischen Operationen betrachtet. 
 
-\subsection{grundlegende Beziehungen}
+\subsection{Eigenschaften der algebraischen Struktur $({2^X}^*,\ff)$}
+
+\subsubsection{Kommutativität}
+Die algebraische Struktur $A=({2^X}^*,\ff)$ ist nicht kommutativ. Um dies zu zeigen, wird ein Gegenbeispiel angegeben.
+\begin{beispiel}
+Es seien $L=\{b\}$ und $W=\{bb\}$. Dann haben wir $L\ff W = \{bb\}$, aber $W\ff L = \emptyset$. 
+\end{beispiel}
+\subsubsection{Assoziativität}
+Die algebraische Struktur $A=({2^X}^*,\ff)$ ist nicht assoziativ. Um dies zu zeigen wird wieder ein Gegenbeispiel angegeben.
+\begin{beispiel}
+Es seien $L=\{aa,bb\},\ V = \{aa,b\}$ und $W=\{aa,bb\}$. Dann haben wir $(L\ff V)\ff W = \{aa\} \ff W = \{aa\}$, aber $L\ff (V\ff W) = L\ff \{aa,bb\} = \{aa,bb\}$.
+\end{beispiel}
+
+\subsubsection{Einselement}
+Da die algebraische Struktur $A$ nicht kommutativ ist, werden bei der Untersuchung auf Einselemente sowohl linksneutrale, als auch rechtsneutrale Einselemente betrachtet.
+Wir betrachten zuerst ein linksneutrales Element $E_l$, so dass $E_l\ff L = L$ für alle $L\subseteq X^*$, gilt. Man erkennt leicht, dass $X^*$ ein solches Element ist, denn es gilt $X^*\ff L = L$.\\\\
+Analog betrachten wir nun ein rechtsneutrales Element $E_r$, so dass $L\ff E_r = L$ für alle $L\subseteq X^*$, gilt. Auch hier erkennt man leicht, dass $X^*$ ein solches Element ist, denn es gilt $L\ff X^* = L$ 
+\subsubsection{Nullelement}
+Die Suche nach dem Nullelement stellt sich als trivial dar. Wir suchen ein Nullelement $N$, so dass $L\ff N = N$ sowie $N\ff L = N$ für alle $L\subseteq X^*$ gilt. Man erkennt leicht, dass die leere Menge $\emptyset$ ein solches Nullelement darstellt, da $\emptyset \ff L = \emptyset$ und $L\ff \emptyset = \emptyset$ gelten.\\\\
+Damit kann die algebraische Struktur $A=({2^X}^*,\ff)$ aufgrund fehlender Assoziativität weder eine Gruppe noch eine Halbgruppe sein, besitzt aber Null- und Einselement.
+
+\subsection{Boolsche Operationen}
 
 Aus der Definition folgen direkt die Eigenschaften:
 
 \begin{eigen}\label{eig1}
-$\{w\} \ff L = \{w\}$, wenn $w\in L$\\
-$W\cap L \subseteq W\ff L \subseteq L$
+Es gilt genau dann $\{w\} \ff W = \{w\}$, wenn $w\in W$.\\
+$L\cap W \subseteq L\ff W \subseteq W$
 \end{eigen}
 
 \begin{eigen}\label{cupeig}
-$(W\cup V)\ff L = W\ff L\cup V\ff L$
+$(L\cup V)\ff W = L\ff W\cup V\ff W$
 \end{eigen}
 
-Aus Eigenschaft \ref{eig1} wissen wir, dass $W\cap L \subseteq W\ff L$. Man kann nun die Fortsetzung von $W$ in $L$ aufsplitten, sodass sich folgende Beziehung ergibt:
+Aus Eigenschaft \ref{eig1} wissen wir, dass $L\cap W \subseteq L\ff W$. Man kann nun die Fortsetzung von $L$ in $W$ aufsplitten, sodass sich folgende Beziehung ergibt:
 
 \begin{eigen}\label{basiseigen}
-$W\ff L = W\cap L \cup (W\backslash L) \ff L$
+$L\ff W = L\cap W \cup (L\backslash W) \ff W$
 \end{eigen}
 
 Aus der Eigenschaft \ref{basiseigen} folgt durch Einschränkung der Mengen $W$ bzw. $L$:
 
 \begin{folg}
-$W\subseteq L \to W\ff L = W\cap L = W$
+$L\subseteq W \leftrightarrow L\ff W = L\cap W = L$
 \end{folg}
 \begin{folg}
-$W\supseteq L \to W\ff L = W\cap L = L$
+$L\supseteq W \to L\ff W = L\cap W = W$
 \end{folg}
 
 
 Aus Eigenschaft \ref{cupeig} folgt:
 \begin{eigen}
-$W\ff L \to W\ff V \subseteq L \ff V$
+$L\ff W \to L\ff V \subseteq W \ff V$
 \end{eigen}
 
-Damit haben wir eine
+Damit erhalten wir die Inklusion:
 \begin{gleich}
-$(L\cap U) \ff V \subseteq (L\ff V) \cap (U\ff V)$
+$(L\cap V) \ff W \subseteq (L\ff W) \cap (V\ff W)$
 \end{gleich}
 Dabei muss nicht notwendig die Gleichheit gelten, wie das folgende Beispiel zeigt
 \begin{beispiel}
-Es seien $L= \{aa,bb\}\, ,U = \{aa,b\}\, ,V = \{aa,bb\}$. \\Dann haben wir $(L\cap U) \ff V = \{aa\} \subset \{aa,bb\} = (L\ff V) \cap (U\ff V)$
+Es seien $L= \{aa,bb\}\, ,V = \{aa,b\}\, ,W = \{aa,bb\}$. \\Dann haben wir $(L\cap V) \ff W = \{aa\} \subset \{aa,bb\} = (L\ff W) \cap (V\ff W)$
 \end{beispiel}
 
 %\begin{proof}
@@ -54,47 +75,55 @@ Es seien $L= \{aa,bb\}\, ,U = \{aa,b\}\, ,V = \{aa,bb\}$. \\Dann haben wir $(L\c
 %\end{proof}
 
 
-\begin{gleich}
-$L\ff (U\cup V)\subseteq (L\ff U) \cup (L\ff V)$
+\begin{gleich}\label{gl22}
+$L\ff (V\cup W)\subseteq (L\ff V) \cup (L\ff W)$
 \end{gleich}
-Zum Beweis bemühen wir die Beziehung aus 
-\begin{lem}
+Zum Beweis nutzen wir die folgende Beziehung.
+\begin{lem}\label{lem123}
 $\min (A\cup B) \subseteq \min A \cup \min B$
 \end{lem}
-\begin{proof}
+
+\begin{proof}[Beweis von Lemma \ref{lem123}]
+Sei $w\in \min (A\cup B)$. Dann ist $w$ in $A$ oder in $B$ enthalten. OBdA sei $w\in A$. Es gilt außerdem für alle $v\sqsubset w$, dass $v\notin (A\cup B)$, also insbesondere $v\notin A$. Nach Definition von $\min$ gilt also $w\in\min(A)$. Gleiches gilt analog, wenn man annimmt $w\in B$.
+\end{proof}
+\begin{proof}[Beweis von Gleichung \ref{gl22}]
 Es genügt, die Eigenschaft für $L=\{w\}$ zu zeigen.\\
 Es gilt $w \ff (W\cup V)=\min (w\cdot X^* \cap (W\cup V)) =\min ((w\cdot X^* \cap W) \cup (w\cdot X^* \cap V))$\\
 und mit Lemma 1 erhalten wir:\\
-$ w\ff (W\cup V) \subseteq \min (w\cdot X^* \cap W) \cup \min (w\cdot X^* \cap V)=(L\ff W)\cup (L\ff V)$
+$ w\ff (V\cup W) \subseteq \min (w\cdot X^* \cap V) \cup \min (w\cdot X^* \cap W)=(L\ff V)\cup (L\ff W)$
 \end{proof}
 Dabei muss nicht notwendig die Gleichheit gelten, wie das folgende Beispiel zeigt.
 \begin{beispiel}
-Es seien $L= \{a,b\}\, ,U =\{aaa\}\, ,V = \{bb,aa\}$. \\Dann haben wir $L\ff (U\cup V)=\{aa,bb\} \subset \{aa,bb,aaa\} = (L\ff U) \cup (L\ff V)$
+Es seien $L= \{a,b\}\, ,V =\{aaa\}\, ,W = \{bb,aa\}$. \\Dann haben wir $L\ff (V\cup W)=\{aa,bb\} \subset \{aa,bb,aaa\} = (L\ff V) \cup (L\ff W)$
 \end{beispiel}
 
 Eine ähnliche Beziehung ergibt sich für die Operation $\cup$
 
-\begin{gleich}
-$L\ff (U\cap V)\supseteq (L\ff U) \cap (L\ff V)$
+\begin{gleich}\label{eigen321}
+$L\ff (V\cap W)\supseteq (L\ff V) \cap (L\ff W)$
 \end{gleich}
 Zum Beweis bemühen wir die Beziehung aus 
-\begin{lem}
+\begin{lem}\label{lem321}
 $\min(A\cap B) \supseteq \min A \cap \min B$
 \end{lem}
 %\begin{lem}
 %$$L\ff U \cap L \ff V \stackrel{!}{=} \bigcup_{l\in L} (l\ff U \cap l\ff V)$$
 %\end{lem}
-\begin{proof}
+
+\begin{proof}[Beweis von Lemma \ref{lem321}]
+Sei $w\in (\min(A) \cap \min(B))$. Dann ist $w$ sowohl in $A$, als auch in $B$ enthalten. Außerdem gilt für alle $v$ mit $v\sqsubset w$, dass $v \notin A$ und dass $v \notin B$. Nach Definition von $\min$ gilt also $w\in \min(A\cap B)$.\emph{}
+\end{proof}
+\begin{proof}[Beweis von Eigenschaft \ref{eigen321}]
 Es genügt die Eigenschaft für $L=\{w\}$ zu zeigen.\\
-Es gilt $w\ff (U\cap V) = \min(w\cdot X^* \cap (U \cap V))= \min((w\cdot X^* \cap U) \cap (w\cdot X^* \cap V))$\\
+Es gilt $w\ff (V\cap W) = \min(w\cdot X^* \cap (V \cap W))= \min((w\cdot X^* \cap V) \cap (w\cdot X^* \cap W))$\\
 und mit Lemma 2 erhalten wir\\
-$ w\ff (U\cap V) \supseteq \min(w\cdot X^* \cap U) \cap \min(w\cdot X^* \cap V)$\\
-$=(L\ff U) \cap (L\ff V)$
+$ w\ff (V\cap W) \supseteq \min(w\cdot X^* \cap V) \cap \min(w\cdot X^* \cap W)$\\
+$=(L\ff V) \cap (L\ff W)$
 \end{proof}
 Dabei muss nicht notwendig die Gleichheit gelten, wie das folgende Beispiel zeigt
 \begin{beispiel}
-Es seien $L= \{a,b\}\, ,U =\{aaa,b,bb\}\, ,V = \{bb,aaa\}$\\
-Dann haben wir $L\ff (U\cap V) = \{bb,aaa\} \supset \{ aaa \} =(L\ff U) \cap (L\ff V)$
+Es seien $L= \{a,b\}\, ,V =\{aaa,b,bb\}\, ,W = \{bb,aaa\}$\\
+Dann haben wir $L\ff (V\cap W) = \{bb,aaa\} \supset \{ aaa \} =(L\ff V) \cap (L\ff W)$
 \end{beispiel}
 
 \newpage
@@ -104,29 +133,29 @@ Für die Konkatenation ergeben sich keine Eigenschaften allgemeingültiger Natur.\
 
 So gibt es Sprachen, bei denen die Gleichheit in folgender Weise gegeben ist:
 \begin{beispiel}
-Es seien  $L=\{e\}\quad ,U=\{a\}\quad ,V=\{b\} $, so erhalten wir \\
-$L\ff (U\cdot V) = \{ ab\} =  \{ab\} = (L\ff U) \cdot (L\ff V)$, also $L\ff (U\cdot V) = (L\ff U) \cdot (L\ff V)$
+Es seien  $L=\{e\}\quad ,V=\{a\}\quad ,W=\{b\} $, so erhalten wir \\
+$L\ff (V\cdot W) = \{ ab\} =  \{ab\} = (L\ff V) \cdot (L\ff W)$, also $L\ff (V\cdot W) = (L\ff V) \cdot (L\ff W)$
 \end{beispiel}
 weiterhin können wir Sprachen angeben, sodass Teilmengenbeziehung in folgender Weise existieren:
 \begin{beispiel}
-Es seien $L=\{a\}\quad ,U=\{aa\}\quad ,V=\{b,a\} $\\
-Dann erhalten wir $L\ff (U\cdot V) = \{aab,aaa\} \supset  \{aaa\} = (L\ff U) \cdot (L\ff V)$, also $L\ff (U\cdot V) \supset (L\ff U) \cdot (L\ff V)$.
+Es seien $L=\{a\}\quad ,V=\{aa\}\quad ,W=\{b,a\} $\\
+Dann erhalten wir $L\ff (V\cdot W) = \{aab,aaa\} \supset  \{aaa\} = (L\ff V) \cdot (L\ff W)$, also $L\ff (V\cdot W) \supset (L\ff V) \cdot (L\ff W)$.
 \end{beispiel}
 
 Das letzte Beispiel in diesem Abschnitt zeigt deutlich, dass keine allgemeingültigen Eigenschaften für die Operation $\cdot$ bezüglich $\ff$ existieren:
 \begin{beispiel}
-Es seien $L=\{aab,a\}\quad U=\{aa\}\quad V=\{b\}$\\
-Dann erhalten wir $L\ff (U\cdot V) = \{aab\} \neq \{aa\} = (L\ff U) \cdot (L\ff V)$, das bedeutet also, dass beide Seiten mengentheoretisch unvergleichbar sind, also 
-$L\ff (U\cdot V) \not\supset (L\ff U) \cdot (L\ff V)$, sowie $L\ff (U\cdot V) \not\subset (L\ff U) \cdot (L\ff V)$
+Es seien $L=\{aab,a\}\quad V=\{aa\}\quad W=\{b\}$\\
+Dann erhalten wir $L\ff (V\cdot W) = \{aab\} \neq \{aa\} = (L\ff V) \cdot (L\ff W)$, das bedeutet also, dass beide Seiten mengentheoretisch unvergleichbar sind, also 
+$L\ff (V\cdot W) \not\supset (L\ff V) \cdot (L\ff W)$, sowie $L\ff (V\cdot W) \not\subset (L\ff V) \cdot (L\ff W)$
 \end{beispiel}
-Betrachtet man nun die Konkatenation `vorn`, also die Beziehung $(L\cdot U)\ff V$ zu  $(L\ff V) \cdot (U\ff V)$, so sieht man leicht, dass es sich auf 
-der linken Seite der Gleichung um Wörter aus $V$ handelt die man vergleicht mit Wörtern aus $V^2$. \\Demnach treten hier Eigenschaften nur auf wenn $V$ eine ganz spezielle Gestalt hat.
-\subsection{Gilt nicht...}
-Folgt direkt aus den Gleichungen in 2.1
-$$L\ff (U\cup V)\supset (L\ff U) \cup (L\ff V)$$
-$$L\ff (U\cap V)\subset (L\ff U) \cap (L\ff V)$$
-$$L\ff (U\cdot V)\subset (L\ff U) \cdot (L\ff V)$$
-$$(L\cap U) \ff V \supset (L\ff V) \cap (U\ff V)$$
+Betrachtet man nun die Konkatenation `vorn`, also die Beziehung $(L\cdot V)\ff V$ zu  $(L\ff W) \cdot (V\ff W)$, so sieht man leicht, dass es sich auf 
+der linken Seite der Gleichung um Wörter aus $W$ handelt die man vergleicht mit Wörtern aus $W^2$. \\Demnach treten hier Eigenschaften nur auf wenn $W$ eine ganz spezielle Gestalt hat.
+%\subsection{Gilt nicht...}
+%%Folgt direkt aus den Gleichungen in 2.1
+%$$L\ff (U\cup V)\supset (L\ff U) \cup (L\ff V)$$
+%%$$L\ff (U\cap V)\subset (L\ff U) \cap (L\ff V)$$
+%$$L\ff (U\cdot V)\subset (L\ff U) \cdot (L\ff V)$$
+%$$(L\cap U) \ff V \supset (L\ff V) \cap (U\ff V)$$
 
 %\newpage
 %$$L\ff (U\cup V)\subset (L\ff U) \cup (L\ff V)$$
