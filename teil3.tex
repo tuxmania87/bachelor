@@ -2,19 +2,20 @@
 \begin{satz}
 Sind $L$ und $W$ regul\"are Sprachen, so ist auch $L\ff W$ regul\"ar.
 \end{satz}
+\begin{proof}
 Der nicht-deterministische Automat $A_L= (X,Z,z_{0},\delta_L,Z_f)$ akzeptiere $L$, der deterministische Automat $A_W = (X,S,s_{0},f,S_{f})$ akzeptiere $W$.
 Wir konstruieren einen nicht-determninistischen Automaten $A$, der $L\ff W$ akzeptiert \\\\Arbeitsweise:\\
-$A_L$ und $A_W$ lesen das Wort $w$ parallel. Falls $A_L$ ein Präfix $v$ von $w$ akzeptiert, wählt $A$ nicht-deterministisch aus ob Schritt zwei aktiviert wird oder nicht.\\
-Wird Schritt zwei aktiviert, so liest $A_W$ das Wort $w$ weiter, während $A_L$ in einem Ruhezustand $z_f'$ verweilt. Akzeptiert $A_W$ nun ein Präfix $v',\ v\sqsubseteq v'\sqsubset w$, so lehnt $A$ das Eingabewort $w$ ab. Findet der Automat $A_W$ kein solches Präfix $v'$ und akzeptiert das Eingabewort $w$, so akzeptiert auch $A$.\\
+Schritt Eins: $A_L$ und $A_W$ lesen das Wort $w$ parallel (\# 1). Falls $A_L$ ein Präfix $v$ von $w$ akzeptiert, wählt $A$ nicht-deterministisch aus ob Schritt zwei aktiviert wird oder nicht ( Nicht-Determinismus von $A_L$ ).\\
+Wird Schritt zwei aktiviert, so liest $A_W$ das Wort $w$ weiter, während $A_L$ in einem Ruhezustand $z_f'$ verweilt (\# 2). Akzeptiert $A_W$ nun ein Präfix $v'$ mit $v\sqsubseteq v'\sqsubset w\quad v'\in W$, so lehnt $A$ das Eingabewort $w$ ab. Dazu begibt sich $A$ in den Zustand $(z_f',s_x)$ aus dem keine Transition herausführt (\# 3). Findet der Automat $A_W$ kein solches Präfix $v'$ und akzeptiert das Eingabewort $w$ ( und kein Präfix von $w$), so akzeptiert auch $A$ und endet im Zustand $(z_f',s_x)$ (\# 4).\\
 
 $A = (X,Z\cup \{ z_f'\}\times S\cup \{ s_x\}, (z_{0},s_{0} ), \delta , \{ (z_f',s') : s'\in S_f \} ), s_x\notin S$
 mit\\\\
-$\delta = \{ ((z_i,s_i),x,(z_j,s_j)) : (z_i,x,z_j) \in \delta_L \wedge f(s_i,x)=s_j  \} \cup \\
- \{ ((z_i,s_i),x,(z_f',s_j)) : (z_i,x,z') \in \delta_L \wedge z'\in Z_f \wedge f(s_i,x)=s_j  \} \cup \\
- \{ ((z_f',s_i),x,(z_f',s_j)) : f(s_i,x)=s_j  \wedge s_i \notin S_f\} \cup  \\
- \{ ((z_f',s_i),x,(z_f',s_x)) : f(s_i,x)=s_j  \wedge s_i \in S_f\} 
+$\delta = \{ ((z_i,s_i),x,(z_j,s_j)) : (z_i,x,z_j) \in \delta_L \wedge f(s_i,x)=s_j  \} \cup\ \quad\quad$ \# 1 $\\
+ \{ ((z_i,s_i),x,(z_f',s_j)) : (z_i,x,z') \in \delta_L \wedge z'\in Z_f \wedge f(s_i,x)=s_j  \} \cup\quad\quad$ \# 2 $ \\
+ \{ ((z_f',s_i),x,(z_f',s_j)) : f(s_i,x)=s_j  \wedge s_i \notin S_f\} \cup\quad\quad$\# 3 $\\
+ \{ ((z_f',s_i),x,(z_f',s_x)) : f(s_i,x)=s_j  \wedge s_i \in S_f\}\quad\quad$\# 4 $
  $\\
-\begin{proof}
+
 Nach Konstruktion ist klar, dass der Automat $A$ nur Wörter aus $L\ff W$ akzeptiert. Er akzeptiert auch alle Wörter aus $L\ff W$, weil der Automat $A_L$, welcher die Präfixe akzeptiert, nicht-deterministisch entscheidet, ob das gefunden Präfix zum Wort $w$ gehört.
 Damit akzeptiert der Automat $A$ ein Eingabewort $w$ genau dann, wenn $w\in L\ff W$
 \end{proof}
@@ -24,21 +25,26 @@ Damit akzeptiert der Automat $A$ ein Eingabewort $w$ genau dann, wenn $w\in L\ff
 \subsubsection{deterministisch kontextfrei}
 
 Es existieren deterministisch kontextfreie Sprachen $L,W$, sodass $L\ff W$ nicht deterministisch kontextfrei ist.\\\\
-Sei $L=\{a^nb^nc^i:i,n>0\}$ und $W=\{a^ib^nc^n:i,n>0\}$. Sowohl $L$ als auch $W$ sind deterministische, kontextfreie und auch lineare Sprachen, da es je einen deterministischen Kellerautomaten gibt, der $L$ sowie $W$ akzeptiert und eine es lineare Grammatiken $G_L$ und $G_W$ gibt, sodass $L(G_L) = L$ und $L(G_W) = W$ gilt.\\
-Betrachtet man sich nun ein Wort $u\in L\ff W$ so muss $u$ laut Definition folgende Struktur besitzen $u\in \min( v\cdot X^* \cap W)\textit{ für ein }v \in L$.
+Sei $L=\{a^nb^nc^i:i,n>0\}$ und $W=\{a^ib^nc^n:i,n>0\}$. Sowohl $L$ als auch $W$ sind deterministische, kontextfreie und auch lineare Sprachen, da es je einen deterministischen Kellerautomaten gibt, der $L$ sowie $W$ akzeptiert und eine es lineare Grammatiken \\\\$G_L = (\{S,A,C\},\{a,b,c\},S,\{ (S,Cc),(C,Cc),(C,aAb),(A,aAb),(A,e)\})$ und \\$G_W = (\{S,A,B\},\{a,b,c\},S,\{ (S,aA),(A,aA),(A,bBc),(B,bBc),(B,e) \})$ gibt, sodass \\$L(G_L) = L$ und $L(G_W) = W$ gilt.\\\\
+Betrachten wir nun ein Wort $u\in L\ff W$ so muss $u$ laut Definition folgende Struktur besitzen $u\in \min( v\cdot X^* \cap W)\textit{ für ein }v \in L$.
 Damit sieht man leicht, dass $L\ff W= \{a^nb^nc^n:n>0\}$ und diese Sprache ist bekanntlich nicht kontextfrei, also auch nicht deterministisch kontextfrei
 \newpage
 \subsection{Entscheidbarkeit}
+In diesem Abschnitt betrachten wir die Erhaltung der Entscheidbarkeit bzw. der Aufzählbarkeit von Sprachen $L,W$ in Bezug auf deren Fortsetzung $L\ff W$. Dabei betrachten wir drei verschieden Fälle.
 \subsubsection{L und W entscheidbar}
 
-\begin{satz}
+\begin{satz}\label{entsch1}
 Sind $L$ und $W$ entscheidbare Sprachen, so ist auch $L\ff W$ entscheidbar.
 \end{satz}
-
-Es gibt die Turing Maschinen $T_L$ mit $L(T_L)=L$ und $T_W$ mit $L(T_W) = W$.\\
-Vom Eingabewort $w$ wird in jedem Schleifendurchlauf ein Buchstabe hinten abgeschnitten und damit werden schrittweise alle Präfixe $v'$ von $w$ untersucht.
-Gilt nun $v'\in W$ so lehnen wir ab, weil ein kürzeres Wort aus $W$ gefunden wurde. Gilt $v'\in L$ so akzeptieren wir.
-
+\begin{proof}
+Wir wissen, dass zu jeder entscheidbaren Sprache $L$ ein Algorithmus angegeben werden kann, welcher $L$ entscheidet. Daher konstruieren wir zum Beweis von Satz \ref{entsch1} einen Algorithmus welcher $L\ff W$ entscheidet.\\\\
+\textbf{Arbeitsweise des Algorithmus:}\\
+Zunächst wird geprüft ob $w\in W$, da dies eine zwingende Voraussetzung laut Definition der Operation Fortzsetung ist (\# 1).
+Jetzt wissen wir, dass $w\in W$. Gilt zusätzlich $w\in L$, so ist klar, dass $w\in L\ff W$ nach Eigenschaft \ref{klaro} (\# 2).\\\\
+Jetzt setzen wir $w'$ mit $w':=w$ als Arbeitskopie. Im folgenden Schleifendurchlauf schneiden wir mit $cut()$ den letzten Buchstaben von $w'$ ab (\# 3). 
+Gilt jetzt $w'\in W$ so müssen wir mit NEIN entscheiden, weil die Eingabe jetzt nicht mehr dem $\min$ Kriterium genügt.
+Anschließend wird geprüft ob $w'\in L\backslash W$ (\# 5) gilt. Wenn ja, dann haben wir ein das erste Präfix von $w$ gefunden und können für die Eingabe $w$ mit JA entscheiden.
+\\\\Ansonsten wird die Schleife solange weiter durchlaufen, bis $w'$ nur noch aus dem leeren Wort besteht, anschliessend wird abgelehnt, da kein Präfix von $v$ von $w$ gefunden wurde, welches in $L\backslash W$ liegt.
 \begin{algorithm}
 \caption{entscheide $L\ff W$, Input $w$}
 \label{split}
@@ -46,18 +52,19 @@ Gilt nun $v'\in W$ so lehnen wir ab, weil ein kürzeres Wort aus $W$ gefunden wur
 %\REQUIRE Menge X, int stufe
 %Input: w
 \IF{($w \notin W$)}  
-\STATE $T$ rejects
+\STATE $T$ rejects \COMMENT{\# 1}
 \ELSE
 \IF{($w \in L$)}
-\STATE $T$ accepts
+\STATE $T$ accepts  \COMMENT{\# 2}
 \ENDIF
 \ENDIF
-\STATE $w' = w$
+\STATE $w' = w$  \COMMENT{\# 3}
 \REPEAT
-\STATE $w' \leftarrow \mathit{cut}(w')$
+\STATE $w' \leftarrow \mathit{cut}(w')$ \COMMENT{\# 4}
 \IF{($w'\in W$)}
 \STATE $T$ rejects
 \ENDIF
+\COMMENT{\# 5}
 \IF{($w' \in L$)}
 \STATE $T$ accepts
 \ENDIF
@@ -65,12 +72,21 @@ Gilt nun $v'\in W$ so lehnen wir ab, weil ein kürzeres Wort aus $W$ gefunden wur
 \STATE $T$ rejects
 \end{algorithmic}
 \end{algorithm}
+
+\end{proof}
+
 \newpage
 \subsubsection{L akzeptierbar, W entscheidbar}
 \begin{satz}
 Ist $L$ eine aufzählbare Sprache und $W$ eine entscheidbare Sprache, so ist $L\ff W$ aufzählbar.
 \end{satz}
-Sei $w$ die Eingabe. Wir  zählen $v\in L$ auf und prüfen für alle $u$ mit $v\sqsubseteq u\sqsubset w$, ob ein $u \in W$ liegt. Sollte dies der Fall sein, darf man für das aktuelle $v$ nicht akzeptieren, daher wird ein neues $v\in L$ aufgezählt und der Algorithmus läuft weiter. Gilt für kein solches $u$ die Beziehung $u\in W$, so akzeptieren wir.
+\begin{proof}
+Wir konstruieren einen Algorithmus welcher die Eingabe $w$ akzeptiert genau dann, wenn $w\in L\ff W$.
+Ist $w\notin W$ so kann nach Definition auch nicht $w\in L\ff W$ gelten. \\\\Wir zählen nun ein Wort $u\in L$ auf (\# 1).
+Gilt nun $u\sqsubseteq w$, so wird eine Arbeitskopie $v$ mit $v:=w$ erstellt (\# 2). Im nächsten Schritt wird für alle Präfixe $v$ mit $u\sqsubseteq v\sqsubset w$ sukzessive geprüft ob $v\in W$ (\# 3). 
+\\\\Sollte dies der Fall sein, dann erfüllt das aufgezählte $u\in L$ nicht das Kriterium $u\in L\backslash W$. Die innere Schleife wird daher verlassen(\# 4). Ein neues $u\in L$ wird aufgezählt und der Algorithmus läuft mit diesem $u$ weiter.
+\\Gilt aber für alle Präfixe $v\notin W$, so erreicht die innere Schleife ihre Abbruchbedingung und wir akzeptieren die Eingabe $w$ (\# 5).
+
 
 \begin{algorithm}
 \caption{akzeptiere $L\ff W$, Input $w$}
@@ -82,22 +98,23 @@ Sei $w$ die Eingabe. Wir  zählen $v\in L$ auf und prüfen für alle $u$ mit $v\sqs
 \STATE $T$ rejects
 \ENDIF
 \WHILE{true} 
-\STATE zähle ein $u\in L$ auf
+\STATE zähle ein $u\in L$ auf \COMMENT{\# 1}
 \IF{  $u\in\pref(\{w\})$ }
-\STATE $v := w$
+\STATE $v := w$ \COMMENT{\# 2}
 \WHILE{$v\neq u$}
-\STATE $v := w'$ mit $w'\cdot x = v,\, x\in X$
-\STATE exit WHEN $v\in W$
+\STATE $v := w'$ mit $w'\cdot x = v,\, x\in X$ \COMMENT{\# 3}
+\STATE \textbf{EXIT IF} $v\in W$ \COMMENT{\# 4}
 \ENDWHILE
 \IF{$v=u$}
-\STATE $T$ accepts
+\STATE $T$ accepts \COMMENT{\# 5}
 \ENDIF
 \ENDIF
 \ENDWHILE
 
 \end{algorithmic}
 \end{algorithm}
-
+\end{proof}
+\newpage
 \subsubsection{L entscheidbar, W akzeptierbar}
 
 \begin{satz}

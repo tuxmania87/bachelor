@@ -24,60 +24,46 @@ Analog betrachten wir nun ein rechtsneutrales Element $E_r$, so dass $L\ff E_r =
 Die Suche nach dem Nullelement stellt sich als trivial dar. Wir suchen ein Nullelement $N$, so dass $L\ff N = N$ sowie $N\ff L = N$ für alle $L\subseteq X^*$ gilt. Man erkennt leicht, dass die leere Menge $\emptyset$ ein solches Nullelement darstellt, da $\emptyset \ff L = \emptyset$ und $L\ff \emptyset = \emptyset$ gelten.\\\\
 Damit kann die algebraische Struktur $A=({2^X}^*,\ff)$ aufgrund fehlender Assoziativität weder eine Gruppe noch eine Halbgruppe sein, besitzt aber Null- und Einselement.
 
-\subsection{Boolsche Operationen}
-
-Aus der Definition folgen direkt die Eigenschaften:
-
+\subsection{BOOLEsche Operationen}
+In diesem Abschnitt befassen wir uns mit den Zusammenhängen der mengentheoretischen Operationen $\cap,\cup$ bezüglich der Monotonie und der Stabilität der Operation Fortsetzung $\ff$.
+\\\\Aus der Definition folgt direkt die Eigenschaft:
 \begin{eigen}\label{eig1}
-Es gilt genau dann $\{w\} \ff W = \{w\}$, wenn $w\in W$.\\
+Es gilt genau dann $\{w\} \ff W = \{w\}$, wenn $w\in W$.
+\end{eigen}
+Es folgt ebenfalls eine generelle Inklusionsbeziehung:
+\begin{eigen}\label{klaro}
 $L\cap W \subseteq L\ff W \subseteq W$
 \end{eigen}
 
+\subsubsection{Monotonie im Hinterglied}
+
+Wir betrachten zunächst die Stabilität und Monotonie der Operation Fortsetzung in Verbindung der BOOLEsche Operationen $\cap$ und $\cup$ im Hinterglied.\\\\
+Da die Operation Fortsetzung einer Sprache $L$ in eine Sprache $W$ über die Vereinigung $\cup$ aller Wörter aus $L$ definiert wurde, folgt aus der Definition:
 \begin{eigen}\label{cupeig}
 $(L\cup V)\ff W = L\ff W\cup V\ff W$
 \end{eigen}
 
-Aus Eigenschaft \ref{eig1} wissen wir, dass $L\cap W \subseteq L\ff W$. Man kann nun die Fortsetzung von $L$ in $W$ aufsplitten, sodass sich folgende Beziehung ergibt:
-
-\begin{eigen}\label{basiseigen}
-$L\ff W = L\cap W \cup (L\backslash W) \ff W$
+Aus der Definition \ref{continuecup} und aus Eigenschaft \ref{cupeig} folgt:
+\begin{eigen}\label{fresh}
+$L\subseteq W \to L\ff V \subseteq W \ff V$
 \end{eigen}
 
-Aus der Eigenschaft \ref{basiseigen} folgt durch Einschränkung der Mengen $W$ bzw. $L$:
-
-\begin{folg}
-$L\subseteq W \leftrightarrow L\ff W = L\cap W = L$
-\end{folg}
-\begin{folg}
-$L\supseteq W \to L\ff W = L\cap W = W$
-\end{folg}
-
-
-Aus Eigenschaft \ref{cupeig} folgt:
+Betrachten wir nun $L\cap V \subseteq L$ und $L\cap V \subseteq V$, dann haben wir mit Eigenschaft \ref{fresh} die Inklusion:
 \begin{eigen}
-$L\ff W \to L\ff V \subseteq W \ff V$
-\end{eigen}
-
-Damit erhalten wir die Inklusion:
-\begin{gleich}
 $(L\cap V) \ff W \subseteq (L\ff W) \cap (V\ff W)$
-\end{gleich}
+\end{eigen}
 Dabei muss nicht notwendig die Gleichheit gelten, wie das folgende Beispiel zeigt
 \begin{beispiel}
 Es seien $L= \{aa,bb\}\, ,V = \{aa,b\}\, ,W = \{aa,bb\}$. \\Dann haben wir $(L\cap V) \ff W = \{aa\} \subset \{aa,bb\} = (L\ff W) \cap (V\ff W)$
 \end{beispiel}
 
-%\begin{proof}
-%$$w\in  (L\cap U)\ff V \to w\in V \wedge \exists p: p\sqsubseteq w \wedge p\in L \wedge p\in U \wedge p\textit{ ist minimal}$$
-%$$\to \underbrace{w\in V \wedge \exists p: p\sqsubseteq w \wedge p\in L \wedge p\textit{ ist minimal}}_{w\in L\ff V} 
-%\wedge \underbrace{w\in V \wedge \exists p: p\sqsubseteq w \wedge p\in U \wedge p\textit{ ist minimal}}_{w\in U\ff V} 
-%$$
-%\end{proof}
-
-
-\begin{gleich}\label{gl22}
+\newpage
+\subsubsection{Monotonie im Vorderglied}
+Anders als bei der vorherigen Betrachtung, leiten sich in diesem Abschnitt kaum Folgerungen direkt aus der Definition ab.
+So haben wir, im Gegensatz zu Eigenschaft \ref{cupeig}:
+\begin{eigen}\label{gl22}
 $L\ff (V\cup W)\subseteq (L\ff V) \cup (L\ff W)$
-\end{gleich}
+\end{eigen}
 Zum Beweis nutzen wir die folgende Beziehung.
 \begin{lem}\label{lem123}
 $\min (A\cup B) \subseteq \min A \cup \min B$
@@ -97,12 +83,12 @@ Dabei muss nicht notwendig die Gleichheit gelten, wie das folgende Beispiel zeig
 Es seien $L= \{a,b\}\, ,V =\{aaa\}\, ,W = \{bb,aa\}$. \\Dann haben wir $L\ff (V\cup W)=\{aa,bb\} \subset \{aa,bb,aaa\} = (L\ff V) \cup (L\ff W)$
 \end{beispiel}
 
-Eine ähnliche Beziehung ergibt sich für die Operation $\cup$
+Eine ähnliche Beziehung ergibt sich für die Operation $\cap$
 
 \begin{gleich}\label{eigen321}
 $L\ff (V\cap W)\supseteq (L\ff V) \cap (L\ff W)$
 \end{gleich}
-Zum Beweis bemühen wir die Beziehung aus 
+Zum Beweis nutzen wir die Beziehung.
 \begin{lem}\label{lem321}
 $\min(A\cap B) \supseteq \min A \cap \min B$
 \end{lem}
@@ -126,30 +112,75 @@ Es seien $L= \{a,b\}\, ,V =\{aaa,b,bb\}\, ,W = \{bb,aaa\}$\\
 Dann haben wir $L\ff (V\cap W) = \{bb,aaa\} \supset \{ aaa \} =(L\ff V) \cap (L\ff W)$
 \end{beispiel}
 
+Es gilt keine Monotonie im Vorderglied.
+\begin{eigen}
+$L\subseteq W \not\to V\ff L \subseteq V \ff W$
+\end{eigen}
+Wie das folgende Beispiel zeigt:
+\begin{beispiel}
+Sei $L=\{aaba\},W=\{aab,aaba\}$ und $V=\{a\}$, also $L\subseteq W$.\\
+Dann haben wir $V\ff L = \{aaba\} \not\subseteq V\ff W =\{aab\}$
+\end{beispiel}
+
+\subsubsection{Rest}
+Aus Eigenschaft \ref{eig1} wissen wir, dass $L\cap W \subseteq L\ff W$. Man kann nun die Fortsetzung von $L$ in $W$ aufsplitten, sodass sich folgende Beziehung ergibt:
+
+\begin{eigen}\label{basiseigen}
+$L\ff W = L\cap W \cup (L\backslash W) \ff W$
+\end{eigen}
+
+Wir bilden nun Inklusionsbeziehungen zwischen $L$ und $W$ und erhalten mit Eigenschaft \ref{basiseigen}, zwei Folgerungen.
+Zu beachten ist, dass in Folgerung \ref{folg1} eine "`genau dann wenn"' Beziehung gilt.
+
+\begin{folg}\label{folg1}
+$L\subseteq W \leftrightarrow L\ff W = L\cap W = L$
+\end{folg}
+\begin{folg}
+$L\supseteq W \to L\ff W = L\cap W = W$
+\end{folg}
+
+
+
+
+%\begin{proof}
+%$$w\in  (L\cap U)\ff V \to w\in V \wedge \exists p: p\sqsubseteq w \wedge p\in L \wedge p\in U \wedge p\textit{ ist minimal}$$
+%$$\to \underbrace{w\in V \wedge \exists p: p\sqsubseteq w \wedge p\in L \wedge p\textit{ ist minimal}}_{w\in L\ff V} 
+%\wedge \underbrace{w\in V \wedge \exists p: p\sqsubseteq w \wedge p\in U \wedge p\textit{ ist minimal}}_{w\in U\ff V} 
+%$$
+%\end{proof}
+
+
+
 \newpage
 \subsection{Konkatenation}
-Bisher wurden hauptsächlich die Operationen $\cap$ sowie $\cup$ in Verbindung mit $\ff$ betrachtet.
-Für die Konkatenation ergeben sich keine Eigenschaften allgemeingültiger Natur.\\
-
-So gibt es Sprachen, bei denen die Gleichheit in folgender Weise gegeben ist:
+Bisher wurden hauptsächlich die boolschen Operationen $\cap$ sowie $\cup$ in Verbindung mit der Operation Fortsetzung $\ff$ betrachtet.
+Nun betrachten wir ob spezielle Eigenschaften der Operation Fortsetzung mit der Konkatenation existieren.\\\\
+Es existieren Sprachen $L,V$ und $W$ derart, dass $L\ff (V\cdot W) = (L\ff V) \cdot (L\ff W)$ gilt.
 \begin{beispiel}
 Es seien  $L=\{e\}\quad ,V=\{a\}\quad ,W=\{b\} $, so erhalten wir \\
 $L\ff (V\cdot W) = \{ ab\} =  \{ab\} = (L\ff V) \cdot (L\ff W)$, also $L\ff (V\cdot W) = (L\ff V) \cdot (L\ff W)$
 \end{beispiel}
-weiterhin können wir Sprachen angeben, sodass Teilmengenbeziehung in folgender Weise existieren:
+Weiterhin existieren Sprachen derart, dass $L\ff (V\cdot W) \supset (L\ff V) \cdot (L\ff W)$ gilt.
 \begin{beispiel}
 Es seien $L=\{a\}\quad ,V=\{aa\}\quad ,W=\{b,a\} $\\
 Dann erhalten wir $L\ff (V\cdot W) = \{aab,aaa\} \supset  \{aaa\} = (L\ff V) \cdot (L\ff W)$, also $L\ff (V\cdot W) \supset (L\ff V) \cdot (L\ff W)$.
 \end{beispiel}
-
-Das letzte Beispiel in diesem Abschnitt zeigt deutlich, dass keine allgemeingültigen Eigenschaften für die Operation $\cdot$ bezüglich $\ff$ existieren:
+Es existieren Sprachen derart, dass $L\ff (V\cdot W) \subset (L\ff V)\cdot (L\ff W)$ gilt.
+\begin{beispiel}
+Es seien  $L=\{ab,e\}\quad ,V=\{aba,bab\}\quad ,W=\{e,aba,bab\} $, so erhalten wir \\
+$L\ff (V\cdot W) = L \ff \{aba,abaaba,ababab,bab,bababa,babbab\} = \{ aba,bab\}$ und $(L\ff V)\cdot (L\ff W) = \{aba,bab\} \cdot \{e,aba\} = \{aba,abaaba,bab,bababa\}$. 
+Also haben wir $L\ff (V\cdot W) \subset (L\ff V)\cdot (L\ff W)$
+\end{beispiel}
+Zuletzt existieren Sprachen derart, dass sowohl $L\ff (V\cdot W) \not\subset (L\ff V)\cdot (L\ff W)$ als auch $L\ff (V\cdot W) \not\supset (L\ff V)\cdot (L\ff W)$ gelten. Es gilt also eine mengentheoretische Unvergleichbarkeit.
 \begin{beispiel}
 Es seien $L=\{aab,a\}\quad V=\{aa\}\quad W=\{b\}$\\
 Dann erhalten wir $L\ff (V\cdot W) = \{aab\} \neq \{aa\} = (L\ff V) \cdot (L\ff W)$, das bedeutet also, dass beide Seiten mengentheoretisch unvergleichbar sind, also 
 $L\ff (V\cdot W) \not\supset (L\ff V) \cdot (L\ff W)$, sowie $L\ff (V\cdot W) \not\subset (L\ff V) \cdot (L\ff W)$
 \end{beispiel}
-Betrachtet man nun die Konkatenation `vorn`, also die Beziehung $(L\cdot V)\ff V$ zu  $(L\ff W) \cdot (V\ff W)$, so sieht man leicht, dass es sich auf 
-der linken Seite der Gleichung um Wörter aus $W$ handelt die man vergleicht mit Wörtern aus $W^2$. \\Demnach treten hier Eigenschaften nur auf wenn $W$ eine ganz spezielle Gestalt hat.
+Da wir für alle Inklusionsbeziehungen Sprachen gefunden haben, die diese erfüllen, so kann es keine Eigenschaft bezüglich der Inklusion geben, welche für alle Sprachen $L,V,W$ gelten würde.\\\\
+Betrachtet man nun die Konkatenation `vorn`, also die Beziehung $(L\cdot V)\ff W$ zu  $(L\ff W) \cdot (V\ff W)$, so sieht man leicht, dass es sich auf 
+der linken Seite der Gleichung um Wörter aus $W$ handelt die man vergleicht mit Wörtern aus $W^2$. \\
+Demnach treten hier Eigenschaften nur auf wenn $W$ eine ganz spezielle Gestalt hat, nämlich $W\subseteq W^2$ oder $W\supseteq W^2$
 %\subsection{Gilt nicht...}
 %%Folgt direkt aus den Gleichungen in 2.1
 %$$L\ff (U\cup V)\supset (L\ff U) \cup (L\ff V)$$
