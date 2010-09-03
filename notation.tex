@@ -1,0 +1,24 @@
+%notationen
+Mit $\mathbb{N}=\{0,1,2,3,..\}$ bezeichnen wir die Menge der natürlichen Zahlen. Sei $X$ ein Alphabet.
+Mit $X^*$ bezeichnen wir die Menge aller endlichen Wörter über dem Alphabet $X$, einschließlich des leeren Wortes $e$.
+Wir bezeichnen weiterhin die Menge $X^\omega$ als Menge aller unendlichen Wörter über dem Alphabet $X$.\\\\
+Für $w\in X^*$ und $v\in X^\omega$ bezeichnen wir $w\cdot v$ als deren Konkatenation. Für eine Sprache $W$ ist $W^*=\bigcup_{i\in\mathbb{N}} W^i$. Weiterhin bezeichnet $\vert w\vert$ die Länge des Wortes $w\in X^*$.
+Wir definieren die Präfixrelation $\sqsubseteq$ wie üblich mit $w\sqsubseteq b \Leftrightarrow w\cdot b' = b,\textit{ f{\"u}r ein }b'\in X^*$.
+Somit bildet $\pref(L) = \{v:v\sqsubseteq w \wedge w\in L\}$ alle Präfixe aller Wörter aus $L$.\\\\
+Weiterhin bezeichnen wir mit $\min(L) = \{w:w\in L \wedge \forall v( v\sqsubset w \to v\notin L)\}$ alle Wörter der Sprache $L$, in denen kein Wort Präfix eines anderen Wortes ist.
+Abschließend bezeichnen wir die Operation Fortsetzung einer Sprache $L$ in die Sprache $W$ als $L\ff W = \bigcup_{u\in L} \min(u\cdot X^* \cap W)$\\\\
+Wir definieren den $\delta$-Limes einer Wortmenge $W ^\delta$ wie in [St87] mit\\$W^\delta = \{\beta : \beta \in X^\omega \text{ und }\pref(\beta)\cap W \text{ ist unendlich}\}$
+% also eine unendliche Aneinanderreihung von Wörtern aus ....
+Die Eigenschaft (13) aus [St87] ist leich einzusehen: $(U \cup W)^\delta = U^\delta \cup W^\delta$.	Eine Sprache nennen wir eine $(\sigma,\delta)$-Teilmenge von $X^*$ genau dann, wenn für alle $\beta \in X^\omega$ entweder $\pref(\beta)\cap W$ oder $\pref(\beta)\backslash W$ endlich ist.
+Beispiele für $(\sigma,\delta)$-Teilmengen sind alle endlichen Sprachen und deren Komplemente. Weitere Beispiele sind Sprachen der Form $\pref(L)$ oder $W\cdot X^*$.\\
+Eine Eigenschaft für diese Teilmengen ist:
+\begin{satz}[St87]
+$\text{Sei }U\text{ eine }(\sigma,\delta)-\text{Teilmenge von }X^*, \text{ dann gilt:}$\\
+$(U\cap W)^\delta = U^\delta \cap W^\delta,\qquad \text{für alle }W\subseteq X^*$
+\end{satz}
+Die Operation Fortsetzung hat nun folgende Eigenschaft bezüglich des $\delta$-Limes.
+Während $(W\cap U)^\delta = W^\delta \cap U^\delta$ nur für $(\sigma,\delta)$-Teilemgen gilt, so gilt
+$(W\ff U)^\delta = W^\delta \cap U^\delta$ für sämtliche Sprachen.\\
+
+
+

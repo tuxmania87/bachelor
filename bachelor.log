@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.5.7)  2 SEP 2010 11:43
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.5.7)  3 SEP 2010 15:46
 entering extended mode
  %&-line parsing enabled.
 **bachelor.tex
@@ -387,11 +387,11 @@ driver: pdftex
 \c@eigen=\count124
 \c@folg=\count125
 \c@beispiel=\count126
-LaTeX Font Info:    Try loading font information for U+msa on input line 39.
+LaTeX Font Info:    Try loading font information for U+msa on input line 40.
  (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 39.
+LaTeX Font Info:    Try loading font information for U+msb on input line 40.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
@@ -410,159 +410,195 @@ Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)            on input line 4.
 Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)           `sectioning' that is an alias of element `disposition'
+(scrartcl)            on input line 15.
+Class scrartcl Info: You've told me to use the font selection of the element
+(scrartcl)           `sectioning' that is an alias of element `disposition'
 (scrartcl)            on input line 16.
 Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)           `sectioning' that is an alias of element `disposition'
-(scrartcl)            on input line 17.
-Class scrartcl Info: You've told me to use the font selection of the element
-(scrartcl)           `sectioning' that is an alias of element `disposition'
-(scrartcl)            on input line 25.
+(scrartcl)            on input line 23.
 )
 \tf@toc=\write3
 \openout3 = `bachelor.toc'.
 
  [2] (./einleitung.tex
-Underfull \hbox (badness 10000) in paragraph at lines 2--5
+Underfull \hbox (badness 10000) in paragraph at lines 2--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--11
 
  []
 
 ) [3] (./notation.tex
-Underfull \hbox (badness 10000) in paragraph at lines 2--11
+Underfull \hbox (badness 10000) in paragraph at lines 2--15
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--11
+Underfull \hbox (badness 10000) in paragraph at lines 2--15
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--15
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--22
 
  []
 
 ) [4] (./teil1.tex
-Underfull \hbox (badness 10000) in paragraph at lines 20--23
+Underfull \hbox (badness 10000) in paragraph at lines 20--24
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--26
+Underfull \hbox (badness 10000) in paragraph at lines 25--27
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--30
+Underfull \hbox (badness 10000) in paragraph at lines 29--31
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 40--42
+Underfull \hbox (badness 10000) in paragraph at lines 71--73
 
  []
 
 [6] [7] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 156--159
+Underfull \hbox (badness 10000) in paragraph at lines 171--174
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--190
+Underfull \hbox (badness 10000) in paragraph at lines 195--205
 
  []
 
-) [9] (./teil2.tex) [10] (./teil3.tex
-Underfull \hbox (badness 10000) in paragraph at lines 6--10
+) [9] (./teil2.tex
+Overfull \hbox (35.79527pt too wide) in paragraph at lines 46--48
+[]\OT1/cmr/m/it/10.95 Beispiel \OT1/cmr/m/n/10.95 13\OT1/cmr/m/it/10.95 . []\OT
+1/cmr/m/n/10.95 Es seien $\OML/cmm/m/it/10.95 V \OT1/cmr/m/n/10.95 = \OMS/cmsy/
+m/n/10.95 f\OML/cmm/m/it/10.95 aab; ab\OMS/cmsy/m/n/10.95 g$ \OT1/cmr/m/n/10.95
+ und $\OML/cmm/m/it/10.95 W \OT1/cmr/m/n/10.95 = \OMS/cmsy/m/n/10.95 f\OML/cmm/
+m/it/10.95 a; abb; aaab\OMS/cmsy/m/n/10.95 g$\OT1/cmr/m/n/10.95 , so dass $[]\O
+ML/cmm/m/it/10.95 V\OT1/cmr/m/n/10.95 ) = \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10
+.95 e; a; aa; ab; aab\OMS/cmsy/m/n/10.95 g$\OT1/cmr/m/n/10.95 .
+ []
+
+
+Overfull \hbox (30.33162pt too wide) in paragraph at lines 46--48
+\OT1/cmr/m/n/10.95 Dann haben wir $[]\OML/cmm/m/it/10.95 V\OT1/cmr/m/n/10.95 ) 
+\OML/cmm/m/it/10.95 . W \OT1/cmr/m/n/10.95 = \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it
+/10.95 a; aab; aaab\OMS/cmsy/m/n/10.95 g$\OT1/cmr/m/n/10.95 , aber $[]\OML/cmm/
+m/it/10.95 V\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 \ \OML/cmm/m/it/10.95 W \O
+T1/cmr/m/n/10.95 = \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 a\OMS/cmsy/m/n/10.9
+5 g$ \OT1/cmr/m/n/10.95 und $[] ([]\OML/cmm/m/it/10.95 V\OT1/cmr/m/n/10.95 )\OM
+S/cmsy/m/n/10.95 nf\OML/cmm/m/it/10.95 e\OMS/cmsy/m/n/10.95 g\OT1/cmr/m/n/10.95
+ ) \OML/cmm/m/it/10.95 .
+ []
+
+) [10] (./teil3.tex
+Overfull \hbox (41.92184pt too wide) in paragraph at lines 1--3
+\OT1/cmr/m/n/10.95 nacheinan-der Reg-u-lar-it[]at, Kon-textfrei-heit und ab-sch
+lie^^Yend Entschei-d-barkeit und Aufz[]ahlbarkeit. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--13
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--10
+Underfull \hbox (badness 10000) in paragraph at lines 9--13
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--18
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--18
+Underfull \hbox (badness 10000) in paragraph at lines 14--18
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 27--31
+Underfull \hbox (badness 10000) in paragraph at lines 31--34
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--31
+Underfull \hbox (badness 10000) in paragraph at lines 31--34
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--31
+Underfull \hbox (badness 10000) in paragraph at lines 38--42
 
  []
 
-[12]
-Overfull \hbox (28.97029pt too wide) in paragraph at lines 33--34
-\OT1/cmr/m/n/10.95 In diesem Ab-schnitt be-tra-cht-en wir die Er-hal-tung der E
-ntschei-d-barkeit bzw. der Aufz[]ahlbarkeit
- []
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 55.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 64.
 (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 55.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 64.
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--75
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--75
+Underfull \hbox (badness 10000) in paragraph at lines 48--84
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--75
-
- []
-
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 84--89
+Underfull \hbox (badness 10000) in paragraph at lines 48--84
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--89
+Underfull \hbox (badness 10000) in paragraph at lines 48--84
+
+ []
+
+[12] [13]
+Underfull \hbox (badness 10000) in paragraph at lines 93--99
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--99
 
  []
 
 [14]) [15] [16] (./bachelor.aux) ) 
 Here is how much of TeX's memory you used:
- 4214 strings out of 95061
- 56085 string characters out of 1182622
- 140781 words of memory out of 256000000
- 7297 multiletter control sequences out of 15000+50000
+ 4231 strings out of 95061
+ 56199 string characters out of 1182622
+ 141931 words of memory out of 256000000
+ 7314 multiletter control sequences out of 15000+50000
  15721 words of font info for 60 fonts, out of 1200000 for 2000
  28 hyphenation exceptions out of 8191
- 35i,11n,35p,556b,638s stack positions out of 5000i,500n,10000p,200000b,5000s
+ 35i,12n,35p,575b,640s stack positions out of 5000i,500n,10000p,200000b,5000s
 </usr/share/texmf-texlive/fonts/type1/public/
 amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
 /cmex10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 ></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
-e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texl
-ive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/ty
-pe1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/a
-msfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
-ssbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/
-texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texli
-ve/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-texlive/fon
-ts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on bachelor.pdf (16 pages, 206772 bytes).
+e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-texl
+ive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/ty
+pe1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/a
+msfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
+mr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr
+/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/te
+xmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive
+/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-texlive/fonts/type1
+/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
+onts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbol
+s/msam10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msbm
+10.pfb>
+Output written on bachelor.pdf (16 pages, 234049 bytes).
 PDF statistics:
- 110 PDF objects out of 1000 (max. 8388607)
+ 122 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

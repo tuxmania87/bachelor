@@ -16,7 +16,7 @@
 %$$V\ff W = V\ff \min(W)$$
 %\end{eigen}
 
-Im nun vorliegenden Abschnitt wird die Operation Fortsetzung im Hinblick auf Sprachen mit spezieller Gestalt untersucht. Dabei geht es hauptsächlich um Sprachen der Form $\pref(L)$ oder $W\cdot X^*$.
+In diesem Abschnitt wird die Operation Fortsetzung untersucht, wenn eine der beiden Operanden die spezielle Gestalt $\pref(L)$ oder $W\cdot X^*$ hat.
 
 
 %\textbf{zu 1.} Es genügt die Eigenschaft zu zeigen für $V=\{v\}$\\
@@ -31,7 +31,7 @@ Im nun vorliegenden Abschnitt wird die Operation Fortsetzung im Hinblick auf Spr
 
 %\newpage
 
-\begin{eigen}
+\begin{eigen}\label{spezeig1}
 $W\ff \pref(V) = W \cap \pref(V)$
 \end{eigen}
 \begin{proof}
@@ -39,8 +39,14 @@ Es genügt die Eigenschaft für $W=\{w\}$ zu zeigen:\\
 Aus der Definition wissen wir, dass $w\ff \pref(V)= \min ( \{w\} \cdot X^* \cap \pref(V) )$ gilt. 
 ist $w'\in (\{w\} \cdot X^* \cap \pref(V))$, so sieht man, dass $w\sqsubseteq w'$ gilt. Also haben wir wegen $w'\in \pref(V)$ auch $w\in\pref(V)$.
 Daraus folgt $\min ( \{w\} \cdot X^* \cap \pref(V) ) = \{w\} \cap \pref(V)$
-
 \end{proof}
+
+Für die Umkehrung von Eigenschaft \ref{spezeig1} $\pref(V)\ff W$ gibt es keine Vereinfachung, wie das folgende Beispiel zeigt.
+\begin{beispiel}
+Es seien $V=\{aab,ab\}$ und $W=\{a,abb,aaab\}$, so dass $\pref(V)=\{e,a,aa,ab,aab\}$. Dann haben wir $\pref(V)\ff W = \{a,aab,aaab\}$, aber $\pref(V) \cap W = \{a\}$ und $\min(\pref(V)\backslash\{e\}) \ff W = \{a,abb\}$
+Damit fehlt das Element $aaab$. Ein Betrachten von $\min(\pref(V))$ hat keinen Sinn, da trivialerweise $\min(\pref(V)) = \{e\}$, wenn $V\neq\emptyset$.
+\end{beispiel}
+
 
 
 %\begin{eigen}
@@ -83,16 +89,21 @@ Zum Beweis von Eigenschaft \ref{fooba} benutzen wir
 Sei $L\subseteq X^*\backslash W\cdot X^*$, so gilt $L\ff W\cdot X^* = L\ff \min(W) $
 \end{lem}
 \begin{proof}[Beweis Lemma \ref{eingeschr1}]:\\
-Es gilt die grundlegende Beziehung: $\forall w\in \min(W) \not\exists w'\in W\cdot X^* : w'\sqsubset w$ . Aus dieser Beziehung folgt unmittelbar $u\in L\ff \min(W) \to u\in L\ff W\cdot X^*$.\\
+Die Inklusion $L\ff \min(W) \subseteq L\ff W\cdot X^*$ ist, wie man leicht sieht, trivial.\\
 Zum Beweis der der anderen Inklusion genügt es, diese für den Fall $L=\{v\}$ zu zeigen.\\
 Es sei nun $w\in v\ff W\cdot X^*$, wobei nach Vorraussetzung $v\notin W\cdot X^*$ gelte. Dann gilt für kein $u$, $v\sqsubseteq u\sqsubset w$ oder $u\sqsubseteq v$ die Beziehung $u\in W\cdot X^*$.\\
 Also haben wir $w\in\min(W\cdot X^*) = \min(W)$
 \end{proof}
 
 \begin{proof}[Beweis von Eigenschaft \ref{fooba}]
-Die Fortsetzung von $W$ in $V\cdot X^*$ lässt sich, mit Hilfe von Eigenschaft \ref{basiseigen}, in zwei Teile aufspalten: $W\ff V\cdot X^* = (W\backslash V\cdot X^*) \ff V\cdot X^* \cup (W\cap V\cdot X^*)$.\\
-Nun setzen wir $V' = W\backslash V\cdot X^*$ so, dass  $V'\subseteq X^*\backslash V\cdot X^*$ gilt. Mit Lemma \ref{eingeschr1} erhalten wir
-$W\ff V\cdot X^* = W\backslash V\cdot X^*  \ff \min(V\cdot X^*) \cup (W\cap V\cdot X^*) = W \ff \min(V) \cup (W\cap V\cdot X^*)$.
+Die Fortsetzung von $W$ in $V\cdot X^*$ lässt sich, mit Hilfe von Eigenschaft \ref{basiseigen}, in zwei Teile aufspalten (\ref{arr1}).
+Da $W\backslash V\cdot X^* \subseteq X^*\backslash V\cdot X^*$, wenden wir Lemma \ref{eingeschr1} an und erhalten (\ref{arr3}), was sich zu (\ref{arr4}) vereinfachen lässt.
+\begin{eqnarray}
+W\ff V\cdot X^* & = & (W\backslash V\cdot X^*) \ff V\cdot X^* \cup (W\cap V\cdot X^*) \label{arr1}\\
+%V' &:= & W\backslash V\cdot X^* \label{arr2}\\
+W\ff V\cdot X^* & = & W\backslash V\cdot X^*  \ff \min(V\cdot X^*) \cup (W\cap V\cdot X^*) \label{arr3} \\
+W\ff V\cdot X^* & = &W \ff \min(V) \cup (W\cap V\cdot X^*) \label{arr4}
+\end{eqnarray}
 \end{proof}
 
 
