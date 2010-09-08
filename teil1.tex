@@ -32,10 +32,6 @@ Aus Eigenschaft \ref{eig1} folgt sofort
 \begin{folg}
 $L\cap W \ff W = L\cap W$
 \end{folg}
-und damit erhalten wir
-\begin{folg}\label{klaro}
-$L\cap W \subseteq L\ff W \subseteq W$
-\end{folg}
 
 Da die Operation Fortsetzung einer Sprache $L$ in eine Sprache $W$ über die Vereinigung $\cup$ aller Wörter aus $L$ definiert wurde, folgt aus der Definition:
 \begin{eigen}\label{cupeig}
@@ -46,6 +42,11 @@ $(\bigcup_{i\in\mathbb{N}} L_i) \ff W = \bigcup_{i\in\mathbb{N}} (L_i\ff W)$
 Nach Definition gilt $(\bigcup_{i\in\mathbb{N}} L_i) \ff W = \bigcup_{w\in L_0\cup L_1\cup ... \cup L_n} w\ff W$\\
 Wir betrachten nun die Vereinigung für jede Sprache, so dass $\bigcup_{w\in L_0\cup L_1\cup ... \cup L_n} w\ff W = (\bigcup_{w\in L_0} w\ff W) \cup (\bigcup_{w\in L_1} w\ff W) \cup ... \cup (\bigcup_{w\in L_n} w\ff W)$. Damit haben wir $ (\bigcup_{i\in\mathbb{N}} L_i) \ff W  = \bigcup_{i\in\mathbb{N}} (L_i\ff W)$
 \end{proof}
+
+Damit erhalten wir
+\begin{folg}\label{klaro}
+$L\cap W \subseteq L\ff W \subseteq W$
+\end{folg}
 
 Aus Folgerung \ref{klaro} wissen wir, dass $L\cap W \subseteq L\ff W$. Wir zerlegen nun die Fortsetzung von $L$ in $W$ so, dass sich folgende Beziehung ergibt:
 
