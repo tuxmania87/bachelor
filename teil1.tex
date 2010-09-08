@@ -47,8 +47,7 @@ Damit erhalten wir
 \begin{folg}\label{klaro}
 $L\cap W \subseteq L\ff W \subseteq W$
 \end{folg}
-
-Aus Folgerung \ref{klaro} wissen wir, dass $L\cap W \subseteq L\ff W$. Wir zerlegen nun die Fortsetzung von $L$ in $W$ so, dass sich folgende Beziehung ergibt:
+Wir zerlegen nun die Fortsetzung von $L$ in $W$ so, dass sich folgende Beziehung ergibt:
 
 \begin{eigen}\label{basiseigen}
 $L\ff W = (L\cap W) \cup ((L\setminus W) \ff W)$
@@ -81,14 +80,13 @@ Da die Operation Fortsetzung nicht kommutativ ist, betrachten wir nun die Monoto
 \subsubsection{Monotonie im Hinterglied}
 
 Wir betrachten zunächst die Stabilität und Monotonie der Operation Fortsetzung in Verbindung der BOOLEsche Operationen $\cap$ und $\cup$ im Hinterglied.\\\\
-
 Aus Eigenschaft \ref{cupeig} folgt:
 \begin{eigen}\label{fresh}
 $L\subseteq W \to L\ff V \subseteq W \ff V$
 \end{eigen}
 Dabei muss diese Eigenschaft nicht notwendigerweise für die echte Inklusion gelten, wie das folgende Beispiel zeigt:
 \begin{beispiel}
-Es Es sei $L=\{a\}, W=\{a,ab\}$ und $V=\{b\}$. Dann haben wir $L\subset W$, aber $L\ff V \not\subset W\ff W$ wegen $\emptyset \not\subset\emptyset$.
+Es sei $L=\{a\}, W=\{a,ab\}$ und $V=\{b\}$. Dann haben wir $L\subset W$, aber $L\ff V \not\subset W\ff W$ wegen $\emptyset \not\subset\emptyset$.
 \end{beispiel}
 
 Aus Eigenschaft \ref{fresh} folgt die Inklusion:
@@ -112,7 +110,7 @@ $\min (A\cup B) \subseteq \min A \cup \min B$
 \end{lem}
 
 \begin{proof}[Beweis von Lemma \ref{lem123}]
-Es sei $w\in \min (A\cup B)$. Dann ist $w$ in $A$ oder in $B$ enthalten. OBdA Es sei $w\in A$. Es gilt außerdem für alle $v\sqsubset w$, dass $v\notin (A\cup B)$, also insbesondere $v\notin A$. Nach Definition von $\min$ gilt also $w\in\min(A)$. Gleiches gilt analog, wenn man annimmt $w\in B$.
+Es sei $w\in \min (A\cup B)$. Dann ist $w$ in $A$ oder in $B$ enthalten. Es sei o.B.d.A. $w\in A$. Es gilt außerdem für alle $v\sqsubset w$, dass $v\notin (A\cup B)$, also insbesondere $v\notin A$. Nach Definition von $\min$ gilt also $w\in\min(A)$. Gleiches gilt analog für $B$.
 \end{proof}
 \begin{proof}[Beweis von Eigenschaft \ref{gl22}]
 Es genügt, die Eigenschaft für $L=\{w\}$ zu zeigen.\\

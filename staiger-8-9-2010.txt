@@ -1,0 +1,8 @@
+
+TO ASK/MENTION:
+es genügt {w}\ff ... zu betrachten
+folgt aus.... folgt nicht ..
+Automaten
+L oder W regulär cf -> 
+Nachsetzen von Definitionen
+  L\ff\pref(L)   pref(L) W\cdot X^*

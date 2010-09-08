@@ -89,7 +89,7 @@ Anschließend wird geprüft ob $w'\in L\setminus W$ (\# 5) gilt. Wenn ja, dann hab
 Ist $L$ eine aufzählbare Sprache und $W$ eine entscheidbare Sprache, so ist $L\ff W$ aufzählbar.
 \end{satz}
 \begin{proof}
-Es Es sei $U=\{u_i : 0 \le i \le n \wedge u_i \in L\}$ eine Aufzählung von $L$.\\
+Es sei $U=\{u_i : 0 \le i \le n \wedge u_i \in L\}$ eine Aufzählung von $L$.\\
 Wir konstruieren einen Algorithmus welcher die Eingabe $w$ akzeptiert genau dann, wenn $w\in L\ff W$.
 Ist $w\notin W$ so kann nach Definition auch nicht $w\in L\ff W$ gelten. \\\\Wir wählen das Wort $u_i$ aus der Aufzählung $U$ von $L$ aus (\# 1).
 Gilt nun $u_i\sqsubseteq w$, so wird eine Arbeitskopie $v$ mit $v:=w$ erstellt (\# 2). Im nächsten Schritt wird für alle Präfixe $v$ mit $u_i\sqsubseteq v\sqsubset w$ sukzessive geprüft ob $v\in W$ (\# 3). 
