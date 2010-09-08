@@ -7,7 +7,7 @@
 %$$V\ff W\cdot X^* = \{v\} \ff W\cdot X^*$$
 %Nach Definition der Operation Fortsetzung ergibt sich:
 %$$ = min_{\sqsubseteq} \{w:w\in W\cdot X^* \wedge v\sqsubseteq w\}$$
-%Wir wissen aus der Vorrausetzung, dass $v\notin W\cdot X^*$, daraus folgt unmittelbar, dass $v\in pref(W)\backslash W$.\\
+%Wir wissen aus der Vorrausetzung, dass $v\notin W\cdot X^*$, daraus folgt unmittelbar, dass $v\in pref(W)\setminus W$.\\
 %Angenommen es existiert ein $w\in W\cdot X^+$ in $min_{\sqsubseteq} \{w:w\in W\cdot X^* \wedge v\sqsubseteq w\}$, so ist $w'$ mit $w=w'\cdot r\wedge w'\in W$ ein kürzeres Wort, daher gilt:
 %$$min_{\sqsubseteq} \{w:w\in W\cdot X^* \wedge v\sqsubseteq w\} = min_{\sqsubseteq} \{w:w\in W \wedge v\sqsubseteq w\}$$
 %\end{proof}
@@ -35,15 +35,17 @@ In diesem Abschnitt wird die Operation Fortsetzung untersucht, wenn eine der bei
 $W\ff \pref(V) = W \cap \pref(V)$
 \end{eigen}
 \begin{proof}
-Es genügt die Eigenschaft für $W=\{w\}$ zu zeigen:\\
-Aus der Definition wissen wir, dass $w\ff \pref(V)= \min ( \{w\} \cdot X^* \cap \pref(V) )$ gilt. 
-ist $w'\in (\{w\} \cdot X^* \cap \pref(V))$, so sieht man, dass $w\sqsubseteq w'$ gilt. Also haben wir wegen $w'\in \pref(V)$ auch $w\in\pref(V)$.
-Daraus folgt $\min ( \{w\} \cdot X^* \cap \pref(V) ) = \{w\} \cap \pref(V)$
+Die Inklusion $\supseteq$ folgt aus Eigenschaft \ref{klaro}.\\
+Zum Beweis der anderen Inklusion betrachten wir $w\in W\ff\pref(V)$. Es muss also ein $u\in W$ existieren, sodass $w\in \{u\}\ff\pref(V)$. Daraus folgt, dass $u$ ein Präfix von $w$ sein muss, was wiederum bedeutet, dass $u\in\pref(V)$. Damit haben wir $w\in\min(\{u\}\cdot X^*\cap \pref(V)) \to w\in \{u\}\cap \pref(V)$.
+%Es genügt die Eigenschaft für $W=\{w\}$ zu zeigen:\\
+%Aus der Definition wissen wir, dass $w\ff \pref(V)= \min ( \{w\} \cdot X^* \cap \pref(V) )$ gilt. 
+%ist $w'\in (\{w\} \cdot X^* \cap \pref(V))$, so sieht man, dass $w\sqsubseteq w'$ gilt. Also haben wir wegen $w'\in \pref(V)$ auch $w\in\pref(V)$.
+%Daraus folgt $\min ( \{w\} \cdot X^* \cap \pref(V) ) = \{w\} \cap \pref(V)$
 \end{proof}
 
 Für die Umkehrung von Eigenschaft \ref{spezeig1} $\pref(V)\ff W$ gibt es keine Vereinfachung, wie das folgende Beispiel zeigt.
 \begin{beispiel}
-Es seien $V=\{aab,ab\}$ und $W=\{a,abb,aaab\}$, so dass $\pref(V)=\{e,a,aa,ab,aab\}$. Dann haben wir $\pref(V)\ff W = \{a,aab,aaab\}$, aber $\pref(V) \cap W = \{a\}$ und $\min(\pref(V)\backslash\{e\}) \ff W = \{a,abb\}$
+Es seien $V=\{aab,ab\}$ und $W=\{a,abb,aaab\}$, so dass $\pref(V)=\{e,a,aa,ab,aab\}$. Dann haben wir $\pref(V)\ff W = \{a,aab,aaab\}$, aber $\pref(V) \cap W = \{a\}$ und $\min(\pref(V)\setminus\{e\}) \ff W = \{a,abb\}$
 Damit fehlt das Element $aaab$. Ein Betrachten von $\min(\pref(V))$ hat keinen Sinn, da trivialerweise $\min(\pref(V)) = \{e\}$, wenn $V\neq\emptyset$.
 \end{beispiel}
 
@@ -66,8 +68,8 @@ Damit fehlt das Element $aaab$. Ein Betrachten von $\min(\pref(V))$ hat keinen S
 $V\cdot X^* \ff W = V\cdot X^* \cap W$
 \end{eigen}
 \begin{proof}
-Die Inklusion $\supseteq$ folgt aus Eigenschaft \ref{eig1}.
-Zum Beweis der anderen Inklusion betrachten wir $w\in V\cdot X^* \ff W$. Es muss nun ein $v\in V\cdot X^*$ existieren, sodass $w\in \{v\}\ff W$ gilt. Daraus folgt, dass $v$ ein Präfix von $w$ sein muss, was wiederum bedeutet, dass $w\in V\cdot X^*$. Somit gilt die Inklusion $V\cdot X^* \ff W \subseteq W\cap V\cdot X^*$.
+Die Inklusion $\supseteq$ folgt aus Eigenschaft \ref{klaro}.
+Zum Beweis der anderen Inklusion betrachten wir $w\in V\cdot X^* \ff W$. Es existiert also ein $v\in V\cdot X^*$, sodass $w\in \{v\}\ff W$ ist. Daraus folgt, dass $v$ ein Präfix von $w$ sein muss, was wiederum bedeutet, dass $w\in V\cdot X^*$. Somit gilt die Inklusion $V\cdot X^* \ff W \subseteq W\cap V\cdot X^*$.
 \end{proof}
 
 %\begin{eigen}
@@ -86,23 +88,24 @@ $W\ff V\cdot X^* = (W\ff\min(V)) \cup (W\cap V\cdot X^*)$
 \end{eigen}
 Zum Beweis von Eigenschaft \ref{fooba} benutzen wir
 \begin{lem}\label{eingeschr1}
-Sei $L\subseteq X^*\backslash W\cdot X^*$, so gilt $L\ff W\cdot X^* = L\ff \min(W) $
+Es sei $L\subseteq X^*\setminus W\cdot X^*$, so gilt $L\ff W\cdot X^* = L\ff \min(W) $
 \end{lem}
 \begin{proof}[Beweis Lemma \ref{eingeschr1}]:\\
 Die Inklusion $L\ff \min(W) \subseteq L\ff W\cdot X^*$ ist, wie man leicht sieht, trivial.\\
 Zum Beweis der der anderen Inklusion genügt es, diese für den Fall $L=\{v\}$ zu zeigen.\\
-Es sei nun $w\in v\ff W\cdot X^*$, wobei nach Vorraussetzung $v\notin W\cdot X^*$ gelte. Dann gilt für kein $u$, $v\sqsubseteq u\sqsubset w$ oder $u\sqsubseteq v$ die Beziehung $u\in W\cdot X^*$.\\
+Es Es sei nun $w\in v\ff W\cdot X^*$, wobei nach Vorraussetzung $v\notin W\cdot X^*$ gelte. Dann gilt für kein $u$, $v\sqsubseteq u\sqsubset w$ oder $u\sqsubseteq v$ die Beziehung $u\in W\cdot X^*$.\\
 Also haben wir $w\in\min(W\cdot X^*) = \min(W)$
 \end{proof}
 
 \begin{proof}[Beweis von Eigenschaft \ref{fooba}]
 Die Fortsetzung von $W$ in $V\cdot X^*$ lässt sich, mit Hilfe von Eigenschaft \ref{basiseigen}, in zwei Teile aufspalten (\ref{arr1}).
-Da $W\backslash V\cdot X^* \subseteq X^*\backslash V\cdot X^*$, wenden wir Lemma \ref{eingeschr1} an und erhalten (\ref{arr3}), was sich zu (\ref{arr4}) vereinfachen lässt.
+Da $W\setminus V\cdot X^* \subseteq X^*\setminus V\cdot X^*$, wenden wir Lemma \ref{eingeschr1} an und erhalten (\ref{arr3}), was sich zu (\ref{arr4}) vereinfachen lässt.
+\setcounter{equation}{0}
 \begin{eqnarray}
-W\ff V\cdot X^* & = & (W\backslash V\cdot X^*) \ff V\cdot X^* \cup (W\cap V\cdot X^*) \label{arr1}\\
-%V' &:= & W\backslash V\cdot X^* \label{arr2}\\
-W\ff V\cdot X^* & = & W\backslash V\cdot X^*  \ff \min(V\cdot X^*) \cup (W\cap V\cdot X^*) \label{arr3} \\
-W\ff V\cdot X^* & = &W \ff \min(V) \cup (W\cap V\cdot X^*) \label{arr4}
+W\ff V\cdot X^* & = & ((W\setminus V\cdot X^*) \ff V\cdot X^*) \cup (W\cap V\cdot X^*) \label{arr1}\\
+%V' &:= & W\setminus V\cdot X^* \label{arr2}\\
+W\ff V\cdot X^* & = & ((W\setminus V\cdot X^*)  \ff \min(V\cdot X^*) \cup (W\cap V\cdot X^*) \label{arr3} \\
+W\ff V\cdot X^* & = &(W \ff \min(V)) \cup (W\cap V\cdot X^*) \label{arr4}
 \end{eqnarray}
 \end{proof}
 

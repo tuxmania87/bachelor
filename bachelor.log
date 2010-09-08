@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.5.7)  3 SEP 2010 15:46
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.5.7)  8 SEP 2010 10:19
 entering extended mode
  %&-line parsing enabled.
 **bachelor.tex
@@ -410,13 +410,13 @@ Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)            on input line 4.
 Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)           `sectioning' that is an alias of element `disposition'
+(scrartcl)            on input line 14.
+Class scrartcl Info: You've told me to use the font selection of the element
+(scrartcl)           `sectioning' that is an alias of element `disposition'
 (scrartcl)            on input line 15.
 Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)           `sectioning' that is an alias of element `disposition'
-(scrartcl)            on input line 16.
-Class scrartcl Info: You've told me to use the font selection of the element
-(scrartcl)           `sectioning' that is an alias of element `disposition'
-(scrartcl)            on input line 23.
+(scrartcl)            on input line 22.
 )
 \tf@toc=\write3
 \openout3 = `bachelor.toc'.
@@ -431,59 +431,54 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--11
 
  []
 
-) [3] (./notation.tex
-Underfull \hbox (badness 10000) in paragraph at lines 2--15
+) [3] (./notation.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--49
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--15
+Underfull \hbox (badness 10000) in paragraph at lines 2--49
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--15
+Underfull \hbox (badness 10000) in paragraph at lines 2--49
+
+ []
+
+[4] (./teil1.tex
+Underfull \hbox (badness 10000) in paragraph at lines 20--26
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--22
-
- []
-
-) [4] (./teil1.tex
-Underfull \hbox (badness 10000) in paragraph at lines 20--24
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--27
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--31
+Underfull \hbox (badness 10000) in paragraph at lines 28--30
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 71--73
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
 
  []
 
 [6] [7] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 171--174
+Underfull \hbox (badness 10000) in paragraph at lines 175--178
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--205
+Underfull \hbox (badness 10000) in paragraph at lines 199--209
 
  []
 
 ) [9] (./teil2.tex
-Overfull \hbox (35.79527pt too wide) in paragraph at lines 46--48
-[]\OT1/cmr/m/it/10.95 Beispiel \OT1/cmr/m/n/10.95 13\OT1/cmr/m/it/10.95 . []\OT
+Overfull \hbox (35.79527pt too wide) in paragraph at lines 48--50
+[]\OT1/cmr/m/it/10.95 Beispiel \OT1/cmr/m/n/10.95 12\OT1/cmr/m/it/10.95 . []\OT
 1/cmr/m/n/10.95 Es seien $\OML/cmm/m/it/10.95 V \OT1/cmr/m/n/10.95 = \OMS/cmsy/
 m/n/10.95 f\OML/cmm/m/it/10.95 aab; ab\OMS/cmsy/m/n/10.95 g$ \OT1/cmr/m/n/10.95
  und $\OML/cmm/m/it/10.95 W \OT1/cmr/m/n/10.95 = \OMS/cmsy/m/n/10.95 f\OML/cmm/
@@ -493,24 +488,17 @@ ML/cmm/m/it/10.95 V\OT1/cmr/m/n/10.95 ) = \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10
  []
 
 
-Overfull \hbox (30.33162pt too wide) in paragraph at lines 46--48
+Overfull \hbox (4.54965pt too wide) in paragraph at lines 48--50
 \OT1/cmr/m/n/10.95 Dann haben wir $[]\OML/cmm/m/it/10.95 V\OT1/cmr/m/n/10.95 ) 
 \OML/cmm/m/it/10.95 . W \OT1/cmr/m/n/10.95 = \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it
 /10.95 a; aab; aaab\OMS/cmsy/m/n/10.95 g$\OT1/cmr/m/n/10.95 , aber $[]\OML/cmm/
 m/it/10.95 V\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 \ \OML/cmm/m/it/10.95 W \O
 T1/cmr/m/n/10.95 = \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 a\OMS/cmsy/m/n/10.9
-5 g$ \OT1/cmr/m/n/10.95 und $[] ([]\OML/cmm/m/it/10.95 V\OT1/cmr/m/n/10.95 )\OM
-S/cmsy/m/n/10.95 nf\OML/cmm/m/it/10.95 e\OMS/cmsy/m/n/10.95 g\OT1/cmr/m/n/10.95
- ) \OML/cmm/m/it/10.95 .
+5 g$ \OT1/cmr/m/n/10.95 und $[] ([]\OML/cmm/m/it/10.95 V\OT1/cmr/m/n/10.95 ) \O
+MS/cmsy/m/n/10.95 n
  []
 
 ) [10] (./teil3.tex
-Overfull \hbox (41.92184pt too wide) in paragraph at lines 1--3
-\OT1/cmr/m/n/10.95 nacheinan-der Reg-u-lar-it[]at, Kon-textfrei-heit und ab-sch
-lie^^Yend Entschei-d-barkeit und Aufz[]ahlbarkeit. 
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 9--13
 
  []
@@ -521,53 +509,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--13
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--18
+Underfull \hbox (badness 10000) in paragraph at lines 14--17
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 31--34
+Underfull \hbox (badness 10000) in paragraph at lines 30--33
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--34
+Underfull \hbox (badness 10000) in paragraph at lines 30--33
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--42
+Underfull \hbox (badness 10000) in paragraph at lines 37--41
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 64.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 63.
 (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 64.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 63.
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--84
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--84
+Underfull \hbox (badness 10000) in paragraph at lines 47--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--84
+Underfull \hbox (badness 10000) in paragraph at lines 47--83
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--83
 
  []
 
 [12] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 93--99
+Underfull \hbox (badness 10000) in paragraph at lines 92--98
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--99
+Underfull \hbox (badness 10000) in paragraph at lines 92--98
 
  []
 
@@ -575,11 +563,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--99
 Here is how much of TeX's memory you used:
  4231 strings out of 95061
  56199 string characters out of 1182622
- 141931 words of memory out of 256000000
+ 141930 words of memory out of 256000000
  7314 multiletter control sequences out of 15000+50000
  15721 words of font info for 60 fonts, out of 1200000 for 2000
  28 hyphenation exceptions out of 8191
- 35i,12n,35p,575b,640s stack positions out of 5000i,500n,10000p,200000b,5000s
+ 35i,12n,35p,568b,640s stack positions out of 5000i,500n,10000p,200000b,5000s
 </usr/share/texmf-texlive/fonts/type1/public/
 amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
 /cmex10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb
@@ -591,14 +579,13 @@ msfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
 mr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr
 /share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/te
 xmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive
-/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-texlive/fonts/type1
-/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
-onts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbol
-s/msam10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msbm
-10.pfb>
-Output written on bachelor.pdf (16 pages, 234049 bytes).
+/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1
+/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/ams
+fonts/symbols/msam10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
+symbols/msbm10.pfb>
+Output written on bachelor.pdf (16 pages, 224877 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
+ 118 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

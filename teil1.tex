@@ -1,53 +1,66 @@
 \subsection{Allgemeines}
 
 In diesem Abschnitt betrachten wir Eigenschaften der Operation der Fortsetzung von Sprachen.
-Hierbei wird zunächst die algebraische Struktur $({2^X}^*,\ff)$ untersucht. Anschliessend werden insbesondere die Stabilität bzw. Monotonie bezüglich mengentheoretischen Operationen betrachtet. 
+Hierbei wird zunächst die algebraische Struktur $({2^X}^*,\ff)$ untersucht. Anschliessend untersuchen wir die Monotonie der Operation Fortsetzung bezüglich $\subseteq$ und die Stabilität bezüglich der mengentheoretischen Operationen $\cap$ und $\cup$.
 
 \subsection{Eigenschaften der algebraischen Struktur $({2^X}^*,\ff)$}
 
-\subsubsection{Kommutativität}
-Die algebraische Struktur $A=({2^X}^*,\ff)$ ist nicht kommutativ. Um dies zu zeigen, wird ein Gegenbeispiel angegeben.
+\subsubsection{Kommutativität und Assoziativität}
+Die algebraische Struktur $A=({2^X}^*,\ff)$ ist weder kommutativ, noch assoziativ. Um dies zu zeigen, wird ein Gegenbeispiel angegeben.
 \begin{beispiel}
-Es seien $L=\{b\}$ und $W=\{bb\}$. Dann haben wir $L\ff W = \{bb\}$, aber $W\ff L = \emptyset$. 
+Es seien $L=\{aa,bb\},\ V = \{aa,b\}$ und $W=\{aa,bb\}$. \\Dann haben wir $(L\ff V)\ff W = \{aa\} \ff W = \{aa\}$, aber $L\ff (V\ff W) = L\ff \{aa,bb\} = \{aa,bb\}$ und $L\ff V = \{aa\}$, aber $V\ff L=\{aa,bb\}$.
 \end{beispiel}
-\subsubsection{Assoziativität}
-Die algebraische Struktur $A=({2^X}^*,\ff)$ ist nicht assoziativ. Um dies zu zeigen wird wieder ein Gegenbeispiel angegeben.
-\begin{beispiel}
-Es seien $L=\{aa,bb\},\ V = \{aa,b\}$ und $W=\{aa,bb\}$. Dann haben wir $(L\ff V)\ff W = \{aa\} \ff W = \{aa\}$, aber $L\ff (V\ff W) = L\ff \{aa,bb\} = \{aa,bb\}$.
-\end{beispiel}
-
 \subsubsection{Einselement}
 Da die algebraische Struktur $A$ nicht kommutativ ist, werden bei der Untersuchung auf Einselemente sowohl linksneutrale, als auch rechtsneutrale Einselemente betrachtet.
-Wir betrachten zuerst ein linksneutrales Element $E_l$, so dass $E_l\ff L = L$ für alle $L\subseteq X^*$, gilt. Man erkennt leicht, dass $X^*$ ein solches Element ist, denn es gilt $X^*\ff L = L$.\\\\
-Analog betrachten wir nun ein rechtsneutrales Element $E_r$, so dass $L\ff E_r = L$ für alle $L\subseteq X^*$, gilt. Auch hier erkennt man leicht, dass $X^*$ ein solches Element ist, denn es gilt $L\ff X^* = L$.
-Es gilt $E_l = E_l \ff E_r = E_r$, es existiert nur ein Einselement.
+Wir betrachten zuerst linksneutrale Elemente.
+Man erkennt leicht, dass $X^*$ ein solches Element ist, denn es gilt $X^*\ff L = L$.
+Analog ist $X^*$ rechtsneutrales Element, denn es gilt $L\ff X^* = L$.
+Nehmen wir nun an, es gebe weitere links- oder rechtsneutrale Elemente $E_l$ bzw. $E_r$, so haben wir $E_l=E_l\ff X^* = X^*$, da $X^*$ rechtsneutrales Element ist, sowie $E_r = X^*\ff E_r = X^*$, da $X^*$ auch linksneutrales Element ist.
 \subsubsection{Nullelement}
-Die Suche nach dem Nullelement stellt sich als trivial dar. Wir suchen ein linksneutrales bzw. rechtsneutrales Nullelement $N_l$ bzw. $N_r$, so dass $L\ff N_r = N$ sowie $N_l \ff L = N$ für alle $L\subseteq X^*$ gilt. Man erkennt leicht, dass die leere Menge $\emptyset$ ein solches Nullelement auf beiden Seiten ist, da $N_l = N_l\ff N_r = N_r$ gilt.\\\\
-Damit kann die algebraische Struktur $A=({2^X}^*,\ff)$ aufgrund fehlender Assoziativität weder eine Gruppe noch eine Halbgruppe sein, besitzt aber Null- und Einselement.
+Wir betrachten, da $A$ nicht kommutativ ist, ... prosa.
+Wir betrachten zuerst linksabsorbierende Elemente.
+Man erkennt leicht, dass $\emptyset$ ein solches Element ist, denn es gilt $\emptyset\ff L = \emptyset$.
+Analog ist $\emptyset$ rechtsabsorbierendes Element, denn es gilt $L\ff\emptyset =\emptyset$.
+Nehmen wir an, es gebe weitere links- oder rechtsabsorbierende Elemente $N_l$ bzw. $N_r$, so haben wir $N_l = N_l\ff \emptyset = \emptyset$, da $\emptyset$ rechtsabsorbierendes Element ist, sowie $N_r = \emptyset\ff N_r = \emptyset$, da $\emptyset$ auch linksabsorbierendes Element ist.\\\\
+Damit kann die algebraische Struktur $A=({2^X}^*,\ff)$ aufgrund fehlender Assoziativität weder eine Gruppe noch eine Halbgruppe sein, besitzt aber ein Null- und ein Einselement.
 
 \subsection{BOOLEsche Operationen}
-In diesem Abschnitt befassen wir uns mit den Zusammenhängen der mengentheoretischen Operationen $\cap,\cup$ bezüglich der Monotonie und der Stabilität der Operation Fortsetzung $\ff$.
+In diesem Abschnitt untersuchen wir die Operation Fortsetzung auf Stabilität bezüglich den mengentheoretischen Operationen $\cap$ und $\cup$ und auf Monotonie bezüglich $\subseteq$.
 \\\\Aus der Definition folgt direkt die Eigenschaft:
 \begin{eigen}\label{eig1}
 Es gilt genau dann $\{w\} \ff W = \{w\}$, wenn $w\in W$.
 \end{eigen}
-Es folgt ebenfalls eine generelle Inklusionsbeziehung:
-\begin{eigen}\label{klaro}
+Aus Eigenschaft \ref{eig1} folgt sofort
+\begin{folg}
+$L\cap W \ff W = L\cap W$
+\end{folg}
+und damit erhalten wir
+\begin{folg}\label{klaro}
 $L\cap W \subseteq L\ff W \subseteq W$
-\end{eigen}
+\end{folg}
 
-Aus Eigenschaft \ref{klaro} wissen wir, dass $L\cap W \subseteq L\ff W$. Man kann nun die Fortsetzung von $L$ in $W$ aufsplitten, sodass sich folgende Beziehung ergibt:
+Da die Operation Fortsetzung einer Sprache $L$ in eine Sprache $W$ über die Vereinigung $\cup$ aller Wörter aus $L$ definiert wurde, folgt aus der Definition:
+\begin{eigen}\label{cupeig}
+%$(L\cup V)\ff W = L\ff W\cup V\ff W$
+$(\bigcup_{i\in\mathbb{N}} L_i) \ff W = \bigcup_{i\in\mathbb{N}} (L_i\ff W)$
+\end{eigen}
+\begin{proof} 
+Nach Definition gilt $(\bigcup_{i\in\mathbb{N}} L_i) \ff W = \bigcup_{w\in L_0\cup L_1\cup ... \cup L_n} w\ff W$\\
+Wir betrachten nun die Vereinigung für jede Sprache, so dass $\bigcup_{w\in L_0\cup L_1\cup ... \cup L_n} w\ff W = (\bigcup_{w\in L_0} w\ff W) \cup (\bigcup_{w\in L_1} w\ff W) \cup ... \cup (\bigcup_{w\in L_n} w\ff W)$. Damit haben wir $ (\bigcup_{i\in\mathbb{N}} L_i) \ff W  = \bigcup_{i\in\mathbb{N}} (L_i\ff W)$
+\end{proof}
+
+Aus Folgerung \ref{klaro} wissen wir, dass $L\cap W \subseteq L\ff W$. Wir zerlegen nun die Fortsetzung von $L$ in $W$ so, dass sich folgende Beziehung ergibt:
 
 \begin{eigen}\label{basiseigen}
-$L\ff W = (L\cap W) \cup ((L\backslash W) \ff W)$
+$L\ff W = (L\cap W) \cup ((L\setminus W) \ff W)$
 \end{eigen}
 \begin{proof}
-Wir splitten zunächst die Fortsetzung von $L$ in $W$ in Wörter die nur in $L$ und nicht in $W$ liegen und dem Schnitt beider Sprachen (\ref{basis1},\ref{basis2}).
-Wie wir leicht sehen gilt (\ref{basis3}). Damit haben wir die Beziehung $L\ff W = L\cap W \cup (L\backslash W) \ff W$
+Wir zerlegen zunächst $L$ in $L\cap W$ und $L\setminus W$. Damit haben wir (\ref{basis1}). 
+Nach Anwenden der Eigenschaft \ref{cupeig} erhalten wir (\ref{basis2}). Mit Eigenschaft \ref{eig1} lässt sich der Ausdruck zu (\ref{basis3}) vereinfachen.
 \begin{eqnarray}
-L\ff W &=& \bigcup_{v\in L} v\ff W \label{basis1} \\
-L\ff W &=& \bigcup_{v\in L\backslash W} v\ff W \cup \bigcup_{v'\in L\cap W} v\ff W \label{basis2} \\
-\bigcup_{v'\in L\cap W} v\ff W &=& (L\cap W) \ff W = L\cap W \label{basis3} 
+L\ff W = ((L\cap W) \cup (L\setminus W)) \ff W \label{basis1}\\
+L\ff W = ((L\cap W) \ff W) \cup ((L\setminus W) \ff W) \label{basis2} \\
+L\ff W = (L\cap W) \cup ((L\setminus W) \ff W) \label{basis3} 
 \end{eqnarray}
 \end{proof}
 
@@ -69,15 +82,6 @@ Da die Operation Fortsetzung nicht kommutativ ist, betrachten wir nun die Monoto
 \subsubsection{Monotonie im Hinterglied}
 
 Wir betrachten zunächst die Stabilität und Monotonie der Operation Fortsetzung in Verbindung der BOOLEsche Operationen $\cap$ und $\cup$ im Hinterglied.\\\\
-Da die Operation Fortsetzung einer Sprache $L$ in eine Sprache $W$ über die Vereinigung $\cup$ aller Wörter aus $L$ definiert wurde, folgt aus der Definition:
-\begin{eigen}\label{cupeig}
-%$(L\cup V)\ff W = L\ff W\cup V\ff W$
-$(\bigcup_{i\in\mathbb{N}} L_i) \ff W = \bigcup_{i\in\mathbb{N}} (L_i\ff W)$
-\end{eigen}
-\begin{proof} 
-Nach Definition gilt $(\bigcup_{i\in\mathbb{N}} L_i) \ff W = \bigcup_{w\in L_0\cup L_1\cup ... \cup L_n} w\ff W$\\
-Wir betrachten nun die Vereinigung für jede Sprache, so dass $\bigcup_{w\in L_0\cup L_1\cup ... \cup L_n} w\ff W = (\bigcup_{w\in L_0} w\ff W) \cup (\bigcup_{w\in L_1} w\ff W) \cup ... \cup (\bigcup_{w\in L_n} w\ff W) = \bigcup_{i\in\mathbb{N}} (L_i\ff W)$
-\end{proof}
 
 Aus Eigenschaft \ref{cupeig} folgt:
 \begin{eigen}\label{fresh}
@@ -85,7 +89,7 @@ $L\subseteq W \to L\ff V \subseteq W \ff V$
 \end{eigen}
 Dabei muss diese Eigenschaft nicht notwendigerweise für die echte Inklusion gelten, wie das folgende Beispiel zeigt:
 \begin{beispiel}
-Es sei $L=\{a\}, W=\{a,ab\}$ und $V=\{b\}$. Dann haben wir $L\subset W$, aber $L\ff V \not\subset W\ff W$ wegen $\emptyset \not\subset\emptyset$.
+Es Es sei $L=\{a\}, W=\{a,ab\}$ und $V=\{b\}$. Dann haben wir $L\subset W$, aber $L\ff V \not\subset W\ff W$ wegen $\emptyset \not\subset\emptyset$.
 \end{beispiel}
 
 Aus Eigenschaft \ref{fresh} folgt die Inklusion:
@@ -109,7 +113,7 @@ $\min (A\cup B) \subseteq \min A \cup \min B$
 \end{lem}
 
 \begin{proof}[Beweis von Lemma \ref{lem123}]
-Sei $w\in \min (A\cup B)$. Dann ist $w$ in $A$ oder in $B$ enthalten. OBdA sei $w\in A$. Es gilt außerdem für alle $v\sqsubset w$, dass $v\notin (A\cup B)$, also insbesondere $v\notin A$. Nach Definition von $\min$ gilt also $w\in\min(A)$. Gleiches gilt analog, wenn man annimmt $w\in B$.
+Es sei $w\in \min (A\cup B)$. Dann ist $w$ in $A$ oder in $B$ enthalten. OBdA Es sei $w\in A$. Es gilt außerdem für alle $v\sqsubset w$, dass $v\notin (A\cup B)$, also insbesondere $v\notin A$. Nach Definition von $\min$ gilt also $w\in\min(A)$. Gleiches gilt analog, wenn man annimmt $w\in B$.
 \end{proof}
 \begin{proof}[Beweis von Eigenschaft \ref{gl22}]
 Es genügt, die Eigenschaft für $L=\{w\}$ zu zeigen.\\
@@ -136,7 +140,7 @@ $\min(A\cap B) \supseteq \min A \cap \min B$
 %\end{lem}
 
 \begin{proof}[Beweis von Lemma \ref{lem321}]
-Sei $w\in (\min(A) \cap \min(B))$. Dann ist $w$ sowohl in $A$, als auch in $B$ enthalten. Außerdem gilt für alle $v$ mit $v\sqsubset w$, dass $v \notin A$ und dass $v \notin B$. Nach Definition von $\min$ gilt also $w\in \min(A\cap B)$.\emph{}
+Es sei $w\in (\min(A) \cap \min(B))$. Dann ist $w$ sowohl in $A$, als auch in $B$ enthalten. Außerdem gilt für alle $v$ mit $v\sqsubset w$, dass $v \notin A$ und dass $v \notin B$. Nach Definition von $\min$ gilt also $w\in \min(A\cap B)$.\emph{}
 \end{proof}
 \begin{proof}[Beweis von Eigenschaft \ref{eigen321}]
 Es genügt die Eigenschaft für $L=\{w\}$ zu zeigen.\\
@@ -152,7 +156,7 @@ Dann haben wir $L\ff (V\cap W) = \{bb,aaa\} \supset \{ aaa \} =(L\ff V) \cap (L\
 
 Es gilt keine Monotonie im Vorderglied, $L\subseteq W \not\to V\ff L \subseteq V \ff W$, wie das folgende Beispiel zeigt:
 \begin{beispiel}
-Sei $L=\{aaba\},W=\{aab,aaba\}$ und $V=\{a\}$, also $L\subseteq W$.\\
+Es sei $L=\{aaba\},W=\{aab,aaba\}$ und $V=\{a\}$, also $L\subseteq W$.\\
 Dann haben wir $V\ff L = \{aaba\} \not\subseteq V\ff W =\{aab\}$
 \end{beispiel}
 

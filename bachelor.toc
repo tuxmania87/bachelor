@@ -4,11 +4,10 @@
 \contentsline {section}{\numberline {3}Eigenschaften}{5}
 \contentsline {subsection}{\numberline {3.1}Allgemeines}{5}
 \contentsline {subsection}{\numberline {3.2}Eigenschaften der algebraischen Struktur $({2^X}^*,\triangleright )$}{5}
-\contentsline {subsubsection}{\numberline {3.2.1}Kommutativit\"at}{5}
-\contentsline {subsubsection}{\numberline {3.2.2}Assoziativit\"at}{5}
-\contentsline {subsubsection}{\numberline {3.2.3}Einselement}{5}
-\contentsline {subsubsection}{\numberline {3.2.4}Nullelement}{5}
-\contentsline {subsection}{\numberline {3.3}BOOLEsche Operationen}{6}
+\contentsline {subsubsection}{\numberline {3.2.1}Kommutativit\"at und Assoziativit\"at}{5}
+\contentsline {subsubsection}{\numberline {3.2.2}Einselement}{5}
+\contentsline {subsubsection}{\numberline {3.2.3}Nullelement}{5}
+\contentsline {subsection}{\numberline {3.3}BOOLEsche Operationen}{5}
 \contentsline {subsubsection}{\numberline {3.3.1}Monotonie im Hinterglied}{7}
 \contentsline {subsubsection}{\numberline {3.3.2}Monotonie im Vorderglied}{7}
 \contentsline {subsection}{\numberline {3.4}Konkatenation}{9}
