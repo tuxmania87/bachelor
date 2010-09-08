@@ -7,7 +7,8 @@ Für eine Sprache $W$ ist $W^*=\bigcup_{i\in\mathbb{N}} W^i$. Weiterhin bezeichne
 Wir definieren die Präfixrelation $\sqsubseteq$ wie üblich mit $w\sqsubseteq b \Leftrightarrow w\cdot b' = b,\textit{ f{\"u}r ein }b'\in X^*$.
 Somit bildet $\pref(L) = \{v:v\sqsubseteq w \wedge w\in L\}$ alle Präfixe aller Wörter aus $L$.\\\\
 Weiterhin bezeichnen wir mit $\min(L) = \{w:w\in L \wedge \forall v( v\sqsubset w \to v\notin L)\}$ alle Wörter der Sprache $L$, in denen kein Wort Präfix eines anderen Wortes ist.
-Abschließend bezeichnen wir die Operation Fortsetzung einer Sprache $L$ in die Sprache $W$ als $L\ff W = \bigcup_{u\in L} \min(u\cdot X^* \cap W)$\\\\
+Die Fortsetzung $\ff$ eines Wortes $w$ in $L$ definieren wir als $w\ff L = \min(w\cdot X^* \cap L)$. Diese Definition weiten wir auf Sprachen aus und definieren
+die Fortsetzung einer Sprache $L$ in die Sprache $W$ als $L\ff W = \bigcup_{u\in L} u\ff W$\\\\
 Wir definieren den $\delta$-Limes einer Wortmenge $W ^\delta$ wie in [St87] mit\\$W^\delta = \{\beta : \beta \in X^\omega \text{ und }\pref(\beta)\cap W \text{ ist unendlich}\}$
 % also eine unendliche Aneinanderreihung von Wörtern aus ....
 Die Eigenschaft (13) aus [St87] ist leicht einzusehen: $(U \cup W)^\delta = U^\delta \cup W^\delta$.	Eine Sprache nennen wir eine $(\sigma,\delta)$-Teilmenge von $X^*$ genau dann, wenn für alle $\beta \in X^\omega$ entweder $\pref(\beta)\cap W$ oder $\pref(\beta)\setminus W$ endlich ist.

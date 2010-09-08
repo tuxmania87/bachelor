@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.5.7)  8 SEP 2010 10:19
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.5.7)  8 SEP 2010 10:39
 entering extended mode
  %&-line parsing enabled.
 **bachelor.tex
@@ -410,13 +410,13 @@ Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)            on input line 4.
 Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)           `sectioning' that is an alias of element `disposition'
+(scrartcl)            on input line 13.
+Class scrartcl Info: You've told me to use the font selection of the element
+(scrartcl)           `sectioning' that is an alias of element `disposition'
 (scrartcl)            on input line 14.
 Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)           `sectioning' that is an alias of element `disposition'
-(scrartcl)            on input line 15.
-Class scrartcl Info: You've told me to use the font selection of the element
-(scrartcl)           `sectioning' that is an alias of element `disposition'
-(scrartcl)            on input line 22.
+(scrartcl)            on input line 21.
 )
 \tf@toc=\write3
 \openout3 = `bachelor.toc'.
@@ -447,32 +447,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--49
  []
 
 [4] (./teil1.tex
-Underfull \hbox (badness 10000) in paragraph at lines 20--26
+Underfull \hbox (badness 10000) in paragraph at lines 18--24
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--30
+Underfull \hbox (badness 10000) in paragraph at lines 26--28
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
  []
 
 [6] [7] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 175--178
+Underfull \hbox (badness 10000) in paragraph at lines 173--176
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 199--209
+Underfull \hbox (badness 10000) in paragraph at lines 197--207
 
  []
 
@@ -583,7 +583,7 @@ xmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive
 /public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/ams
 fonts/symbols/msam10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
 symbols/msbm10.pfb>
-Output written on bachelor.pdf (16 pages, 224877 bytes).
+Output written on bachelor.pdf (16 pages, 224984 bytes).
 PDF statistics:
  118 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
