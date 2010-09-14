@@ -1,15 +1,15 @@
-In diesem Abschnitt betrachten wir die Abgeschlossenheitseigenschaften der Klassen der CHOMSKY-Hierachie bezüglich der Operation Fortsetzung. 
-Dabei betrachten wir in den folgenden Abschnitten die Klassen der refulären, kontextfreien, aufzählbaren und entscheidbaren Sprachen.
+In diesem Abschnitt betrachten wir die Abgeschlossenheitseigenschaften der Klassen der CHOMSKY-Hierachie bez"uglich der Operation Fortsetzung. 
+Dabei betrachten wir in den folgenden Abschnitten die Klassen der reful"aren, kontextfreien, aufz"ahlbaren und entscheidbaren Sprachen.
 
-\subsection{Regularität}
+\section{Regularit"at}
 \begin{satz}
 Sind $L$ und $W$ regul\"are Sprachen, so ist auch $L\ff W$ regul\"ar.
 \end{satz}
 \begin{proof}
 Der nicht-deterministische Automat $A_L= (X,Z,z_{0},\delta_L,Z_f)$ akzeptiere $L$, der deterministische Automat $A_W = (X,S,s_{0},f,S_{f})$ akzeptiere $W$.
 Wir konstruieren einen nicht-determninistischen Automaten $A$, der $L\ff W$ akzeptiert \\\\Arbeitsweise:\\
-In Phase eins lesen $A_L$ und $A_W$ das Wort $w$ parallel (\ref{auto1}). Falls $A_L$ ein Präfix $v$ von $w$ akzeptiert, wählt $A$ nicht-deterministisch aus ob Schritt zwei aktiviert wird oder nicht ( Nicht-Determinismus von $A_L$ ).\\
-Wird Phase zwei aktiviert, so liest $A_W$ das Wort $w$ weiter, während $A_L$ in einem Ruhezustand $z_f'$ verweilt (\ref{auto2}). Akzeptiert $A_W$ nun ein Präfix $v'$ mit $v\sqsubseteq v'\sqsubset w\quad v'\in W$, so lehnt $A$ das Eingabewort $w$ ab. Dazu geht $A$ in den Zustand $(z_f',s_x)$ aus dem keine Transition herausführt (\ref{auto3}). Findet der Automat $A_W$ kein solches Präfix $v'$ und akzeptiert das Eingabewort $w$ ( und kein Präfix von $w$), so akzeptiert auch $A$ und endet im Zustand $(z_f',s_x)$ (\ref{auto4}).\\
+In Phase eins lesen $A_L$ und $A_W$ das Wort $w$ parallel (\ref{auto1}). Falls $A_L$ ein Pr"afix $v$ von $w$ akzeptiert, w"ahlt $A$ nicht-deterministisch aus ob Schritt zwei aktiviert wird oder nicht ( Nicht-Determinismus von $A_L$ ).\\
+Wird Phase zwei aktiviert, so liest $A_W$ das Wort $w$ weiter, w"ahrend $A_L$ in einem Ruhezustand $z_f'$ verweilt (\ref{auto2}). Akzeptiert $A_W$ nun ein Pr"afix $v'$ mit $v\sqsubseteq v'\sqsubset w\quad v'\in W$, so lehnt $A$ das Eingabewort $w$ ab. Dazu geht $A$ in den Zustand $(z_f',s_x)$ aus dem keine Transition herausf"uhrt (\ref{auto3}). Findet der Automat $A_W$ kein solches Pr"afix $v'$ und akzeptiert das Eingabewort $w$ ( und kein Pr"afix von $w$), so akzeptiert auch $A$ und endet im Zustand $(z_f',s_x)$ (\ref{auto4}).\\
 
 $A = (X,(Z\cup \{ z_f'\})\times (S\cup \{ s_x\}), (z_{0},s_{0}), \delta , \{ (z_f',s_x) \} ), s_x\notin S$
 mit\\
@@ -20,25 +20,25 @@ mit\\
  & \cup & \{ ((z_f',s_i),x,(z_f',s_j)) : f(s_i,x)=s_j  \wedge s_j \notin S_f\} \label{auto3}\\
  & \cup & \{ ((z_f',s_i),x,(z_f',s_x)) : f(s_i,x)=s_j  \wedge s_j \in S_f \label{auto4} \}
 \end{eqnarray}
-Nach Konstruktion ist klar, dass der Automat $A$ nur Wörter aus $L\ff W$ akzeptiert. Er akzeptiert auch alle Wörter aus $L\ff W$, weil der Automat $A_L$, welcher die Präfixe akzeptiert, nicht-deterministisch entscheidet, wann Phase zwei beginnt. In Phase zwei läuft dann nur $A_W$ deterministisch auf der Eingabe $w$ weiter und akzeptiert, wenn das nicht-deterministisch ausgewählte Präfix in $w$ fortgesetzt werden kann.
+Nach Konstruktion ist klar, dass der Automat $A$ nur W"orter aus $L\ff W$ akzeptiert. Er akzeptiert auch alle W"orter aus $L\ff W$, weil der Automat $A_L$, welcher die Pr"afixe akzeptiert, nicht-deterministisch entscheidet, wann Phase zwei beginnt. In Phase zwei l"auft dann nur $A_W$ deterministisch auf der Eingabe $w$ weiter und akzeptiert, wenn das nicht-deterministisch ausgew"ahlte Pr"afix in $w$ fortgesetzt werden kann.
 Damit akzeptiert der Automat $A$ ein Eingabewort $w$ genau dann, wenn $w\in L\ff W$
 \end{proof}
 \newpage
-\subsection{Kontextfreiheit}
+\section{Kontextfreiheit}
 Es existieren deterministisch kontextfreie, lineare Sprachen $L,W$ derart, dass $L\ff W$ nicht einmal kontextfrei ist.
 \begin{beispiel}
 Es seien $L=\{a^nb^nc^i:i,n>0\}$ und $W=\{a^ib^nc^n:i,n>0\}$. Sowohl $L$ als auch $W$ sind deterministische, kontextfreie und auch lineare Sprachen, da es je einen deterministischen Kellerautomaten gibt, der $L$ sowie $W$ akzeptiert und es lineare Grammatiken \\\\$G_L = (\{S,A,C\},\{a,b,c\},S,\{ (S,Cc),(C,Cc),(C,aAb),(A,aAb),(A,e)\})$ und \\$G_W = (\{S,A,B\},\{a,b,c\},S,\{ (S,aA),(A,aA),(A,bBc),(B,bBc),(B,e) \})$ gibt, sodass \\$L(G_L) = L$ und $L(G_W) = W$ gilt.\\\\
-Betrachten wir nun ein Wort $u\in L\ff W$ so muss $u$ laut Definition folgende Struktur besitzen $u\in \min( v\cdot X^* \cap W)$ für ein $v \in L$.
+Betrachten wir nun ein Wort $u\in L\ff W$ so muss $u$ laut Definition folgende Struktur besitzen $u\in \min( v\cdot X^* \cap W)$ f"ur ein $v \in L$.
 Damit sieht man leicht, dass $L\ff W= \{a^nb^nc^n:n>0\}$ gilt. Diese Sprache ist bekanntlich nicht einmal kontextfrei.
 \end{beispiel}
 
 
-\subsection{Entscheidbarkeit und Aufzählbarkeit}
-In diesem Abschnitt betrachten wir, ob für entscheidbare bzw. aufzählbare Sprachen $L$ und $W$ auch deren Fortsetzung $L\ff W$ wiederum entscheidbar bzw. aufzaehlbar ist. Dabei betrachten wir drei verschieden Fälle.\\\\
-Wir betrachten zunächst $L\ff W$, wenn $L$ und $W$ entscheidbar sind. Dabei werden wir feststellen, dass auch die Fortsetzung $L\ff W$ entscheidbar ist. Ein Algorithmus wird dazu angegeben.\\
-Anschließend werden wir die Fortsetzung betrachten, wenn $L$ nur aufzählbar und $W$ entscheidbar ist. In diesem Fall ist die Fortsetzung von $L$ in $W$ ebenso aufzählbar. Dazu geben wir einen Algorithmus an.\\
-Im letzten Fall betrachten wir $L\ff W$, wenn $W$ nur aufzählbar ist. In diesem Fall ist die Fortsetzung beider Sprachen nicht einmal aufzählbar. Dies gilt sogar , wenn $L$ eine endliche Sprache ist.
-\subsubsection{L und W entscheidbar}
+\section{Entscheidbarkeit und Aufz"ahlbarkeit}
+In diesem Abschnitt betrachten wir, ob f"ur entscheidbare bzw. aufz"ahlbare Sprachen $L$ und $W$ auch deren Fortsetzung $L\ff W$ wiederum entscheidbar bzw. aufzaehlbar ist. Dabei betrachten wir drei verschieden F"alle.\\\\
+Wir betrachten zun"achst $L\ff W$, wenn $L$ und $W$ entscheidbar sind. Dabei werden wir feststellen, dass auch die Fortsetzung $L\ff W$ entscheidbar ist. Ein Algorithmus wird dazu angegeben.\\
+Anschlie"send werden wir die Fortsetzung betrachten, wenn $L$ nur aufz"ahlbar und $W$ entscheidbar ist. In diesem Fall ist die Fortsetzung von $L$ in $W$ ebenso aufz"ahlbar. Dazu geben wir einen Algorithmus an.\\
+Im letzten Fall betrachten wir $L\ff W$, wenn $W$ nur aufz"ahlbar ist. In diesem Fall ist die Fortsetzung beider Sprachen nicht einmal aufz"ahlbar. Dies gilt sogar , wenn $L$ eine endliche Sprache ist.
+\subsection{L und W entscheidbar}
 
 \begin{satz}\label{entsch1}
 Sind $L$ und $W$ entscheidbare Sprachen, so ist auch $L\ff W$ entscheidbar.
@@ -46,12 +46,12 @@ Sind $L$ und $W$ entscheidbare Sprachen, so ist auch $L\ff W$ entscheidbar.
 \begin{proof}
 Wir wissen, dass zu jeder entscheidbaren Sprache $L$ ein Algorithmus angegeben werden kann, welcher $L$ entscheidet. Daher geben wir zum Beweis von Satz \ref{entsch1} einen Algorithmus an, welcher $L\ff W$ entscheidet.\\\\
 \textbf{Arbeitsweise des Algorithmus:}\\
-Zunächst wird geprüft ob $w\in W$, da dies eine zwingende Voraussetzung laut Definition der Operation Fortzsetung ist (\# 1).
-Jetzt wissen wir, dass $w\in W$. Gilt zusätzlich $w\in L$, so ist klar, dass $w\in L\ff W$ nach Eigenschaft \ref{klaro} (\# 2).\\\\
+Zun"achst wird gepr"uft ob $w\in W$, da dies eine zwingende Voraussetzung laut Definition der Operation Fortzsetung ist (\# 1).
+Jetzt wissen wir, dass $w\in W$. Gilt zus"atzlich $w\in L$, so ist klar, dass $w\in L\ff W$ nach Eigenschaft \ref{klaro} (\# 2).\\\\
 Jetzt setzen wir $w'$ mit $w':=w$ als Arbeitskopie. Im folgenden Schleifendurchlauf schneiden wir mit $cut()$ den letzten Buchstaben von $w'$ ab (\# 3). 
-Gilt jetzt $w'\in W$ so müssen wir mit NEIN entscheiden, weil die Eingabe jetzt nicht mehr dem $\min$ Kriterium genügt.
-Anschließend wird geprüft ob $w'\in L\setminus W$ (\# 5) gilt. Wenn ja, dann haben wir ein das erste Präfix von $w$ gefunden und können für die Eingabe $w$ mit JA entscheiden.
-\\\\Ansonsten wird die Schleife solange weiter durchlaufen, bis $w'$ nur noch aus dem leeren Wort besteht, anschliessend wird abgelehnt, da kein Präfix von $v$ von $w$ gefunden wurde, welches in $L\setminus W$ liegt.
+Gilt jetzt $w'\in W$ so m"ussen wir mit NEIN entscheiden, weil die Eingabe jetzt nicht mehr dem $\min$ Kriterium gen"ugt.
+Anschlie"send wird gepr"uft ob $w'\in L\setminus W$ (\# 5) gilt. Wenn ja, dann haben wir ein das erste Pr"afix von $w$ gefunden und k"onnen f"ur die Eingabe $w$ mit JA entscheiden.
+\\\\Ansonsten wird die Schleife solange weiter durchlaufen, bis $w'$ nur noch aus dem leeren Wort besteht, anschliessend wird abgelehnt, da kein Pr"afix von $v$ von $w$ gefunden wurde, welches in $L\setminus W$ liegt.
 \begin{algorithm}
 \caption{entscheide $L\ff W$}
 \label{split}
@@ -84,17 +84,17 @@ Anschließend wird geprüft ob $w'\in L\setminus W$ (\# 5) gilt. Wenn ja, dann hab
 \end{proof}
 
 \newpage
-\subsubsection{L aufzählbar, W entscheidbar}
+\subsection{L aufz"ahlbar, W entscheidbar}
 \begin{satz}
-Ist $L$ eine aufzählbare Sprache und $W$ eine entscheidbare Sprache, so ist $L\ff W$ aufzählbar.
+Ist $L$ eine aufz"ahlbare Sprache und $W$ eine entscheidbare Sprache, so ist $L\ff W$ aufz"ahlbar.
 \end{satz}
 \begin{proof}
-Es sei $U=\{u_i : 0 \le i \le n \wedge u_i \in L\}$ eine Aufzählung von $L$.\\
+Es sei $U=\{u_i : 0 \le i \le n \wedge u_i \in L\}$ eine Aufz"ahlung von $L$.\\
 Wir konstruieren einen Algorithmus welcher die Eingabe $w$ akzeptiert genau dann, wenn $w\in L\ff W$.
-Ist $w\notin W$ so kann nach Definition auch nicht $w\in L\ff W$ gelten. \\\\Wir wählen das Wort $u_i$ aus der Aufzählung $U$ von $L$ aus (\# 1).
-Gilt nun $u_i\sqsubseteq w$, so wird eine Arbeitskopie $v$ mit $v:=w$ erstellt (\# 2). Im nächsten Schritt wird für alle Präfixe $v$ mit $u_i\sqsubseteq v\sqsubset w$ sukzessive geprüft ob $v\in W$ (\# 3). 
-\\\\Sollte dies der Fall sein, dann erfüllt das aufgezählte $u_i\in L$ nicht das Kriterium $u_i\in L\setminus W$. Die innere Schleife wird daher verlassen und die FOR Schleife wählt das nächste $u_{i+1}$ aus(\# 4).% und der Algorithmus läuft mit diesem $u_i$ weiter.
-\\Gilt aber für alle Präfixe $v\notin W$, so erreicht die innere Schleife ihre Abbruchbedingung und wir akzeptieren die Eingabe $w$ (\# 5).
+Ist $w\notin W$ so kann nach Definition auch nicht $w\in L\ff W$ gelten. \\\\Wir w"ahlen das Wort $u_i$ aus der Aufz"ahlung $U$ von $L$ aus (\# 1).
+Gilt nun $u_i\sqsubseteq w$, so wird eine Arbeitskopie $v$ mit $v:=w$ erstellt (\# 2). Im n"achsten Schritt wird f"ur alle Pr"afixe $v$ mit $u_i\sqsubseteq v\sqsubset w$ sukzessive gepr"uft ob $v\in W$ (\# 3). 
+\\\\Sollte dies der Fall sein, dann erf"ullt das aufgez"ahlte $u_i\in L$ nicht das Kriterium $u_i\in L\setminus W$. Die innere Schleife wird daher verlassen und die FOR Schleife w"ahlt das n"achste $u_{i+1}$ aus(\# 4).% und der Algorithmus l"auft mit diesem $u_i$ weiter.
+\\Gilt aber f"ur alle Pr"afixe $v\notin W$, so erreicht die innere Schleife ihre Abbruchbedingung und wir akzeptieren die Eingabe $w$ (\# 5).
 
 
 \begin{algorithm}
@@ -110,7 +110,7 @@ Gilt nun $u_i\sqsubseteq w$, so wird eine Arbeitskopie $v$ mit $v:=w$ erstellt (
 \ENDIF\\
 \COMMENT{\# 1}
 \FOR{$i = 0$ to $\infty$} 
-%\STATE zähle ein $u\in L$ auf 
+%\STATE z"ahle ein $u\in L$ auf 
 \IF{  $u_i\in\pref(\{w\})$ }
 \STATE $v := w$ \COMMENT{\# 2}
 \WHILE{$v\neq u_i$}
@@ -127,15 +127,15 @@ Gilt nun $u_i\sqsubseteq w$, so wird eine Arbeitskopie $v$ mit $v:=w$ erstellt (
 \end{algorithm}
 \end{proof}
 \newpage
-\subsubsection{L entscheidbar, W aufzählbar}
+\subsection{L entscheidbar, W aufz"ahlbar}
 
 \begin{satz}
-Es sei $L$ eine entscheidbare Sprache und $W$ eine aufzählbare Sprache, so ist $L\ff W$ nicht notwendig aufzählbar.
+Es sei $L$ eine entscheidbare Sprache und $W$ eine aufz"ahlbare Sprache, so ist $L\ff W$ nicht notwendig aufz"ahlbar.
 \end{satz}
 \begin{proof}
-Wir wählen ein $A\subseteq \mathbb{N}$ welches aufzählbar, aber nicht entscheidbar ist und
-setzen $W$ wie in (\ref{last1}) und $L$ wie in (\ref{last2}). $W$ ist also aufzählbar und $L$ sogar regulär und endlich.
-Angenommen (\ref{last3}) wäre aufzählbar, so wäre (\ref{last4}) auch aufzählbar. Das würde bedeuten, dass $\mathbb{N}\setminus A$ aufzählbar und damit $A$ entscheidbar wäre. Dies ergibt aber einen Widerspruch zur Annahme, da wir $A$ so gewählt haben, dass es nicht entscheidbar ist.
+Wir w"ahlen ein $A\subseteq \mathbb{N}$ welches aufz"ahlbar, aber nicht entscheidbar ist und
+setzen $W$ wie in (\ref{last1}) und $L$ wie in (\ref{last2}). $W$ ist also aufz"ahlbar und $L$ sogar regul"ar und endlich.
+Angenommen (\ref{last3}) w"are aufz"ahlbar, so w"are (\ref{last4}) auch aufz"ahlbar. Das w"urde bedeuten, dass $\mathbb{N}\setminus A$ aufz"ahlbar und damit $A$ entscheidbar w"are. Dies ergibt aber einen Widerspruch zur Annahme, da wir $A$ so gew"ahlt haben, dass es nicht entscheidbar ist.
 \setcounter{equation}{0}
 \begin{eqnarray}
 W&=&\{0^{n+1}\ 1^{n+1} : n\in \mathbb{N} \} \cup \{0^{n+1}\ 1 : n\in A \} \label{last1} \\

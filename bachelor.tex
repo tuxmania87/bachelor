@@ -1,30 +1,29 @@
-\documentclass[11pt]{scrartcl}
-\usepackage{geometry}
-\usepackage{graphics}
-\usepackage{graphicx}
-\usepackage{amssymb}
-\usepackage{amstext}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{amsthm}
-\usepackage{color}
-\usepackage{amsmath}
-\usepackage[ngerman]{babel}
-\usepackage[latin1]{inputenc}
-\usepackage{units}
-\usepackage{ulem}
+%\documentclass[11pt]{scrartcl}
+
+%ronny
+\documentclass[12pt]{scrreprt}
+
+\usepackage{primaer}
+\usepackage{setspace}
+\usepackage{txfonts}
 \usepackage{algorithm}
+\usepackage[ngerman]{babel}
+%\usepackage{algorithm}
 \usepackage{algorithmic}
+\usepackage{tikz}
+\usetikzlibrary{trees}
+\usetikzlibrary{shapes}
+\usetikzlibrary{automata}
+\usetikzlibrary{backgrounds}
+\usetikzlibrary{plotmarks}
+\usetikzlibrary{arrows}
+%ende ronny
+
 %\geometry{a4paper,left=25mm,right=50mm, top=13mm, bottom=20mm}
 %\geometry{a4paper,right=50mm,left=25mm}
 \newcommand{\ff}{\triangleright}
 \newcommand{\pref}[1]{\mathit{pref{#1}}}
 \renewcommand{\min}{\mathit{Min}\;}
-\author{Robert Hartmann}
-\title{Über die Operation Fortsetzung bei formalen Sprachen}
-\date{24. September 2010}
-\parindent 0pt
-\begin{document}
 
 \newtheorem{def1}{Definition}
 \newtheorem{satz}{Satz}
@@ -36,44 +35,51 @@
 \theoremstyle{remark}
 \newtheorem{beispiel}{Beispiel}
 
-\maketitle
-\newpage
+\author{Robert Hartmann}
+\title{"Uber die Operation Fortsetzung bei formalen Sprachen}
+\date{24. September 2010}
+\parindent 0pt
+\begin{document}
+
+\input{titlepage}
+%\include{dedication}
+
+\pagestyle{plain}
 \tableofcontents
-\newpage
-\section{Einleitung}
+
+\onehalfspacing
+
+\chapter{Einleitung}
 \input{einleitung}
 \newpage
 
-\section{Notation}
+\chapter{Notation}
 \input{notation}
 \newpage
 
-\section{Eigenschaften}
+\chapter{Eigenschaften}
 \input{teil1}
 \newpage
 
-\section{Eigenschaften bei Sprachen spezieller Gestalt}
+\chapter{Eigenschaften bei Sprachen spezieller Gestalt}
 \input{teil2}
 \newpage
 
-\section{Abgeschlossenheitseigenschaften}
+\chapter{Abgeschlossenheitseigenschaften}
 \input{teil3}
 \newpage
 
 
-\section{Quellenverzeichnis}
-\begin{thebibliography}{9}
-
-
-\bibitem[St87]{St87}L. Staiger, Sequential Mappings of $\omega$-Languages, 1987, pp. 148--170.
+\chapter{Quellenverzeichnis}
+%\begin{thebibliography}{9}
+%\bibitem[St87]{St87}L. Staiger, Sequential Mappings of $\omega$-Languages, 1987, pp. 148--170.
 %\bibitem[St75]{St75}L. Staiger, Reguläre Nullmengen, 1975.
-\bibitem[St97]{St97}L. Staiger, $\omega$-Languages. in: Handbook of Formal Languages, (G. Rozenberg and A. Salomaa Eds.), Springer-Verlag, Berlin 1997, Vol. 3, pp. 339--387.
-\bibitem[Wagner94]{Wg94}K. Wagner, Einführung in die theoretische Informatik, Springer-Verlag, Berlin 1994.
+%\bibitem[St97]{St97}L. Staiger, $\omega$-Languages. in: Handbook of Formal Languages, (G. Rozenberg and A. Salomaa Eds.), Springer-Verlag, Berlin 1997, Vol. 3, pp. 339--387.
+%\bibitem[Wagner94]{Wg94}K. Wagner, Einführung in die theoretische Informatik, Springer-Verlag, Berlin 1994.
 
-\end{thebibliography}
+%\end{thebibliography}
 
 
+\include{erklaerung}
 
 \end{document}
-
-

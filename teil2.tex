@@ -2,13 +2,13 @@
 %$$V\ff W\cdot X^* = V\ff W $$
 %\end{eigen}
 
-%Es genügt die Eigenschaft zu zeigen für $L=\{v\}$:
+%Es gen"ugt die Eigenschaft zu zeigen f"ur $L=\{v\}$:
 %\begin{proof}
 %$$V\ff W\cdot X^* = \{v\} \ff W\cdot X^*$$
 %Nach Definition der Operation Fortsetzung ergibt sich:
 %$$ = min_{\sqsubseteq} \{w:w\in W\cdot X^* \wedge v\sqsubseteq w\}$$
 %Wir wissen aus der Vorrausetzung, dass $v\notin W\cdot X^*$, daraus folgt unmittelbar, dass $v\in pref(W)\setminus W$.\\
-%Angenommen es existiert ein $w\in W\cdot X^+$ in $min_{\sqsubseteq} \{w:w\in W\cdot X^* \wedge v\sqsubseteq w\}$, so ist $w'$ mit $w=w'\cdot r\wedge w'\in W$ ein kürzeres Wort, daher gilt:
+%Angenommen es existiert ein $w\in W\cdot X^+$ in $min_{\sqsubseteq} \{w:w\in W\cdot X^* \wedge v\sqsubseteq w\}$, so ist $w'$ mit $w=w'\cdot r\wedge w'\in W$ ein k"urzeres Wort, daher gilt:
 %$$min_{\sqsubseteq} \{w:w\in W\cdot X^* \wedge v\sqsubseteq w\} = min_{\sqsubseteq} \{w:w\in W \wedge v\sqsubseteq w\}$$
 %\end{proof}
 
@@ -19,7 +19,7 @@
 In diesem Abschnitt wird die Operation Fortsetzung untersucht, wenn eine der beiden Operanden die spezielle Gestalt $\pref(L)$ oder $W\cdot X^*$ hat.
 
 
-%\textbf{zu 1.} Es genügt die Eigenschaft zu zeigen für $V=\{v\}$\\
+%\textbf{zu 1.} Es gen"ugt die Eigenschaft zu zeigen f"ur $V=\{v\}$\\
 %\begin{proof}
 %$$v \ff W\cdot X^* = \min_{\sqsubseteq} \{w:w\in W\cdot X^* \wedge v\sqsubseteq w\}$$
 %$$w\in W\cdot X^* \wedge v\sqsubseteq w \wedge v\not\in W\cdot X^* \to ( w'\in (\min(v\cdot X^* \cap W\cdot X^*) \to w'\in  (\min(v\cdot X^* \cap \min(W)))) )$$
@@ -36,14 +36,14 @@ $W\ff \pref(V) = W \cap \pref(V)$
 \end{eigen}
 \begin{proof}
 Die Inklusion $\supseteq$ folgt aus Eigenschaft \ref{klaro}.\\
-Zum Beweis der anderen Inklusion betrachten wir $w\in W\ff\pref(V)$. Es muss also ein $u\in W$ existieren, sodass $w\in \{u\}\ff\pref(V)$. Daraus folgt, dass $u$ ein Präfix von $w$ sein muss, was wiederum bedeutet, dass $u\in\pref(V)$. Damit haben wir $w\in\min(\{u\}\cdot X^*\cap \pref(V)) \to w\in \{u\}\cap \pref(V)$.
-%Es genügt die Eigenschaft für $W=\{w\}$ zu zeigen:\\
+Zum Beweis der anderen Inklusion betrachten wir $w\in W\ff\pref(V)$. Es muss also ein $u\in W$ existieren, sodass $w\in \{u\}\ff\pref(V)$. Daraus folgt, dass $u$ ein Pr"afix von $w$ sein muss, was wiederum bedeutet, dass $u\in\pref(V)$. Damit haben wir $w\in\min(\{u\}\cdot X^*\cap \pref(V)) \to w\in \{u\}\cap \pref(V)$.
+%Es gen"ugt die Eigenschaft f"ur $W=\{w\}$ zu zeigen:\\
 %Aus der Definition wissen wir, dass $w\ff \pref(V)= \min ( \{w\} \cdot X^* \cap \pref(V) )$ gilt. 
 %ist $w'\in (\{w\} \cdot X^* \cap \pref(V))$, so sieht man, dass $w\sqsubseteq w'$ gilt. Also haben wir wegen $w'\in \pref(V)$ auch $w\in\pref(V)$.
 %Daraus folgt $\min ( \{w\} \cdot X^* \cap \pref(V) ) = \{w\} \cap \pref(V)$
 \end{proof}
 
-Für die Umkehrung von Eigenschaft \ref{spezeig1} $\pref(V)\ff W$ gibt es keine Vereinfachung, wie das folgende Beispiel zeigt.
+F"ur die Umkehrung von Eigenschaft \ref{spezeig1} $\pref(V)\ff W$ gibt es keine Vereinfachung, wie das folgende Beispiel zeigt.
 \begin{beispiel}
 Es seien $V=\{aab,ab\}$ und $W=\{a,abb,aaab\}$, so dass $\pref(V)=\{e,a,aa,ab,aab\}$. Dann haben wir $\pref(V)\ff W = \{a,aab,aaab\}$, aber $\pref(V) \cap W = \{a\}$ und $\min(\pref(V)\setminus\{e\}) \ff W = \{a,abb\}$
 Damit fehlt das Element $aaab$. Ein Betrachten von $\min(\pref(V))$ hat keinen Sinn, da trivialerweise $\min(\pref(V)) = \{e\}$, wenn $V\neq\emptyset$.
@@ -55,7 +55,7 @@ Damit fehlt das Element $aaab$. Ein Betrachten von $\min(\pref(V))$ hat keinen S
 %%$W\ff \pref(V) = W \cap \pref(V)$%
 %\end{eigen}
 %\begin{proof}
-%Es genügt die Eigenschaft für $W=\{w\}$ zu zeigen:
+%Es gen"ugt die Eigenschaft f"ur $W=\{w\}$ zu zeigen:
 %$$W\ff \pref(V) = \{w\}\ff\pref(V)$$
 %$$=min_{\sqsubseteq} \{v:v\in \pref(V) \wedge w\sqsubseteq v\}$$
 %Aus $v\in \pref(V) \wedge w\sqsubseteq v$ folgt direkt, dass $w\in pref(V)$. Damit ergibt sich :
@@ -69,14 +69,14 @@ $V\cdot X^* \ff W = V\cdot X^* \cap W$
 \end{eigen}
 \begin{proof}
 Die Inklusion $\supseteq$ folgt aus Eigenschaft \ref{klaro}.
-Zum Beweis der anderen Inklusion betrachten wir $w\in V\cdot X^* \ff W$. Es existiert also ein $v\in V\cdot X^*$, sodass $w\in \{v\}\ff W$ ist. Daraus folgt, dass $v$ ein Präfix von $w$ sein muss, was wiederum bedeutet, dass $w\in V\cdot X^*$. Somit gilt die Inklusion $V\cdot X^* \ff W \subseteq W\cap V\cdot X^*$.
+Zum Beweis der anderen Inklusion betrachten wir $w\in V\cdot X^* \ff W$. Es existiert also ein $v\in V\cdot X^*$, sodass $w\in \{v\}\ff W$ ist. Daraus folgt, dass $v$ ein Pr"afix von $w$ sein muss, was wiederum bedeutet, dass $w\in V\cdot X^*$. Somit gilt die Inklusion $V\cdot X^* \ff W \subseteq W\cap V\cdot X^*$.
 \end{proof}
 
 %\begin{eigen}
 %$V\cdot X^* \ff W$
 %\end{eigen}
 %\begin{proof}
-%Es genügt die Eigenschaft für ein $v\in V\cdot X^*$ zu zeigen:
+%Es gen"ugt die Eigenschaft f"ur ein $v\in V\cdot X^*$ zu zeigen:
 %$$\min_{\sqsubseteq} \{w:w\in W \wedge v\sqsubseteq w\}$$
 %$$v\in VX^* \wedge v\sqsubseteq w \to w\in VX^*$$
 %$$=\min_{\sqsubseteq} \{w:w\in W \wedge w\in V\cdot X^* \wedge v=w\} = \{v\}\cap W$$
@@ -92,14 +92,14 @@ Es sei $L\subseteq X^*\setminus W\cdot X^*$, so gilt $L\ff W\cdot X^* = L\ff \mi
 \end{lem}
 \begin{proof}[Beweis Lemma \ref{eingeschr1}]:\\
 Die Inklusion $L\ff \min(W) \subseteq L\ff W\cdot X^*$ ist, wie man leicht sieht, trivial.\\
-Zum Beweis der der anderen Inklusion genügt es, diese für den Fall $L=\{v\}$ zu zeigen.\\
-Es sei nun $w\in v\ff W\cdot X^*$, wobei nach Vorraussetzung $v\notin W\cdot X^*$ gelte. Dann gilt für kein $u$, $v\sqsubseteq u\sqsubset w$ oder $u\sqsubseteq v$ die Beziehung $u\in W\cdot X^*$.\\
+Zum Beweis der der anderen Inklusion gen"ugt es, diese f"ur den Fall $L=\{v\}$ zu zeigen.\\
+Es sei nun $w\in v\ff W\cdot X^*$, wobei nach Vorraussetzung $v\notin W\cdot X^*$ gelte. Dann gilt f"ur kein $u$, $v\sqsubseteq u\sqsubset w$ oder $u\sqsubseteq v$ die Beziehung $u\in W\cdot X^*$.\\
 Also haben wir $w\in\min(W\cdot X^*) = \min(W)$
 \end{proof}
 
 \begin{proof}[Beweis von Eigenschaft \ref{fooba}]
-Die Fortsetzung von $W$ in $V\cdot X^*$ lässt sich, mit Hilfe von Eigenschaft \ref{basiseigen}, in zwei Teile aufspalten (\ref{arr1}).
-Da $W\setminus V\cdot X^* \subseteq X^*\setminus V\cdot X^*$, wenden wir Lemma \ref{eingeschr1} an und erhalten (\ref{arr3}), was sich zu (\ref{arr4}) vereinfachen lässt.
+Die Fortsetzung von $W$ in $V\cdot X^*$ l"asst sich, mit Hilfe von Eigenschaft \ref{basiseigen}, in zwei Teile aufspalten (\ref{arr1}).
+Da $W\setminus V\cdot X^* \subseteq X^*\setminus V\cdot X^*$, wenden wir Lemma \ref{eingeschr1} an und erhalten (\ref{arr3}), was sich zu (\ref{arr4}) vereinfachen l"asst.
 \setcounter{equation}{0}
 \begin{eqnarray}
 W\ff V\cdot X^* & = & ((W\setminus V\cdot X^*) \ff V\cdot X^*) \cup (W\cap V\cdot X^*) \label{arr1}\\
@@ -124,7 +124,7 @@ W\ff V\cdot X^* & = &(W \ff \min(V)) \cup (W\cap V\cdot X^*) \label{arr4}
 %$$W\ff V = \bigcup_{x\in W} x\ff V = \bigcup \min_{\sqsubseteq } \{v:v\in V \wedge x\sqsubseteq v\}$$
 %Wegen $x\in W$ und $x\sqsubseteq v$ gilt $\{v:v\in V \wedge x\sqsubseteq v\} = \emptyset \Rightarrow \bigcup \min_{\sqsubseteq} \{v:v\in V \wedge x\sqsubseteq v\} = \emptyset$\\\\
 %$$ W\cdot X^* \ff V = \bigcup_{x\in W\cdot X^*} x\ff V = \bigcup_{x\in W\cdot X^*} \min_{\sqsubseteq} \{v:v\in V \wedge x\sqsubseteq v\} = \emptyset$$
-%Begründung analog Fall $W\ff V$\\\\
+%Begr"undung analog Fall $W\ff V$\\\\
 %$$ W \ff \mathit{pref}(V) = \bigcup_{w\in W} w\ff \mathit{pref}(V) = \bigcup_{w\in W} \{v:v\in \mathit{pref}(V) \wedge w\sqsubseteq v\} = \emptyset$$
 %$w\sqsubseteq v$ ist nie erfuellt. Angenommen $v\in \mathit{pref}(V) \wedge w\sqsubseteq v$, dann kann man $v$ wie folgt verlaengern $v'=v\cdot v''$ mit $v'\in V$, dann waere $v'=w\cdot w' \cdot v''$ mit $w\cdot w' = v$.
 %Dadurch gilt aber $v'\in V\wedge w\sqsubseteq v' \wedge w\in W \Rightarrow$ Widerspruch zur Definition.\\\\
@@ -133,4 +133,4 @@ W\ff V\cdot X^* & = &(W \ff \min(V)) \cup (W\cap V\cdot X^*) \label{arr4}
 %$$ =  \bigcup_{u\in \mathit{pref}(V)} \min(W\cdot X^* \cap u\cdot X^*) =  \bigcup_{u\in \mathit{pref}(V)} \min(\{w:w\in W \wedge u\sqsubseteq w\})$$\\
 %$$W\cdot X^* \ff \mathit{pref}(V) = \bigcup_{u\in W\cdot X^*} u\ff \mathit{pref}(V) = \bigcup_{u\in W\cdot X^*} \min_{\sqsubseteq} \{w:w\in \mathit{pref}(V) \wedge u\sqsubseteq w\}$$
 %$$ = \bigcup_{u\in W\cdot X^*} \min(\mathit{pref}(V)\cap u\cdot X^*)$$
-%$\mathit{pref}(V)\cap u\cdot X^* = \emptyset$, Begründung siehe oben $\Rightarrow  \bigcup_{u\in W\cdot X^*} \min(\emptyset) = \emptyset$
+%$\mathit{pref}(V)\cap u\cdot X^* = \emptyset$, Begr"undung siehe oben $\Rightarrow  \bigcup_{u\in W\cdot X^*} \min(\emptyset) = \emptyset$
