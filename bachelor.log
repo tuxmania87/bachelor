@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2010.9.14)  14 SEP 2010 09:43
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2010.9.14)  14 SEP 2010 10:38
 entering extended mode
 **C:/Users/Robert/Desktop/ba/bachelor.tex
 (C:/Users/Robert/Desktop/ba/bachelor.tex
@@ -1372,7 +1372,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--17
 
 [12
 
-] [13]
+]
 Underfull \hbox (badness 10000) in paragraph at lines 30--33
 
  []
@@ -1387,6 +1387,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--41
 
  []
 
+[13]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 56.
 
@@ -1404,7 +1405,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--83
 
  []
 
-[14] [15]
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 92--98
 
  []
@@ -1414,19 +1415,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 92--98
 
  []
 
-[16]) [17]
+[15]) [16]
 Kapitel 6.
-[18
+[17
 
-] (C:\Users\Robert\Desktop\ba\erklaerung.tex) [19
+] (C:\Users\Robert\Desktop\ba\erklaerung.tex) [18
 
 ]
 (C:\Users\Robert\Desktop\ba\bachelor.aux
 (C:\Users\Robert\Desktop\ba\erklaerung.aux)) ) 
 Here is how much of TeX's memory you used:
- 16569 strings out of 495269
- 289189 string characters out of 3179645
- 392384 words of memory out of 3000000
+ 16568 strings out of 495269
+ 289182 string characters out of 3179645
+ 390384 words of memory out of 3000000
  19163 multiletter control sequences out of 15000+200000
  83317 words of font info for 135 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -1448,9 +1449,9 @@ s/type1/urw/palatino/uplr8a.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/
 urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/urw/times/u
 tmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/urw/times/utmri8a.pfb>
 
-Output written on bachelor.pdf (19 pages, 189136 bytes).
+Output written on bachelor.pdf (18 pages, 188100 bytes).
 PDF statistics:
- 397 PDF objects out of 1000 (max. 8388607)
- 117 named destinations out of 1000 (max. 500000)
+ 392 PDF objects out of 1000 (max. 8388607)
+ 116 named destinations out of 1000 (max. 500000)
  190 words of extra memory for PDF output out of 10000 (max. 10000000)
 
