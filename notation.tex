@@ -1,11 +1,16 @@
 %notationen
-Mit $\mathbb{N}=\{0,1,2,3,..\}$ bezeichnen wir die Menge der nat"urlichen Zahlen. Es sei $X$ ein Alphabet.
-Mit $X^*$ bezeichnen wir die Menge aller endlichen W"orter "uber dem Alphabet $X$, einschlie"slich des leeren Wortes $e$.
-Wir bezeichnen weiterhin die Menge $X^\omega$ als Menge aller unendlichen W"orter "uber dem Alphabet $X$.\\\\
-F"ur $w\in X^*$ und $v\in X^* \cup X^\omega$ bezeichne $w\cdot v$ die Konkatenation von $w$ und $v$. Daraus ergibt sich in nat"urlicher Weise ein Produkt $L\cdot W$ von Mengen $L\subseteq X^*$ und $W\subseteq X^*\cup X^\omega$.
+Mit $\mathbb{N}=\{0,1,2,3,..\}$ bezeichnen wir die Menge der nat"urlichen Zahlen. 
+Für ein endliches Alphabet $X$ mit mindestens zwei Buchstaben bezeichne $X^*$ die Menge aller (endlichen) W"orter über X sowie $X^\omega$ die Menge aller (abz"ahlbar unendlichen) Folgen über $X$.
+Es sei $e\in X^*$ das leere Wort. Weiterhin definieren wir $W^\omega = W\cdot W\cdot W \cdot ...$ f"ur $W\subseteq X^*\setminus \{e\}$ als die Menge aller abz"ahlbar unendlichen Produkte von W"ortern aus $W$.
+Zu $p\in X^*$ und $b\in X^*\cup X^\omega$ bezeichne $p\cdot b$ die Konkatenation von $p$ und $b$. Daraus ergibt sich in nat"urlicher Weise ein Produkt $W\cdot B$ von Mengen $W\subseteq X^*$ und $B\subseteq X^*\cup X^\omega$.
+
+%Es sei $X$ ein Alphabet.
+%Mit $X^*$ bezeichnen wir die Menge aller endlichen W"orter "uber dem Alphabet $X$, einschlie"slich des leeren Wortes $e$.
+%Wir bezeichnen weiterhin die Menge $X^\omega$ als Menge aller unendlichen W"orter "uber dem Alphabet $X$.\\\\
+%F"ur $w\in X^*$ und $v\in X^* \cup X^\omega$ bezeichne $w\cdot v$ die Konkatenation von $w$ und $v$. Daraus ergibt sich in nat"urlicher Weise ein Produkt $L\cdot W$ von Mengen $L\subseteq X^*$ und $W\subseteq X^*\cup X^\omega$.
 F"ur eine Sprache $W$ ist $W^*=\bigcup_{i\in\mathbb{N}} W^i$. Weiterhin bezeichne $\vert w\vert$ die L"ange des Wortes $w\in X^*$.
 Wir definieren die Pr"afixrelation $\sqsubseteq$ wie "ublich mit $w\sqsubseteq b \Leftrightarrow w\cdot b' = b,\textit{ f{\"u}r ein }b'\in X^*$.
-Somit bildet $\pref(L) = \{v:v\sqsubseteq w \wedge w\in L\}$ alle Pr"afixe aller W"orter aus $L$.\\\\
+Somit bildet $\pref(L) = \{v:v\sqsubseteq w \wedge w\in L\}$ die Menge aller Pr"afixe von W"ortern aus $L$.\\\\
 Weiterhin bezeichnen wir mit $\min(L) = \{w:w\in L \wedge \forall v( v\sqsubset w \to v\notin L)\}$ alle W"orter der Sprache $L$, in denen kein Wort Pr"afix eines anderen Wortes ist.
 Die Fortsetzung $\ff$ eines Wortes $w$ in $L$ definieren wir als $w\ff L = \min(w\cdot X^* \cap L)$. Diese Definition weiten wir auf Sprachen aus und definieren
 die Fortsetzung einer Sprache $L$ in die Sprache $W$ als $L\ff W = \bigcup_{u\in L} u\ff W$\\\\

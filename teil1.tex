@@ -5,10 +5,15 @@ Hierbei wird zun"achst die algebraische Struktur $({2^X}^*,\ff)$ untersucht. Ans
 
 \subsection{Kommutativit"at und Assoziativit"at}
 Die algebraische Struktur $A=({2^X}^*,\ff)$ ist weder kommutativ, noch assoziativ. Um dies zu zeigen, wird ein Gegenbeispiel angegeben.
+
+\vspace{2ex}
+
 \begin{beispiel}
 Es seien $L=\{aa,bb\},\ V = \{aa,b\}$ und $W=\{aa,bb\}$. \\Dann haben wir $(L\ff V)\ff W = \{aa\} \ff W = \{aa\}$, aber $L\ff (V\ff W) = L\ff \{aa,bb\} = \{aa,bb\}$ und $L\ff V = \{aa\}$, aber $V\ff L=\{aa,bb\}$.
 \end{beispiel}
+
 \subsection{Einselement}
+
 Da die algebraische Struktur $A$ nicht kommutativ ist, werden bei der Untersuchung auf Einselemente sowohl linksneutrale, als auch rechtsneutrale Einselemente betrachtet.
 Wir betrachten zuerst linksneutrale Elemente.
 Man erkennt leicht, dass $X^*$ ein solches Element ist, denn es gilt $X^*\ff L = L$.
@@ -24,16 +29,29 @@ Damit kann die algebraische Struktur $A=({2^X}^*,\ff)$ aufgrund fehlender Assozi
 
 \section{BOOLEsche Operationen}
 In diesem Abschnitt untersuchen wir die Operation Fortsetzung auf Stabilit"at bez"uglich den mengentheoretischen Operationen $\cap$ und $\cup$ und auf Monotonie bez"uglich $\subseteq$.
-\\\\Aus der Definition folgt direkt die Eigenschaft:
+\\\\Aus der Definition folgt direkt die Eigenschaft
+
+\vspace{2ex}
+
 \begin{eigen}\label{eig1}
 Es gilt genau dann $\{w\} \ff W = \{w\}$, wenn $w\in W$.
 \end{eigen}
-Aus Eigenschaft \ref{eig1} folgt sofort
-\begin{folg}
-$L\cap W \ff W = L\cap W$
-\end{folg}
 
-Da die Operation Fortsetzung einer Sprache $L$ in eine Sprache $W$ "uber die Vereinigung $\cup$ aller W"orter aus $L$ definiert wurde, folgt aus der Definition:
+Aus Eigenschaft \ref{eig1} erhalten wir
+
+\vspace{2ex}
+
+\begin{eigen}
+$(L\cap W) \ff W = L\cap W$
+\end{eigen}
+\begin{proof}
+Wir wissen aus der Definition, dass $(L\cap W)\ff W = \bigcup_{w\in L\cap W} w\ff W$. Mit Eigenschaft \ref{eig1} erhalten wir dann $(L\cap W)\ff W = L\ff W$.
+\end{proof}
+
+Da die Operation Fortsetzung einer Sprache $L$ in eine Sprache $W$ "uber die Vereinigung $\cup$ aller W"orter aus $L$ definiert wurde, folgt aus der Definition
+
+\vspace{2ex}
+
 \begin{eigen}\label{cupeig}
 %$(L\cup V)\ff W = L\ff W\cup V\ff W$
 $(\bigcup_{i\in\mathbb{N}} L_i) \ff W = \bigcup_{i\in\mathbb{N}} (L_i\ff W)$
@@ -43,11 +61,9 @@ Nach Definition gilt $(\bigcup_{i\in\mathbb{N}} L_i) \ff W = \bigcup_{w\in L_0\c
 Wir betrachten nun die Vereinigung f"ur jede Sprache, so dass $\bigcup_{w\in L_0\cup L_1\cup ... \cup L_n} w\ff W = (\bigcup_{w\in L_0} w\ff W) \cup (\bigcup_{w\in L_1} w\ff W) \cup ... \cup (\bigcup_{w\in L_n} w\ff W)$. Damit haben wir $ (\bigcup_{i\in\mathbb{N}} L_i) \ff W  = \bigcup_{i\in\mathbb{N}} (L_i\ff W)$
 \end{proof}
 
-Damit erhalten wir
-\begin{folg}\label{klaro}
-$L\cap W \subseteq L\ff W \subseteq W$
-\end{folg}
 Wir zerlegen nun die Fortsetzung von $L$ in $W$ so, dass sich folgende Beziehung ergibt:
+
+\vspace{2ex}
 
 \begin{eigen}\label{basiseigen}
 $L\ff W = (L\cap W) \cup ((L\setminus W) \ff W)$
@@ -62,49 +78,85 @@ L\ff W = (L\cap W) \cup ((L\setminus W) \ff W) \label{basis3}
 \end{eqnarray}
 \end{proof}
 
+Daraus folgt direkt
+
+\vspace{2ex}
+
+\begin{folg}\label{klaro}
+$L\cap W \subseteq L\ff W \subseteq W$
+\end{folg}
+
+
 Wir bilden nun Inklusionsbeziehungen zwischen $L$ und $W$ und erhalten mit Eigenschaft \ref{basiseigen}, zwei Folgerungen.
 Zu beachten ist, dass in Folgerung \ref{folg1} eine "`genau dann wenn"' Beziehung gilt.
+
+\vspace{2ex}
 
 \begin{folg}\label{folg1}
 $L\subseteq W \leftrightarrow L\ff W = L\cap W = L$
 \end{folg}
+
+\vspace{2ex}
+
 \begin{folg}\label{folg2}
 $L\supseteq W \to L\ff W = W$
 \end{folg}
 F"ur Folgerung \ref{folg2} gilt nicht die Richtung $\leftarrow$, wie das folgende Beispiel zeigt:
+
+\vspace{2ex}
+
 \begin{beispiel}
 Es seien $L=\{b\}, W=\{bb\}$. Dann haben wir $L\ff W = W$, aber $L\not\supseteq W$.
 \end{beispiel}
 
 Da die Operation Fortsetzung nicht kommutativ ist, betrachten wir nun die Monotonie der Operation bez"uglich Vorder- und Hinterglied getrennt.
-\subsection{Monotonie im Hinterglied}
+\subsection{Eigenschaften im Vorderglied}
 
-Wir betrachten zun"achst die Stabilit"at und Monotonie der Operation Fortsetzung in Verbindung der BOOLEsche Operationen $\cap$ und $\cup$ im Hinterglied.\\\\
-Aus Eigenschaft \ref{cupeig} folgt:
+Wir betrachten zun"achst die Stabilit"at der Operation Fortsetzung bezüglich $\cap$ und $\cup$ und die Monotonie bezüglich $\subseteq$ im Vorderglied.\\
+Aus Eigenschaft \ref{cupeig} folgt
+
+\vspace{2ex}
+
 \begin{eigen}\label{fresh}
 $L\subseteq W \to L\ff V \subseteq W \ff V$
 \end{eigen}
-Dabei muss diese Eigenschaft nicht notwendigerweise f"ur die echte Inklusion gelten, wie das folgende Beispiel zeigt:
+Dabei muss diese Eigenschaft nicht notwendigerweise f"ur die echte Inklusion gelten. Dazu geben wir ein Beispiel an.
+
+\vspace{2ex}
+
 \begin{beispiel}
 Es sei $L=\{a\}, W=\{a,ab\}$ und $V=\{b\}$. Dann haben wir $L\subset W$, aber $L\ff V \not\subset W\ff W$ wegen $\emptyset \not\subset\emptyset$.
 \end{beispiel}
 
-Aus Eigenschaft \ref{fresh} folgt die Inklusion:
+Aus Eigenschaft \ref{fresh} folgt die Inklusion
+
+\vspace{2ex}
+
 \begin{eigen}
 $(L\cap V) \ff W \subseteq (L\ff W) \cap (V\ff W)$
 \end{eigen}
-Dabei muss nicht notwendig die Gleichheit gelten, wie das folgende Beispiel zeigt
+Dabei muss nicht notwendigerweise die Gleichheit gelten. Dazu geben wir wiederum ein Beispiel an.
+
+\vspace{2ex}
+
 \begin{beispiel}
 Es seien $L= \{aa,bb\}\, ,V = \{aa,b\}\, ,W = \{aa,bb\}$. \\Dann haben wir $(L\cap V) \ff W = \{aa\} \subset \{aa,bb\} = (L\ff W) \cap (V\ff W)$
 \end{beispiel}
 
-\subsection{Monotonie im Vorderglied}
-Anders als bei der vorherigen Betrachtung, leiten sich in diesem Abschnitt kaum Folgerungen direkt aus der Definition ab.
-So haben wir, im Gegensatz zu Eigenschaft \ref{cupeig}:
+\subsection{Monotonie im Hinterglied}
+Jetzt betrachten wir die Stabilit"at der Operation Fortsetzung bezüglich $\cap$ und $\cup$ und die Monotonie bezüglich $\subseteq$ im Hinterglied.\\
+Anders als bei der vorherigen Betrachtung, leiten sich in diesem Abschnitt kaum Folgerungen direkt ab.
+So haben wir, im Gegensatz zu Eigenschaft \ref{cupeig}
+
+\vspace{2ex}
+
 \begin{eigen}\label{gl22}
 $L\ff (V\cup W)\subseteq (L\ff V) \cup (L\ff W)$
 \end{eigen}
 Zum Beweis nutzen wir die folgende Beziehung.
+
+\vspace{2ex}
+
 \begin{lem}\label{lem123}
 $\min (A\cup B) \subseteq \min A \cup \min B$
 \end{lem}
@@ -113,22 +165,31 @@ $\min (A\cup B) \subseteq \min A \cup \min B$
 Es sei $w\in \min (A\cup B)$. Dann ist $w$ in $A$ oder in $B$ enthalten. Es sei o.B.d.A. $w\in A$. Es gilt au"serdem f"ur alle $v\sqsubset w$, dass $v\notin (A\cup B)$, also insbesondere $v\notin A$. Nach Definition von $\min$ gilt also $w\in\min(A)$. Gleiches gilt analog f"ur $B$.
 \end{proof}
 \begin{proof}[Beweis von Eigenschaft \ref{gl22}]
-Es gen"ugt, die Eigenschaft f"ur $L=\{w\}$ zu zeigen.\\
+Es gilt allgemein, wenn $v\in L\ff W$, dann muss ein $w\in L$ derart existieren, dass $v\in \{w\}\ff W$. 
+Daher gen"ugt es Eigenschaft \ref{gl22} f"ur $L=\{w\}$ zu zeigen.\\
 Es gilt $w \ff (W\cup V)=\min (w\cdot X^* \cap (W\cup V)) =\min ((w\cdot X^* \cap W) \cup (w\cdot X^* \cap V))$\\
 und mit Lemma 1 erhalten wir:\\
 $ w\ff (V\cup W) \subseteq \min (w\cdot X^* \cap V) \cup \min (w\cdot X^* \cap W)=(L\ff V)\cup (L\ff W)$
 \end{proof}
-Dabei muss nicht notwendig die Gleichheit gelten, wie das folgende Beispiel zeigt.
+Dabei muss nicht notwendigerweise die Gleichheit gelten. Dazu geben wir ein Beispiel an.
+
+\vspace{2ex}
+
 \begin{beispiel}
 Es seien $L= \{a,b\}\, ,V =\{aaa\}\, ,W = \{bb,aa\}$. \\Dann haben wir $L\ff (V\cup W)=\{aa,bb\} \subset \{aa,bb,aaa\} = (L\ff V) \cup (L\ff W)$
 \end{beispiel}
 
-Eine "ahnliche Beziehung ergibt sich f"ur die Operation $\cap$
+Eine "ahnliche Beziehung ergibt sich f"ur die Stabilität der Operation Fortsetzung bez"uglich $\cap$.
 
-\begin{gleich}\label{eigen321}
+\vspace{2ex}
+
+\begin{eigen}\label{eigen321}
 $L\ff (V\cap W)\supseteq (L\ff V) \cap (L\ff W)$
-\end{gleich}
+\end{eigen}
 Zum Beweis nutzen wir die Beziehung.
+
+\vspace{2ex}
+
 \begin{lem}\label{lem321}
 $\min(A\cap B) \supseteq \min A \cap \min B$
 \end{lem}
@@ -137,21 +198,27 @@ $\min(A\cap B) \supseteq \min A \cap \min B$
 %\end{lem}
 
 \begin{proof}[Beweis von Lemma \ref{lem321}]
-Es sei $w\in (\min(A) \cap \min(B))$. Dann ist $w$ sowohl in $A$, als auch in $B$ enthalten. Au"serdem gilt f"ur alle $v$ mit $v\sqsubset w$, dass $v \notin A$ und dass $v \notin B$. Nach Definition von $\min$ gilt also $w\in \min(A\cap B)$.\emph{}
+Es sei $w\in (\min(A) \cap \min(B))$. Dann ist gilt sowohl $w\in A$, als auch in $w\in B$. Au"serdem gilt f"ur alle $v$ mit $v\sqsubset w$, dass $v \notin A$ und dass $v \notin B$. Nach Definition von $\min$ gilt also $w\in \min(A\cap B)$.\emph{}
 \end{proof}
 \begin{proof}[Beweis von Eigenschaft \ref{eigen321}]
-Es gen"ugt die Eigenschaft f"ur $L=\{w\}$ zu zeigen.\\
-Es gilt $w\ff (V\cap W) = \min(w\cdot X^* \cap (V \cap W))= \min((w\cdot X^* \cap V) \cap (w\cdot X^* \cap W))$\\
-und mit Lemma 2 erhalten wir\\
+Es gen"ugt wiederum die Eigenschaft f"ur $L=\{w\}$ zu zeigen.\\
+Es gilt $w\ff (V\cap W) = \min(w\cdot X^* \cap (V \cap W))= \min((w\cdot X^* \cap V) \cap (w\cdot X^* \cap W))$.\\
+Mit Lemma 2 erhalten wir dann\\
 $ w\ff (V\cap W) \supseteq \min(w\cdot X^* \cap V) \cap \min(w\cdot X^* \cap W)=(L\ff V) \cap (L\ff W)$
 \end{proof}
-Dabei muss nicht notwendig die Gleichheit gelten, wie das folgende Beispiel zeigt
+Dabei muss nicht notwendigerweise die Gleichheit gelten. Dazu geben wir ein Beispiel an.
+
+\vspace{2ex}
+
 \begin{beispiel}
 Es seien $L= \{a,b\}\, ,V =\{aaa,b,bb\}\, ,W = \{bb,aaa\}$\\
 Dann haben wir $L\ff (V\cap W) = \{bb,aaa\} \supset \{ aaa \} =(L\ff V) \cap (L\ff W)$
 \end{beispiel}
 
-Es gilt keine Monotonie im Vorderglied, $L\subseteq W \not\to V\ff L \subseteq V \ff W$, wie das folgende Beispiel zeigt:
+Es gilt keine Monotonie im Hinterglied: $L\subseteq W \not\to V\ff L \subseteq V \ff W$. Dazu geben wir ein Beispiel an.
+
+\vspace{2ex}
+
 \begin{beispiel}
 Es sei $L=\{aaba\},W=\{aab,aaba\}$ und $V=\{a\}$, also $L\subseteq W$.\\
 Dann haben wir $V\ff L = \{aaba\} \not\subseteq V\ff W =\{aab\}$
@@ -165,37 +232,50 @@ Dann haben wir $V\ff L = \{aaba\} \not\subseteq V\ff W =\{aab\}$
 %$$
 %\end{proof}
 
-
-
-\newpage
 \section{Konkatenation}
-Bisher wurden haupts"achlich die boolschen Operationen $\cap$ sowie $\cup$ in Verbindung mit der Operation Fortsetzung $\ff$ betrachtet.
-Nun betrachten wir ob spezielle Eigenschaften der Operation Fortsetzung mit der Konkatenation existieren.\\\\
+Bisher wurde die Stabilität der Operation Fortsetzung bez"uglich der boolschen Operationen $\cap$ und $\cup$ betachtet.
+Nun betrachten wir ob es eine Stabilität der Operation Fortsetzung bezüglich der Konkatenation gibt.
+Dabei werden wir feststellen, dass keine Stabiltät bezüglich der Konkatenation existiert. Dazu geben wir nun Sprachen derart an, dass jeweils alle Inklusionsbeziehungen erf"ullt werden k"onnen.\\\\
+Zuerst betrachten wir die Stabilität der Operation Fortsetzung bezüglich der Konkatenation im Hinterglied.
+
 Es existieren Sprachen $L,V$ und $W$ derart, dass $L\ff (V\cdot W) = (L\ff V) \cdot (L\ff W)$ gilt.
+
+\vspace{2ex}
+
 \begin{beispiel}
 Es seien  $L=\{e\}\quad ,V=\{a\}\quad ,W=\{b\} $, so erhalten wir \\
 $L\ff (V\cdot W) = \{ ab\} =  \{ab\} = (L\ff V) \cdot (L\ff W)$, also $L\ff (V\cdot W) = (L\ff V) \cdot (L\ff W)$
 \end{beispiel}
 Weiterhin existieren Sprachen derart, dass $L\ff (V\cdot W) \supset (L\ff V) \cdot (L\ff W)$ gilt.
+
+\vspace{2ex}
+
 \begin{beispiel}
 Es seien $L=\{a\}\quad ,V=\{aa\}\quad ,W=\{b,a\} $\\
 Dann erhalten wir $L\ff (V\cdot W) = \{aab,aaa\} \supset  \{aaa\} = (L\ff V) \cdot (L\ff W)$, also $L\ff (V\cdot W) \supset (L\ff V) \cdot (L\ff W)$.
 \end{beispiel}
 Es existieren Sprachen derart, dass $L\ff (V\cdot W) \subset (L\ff V)\cdot (L\ff W)$ gilt.
+
+\vspace{2ex}
+
 \begin{beispiel}
 Es seien  $L=\{ab,e\}\quad ,V=\{aba,bab\}\quad ,W=\{e,aba,bab\} $, so erhalten wir \\
 $L\ff (V\cdot W) = L \ff \{aba,abaaba,ababab,bab,bababa,babbab\} = \{ aba,bab\}$ und $(L\ff V)\cdot (L\ff W) = \{aba,bab\} \cdot \{e,aba\} = \{aba,abaaba,bab,bababa\}$. 
 Also haben wir $L\ff (V\cdot W) \subset (L\ff V)\cdot (L\ff W)$
 \end{beispiel}
 Zuletzt existieren Sprachen derart, dass sowohl $L\ff (V\cdot W) \not\subset (L\ff V)\cdot (L\ff W)$ als auch $L\ff (V\cdot W) \not\supset (L\ff V)\cdot (L\ff W)$ gelten. Es gilt also eine mengentheoretische Unvergleichbarkeit.
+
+\vspace{2ex}
+
 \begin{beispiel}
 Es seien $L=\{aab,a\}\quad V=\{aa\}\quad W=\{b\}$\\
-Dann erhalten wir $L\ff (V\cdot W) = \{aab\} \neq \{aa\} = (L\ff V) \cdot (L\ff W)$, das bedeutet also, dass beide Seiten mengentheoretisch unvergleichbar sind, also 
-$L\ff (V\cdot W) \not\supset (L\ff V) \cdot (L\ff W)$, sowie $L\ff (V\cdot W) \not\subset (L\ff V) \cdot (L\ff W)$
+Dann erhalten wir $L\ff (V\cdot W) = \{aab\} \not\subset \{aa\} = (L\ff V) \cdot (L\ff W)$, als auch $L\ff (V\cdot W) = \{aab\} \not\supset \{aa\} = (L\ff V) \cdot (L\ff W)$.
 \end{beispiel}
-Da wir f"ur alle Inklusionsbeziehungen Sprachen gefunden haben, die diese erf"ullen, so kann es keine Eigenschaft bez"uglich der Inklusion geben, welche f"ur alle Sprachen $L,V,W$ gelten w"urde.\\\\
-Betrachtet man nun die Konkatenation `vorn`, also die Beziehung $(L\cdot V)\ff W$ zu  $(L\ff W) \cdot (V\ff W)$, so sieht man leicht, dass es sich auf 
-der linken Seite der Gleichung um W"orter aus $W$ handelt die man mit W"ortern aus $W^2$ vergleicht. \\
+
+Da wir f"ur alle Inklusionsbeziehungen Sprachen gefunden haben, die diese erf"ullen, kann es keine Stabilität der Operation Fortsetzung bezüglich der Konkatenation im Hinterglied geben, welche f"ur alle Sprachen $L,V,W$ gelten w"urde.\\
+
+Betrachtet man nun die Stabilität der Operation Fortsetzung bezüglich der Konkatenation im Vorderglied, so erkennt man leicht, dass es sich 
+zum Einen um W"orter aus $W$ handelt die man mit W"ortern aus $W^2$ vergleicht.\\
 Demnach treten hier spezielle Inklusionsbeziehungen nur auf, wenn $W$ die Gestalt $W\subseteq W^2$ oder $W\supseteq W^2$ hat.
 %\section{Gilt nicht...}
 %%Folgt direkt aus den Gleichungen in 2.1

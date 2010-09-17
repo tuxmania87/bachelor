@@ -16,20 +16,10 @@
 %$$V\ff W = V\ff \min(W)$$
 %\end{eigen}
 
-In diesem Abschnitt wird die Operation Fortsetzung untersucht, wenn eine der beiden Operanden die spezielle Gestalt $\pref(L)$ oder $W\cdot X^*$ hat.
+In der Arbeit [St97, Abschnitt: \emph{Joint topologies on $X^*\cup X^\omega$}] wird eine Sprache $W$ als offen definiert genau dann, wenn sie die Form $W=W\cdot X^*$ hat. Weiterhin wird eine Sprache $L$ als geschlossen definiert genau dann, wenn sie die Form $L=\pref(L)$ hat. 
+Daher betrachten wir in diesem Abschnitt die Operation Fortsetzung, wenn eine der beiden Operanden die spezielle Gestalt $\pref(L)$ oder $W\cdot X^*$ hat. 
 
-
-%\textbf{zu 1.} Es gen"ugt die Eigenschaft zu zeigen f"ur $V=\{v\}$\\
-%\begin{proof}
-%$$v \ff W\cdot X^* = \min_{\sqsubseteq} \{w:w\in W\cdot X^* \wedge v\sqsubseteq w\}$$
-%$$w\in W\cdot X^* \wedge v\sqsubseteq w \wedge v\not\in W\cdot X^* \to ( w'\in (\min(v\cdot X^* \cap W\cdot X^*) \to w'\in  (\min(v\cdot X^* \cap \min(W)))) )$$
-%\end{proof}
-
-%\textbf{zu 2.} klar, weil $W\cdot X^* \supseteq \min(W)$
-
-
-
-%\newpage
+\vspace{2ex}
 
 \begin{eigen}\label{spezeig1}
 $W\ff \pref(V) = W \cap \pref(V)$
@@ -43,13 +33,8 @@ Zum Beweis der anderen Inklusion betrachten wir $w\in W\ff\pref(V)$. Es muss als
 %Daraus folgt $\min ( \{w\} \cdot X^* \cap \pref(V) ) = \{w\} \cap \pref(V)$
 \end{proof}
 
-F"ur die Umkehrung von Eigenschaft \ref{spezeig1} $\pref(V)\ff W$ gibt es keine Vereinfachung, wie das folgende Beispiel zeigt.
-\begin{beispiel}
-Es seien $V=\{aab,ab\}$ und $W=\{a,abb,aaab\}$, so dass $\pref(V)=\{e,a,aa,ab,aab\}$. Dann haben wir $\pref(V)\ff W = \{a,aab,aaab\}$, aber $\pref(V) \cap W = \{a\}$ und $\min(\pref(V)\setminus\{e\}) \ff W = \{a,abb\}$
-Damit fehlt das Element $aaab$. Ein Betrachten von $\min(\pref(V))$ hat keinen Sinn, da trivialerweise $\min(\pref(V)) = \{e\}$, wenn $V\neq\emptyset$.
-\end{beispiel}
 
-
+Betrachte wir die Umkehrung von Eigenschaft \ref{spezeig1} $\pref(V)\ff W$. Wir können mit Eigenschaft \ref{basiseigen} die Fortsetzung $\pref(V)\ff W$ aufspalten in $\pref(V)\ff W= (\pref(V)\cap W) \cup ((pref(V)\setminus W)\ff W)$, aber diese Gleichung lässt sich nicht weiter vereinfachen.
 
 %\begin{eigen}
 %%$W\ff \pref(V) = W \cap \pref(V)$%
@@ -64,11 +49,13 @@ Damit fehlt das Element $aaab$. Ein Betrachten von $\min(\pref(V))$ hat keinen S
 %"'$\leftarrow$"'\\
 %$w\in \pref(V) \wedge w\in W \to w\sqsubseteq v\in \pref(V)$\\\\
 
+\vspace{2ex}
+
 \begin{eigen}
 $V\cdot X^* \ff W = V\cdot X^* \cap W$
 \end{eigen}
 \begin{proof}
-Die Inklusion $\supseteq$ folgt aus Eigenschaft \ref{klaro}.
+Die Inklusion $\supseteq$ folgt aus Eigenschaft \ref{klaro}.\\
 Zum Beweis der anderen Inklusion betrachten wir $w\in V\cdot X^* \ff W$. Es existiert also ein $v\in V\cdot X^*$, sodass $w\in \{v\}\ff W$ ist. Daraus folgt, dass $v$ ein Pr"afix von $w$ sein muss, was wiederum bedeutet, dass $w\in V\cdot X^*$. Somit gilt die Inklusion $V\cdot X^* \ff W \subseteq W\cap V\cdot X^*$.
 \end{proof}
 
@@ -87,14 +74,17 @@ Zum Beweis der anderen Inklusion betrachten wir $w\in V\cdot X^* \ff W$. Es exis
 $W\ff V\cdot X^* = (W\ff\min(V)) \cup (W\cap V\cdot X^*)$
 \end{eigen}
 Zum Beweis von Eigenschaft \ref{fooba} benutzen wir
+
+\vspace{2ex}
+
 \begin{lem}\label{eingeschr1}
 Es sei $L\subseteq X^*\setminus W\cdot X^*$, so gilt $L\ff W\cdot X^* = L\ff \min(W) $
 \end{lem}
 \begin{proof}[Beweis Lemma \ref{eingeschr1}]:\\
-Die Inklusion $L\ff \min(W) \subseteq L\ff W\cdot X^*$ ist, wie man leicht sieht, trivial.\\
-Zum Beweis der der anderen Inklusion gen"ugt es, diese f"ur den Fall $L=\{v\}$ zu zeigen.\\
-Es sei nun $w\in v\ff W\cdot X^*$, wobei nach Vorraussetzung $v\notin W\cdot X^*$ gelte. Dann gilt f"ur kein $u$, $v\sqsubseteq u\sqsubset w$ oder $u\sqsubseteq v$ die Beziehung $u\in W\cdot X^*$.\\
-Also haben wir $w\in\min(W\cdot X^*) = \min(W)$
+Es gilt für alle Wörter $w\in\min(W)$, dass es kein Wort $w'\in W\cdot X^*$ ein echtes Präfix von $w$ sein kann.
+Daraus folgt unmittelbar die Inklusion $L\ff \min(W) \subseteq L\ff W\cdot X^*$.
+Zum Beweis der anderen Inklusion betrachten wir ein $w\in L\ff W\cdot X^*$. Es muss also ein $v\in L$ existieren, sodass $w\in \{v\}\ff W\cdot X^*$ und, nach Vorraussetzung, $v\notin W\cdot X^*$. Dann gilt f"ur kein $u$, $v\sqsubseteq u\sqsubset w$ oder $u\sqsubseteq v$ die Beziehung $u\in W\cdot X^*$.
+Also haben wir $w\in\min(W\cdot X^*) = \min(W)$ und somit gilt auch die Inklusion $L\ff \min(W) \supseteq L\ff W\cdot X^*$.
 \end{proof}
 
 \begin{proof}[Beweis von Eigenschaft \ref{fooba}]
