@@ -1,32 +1,32 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.5.7)  17 SEP 2010 13:46
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2010.9.14)  17 SEP 2010 18:11
 entering extended mode
- %&-line parsing enabled.
-**bachelor.tex
-(./bachelor.tex
-LaTeX2e <2009/09/24>
-Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
-(/usr/share/texmf-texlive/tex/latex/koma-script/scrreprt.cls
+**C:/Users/Robert/Desktop/ba/bachelor.tex
+(C:/Users/Robert/Desktop/ba/bachelor.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman, ngerman, german-x-2009-06-19, ngerman-x-2009-06-19, french, loaded.
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\koma-script\scrreprt.cls
 Document Class: scrreprt 2009/07/24 v3.04a KOMA-Script document class (report)
-(/usr/share/texmf-texlive/tex/latex/koma-script/scrkbase.sty
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\koma-script\scrkbase.sty
 Package: scrkbase 2009/07/24 v3.04a KOMA-Script package (KOMA-Script-dependent 
 basics and keyval usage)
 
-(/usr/share/texmf-texlive/tex/latex/koma-script/scrbase.sty
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\koma-script\scrbase.sty
 Package: scrbase 2009/07/24 v3.04a KOMA-Script package (KOMA-Script-independent
  basics and keyval usage)
 
-(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/usr/share/texmf-texlive/tex/latex/koma-script/scrlfile.sty
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\koma-script\scrlfile.sty
 Package: scrlfile 2009/03/25 v3.03 KOMA-Script package (loading files)
 
 Package scrlfile, 2009/03/25 v3.03 KOMA-Script package (loading files)
                   Copyright (C) Markus Kohm
 
-))) (/usr/share/texmf-texlive/tex/latex/koma-script/tocbasic.sty
+)))
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\koma-script\tocbasic.sty
 Package: tocbasic 2009/06/08 v3.03b KOMA-Script package (handling toc-files)
 )
 Package tocbasic Info: omitting babel extension for `toc'
@@ -46,11 +46,12 @@ Package scrreprt Info: You've used obsolete option `12pt'.
 Class scrreprt Info: File `scrsize12pt.clo' used to setup font sizes on input l
 ine 1271.
 
-(/usr/share/texmf-texlive/tex/latex/koma-script/scrsize12pt.clo
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\koma-script\scrsize12pt.c
+lo
 File: scrsize12pt.clo 2009/07/24 v3.04a KOMA-Script font size class option (12p
 t)
 )
-(/usr/share/texmf-texlive/tex/latex/koma-script/typearea.sty
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\koma-script\typearea.sty
 Package: typearea 2009/07/24 v3.04a KOMA-Script package (type area)
 
 Package typearea, 2009/07/24 v3.04a KOMA-Script package (type area)
@@ -93,44 +94,45 @@ Package typearea Info: These are the values describing the layout:
 \c@figure=\count87
 \c@table=\count88
 \bibindent=\dimen102
-) (./primaer.sty
+) (C:\Users\Robert\Desktop\ba\primaer.sty
 Package: primaer 
- (/usr/share/texmf-texlive/tex/latex/base/fontenc.sty
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\fontenc.sty"
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-(/usr/share/texmf-texlive/tex/latex/base/t1enc.def
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\t1enc.def"
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
-(/usr/share/texmf-texlive/tex/latex/ae/ae.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\ae\ae.sty"
 Package: ae 2001/02/12 1.3 Almost European Computer Modern
 
-(/usr/share/texmf-texlive/tex/latex/base/fontenc.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\fontenc.sty"
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-(/usr/share/texmf-texlive/tex/latex/base/t1enc.def
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\t1enc.def"
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 )
 LaTeX Font Info:    Try loading font information for T1+aer on input line 100.
 
-(/usr/share/texmf-texlive/tex/latex/ae/t1aer.fd
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\ae\t1aer.fd"
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
 )))
-(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
-Package: inputenc 2008/03/30 v1.1d Input encoding file
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\inputenc.sty"
+Package: inputenc 2006/05/05 v1.1b Input encoding file
 \inpenc@prehook=\toks15
 \inpenc@posthook=\toks16
 
-(/usr/share/texmf-texlive/tex/latex/base/utf8.def
-File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\utf8.def"
+File: utf8.def 2006/03/30 v1.1i UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
-... processing UTF-8 mapping file for font encoding T1
+... processing UTF-8 mapping file for font encodingT1
 
-(/usr/share/texmf-texlive/tex/latex/base/t1enc.dfu
-File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\t1enc.dfu"
+File: t1enc.dfu 2006/03/30 v1.1i UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00AB (decimal 171)
@@ -277,10 +279,10 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+2423 (decimal 9251)
 )
 Now handling font encoding OT1 ...
-... processing UTF-8 mapping file for font encoding OT1
+... processing UTF-8 mapping file for font encodingOT1
 
-(/usr/share/texmf-texlive/tex/latex/base/ot1enc.dfu
-File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\ot1enc.dfu"
+File: ot1enc.dfu 2006/03/30 v1.1i UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00B8 (decimal 184)
@@ -308,10 +310,10 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+201D (decimal 8221)
 )
 Now handling font encoding OMS ...
-... processing UTF-8 mapping file for font encoding OMS
+... processing UTF-8 mapping file for font encodingOMS
 
-(/usr/share/texmf-texlive/tex/latex/base/omsenc.dfu
-File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\omsenc.dfu"
+File: omsenc.dfu 2006/03/30 v1.1i UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
    defining Unicode char U+00B7 (decimal 183)
@@ -333,31 +335,32 @@ Now handling font encoding U ...
    defining Unicode char U+2026 (decimal 8230)
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
-)) (./a4.sty
+))
+(C:\Users\Robert\Desktop\ba\a4.sty
 \aiv@width=\skip47
 \tmp@width=\skip48
 )
-(/usr/share/texmf-texlive/tex/latex/ltxmisc/parskip.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\ltxmisc\parskip.sty"
 Package: parskip 2001/04/09 non-zero parskip adjustments
 )
-(/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\ams\math\amsmath.sty"
 Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip49
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\ams\math\amstext.sty"
 Package: amstext 2000/06/29 v2.01
 
-(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\ams\math\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks17
 \ex@=\dimen103
 ))
-(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\ams\math\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen104
 )
-(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\ams\math\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count89
@@ -398,17 +401,17 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
-(/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2009/06/22 v3.00
 
-(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\amsfonts\amsfonts.sty"
 Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
 ))
-(/usr/share/texmf-texlive/tex/latex/amscls/amsthm.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\ams\classes\amsthm.sty"
 Package: amsthm 2004/08/06 v2.20
 \thm@style=\toks22
 \thm@bodyfont=\toks23
@@ -420,35 +423,35 @@ Package: amsthm 2004/08/06 v2.20
 \thm@headsep=\skip54
 \dth@everypar=\toks27
 )
-(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\graphics.sty"
+Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/etc/texmf/tex/latex/config/graphics.cfg
-File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
+Package graphics Info: Driver file: pdftex.def on input line 90.
 
-(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
 \Gread@gobject=\count101
 ))
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
-(/usr/share/texmf-texlive/tex/latex/psnfss/palatino.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\psnfss\palatino.sty"
 Package: palatino 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
-(/usr/share/texmf-texlive/tex/latex/psnfss/mathpazo.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\psnfss\mathpazo.sty"
 Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
 \symupright=\mathgroup6
 )
-(/usr/share/texmf-texlive/tex/latex/fancyhdr/fancyhdr.sty
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\fancyhdr\fancyhdr.sty
 \fancy@headwidth=\skip55
 \f@ncyO@elh=\skip56
 \f@ncyO@erh=\skip57
@@ -459,10 +462,10 @@ Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS)
 \f@ncyO@olf=\skip62
 \f@ncyO@orf=\skip63
 )
-(/usr/share/texmf-texlive/tex/latex/graphics/color.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\color.sty"
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-(/etc/texmf/tex/latex/config/color.cfg
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
@@ -473,40 +476,40 @@ Package color Info: Redefining color yellow on input line 34.
 Package color Info: Redefining color red on input line 35.
 Package color Info: Redefining color black on input line 36.
 
-(/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2009/10/09 v6.79a Hypertext links for LaTeX
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2009/09/10 v6.78u Hypertext links for LaTeX
 
-(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in pdf mode detected.
 )
-(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\ifvtex.sty"
 Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(/usr/share/texmf-texlive/tex/generic/ifxetex/ifxetex.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\ifxetex\ifxetex.sty"
 Package: ifxetex 2009/01/23 v0.5 Provides ifxetex conditional
 )
-(/usr/share/texmf-texlive/tex/latex/oberdiek/hycolor.sty
-Package: hycolor 2009/10/02 v1.5 Code for color options of hyperref/bookmark (H
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\oberdiek\hycolor.sty"
+Package: hycolor 2008/09/08 v1.4 Code for color options of hyperref/bookmark (H
 O)
 
-(/usr/share/texmf-texlive/tex/latex/oberdiek/xcolor-patch.sty
-Package: xcolor-patch 2009/10/02 xcolor patch
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\oberdiek\xcolor-patch.sty"
+Package: xcolor-patch 2008/09/08 xcolor patch
 ))
 \@linkdim=\dimen114
 \Hy@linkcounter=\count102
 \Hy@pagecounter=\count103
 
-(/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2009/10/09 v6.79a Hyperref: PDFDocEncoding definition (HO)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2009/09/10 v6.78u Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-(/usr/share/texmf-texlive/tex/generic/oberdiek/etexcmds.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\etexcmds.sty"
 Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
 
-(/usr/share/texmf-texlive/tex/generic/oberdiek/infwarerr.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
 )
 Package etexcmds Info: Could not find \expanded.
@@ -514,13 +517,13 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )
-(/etc/texmf/tex/latex/config/hyperref.cfg
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-(/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2009/08/13 v3.4 Keyval support for LaTeX options (HO)
 
-(/usr/share/texmf-texlive/tex/generic/oberdiek/kvsetkeys.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\kvsetkeys.sty"
 Package: kvsetkeys 2009/07/30 v1.5 Key value parser with default handler suppor
 t (HO)
 ))
@@ -537,53 +540,47 @@ Package hyperref Info: Plain pages OFF on input line 2990.
 Package hyperref Info: Backreferencing ON on input line 2993.
 Implicit mode ON; LaTeX internals redefined
 Package hyperref Info: Bookmarks ON on input line 3191.
-(/usr/share/texmf-texlive/tex/latex/hyperref/backref.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\hyperref\backref.sty"
 Package: backref 2006/09/05 v1.28 Bibliographical back referencing
 )
-(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\ltxmisc\url.sty"
 \Urlmuskip=\muskip11
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 3428.
 
-(/usr/share/texmf-texlive/tex/generic/oberdiek/bitset.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\bitset.sty"
 Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
 
-(/usr/share/texmf-texlive/tex/generic/oberdiek/intcalc.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\intcalc.sty"
 Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
 )
-(/usr/share/texmf-texlive/tex/generic/oberdiek/bigintcalc.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\bigintcalc.sty"
 Package: bigintcalc 2007/11/11 v1.1 Expandable big integer calculations (HO)
 
-(/usr/share/texmf-texlive/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2009/09/23 v0.6 LuaTeX support for pdfTeX utility functions
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2009/04/10 v0.4 LuaTeX support for pdfTeX utility functions
  (HO)
 
-(/usr/share/texmf-texlive/tex/generic/oberdiek/ifluatex.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\ifluatex.sty"
 Package: ifluatex 2009/04/17 v1.2 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
-(/usr/share/texmf-texlive/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2009/08/05 v1.0 Some LaTeX kernel commands for general use (HO
-)
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: LuaTeX not detected on input line 144.
 )))
 \Fld@menulength=\count104
 \Field@Width=\dimen115
 \Fld@charsize=\dimen116
 \Field@toks=\toks28
-Package hyperref Info: Hyper figures OFF on input line 4377.
-Package hyperref Info: Link nesting OFF on input line 4382.
-Package hyperref Info: Hyper index ON on input line 4385.
-Package hyperref Info: backreferencing ON on input line 4390.
-Package hyperref Info: Link coloring ON on input line 4395.
-Package hyperref Info: Link coloring with OCG OFF on input line 4402.
-Package hyperref Info: PDF/A mode OFF on input line 4407.
+Package hyperref Info: Hyper figures OFF on input line 4346.
+Package hyperref Info: Link nesting OFF on input line 4351.
+Package hyperref Info: Hyper index ON on input line 4354.
+Package hyperref Info: backreferencing ON on input line 4359.
+Package hyperref Info: Link coloring ON on input line 4364.
+Package hyperref Info: Link coloring with OCG OFF on input line 4371.
+Package hyperref Info: PDF/A mode OFF on input line 4376.
 
-(/usr/share/texmf-texlive/tex/generic/oberdiek/atbegshi.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\atbegshi.sty"
 Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
 )
 \Hy@abspage=\count105
@@ -591,15 +588,15 @@ Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
 \c@Hfootnote=\count107
 )
 *hyperref using driver hpdftex*
-(/usr/share/texmf-texlive/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2009/10/09 v6.79a Hyperref driver for pdfTeX
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\hyperref\hpdftex.def"
+File: hpdftex.def 2009/09/10 v6.78u Hyperref driver for pdfTeX
 \Fld@listcount=\count108
 ))
-(/usr/share/texmf-texlive/tex/latex/setspace/setspace.sty
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\setspace\setspace.sty
 Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
 
 Package: `setspace' 6.7 <2000/12/01>
-) (/usr/share/texmf-texlive/tex/latex/txfonts/txfonts.sty
+) (C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\txfonts\txfonts.sty
 Package: txfonts 2008/01/22 v3.2.1
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 21.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -686,11 +683,11 @@ LaTeX Info: Redefining \not on input line 1043.
 LaTeX Info: Redefining \textsquare on input line 1063.
 LaTeX Info: Redefining \openbox on input line 1064.
 )
-(/home/robert/texmf/tex/latex/algorithms/algorithm.sty
-Package: algorithm 
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\algorithms\algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
 
-Document Style `algorithm' - floating environment
-(/usr/share/texmf-texlive/tex/latex/float/float.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count109
 \float@exts=\toks29
@@ -698,111 +695,110 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks30
 \@floatcapt=\box30
 )
-(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\ifthen.sty"
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks31
 \c@algorithm=\count110
 )
-(/usr/share/texmf-texlive/tex/generic/babel/babel.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\babel\babel.sty"
 Package: babel 2008/07/06 v3.8l The Babel package
 
-(/usr/share/texmf-texlive/tex/generic/babel/ngermanb.ldf
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\00miktex\bblopts.cfg"
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\babel\ngermanb.ldf"
 Language: ngermanb 2008/07/06 v2.6n new German support from the babel system
 
-(/usr/share/texmf-texlive/tex/generic/babel/babel.def
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\babel\babel.def"
 File: babel.def 2008/07/06 v3.8l Babel common definitions
 \babel@savecnt=\count111
 \U@D=\dimen117
 )
-
-Package babel Warning: No hyphenation patterns were loaded for
-(babel)                the language `ngerman'
-(babel)                I will use the patterns loaded for \language=0 instead.
-
-\l@ngerman = a dialect from \language0
 \l@naustrian = a dialect from \language\l@ngerman 
 Package babel Info: Making " an active character on input line 92.
-)) (/home/robert/texmf/tex/latex/algorithms/algorithmic.sty
-Package: algorithmic 2006/06/02
-
-Document Style `algorithmic' - environment
-(/usr/share/texmf-texlive/tex/latex/tools/calc.sty
-Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count112
-\calc@Bcount=\count113
-\calc@Adimen=\dimen118
-\calc@Bdimen=\dimen119
-\calc@Askip=\skip64
-\calc@Bskip=\skip65
-LaTeX Info: Redefining \setlength on input line 76.
-LaTeX Info: Redefining \addtolength on input line 77.
-\calc@Ccount=\count114
-\calc@Cskip=\skip66
+))
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\algorithms\algorithmic.st
+y
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count112
+\c@ALC@line=\count113
+\c@ALC@rem=\count114
+\c@ALC@depth=\count115
+\ALC@tlm=\skip64
+\algorithmicindent=\skip65
 )
-\c@ALC@line=\count115
-\c@ALC@rem=\count116
-\c@ALC@depth=\count117
-\ALC@tlm=\skip67
-\algorithmicindent=\skip68
-)
-(/usr/share/texmf/tex/latex/pgf/frontendlayer/tikz.sty
-(/usr/share/texmf/tex/latex/pgf/basiclayer/pgf.sty
-(/usr/share/texmf/tex/latex/pgf/utilities/pgfrcs.sty
-(/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-common.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\pgf\frontendlayer\tikz.st
+y (C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\pgf\basiclayer\pgf.sty
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\pgf\utilities\pgfrcs.sty
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\utilities\pgfutil-c
+ommon.tex
 \pgfutil@everybye=\toks32
 )
-(/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-latex.def)
-(/usr/share/texmf/tex/generic/pgf/utilities/pgfrcs.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\utilities\pgfutil-l
+atex.def)
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\utilities\pgfrcs.co
+de.tex
 Package: pgfrcs 2008/02/20 v2.00 (rcs-revision 1.21)
 ))
 Package: pgf 2008/01/15 v2.00 (rcs-revision 1.12)
 
-(/usr/share/texmf/tex/latex/pgf/basiclayer/pgfcore.sty
-(/usr/share/texmf/tex/latex/pgf/systemlayer/pgfsys.sty
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\pgf\basiclayer\pgfcore.st
+y
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\pgf\systemlayer\pgfsys.st
+y
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\systemlayer\pgfsys.
+code.tex
 Package: pgfsys 2008/02/07 v2.00 (rcs-revision 1.31)
 
-(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\utilities\pgfkeys.c
+ode.tex
 \pgfkeys@pathtoks=\toks33
 \pgfkeys@temptoks=\toks34
 )
-\pgf@x=\dimen120
-\pgf@y=\dimen121
-\pgf@xa=\dimen122
-\pgf@ya=\dimen123
-\pgf@xb=\dimen124
-\pgf@yb=\dimen125
-\pgf@xc=\dimen126
-\pgf@yc=\dimen127
-\c@pgf@counta=\count118
-\c@pgf@countb=\count119
-\c@pgf@countc=\count120
-\c@pgf@countd=\count121
+\pgf@x=\dimen118
+\pgf@y=\dimen119
+\pgf@xa=\dimen120
+\pgf@ya=\dimen121
+\pgf@xb=\dimen122
+\pgf@yb=\dimen123
+\pgf@xc=\dimen124
+\pgf@yc=\dimen125
+\c@pgf@counta=\count116
+\c@pgf@countb=\count117
+\c@pgf@countc=\count118
+\c@pgf@countd=\count119
 
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgf.cfg
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\systemlayer\pgf.cfg
 File: pgf.cfg 2008/01/13  (rcs-revision 1.6)
 )
 Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 885.
 
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\systemlayer\pgfsys-
+pdftex.def
 File: pgfsys-pdftex.def 2007/12/20  (rcs-revision 1.20)
 
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\systemlayer\pgfsys-
+common-pdf.def
 File: pgfsys-common-pdf.def 2007/12/17  (rcs-revision 1.8)
 )))
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\systemlayer\pgfsyss
+oftpath.code.tex
 File: pgfsyssoftpath.code.tex 2008/01/23  (rcs-revision 1.6)
-\pgfsyssoftpath@smallbuffer@items=\count122
-\pgfsyssoftpath@bigbuffer@items=\count123
+\pgfsyssoftpath@smallbuffer@items=\count120
+\pgfsyssoftpath@bigbuffer@items=\count121
 )
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\systemlayer\pgfsysp
+rotocol.code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
 ))
-(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\xcolor\xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-(/etc/texmf/tex/latex/config/color.cfg
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -817,247 +813,284 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcore.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\basiclayer\pgfcore.
+code.tex
 Package: pgfcore 2008/01/15 v2.00 (rcs-revision 1.6)
 
-(/usr/share/texmf/tex/generic/pgf/math/pgfmath.code.tex
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathcalc.code.tex
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathutil.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\math\pgfmath.code.t
+ex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\math\pgfmathcalc.co
+de.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\math\pgfmathutil.co
+de.tex
 \pgfmath@box=\box31
 )
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathparser.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\math\pgfmathparser.
+code.tex
 \pgfmath@stack=\toks35
-\c@pgfmath@parsecounta=\count124
-\c@pgfmath@parsecountb=\count125
-\c@pgfmath@parsecountc=\count126
-\pgfmath@parsex=\dimen128
+\c@pgfmath@parsecounta=\count122
+\c@pgfmath@parsecountb=\count123
+\c@pgfmath@parsecountc=\count124
+\pgfmath@parsex=\dimen126
 )
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathoperations.code.tex
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathtrig.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathrnd.code.tex))
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathbase.code.tex)))
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\math\pgfmathoperati
+ons.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\math\pgfmathtrig.co
+de.tex)
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\math\pgfmathrnd.cod
+e.tex))
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\math\pgfmathbase.co
+de.tex)))
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\basiclayer\pgfcorep
+oints.code.tex
 File: pgfcorepoints.code.tex 2008/02/03  (rcs-revision 1.13)
-\pgf@picminx=\dimen129
-\pgf@picmaxx=\dimen130
-\pgf@picminy=\dimen131
-\pgf@picmaxy=\dimen132
-\pgf@pathminx=\dimen133
-\pgf@pathmaxx=\dimen134
-\pgf@pathminy=\dimen135
-\pgf@pathmaxy=\dimen136
-\pgf@xx=\dimen137
-\pgf@xy=\dimen138
-\pgf@yx=\dimen139
-\pgf@yy=\dimen140
-\pgf@zx=\dimen141
-\pgf@zy=\dimen142
+\pgf@picminx=\dimen127
+\pgf@picmaxx=\dimen128
+\pgf@picminy=\dimen129
+\pgf@picmaxy=\dimen130
+\pgf@pathminx=\dimen131
+\pgf@pathmaxx=\dimen132
+\pgf@pathminy=\dimen133
+\pgf@pathmaxy=\dimen134
+\pgf@xx=\dimen135
+\pgf@xy=\dimen136
+\pgf@yx=\dimen137
+\pgf@yy=\dimen138
+\pgf@zx=\dimen139
+\pgf@zy=\dimen140
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\basiclayer\pgfcorep
+athconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2008/02/13  (rcs-revision 1.14)
-\pgf@path@lastx=\dimen143
-\pgf@path@lasty=\dimen144
+\pgf@path@lastx=\dimen141
+\pgf@path@lasty=\dimen142
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\basiclayer\pgfcorep
+athusage.code.tex
 File: pgfcorepathusage.code.tex 2008/01/23  (rcs-revision 1.11)
-\pgf@shorten@end@additional=\dimen145
-\pgf@shorten@start@additional=\dimen146
+\pgf@shorten@end@additional=\dimen143
+\pgf@shorten@start@additional=\dimen144
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\basiclayer\pgfcores
+copes.code.tex
 File: pgfcorescopes.code.tex 2008/01/15  (rcs-revision 1.26)
 \pgfpic=\box32
 \pgf@hbox=\box33
 \pgf@layerbox@main=\box34
-\pgf@picture@serial@count=\count127
+\pgf@picture@serial@count=\count125
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\basiclayer\pgfcoreg
+raphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2007/12/12  (rcs-revision 1.8)
-\pgflinewidth=\dimen147
+\pgflinewidth=\dimen145
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\basiclayer\pgfcoret
+ransformations.code.tex
 File: pgfcoretransformations.code.tex 2008/02/04  (rcs-revision 1.10)
-\pgf@pt@x=\dimen148
-\pgf@pt@y=\dimen149
-\pgf@pt@temp=\dimen150
+\pgf@pt@x=\dimen146
+\pgf@pt@y=\dimen147
+\pgf@pt@temp=\dimen148
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\basiclayer\pgfcoreq
+uick.code.tex
 File: pgfcorequick.code.tex 2006/10/11  (rcs-revision 1.2)
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\basiclayer\pgfcoreo
+bjects.code.tex
 File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\basiclayer\pgfcorep
+athprocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2008/01/23  (rcs-revision 1.7)
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\basiclayer\pgfcorea
+rrows.code.tex
 File: pgfcorearrows.code.tex 2007/06/07  (rcs-revision 1.8)
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\basiclayer\pgfcores
+hade.code.tex
 File: pgfcoreshade.code.tex 2007/12/10  (rcs-revision 1.9)
-\pgf@max=\dimen151
-\pgf@sys@shading@range@num=\count128
+\pgf@max=\dimen149
+\pgf@sys@shading@range@num=\count126
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\basiclayer\pgfcorei
+mage.code.tex
 File: pgfcoreimage.code.tex 2008/01/15  (rcs-revision 1.1)
 \pgfexternal@startupbox=\box35
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\basiclayer\pgfcorel
+ayers.code.tex
 File: pgfcorelayers.code.tex 2008/01/15  (rcs-revision 1.1)
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\basiclayer\pgfcoret
+ransparency.code.tex
 File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\basiclayer\pgfcorep
+atterns.code.tex
 File: pgfcorepatterns.code.tex 2008/01/15  (rcs-revision 1.1)
 )))
-(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\modules\pgfmodulesh
+apes.code.tex
 File: pgfmoduleshapes.code.tex 2008/02/13  (rcs-revision 1.4)
 \pgfnodeparttextbox=\box36
 \toks@savedmacro=\toks36
 )
-(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\modules\pgfmodulepl
+ot.code.tex
 File: pgfmoduleplot.code.tex 2008/01/15  (rcs-revision 1.1)
 \pgf@plotwrite=\write3
 )
-(/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\pgf\compatibility\pgfcomp
+-version-0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v2.00 (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen152
-\pgf@nodesepend=\dimen153
+\pgf@nodesepstart=\dimen150
+\pgf@nodesepend=\dimen151
 )
-(/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\pgf\compatibility\pgfcomp
+-version-1-18.sty
 Package: pgfcomp-version-1-18 2007/07/23 v2.00 (rcs-revision 1.1)
 ))
-(/usr/share/texmf/tex/latex/pgf/utilities/pgffor.sty
-(/usr/share/texmf/tex/generic/pgf/utilities/pgffor.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\pgf\utilities\pgffor.sty
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\utilities\pgffor.co
+de.tex
 Package: pgffor 2007/11/07 v2.00 (rcs-revision 1.8)
-\pgffor@iter=\dimen154
-\pgffor@skip=\dimen155
+\pgffor@iter=\dimen152
+\pgffor@skip=\dimen153
 ))
-(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\frontendlayer\tikz\
+tikz.code.tex
 Package: tikz 2008/02/13 v2.00 (rcs-revision 1.27)
 
-(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\libraries\pgflibrar
+yplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2007/03/09 v2.00 (rcs-revision 1.9)
-\pgf@plot@mark@count=\count129
-\pgfplotmarksize=\dimen156
+\pgf@plot@mark@count=\count127
+\pgfplotmarksize=\dimen154
 )
-\tikz@lastx=\dimen157
-\tikz@lasty=\dimen158
-\tikz@lastxsaved=\dimen159
-\tikz@lastysaved=\dimen160
-\tikzleveldistance=\dimen161
-\tikzsiblingdistance=\dimen162
+\tikz@lastx=\dimen155
+\tikz@lasty=\dimen156
+\tikz@lastxsaved=\dimen157
+\tikz@lastysaved=\dimen158
+\tikzleveldistance=\dimen159
+\tikzsiblingdistance=\dimen160
 \tikz@figbox=\box37
 \tikz@tempbox=\box38
-\tikztreelevel=\count130
-\tikznumberofchildren=\count131
-\tikznumberofcurrentchild=\count132
-\tikz@fig@count=\count133
+\tikztreelevel=\count128
+\tikznumberofchildren=\count129
+\tikznumberofcurrentchild=\count130
+\tikz@fig@count=\count131
 
-(/usr/share/texmf/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\modules\pgfmodulema
+trix.code.tex
 File: pgfmodulematrix.code.tex 2008/01/15  (rcs-revision 1.1)
-\pgfmatrixcurrentrow=\count134
-\pgfmatrixcurrentcolumn=\count135
-\pgf@matrix@numberofcolumns=\count136
+\pgfmatrixcurrentrow=\count132
+\pgfmatrixcurrentcolumn=\count133
+\pgf@matrix@numberofcolumns=\count134
 )
-\tikz@expandcount=\count137
+\tikz@expandcount=\count135
 
-(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopat
-hs.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\frontendlayer\tikz\
+libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/01/09 v2.00 (rcs-revision 1.1)
 )))
-(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytrees
-.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\frontendlayer\tikz\
+libraries\tikzlibrarytrees.code.tex
 File: tikzlibrarytrees.code.tex 2008/01/09 v2.00 (rcs-revision 1.1)
 )
-(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
-s.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\frontendlayer\tikz\
+libraries\tikzlibraryshapes.code.tex
 File: tikzlibraryshapes.code.tex 2008/01/09 v2.00 (rcs-revision 1.1)
 
-(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
-s.geometric.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\frontendlayer\tikz\
+libraries\tikzlibraryshapes.geometric.code.tex
 File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v2.00 (rcs-revision 1.1)
 
-(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryshapes.geometric.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\libraries\pgflibrar
+yshapes.geometric.code.tex
 File: pgflibraryshapes.geometric.code.tex 2008/02/01 v2.00 (rcs-revision 1.22)
 ))
-(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
-s.misc.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\frontendlayer\tikz\
+libraries\tikzlibraryshapes.misc.code.tex
 File: tikzlibraryshapes.misc.code.tex 2008/01/09 v2.00 (rcs-revision 1.1)
 
-(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryshapes.misc.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\libraries\pgflibrar
+yshapes.misc.code.tex
 File: pgflibraryshapes.misc.code.tex 2008/02/12 v2.00 (rcs-revision 1.10)
 ))
-(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
-s.symbols.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\frontendlayer\tikz\
+libraries\tikzlibraryshapes.symbols.code.tex
 File: tikzlibraryshapes.symbols.code.tex 2008/01/09 v2.00 (rcs-revision 1.1)
 
-(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryshapes.symbols.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\libraries\pgflibrar
+yshapes.symbols.code.tex
 File: pgflibraryshapes.symbols.code.tex 2008/01/30 v2.00 (rcs-revision 1.13)
 ))
-(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
-s.arrows.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\frontendlayer\tikz\
+libraries\tikzlibraryshapes.arrows.code.tex
 File: tikzlibraryshapes.arrows.code.tex 2008/01/09 v2.00 (rcs-revision 1.1)
 
-(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryshapes.arrows.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\libraries\pgflibrar
+yshapes.arrows.code.tex
 File: pgflibraryshapes.arrows.code.tex 2007/11/10 v2.00 (rcs-revision 1.3)
 ))
-(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
-s.callouts.code.tex
-(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryshapes.callouts.code.tex)
-)
-(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
-s.multipart.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\frontendlayer\tikz\
+libraries\tikzlibraryshapes.callouts.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\libraries\pgflibrar
+yshapes.callouts.code.tex))
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\frontendlayer\tikz\
+libraries\tikzlibraryshapes.multipart.code.tex
 File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v2.00 (rcs-revision 1.1)
 
-(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryshapes.multipart.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\libraries\pgflibrar
+yshapes.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2008/01/15 v2.00 (rcs-revision 1.7)
 \pgfnodepartlowerbox=\box39
 \pgfnodepartsecondbox=\box40
 \pgfnodepartthirdbox=\box41
 \pgfnodepartfourthbox=\box42
 )))
-(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryautom
-ata.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\frontendlayer\tikz\
+libraries\tikzlibraryautomata.code.tex
 File: tikzlibraryautomata.code.tex 2008/02/14 v2.00 (rcs-revision 1.2)
 )
-(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybackg
-rounds.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\frontendlayer\tikz\
+libraries\tikzlibrarybackgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2008/01/09 v2.00 (rcs-revision 1.1)
 \pgf@layerbox@background=\box43
 \pgf@layerboxsaved@background=\box44
 )
-(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotm
-arks.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\frontendlayer\tikz\
+libraries\tikzlibraryplotmarks.code.tex
 File: tikzlibraryplotmarks.code.tex 2008/01/09 v2.00 (rcs-revision 1.1)
 
-(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\libraries\pgflibrar
+yplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2007/03/09 v2.00 (rcs-revision 1.5)
 ))
-(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrow
-s.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\frontendlayer\tikz\
+libraries\tikzlibraryarrows.code.tex
 File: tikzlibraryarrows.code.tex 2008/01/09 v2.00 (rcs-revision 1.1)
 
-(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\generic\pgf\libraries\pgflibrar
+yarrows.code.tex
 File: pgflibraryarrows.code.tex 2007/06/07 v2.00 (rcs-revision 1.7)
 ))
-\c@def1=\count138
-\c@satz=\count139
-\c@lem=\count140
-\c@bew=\count141
-\c@gleich=\count142
-\c@eigen=\count143
-\c@folg=\count144
-\c@beispiel=\count145
-
-(./bachelor.aux (./erklaerung.aux))
-\openout1 = `bachelor.aux'.
-
+\c@def1=\count136
+\c@satz=\count137
+\c@lem=\count138
+\c@bew=\count139
+\c@gleich=\count140
+\c@eigen=\count141
+\c@folg=\count142
+\c@beispiel=\count143
+ (C:\Users\Robert\Desktop\ba\bachelor.aux
+(C:\Users\Robert\Desktop\ba\erklaerung.aux))
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 42.
 LaTeX Font Info:    Try loading font information for OML+txmi on input line 42.
 
 
-(/usr/share/texmf-texlive/tex/latex/txfonts/omltxmi.fd
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\txfonts\omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 42.
@@ -1069,7 +1102,7 @@ LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 42.
 LaTeX Font Info:    Try loading font information for OMS+txsy on input line 42.
 
 
-(/usr/share/texmf-texlive/tex/latex/txfonts/omstxsy.fd
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\txfonts\omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 42.
@@ -1077,14 +1110,14 @@ LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 42.
 LaTeX Font Info:    Try loading font information for OMX+txex on input line 42.
 
 
-(/usr/share/texmf-texlive/tex/latex/txfonts/omxtxex.fd
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\txfonts\omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 42.
 LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 42.
 LaTeX Font Info:    Try loading font information for U+txexa on input line 42.
 
-(/usr/share/texmf-texlive/tex/latex/txfonts/utxexa.fd
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\txfonts\utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 42.
@@ -1092,80 +1125,81 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 42.
 LaTeX Font Info:    ... okay on input line 42.
 LaTeX Font Info:    Try loading font information for T1+txr on input line 42.
 
-(/usr/share/texmf-texlive/tex/latex/txfonts/t1txr.fd
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\txfonts\t1txr.fd
 File: t1txr.fd 2000/12/15 v3.1
 )
-(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+("C:\Program Files (x86)\MiKTeX 2.8\tex\context\base\supp-pdf.tex"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count146
-\scratchdimen=\dimen163
+\scratchcounter=\count144
+\scratchdimen=\dimen161
 \scratchbox=\box45
-\nofMPsegments=\count147
-\nofMParguments=\count148
+\nofMPsegments=\count145
+\nofMParguments=\count146
 \everyMPshowfont=\toks37
-\MPscratchCnt=\count149
-\MPscratchDim=\dimen164
-\MPnumerator=\count150
+\MPscratchCnt=\count147
+\MPscratchDim=\dimen162
+\MPnumerator=\count148
 \everyMPtoPDFconversion=\toks38
 )
 Package hyperref Info: Link coloring ON on input line 42.
- (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
+ ("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\hyperref\nameref.sty"
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 
-(/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\oberdiek\refcount.sty"
 Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
-\c@section@level=\count151
+\c@section@level=\count149
 )
 LaTeX Info: Redefining \ref on input line 42.
 LaTeX Info: Redefining \pageref on input line 42.
- (./bachelor.out)
-(./bachelor.out)
-\@outlinefile=\write4
-\openout4 = `bachelor.out'.
 
+(C:\Users\Robert\Desktop\ba\bachelor.out)
+(C:\Users\Robert\Desktop\ba\bachelor.out)
+\@outlinefile=\write4
 \AtBeginShipoutBox=\box46
- (./titlepage.tex
+
+(C:\Users\Robert\Desktop\ba\titlepage.tex
 LaTeX Font Info:    Try loading font information for OT1+txr on input line 25.
 
-(/usr/share/texmf-texlive/tex/latex/txfonts/ot1txr.fd
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\txfonts\ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Try loading font information for U+txsya on input line 25.
 
-(/usr/share/texmf-texlive/tex/latex/txfonts/utxsya.fd
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\txfonts\utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Try loading font information for U+txsyb on input line 25.
 
-(/usr/share/texmf-texlive/tex/latex/txfonts/utxsyb.fd
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\txfonts\utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Try loading font information for OT1+zplm on input line 25.
 
 
-(/usr/share/texmf-texlive/tex/latex/psnfss/ot1zplm.fd
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\psnfss\ot1zplm.fd"
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
 LaTeX Font Info:    Try loading font information for U+txmia on input line 25.
 
-(/usr/share/texmf-texlive/tex/latex/txfonts/utxmia.fd
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\txfonts\utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Try loading font information for U+txsyc on input line 25.
 
-(/usr/share/texmf-texlive/tex/latex/txfonts/utxsyc.fd
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\txfonts\utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-<Bilder/siegel.pdf, id=86, 731.73375pt x 380.42125pt>
+<Bilder/siegel.pdf, id=85, 731.73375pt x 380.42125pt>
 File: Bilder/siegel.pdf Graphic file (type pdf)
  <use Bilder/siegel.pdf>
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Bilder/siegel.pdf>])
+{C:/Users/Robert/AppData/Local/MiKTeX/2.8/pdftex/config/pdftex.map} <C:/Users/R
+obert/Desktop/ba/Bilder/siegel.pdf>])
 LaTeX Font Info:    Try loading font information for T1+txss on input line 48.
 
-(/usr/share/texmf-texlive/tex/latex/txfonts/t1txss.fd
+(C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\txfonts\t1txss.fd
 File: t1txss.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
@@ -1174,7 +1208,8 @@ LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
 (Font)              scaled to size 11.39996pt on input line 48.
 LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
 (Font)              scaled to size 23.63593pt on input line 48.
- (./bachelor.toc
+
+(C:\Users\Robert\Desktop\ba\bachelor.toc
 Class scrreprt Info: You've told me to use the font selection of the element
 (scrreprt)           `sectioning' that is an alias of element `disposition'
 (scrreprt)            on input line 2.
@@ -1190,15 +1225,9 @@ Class scrreprt Info: You've told me to use the font selection of the element
 Class scrreprt Info: You've told me to use the font selection of the element
 (scrreprt)           `sectioning' that is an alias of element `disposition'
 (scrreprt)            on input line 14.
-Class scrreprt Info: You've told me to use the font selection of the element
-(scrreprt)           `sectioning' that is an alias of element `disposition'
-(scrreprt)            on input line 21.
 )
 \tf@toc=\write5
-\openout5 = `bachelor.toc'.
-
-
-[2
+ [2
 
 
 
@@ -1211,13 +1240,13 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              Support for \float@addtolists may be removed from
 (scrreprt)              `scrreprt' soon .
 
-(./einleitung.tex
-Underfull \hbox (badness 10000) in paragraph at lines 2--12
+(C:\Users\Robert\Desktop\ba\einleitung.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--11
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--12
+Underfull \hbox (badness 10000) in paragraph at lines 2--11
 
  []
 
@@ -1225,9 +1254,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--12
 
 ]
 Kapitel 2.
-(./notation.tex
+(C:\Users\Robert\Desktop\ba\notation.tex
 LaTeX Font Info:    Try loading font information for U+fplmbb on input line 2.
- (/usr/share/texmf-texlive/tex/latex/psnfss/ufplmbb.fd
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\psnfss\ufplmbb.fd"
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 ))
 Underfull \hbox (badness 10000) in paragraph at lines 11--57
@@ -1243,14 +1273,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--57
 
 ]
 Kapitel 3.
-(./teil1.tex
-Overfull \hbox (1.83086pt too wide) in paragraph at lines 1--3
-\T1/txr/m/n/12 In diesem Ab-schnitt be-tra-cht-en wir Eigen-schaften der Op-er-
-a-tion Fort-set-zung für for-male Sprachen.
- []
-
+(C:\Users\Robert\Desktop\ba\teil1.tex
 LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
 (Font)              scaled to size 16.41594pt on input line 4.
+
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 4.
@@ -1281,11 +1307,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--29
 [5
 
 ]
+LaTeX Font Info:    Font shape `T1/txss/bx/it' in size <17.28> not available
+(Font)              Font shape `T1/txss/bx/sl' tried instead on input line 30.
+LaTeX Font Info:    Font shape `T1/txss/bx/sl' will be
+(Font)              scaled to size 16.41594pt on input line 30.
+
 Underfull \hbox (badness 10000) in paragraph at lines 31--33
 
  []
 
-[6] [7] [8]
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 115--117
+
+ []
+
+[7] [8]
 Underfull \hbox (badness 10000) in paragraph at lines 236--240
 
  []
@@ -1297,319 +1333,112 @@ Underfull \hbox (badness 10000) in paragraph at lines 275--276
 
 ) [10]
 Kapitel 4.
-(./teil2.tex [11
+(C:\Users\Robert\Desktop\ba\teil2.tex [11
 
 ]) [12]
 Kapitel 5.
-(./teil3.tex
+(C:\Users\Robert\Desktop\ba\teil3.tex
 Overfull \hbox (19.41086pt too wide) in paragraph at lines 1--3
-\T1/txr/m/n/12 In diesem Ab-schnitt be-tra-cht-en wir die Abgeschlossen-heit-se
-igen-schaften der Klassen der CHOMSKY-
+\T1/txr/m/n/12 In die-sem Ab-schnitt be-trach-ten wir die Ab-ge-schlos-sen-heit
+s-ei-gen-schaf-ten der Klas-sen der CHOMSKY-
  []
 
 
-Overfull \hbox (17.43732pt too wide) in paragraph at lines 9--16
-\T1/txr/m/n/12 tis-che Au-tomat $\OML/txmi/m/it/12 A[] \OT1/zplm/m/n/12 = (\OML
-/txmi/m/it/12 X\OT1/txr/m/n/12 , \OML/txmi/m/it/12 S\OT1/txr/m/n/12 , \OML/txmi
-/m/it/12 s[]\OT1/txr/m/n/12 , \OML/txmi/m/it/12 f\OT1/txr/m/n/12 , \OML/txmi/m/
-it/12 S[]\OT1/zplm/m/n/12 )$ \T1/txr/m/n/12 akzep-tiere $\OML/txmi/m/it/12 W$\T
-1/txr/m/n/12 . Wir kon-stru-ieren einen nicht-determninistischen
+Overfull \hbox (17.43732pt too wide) in paragraph at lines 9--15
+\T1/txr/m/n/12 ti-sche Au-to-mat $\OML/txmi/m/it/12 A[] \OT1/zplm/m/n/12 = (\OM
+L/txmi/m/it/12 X\OT1/txr/m/n/12 , \OML/txmi/m/it/12 S\OT1/txr/m/n/12 , \OML/txm
+i/m/it/12 s[]\OT1/txr/m/n/12 , \OML/txmi/m/it/12 f\OT1/txr/m/n/12 , \OML/txmi/m
+/it/12 S[]\OT1/zplm/m/n/12 )$ \T1/txr/m/n/12 ak-zep-tie-re $\OML/txmi/m/it/12 W
+$\T1/txr/m/n/12 . Wir kon-stru-ie-ren einen nicht-determninistischen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--16
+Underfull \hbox (badness 10000) in paragraph at lines 9--15
 
  []
 
 [13
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 32--35
+Underfull \hbox (badness 10000) in paragraph at lines 31--34
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--35
+Underfull \hbox (badness 10000) in paragraph at lines 31--34
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 46--50
+Underfull \hbox (badness 10000) in paragraph at lines 45--49
 
  []
 
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 65.
+put line 64.
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--92
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--92
+Underfull \hbox (badness 10000) in paragraph at lines 55--91
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--92
+Underfull \hbox (badness 10000) in paragraph at lines 55--91
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--91
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 101--107
+Underfull \hbox (badness 10000) in paragraph at lines 100--106
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--107
+Underfull \hbox (badness 10000) in paragraph at lines 100--106
 
  []
 
-[16]) [17pdfTeX warning (ext4): destination with the same identifier (name{ALC@
-rem.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 \chapter
-             {Quellenverzeichnis}pdfTeX warning (ext4): destination with the sa
-me identifier (name{ALC@line.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 \chapter
-             {Quellenverzeichnis}pdfTeX warning (ext4): destination with the sa
-me identifier (name{ALC@rem.2}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 \chapter
-             {Quellenverzeichnis}pdfTeX warning (ext4): destination with the sa
-me identifier (name{ALC@line.2}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 \chapter
-             {Quellenverzeichnis}pdfTeX warning (ext4): destination with the sa
-me identifier (name{ALC@rem.3}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 \chapter
-             {Quellenverzeichnis}pdfTeX warning (ext4): destination with the sa
-me identifier (name{ALC@line.3}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 \chapter
-             {Quellenverzeichnis}pdfTeX warning (ext4): destination with the sa
-me identifier (name{ALC@rem.4}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 \chapter
-             {Quellenverzeichnis}pdfTeX warning (ext4): destination with the sa
-me identifier (name{ALC@line.4}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 \chapter
-             {Quellenverzeichnis}pdfTeX warning (ext4): destination with the sa
-me identifier (name{ALC@rem.5}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 \chapter
-             {Quellenverzeichnis}pdfTeX warning (ext4): destination with the sa
-me identifier (name{ALC@line.5}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 \chapter
-             {Quellenverzeichnis}pdfTeX warning (ext4): destination with the sa
-me identifier (name{ALC@rem.6}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 \chapter
-             {Quellenverzeichnis}pdfTeX warning (ext4): destination with the sa
-me identifier (name{ALC@line.6}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 \chapter
-             {Quellenverzeichnis}pdfTeX warning (ext4): destination with the sa
-me identifier (name{ALC@rem.7}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 \chapter
-             {Quellenverzeichnis}pdfTeX warning (ext4): destination with the sa
-me identifier (name{ALC@line.7}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 \chapter
-             {Quellenverzeichnis}pdfTeX warning (ext4): destination with the sa
-me identifier (name{ALC@rem.8}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 \chapter
-             {Quellenverzeichnis}pdfTeX warning (ext4): destination with the sa
-me identifier (name{ALC@line.8}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 \chapter
-             {Quellenverzeichnis}pdfTeX warning (ext4): destination with the sa
-me identifier (name{ALC@rem.9}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 \chapter
-             {Quellenverzeichnis}pdfTeX warning (ext4): destination with the sa
-me identifier (name{ALC@line.9}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 \chapter
-             {Quellenverzeichnis}pdfTeX warning (ext4): destination with the sa
-me identifier (name{ALC@rem.10}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 \chapter
-             {Quellenverzeichnis}pdfTeX warning (ext4): destination with the sa
-me identifier (name{ALC@line.10}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 \chapter
-             {Quellenverzeichnis}pdfTeX warning (ext4): destination with the sa
-me identifier (name{ALC@rem.11}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 \chapter
-             {Quellenverzeichnis}pdfTeX warning (ext4): destination with the sa
-me identifier (name{ALC@line.11}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 \chapter
-             {Quellenverzeichnis}pdfTeX warning (ext4): destination with the sa
-me identifier (name{ALC@rem.12}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 \chapter
-             {Quellenverzeichnis}pdfTeX warning (ext4): destination with the sa
-me identifier (name{ALC@line.12}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 \chapter
-             {Quellenverzeichnis}pdfTeX warning (ext4): destination with the sa
-me identifier (name{ALC@rem.13}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 \chapter
-             {Quellenverzeichnis}pdfTeX warning (ext4): destination with the sa
-me identifier (name{ALC@line.13}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 \chapter
-             {Quellenverzeichnis}pdfTeX warning (ext4): destination with the sa
-me identifier (name{ALC@rem.14}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 \chapter
-             {Quellenverzeichnis}pdfTeX warning (ext4): destination with the sa
-me identifier (name{ALC@line.14}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 \chapter
-             {Quellenverzeichnis}pdfTeX warning (ext4): destination with the sa
-me identifier (name{ALC@rem.15}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 \chapter
-             {Quellenverzeichnis}pdfTeX warning (ext4): destination with the sa
-me identifier (name{ALC@line.15}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 \chapter
-             {Quellenverzeichnis}pdfTeX warning (ext4): destination with the sa
-me identifier (name{ALC@rem.16}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 \chapter
-             {Quellenverzeichnis}pdfTeX warning (ext4): destination with the sa
-me identifier (name{ALC@line.16}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 \chapter
-             {Quellenverzeichnis}pdfTeX warning (ext4): destination with the sa
-me identifier (name{ALC@rem.17}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 \chapter
-             {Quellenverzeichnis}pdfTeX warning (ext4): destination with the sa
-me identifier (name{ALC@line.17}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.67 \chapter
-             {Quellenverzeichnis}]
-Kapitel 6.
-[18
+[16]) (C:\Users\Robert\Desktop\ba\bachelor.brf)
+\tf@brf=\write6
+ [17] [18
 
 ]
-\openout2 = `erklaerung.aux'.
+(C:\Users\Robert\Desktop\ba\erklaerung.tex) [19
 
- (./erklaerung.tex
-Overfull \hbox (2.34683pt too wide) in paragraph at lines 4--5
-[]\T1/txr/m/n/12 Die Ar-beit wurde bish-er in gle-ich-er oder ähn-lich-er Form 
-kein-er an-deren Prü-fungs-be-hörde vorgelegt
- []
-
-) [19
-
-] (./bachelor.aux (./erklaerung.aux)) ) 
+]
+(C:\Users\Robert\Desktop\ba\bachelor.aux
+(C:\Users\Robert\Desktop\ba\erklaerung.aux)) ) 
 Here is how much of TeX's memory you used:
- 16651 strings out of 95061
- 283241 string characters out of 1182622
- 396039 words of memory out of 256000000
- 19199 multiletter control sequences out of 15000+50000
- 83317 words of font info for 135 fonts, out of 1200000 for 2000
- 28 hyphenation exceptions out of 8191
- 52i,10n,56p,777b,707s stack positions out of 5000i,500n,10000p,200000b,5000s
-{/usr/share/texmf-texlive/fonts/enc/dvip
-s/base/8r.enc}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pf
-b></usr/share/texmf-texlive/fonts/type1/public/mathpazo/fplmbb.pfb></usr/share/
-texmf-texlive/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texmf-texlive/fo
-nts/type1/public/txfonts/rtxr.pfb></usr/share/texmf-texlive/fonts/type1/public/
-txfonts/rtxsc.pfb></usr/share/texmf-texlive/fonts/type1/public/txfonts/txex.pfb
-></usr/share/texmf-texlive/fonts/type1/public/txfonts/txsy.pfb></usr/share/texm
-f-texlive/fonts/type1/public/txfonts/txsya.pfb></usr/share/texmf-texlive/fonts/
-type1/public/txfonts/txsyb.pfb></usr/share/texmf-texlive/fonts/type1/public/txf
-onts/txsyc.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvb8a.pfb></
-usr/share/texmf-texlive/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-t
-exlive/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/u
-rw/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb
->
-Output written on bachelor.pdf (19 pages, 192994 bytes).
+ 16597 strings out of 495269
+ 289478 string characters out of 3179645
+ 394504 words of memory out of 3000000
+ 19182 multiletter control sequences out of 15000+200000
+ 82980 words of font info for 136 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 52i,10n,56p,829b,722s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.
+8/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.8/fonts/type
+1/public/amsfonts/cm/cmr10.pfb><C:/Users/Robert/AppData/Roaming/MiKTeX/2.8/font
+s/type1/public/mathpazo/fplmbb.pfb><C:/Users/Robert/AppData/Roaming/MiKTeX/2.8/
+fonts/type1/public/txfonts/rtxmi.pfb><C:/Users/Robert/AppData/Roaming/MiKTeX/2.
+8/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/Robert/AppData/Roaming/MiKTeX/2
+.8/fonts/type1/public/txfonts/rtxsc.pfb><C:/Users/Robert/AppData/Roaming/MiKTeX
+/2.8/fonts/type1/public/txfonts/txex.pfb><C:/Users/Robert/AppData/Roaming/MiKTe
+X/2.8/fonts/type1/public/txfonts/txsy.pfb><C:/Users/Robert/AppData/Roaming/MiKT
+eX/2.8/fonts/type1/public/txfonts/txsya.pfb><C:/Users/Robert/AppData/Roaming/Mi
+KTeX/2.8/fonts/type1/public/txfonts/txsyb.pfb><C:/Users/Robert/AppData/Roaming/
+MiKTeX/2.8/fonts/type1/public/txfonts/txsyc.pfb><C:/Program Files (x86)/MiKTeX 
+2.8/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x86)/MiKTeX 2.8/font
+s/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/
+urw/palatino/uplr8a.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/urw/time
+s/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/urw/times/utmr8a.pf
+b><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/urw/times/utmri8a.pfb>
+Output written on bachelor.pdf (19 pages, 199192 bytes).
 PDF statistics:
- 399 PDF objects out of 1000 (max. 8388607)
- 119 named destinations out of 1000 (max. 500000)
- 178 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 404 PDF objects out of 1000 (max. 8388607)
+ 120 named destinations out of 1000 (max. 500000)
+ 182 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -14,20 +14,20 @@ Es seien $L=\{aa,bb\},\ V = \{aa,b\}$ und $W=\{aa,bb\}$. \\Dann haben wir $(L\ff
 
 \subsection{Einselement}
 
-Da die algebraische Struktur $A$ nicht kommutativ ist, werden bei der Untersuchung auf Einselemente sowohl linksneutrale, als auch rechtsneutrale Einselemente betrachtet.
-Wir betrachten zuerst linksneutrale Elemente.
+Da die algebraische Struktur $A$ nicht kommutativ ist, werden bei der Untersuchung auf Einselemente sowohl linksneutrale, als auch rechtsneutrale Elemente betrachtet.
+Wir beginnen mit linksneutralen Elementen.
 Man erkennt leicht, dass $X^*$ ein solches Element ist, denn es gilt $X^*\ff L = L$.
 Analog ist $X^*$ rechtsneutrales Element, denn es gilt $L\ff X^* = L$.
 Nehmen wir nun an, es gebe weitere links- oder rechtsneutrale Elemente $E_l$ bzw. $E_r$, so haben wir $E_l=E_l\ff X^* = X^*$, da $X^*$ rechtsneutrales Element ist, sowie $E_r = X^*\ff E_r = X^*$, da $X^*$ auch linksneutrales Element ist.
 \subsection{Nullelement}
-Wir betrachten, da $A$ nicht kommutativ ist, ... prosa.
-Wir betrachten zuerst linksabsorbierende Elemente.
+Wir betrachten, da $A$ nicht kommutativ ist, sowohl linksabsorbierende, als auch rechtsabsorbierende Elemente.
+Wir beginnen mit linksabsorbierenden Elementen.
 Man erkennt leicht, dass $\emptyset$ ein solches Element ist, denn es gilt $\emptyset\ff L = \emptyset$.
 Analog ist $\emptyset$ rechtsabsorbierendes Element, denn es gilt $L\ff\emptyset =\emptyset$.
 Nehmen wir an, es gebe weitere links- oder rechtsabsorbierende Elemente $N_l$ bzw. $N_r$, so haben wir $N_l = N_l\ff \emptyset = \emptyset$, da $\emptyset$ rechtsabsorbierendes Element ist, sowie $N_r = \emptyset\ff N_r = \emptyset$, da $\emptyset$ auch linksabsorbierendes Element ist.\\\\
 Damit kann die algebraische Struktur $A=({2^X}^*,\ff)$ aufgrund fehlender Assoziativit"at weder eine Gruppe noch eine Halbgruppe sein, besitzt aber ein Null- und ein Einselement.
 
-\section{BOOLEsche Operationen}
+\section{\emph{BOOLE}sche Operationen}
 In diesem Abschnitt untersuchen wir die Operation Fortsetzung auf Stabilit"at bez"uglich den mengentheoretischen Operationen $\cap$ und $\cup$ und auf Monotonie bez"uglich $\subseteq$.
 \\\\Aus der Definition folgt direkt die Eigenschaft
 
@@ -101,7 +101,7 @@ $L\subseteq W \leftrightarrow L\ff W = L\cap W = L$
 \begin{folg}\label{folg2}
 $L\supseteq W \to L\ff W = W$
 \end{folg}
-F"ur Folgerung \ref{folg2} gilt nicht die Richtung $\leftarrow$, wie das folgende Beispiel zeigt:
+F"ur Folgerung \ref{folg2} gilt nicht die umgekehrte Richtung. Dazu geben wir ein Beispiel an.
 
 \vspace{2ex}
 
@@ -109,10 +109,10 @@ F"ur Folgerung \ref{folg2} gilt nicht die Richtung $\leftarrow$, wie das folgend
 Es seien $L=\{b\}, W=\{bb\}$. Dann haben wir $L\ff W = W$, aber $L\not\supseteq W$.
 \end{beispiel}
 
-Da die Operation Fortsetzung nicht kommutativ ist, betrachten wir nun die Monotonie der Operation bez"uglich Vorder- und Hinterglied getrennt.
+Da die Operation Fortsetzung nicht kommutativ ist, betrachten wir nun die Monotonie sowie die Stabilit"at der Operation bez"uglich Vorder- und Hinterglied getrennt.
 \subsection{Eigenschaften im Vorderglied}
 
-Wir betrachten zun"achst die Stabilit"at der Operation Fortsetzung bezüglich $\cap$ und $\cup$ und die Monotonie bezüglich $\subseteq$ im Vorderglied.\\
+Wir betrachten zun"achst die Stabilit"at der Operation Fortsetzung bez"ulich $\cap$ und $\cup$ und die Monotonie bez"uglich $\subseteq$ im Vorderglied.\\\\
 Aus Eigenschaft \ref{cupeig} folgt
 
 \vspace{2ex}
@@ -233,7 +233,7 @@ Dann haben wir $V\ff L = \{aaba\} \not\subseteq V\ff W =\{aab\}$
 %\end{proof}
 
 \section{Konkatenation}
-Bisher wurde die Stabilität der Operation Fortsetzung bez"uglich der boolschen Operationen $\cap$ und $\cup$ betachtet.
+Bisher wurde die Stabilität der Operation Fortsetzung bez"uglich der boolschen Operationen $\cap$ und $\cup$ betrachtet.
 Nun betrachten wir ob es eine Stabilität der Operation Fortsetzung bezüglich der Konkatenation gibt.
 Dabei werden wir feststellen, dass keine Stabiltät bezüglich der Konkatenation existiert. Dazu geben wir nun Sprachen derart an, dass jeweils alle Inklusionsbeziehungen erf"ullt werden k"onnen.\\\\
 Zuerst betrachten wir die Stabilität der Operation Fortsetzung bezüglich der Konkatenation im Hinterglied.
@@ -272,7 +272,7 @@ Es seien $L=\{aab,a\}\quad V=\{aa\}\quad W=\{b\}$\\
 Dann erhalten wir $L\ff (V\cdot W) = \{aab\} \not\subset \{aa\} = (L\ff V) \cdot (L\ff W)$, als auch $L\ff (V\cdot W) = \{aab\} \not\supset \{aa\} = (L\ff V) \cdot (L\ff W)$.
 \end{beispiel}
 
-Da wir f"ur alle Inklusionsbeziehungen Sprachen gefunden haben, die diese erf"ullen, kann es keine Stabilität der Operation Fortsetzung bezüglich der Konkatenation im Hinterglied geben, welche f"ur alle Sprachen $L,V,W$ gelten w"urde.\\
+Da wir f"ur alle Inklusionsbeziehungen Sprachen gefunden haben, die diese erf"ullen, kann es keine Stabilität der Operation Fortsetzung bezüglich der Konkatenation im Hinterglied geben, welche f"ur alle Sprachen $L,V,W$ gilt.\\
 
 Betrachtet man nun die Stabilität der Operation Fortsetzung bezüglich der Konkatenation im Vorderglied, so erkennt man leicht, dass es sich 
 zum Einen um W"orter aus $W$ handelt die man mit W"ortern aus $W^2$ vergleicht.\\

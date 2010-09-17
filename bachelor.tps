@@ -4,14 +4,14 @@ Version=2
 
 [SessionInfo]
 ActiveTab=0
-FrameCount=7
-ActiveFrame=6
+FrameCount=9
+ActiveFrame=0
 
 [Frame0]
 Columns=1
 Rows=1
-Flags=0
-ShowCmd=1
+Flags=2
+ShowCmd=3
 MinPos.x=-1
 MinPos.y=-1
 MaxPos.x=-8
@@ -24,17 +24,17 @@ Class=CLatexEdit
 Document=bachelor.tex
 
 [Frame0_Row0]
-cyCur=364
+cyCur=494
 cyMin=10
 
 [Frame0_Col0]
-cxCur=1258
+cxCur=1453
 cxMin=10
 
 [Frame0_View0,0]
-Cursor.row=0
-Cursor.column=0
-TopSubLine=9
+Cursor.row=66
+Cursor.column=1
+TopSubLine=54
 
 [Frame1]
 Columns=1
@@ -61,9 +61,9 @@ cxCur=1237
 cxMin=10
 
 [Frame1_View0,0]
-Cursor.row=0
-Cursor.column=0
-TopSubLine=34
+Cursor.row=103
+Cursor.column=247
+TopSubLine=124
 
 [Frame2]
 Columns=1
@@ -148,9 +148,9 @@ cxCur=1237
 cxMin=10
 
 [Frame4_View0,0]
-Cursor.row=91
-Cursor.column=25
-TopSubLine=85
+Cursor.row=36
+Cursor.column=88
+TopSubLine=21
 
 [Frame5]
 Columns=1
@@ -184,8 +184,8 @@ TopSubLine=0
 [Frame6]
 Columns=1
 Rows=1
-Flags=2
-ShowCmd=3
+Flags=0
+ShowCmd=1
 MinPos.x=-1
 MinPos.y=-1
 MaxPos.x=-8
@@ -198,15 +198,73 @@ Class=CLatexEdit
 Document=teil1.tex
 
 [Frame6_Row0]
-cyCur=534
+cyCur=343
 cyMin=10
 
 [Frame6_Col0]
-cxCur=1453
+cxCur=1237
 cxMin=10
 
 [Frame6_View0,0]
-Cursor.row=115
-Cursor.column=47
-TopSubLine=93
+Cursor.row=114
+Cursor.column=118
+TopSubLine=127
+
+[Frame7]
+Columns=1
+Rows=1
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-8
+MaxPos.y=-30
+NormalPos.left=0
+NormalPos.top=0
+NormalPos.right=1324
+NormalPos.bottom=365
+Class=CLatexEdit
+Document=einleitung.tex
+
+[Frame7_Row0]
+cyCur=306
+cyMin=10
+
+[Frame7_Col0]
+cxCur=1287
+cxMin=10
+
+[Frame7_View0,0]
+Cursor.row=5
+Cursor.column=135
+TopSubLine=0
+
+[Frame8]
+Columns=1
+Rows=1
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-8
+MaxPos.y=-30
+NormalPos.left=25
+NormalPos.top=25
+NormalPos.right=1349
+NormalPos.bottom=390
+Class=CLatexEdit
+Document=notation.tex
+
+[Frame8_Row0]
+cyCur=306
+cyMin=10
+
+[Frame8_Col0]
+cxCur=1287
+cxMin=10
+
+[Frame8_View0,0]
+Cursor.row=11
+Cursor.column=122
+TopSubLine=0
 

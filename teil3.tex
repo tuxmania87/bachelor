@@ -9,9 +9,8 @@ Sind $L$ und $W$ regul\"are Sprachen, so ist auch $L\ff W$ regul\"ar.
 Der nicht-deterministische Automat $A_L= (X,Z,z_{0},\delta_L,Z_f)$ akzeptiere $L$, der deterministische Automat $A_W = (X,S,s_{0},f,S_{f})$ akzeptiere $W$.
 Wir konstruieren einen nicht-determninistischen Automaten $A$, der $L\ff W$ akzeptiert.\\\\\emph{Arbeitsweise.}\\
 In Phase eins lesen $A_L$ und $A_W$ das Wort $w$ parallel (\ref{auto1}). Falls $A_L$ ein Pr"afix $v$ von $w$ akzeptiert, w"ahlt $A$ nicht-deterministisch aus ob Schritt zwei aktiviert wird oder nicht ( Nicht-Determinismus von $A_L$ ).\\
-Wird Phase zwei aktiviert, so liest $A_W$ das Wort $w$ weiter, w"ahrend $A_L$ in einem Ruhezustand $z_f'$ verweilt (\ref{auto2}). Sobald $A_W$ in Phase 2 akzeptiert, gelangt $A$, nach Konstruktion, in den Zustand $(z_f',s_x)$ aus dem keine Transition herausführt. Akzeptiert $A_W$ nun ein Pr"afix $v'$ mit $v\sqsubseteq v'\sqsubset w\quad v'\in W$, so lehnt $A$ das Eingabewort $w$ ab, weil $w$ noch nicht zu Ende gelesen ist und aus dem Zustand $(z_f',s_x)$ keine Transition heraus führt. Findet der Automat $A_W$ kein solches Pr"afix $v'$ und akzeptiert das Eingabewort $w$ ( und kein Pr"afix von $w$), so akzeptiert auch $A$, weil $w$ zu Ende gelesen wurde und sich $A$ im Finalzustand $(z_f',s_x)$ (\ref{auto4}) befindet.
-\\$A = (X,(Z\cup \{ z_f'\})\times (S\cup \{ s_x\}), (z_{0},s_{0}), \delta , \{ (z_f',s_x) \} ), s_x\notin S$
-mit
+Wird Phase zwei aktiviert, so liest $A_W$ das Wort $w$ weiter, w"ahrend $A_L$ in einem Ruhezustand $z_f'$ verweilt (\ref{auto2}). Sobald $A_W$ in Phase 2 akzeptiert, gelangt $A$, nach Konstruktion, in den Zustand $(z_f',s_x)$ aus dem keine Transition herausf"uhrt (\ref{auto4}). Akzeptiert $A_W$ nun ein Pr"afix $v'$ mit $v\sqsubseteq v'\sqsubset w\quad v'\in W$, so muss $A$ das Eingabewort $w$ ablehnen. Dies wird realsiert, da keine Transition aus $(z_f',s_x)$ herausf"uhrt und $w$ noch nicht zu Ende gelesen ist. Findet der Automat $A_W$ kein solches Pr"afix $v'$ und akzeptiert das Eingabewort $w$ ( und kein Pr"afix von $w$), so akzeptiert auch $A$, weil $w$ zu Ende gelesen wurde und sich $A$ im Finalzustand $(z_f',s_x)$ (\ref{auto4}) befindet.
+\\$A = (X,(Z\cup \{ z_f'\})\times (S\cup \{ s_x\}), (z_{0},s_{0}), \delta , \{ (z_f',s_x) \} ),$ mit $s_x\notin S,\ z_f'\notin Z$
 \setcounter{equation}{0}
 \begin{eqnarray}
  \delta &=&\{ ((z_i,s_i),x,(z_j,s_j)) : (z_i,x,z_j) \in \delta_L \wedge f(s_i,x)=s_j  \}  \label{auto1} \\
@@ -19,7 +18,7 @@ mit
  & \cup & \{ ((z_f',s_i),x,(z_f',s_j)) : f(s_i,x)=s_j  \wedge s_j \notin S_f\} \label{auto3}\\
  & \cup & \{ ((z_f',s_i),x,(z_f',s_x)) : f(s_i,x)=s_j  \wedge s_j \in S_f \label{auto4} \}
 \end{eqnarray}
-Nach Konstruktion ist klar, dass der Automat $A$ nur W"orter aus $L\ff W$ akzeptiert. Falls $w\in L\ff W$, so gibt es ein Präfix $v\in L$, sodass $w\in \{v\}\ff W$. Weil dieses Präfix nicht-deterministisch von $A_L$ ausgewählt wird, akzeptiert $A$ auch alle W"orter aus $L\ff W$.
+Nach Konstruktion ist klar, dass der Automat $A$ nur W"orter aus $L\ff W$ akzeptiert. Falls $w\in L\ff W$, so gibt es ein Präfix $v\in L$, sodass $w\in \{v\}\ff W$. Weil dieses Präfix nicht-deterministisch von $A_L$ ausgew"ahlt wird, akzeptiert $A$ auch alle W"orter aus $L\ff W$.
 Damit akzeptiert der Automat $A$ ein Eingabewort $w$ genau dann, wenn $w\in L\ff W$
 \end{proof}
 
@@ -102,7 +101,7 @@ Es sei $U=\{u_i : 0 \le i \le n \wedge u_i \in L\}$ eine Aufz"ahlung von $L$.\\
 Wir konstruieren einen Algorithmus welcher die Eingabe $w$ akzeptiert genau dann, wenn $w\in L\ff W$.
 Ist $w\notin W$ so kann nach Definition auch nicht $w\in L\ff W$ gelten. \\\\Wir w"ahlen das Wort $u_i$ aus der Aufz"ahlung $U$ von $L$ aus (\# 1).
 Gilt nun $u_i\sqsubseteq w$, so wird eine Arbeitskopie $v$ mit $v:=w$ erstellt (\# 2). Im n"achsten Schritt wird f"ur alle Pr"afixe $v$ mit $u_i\sqsubseteq v\sqsubset w$ sukzessive gepr"uft ob $v\in W$ (\# 3). 
-\\\\Sollte dies der Fall sein, dann haben wir mit $v$ ein Präfix von $w$, werlches gegen die das $\min$ Kriterium verstö"st. Die innere Schleife wird dann verlassen und die FOR Schleife w"ahlt das n"achste $u_{i+1}$ aus(\# 4).% und der Algorithmus l"auft mit diesem $u_i$ weiter.
+\\\\Sollte dies der Fall sein, dann haben wir mit $v$ ein Pr"afix von $w$, werlches gegen die das $\min$ Kriterium verst"o"st. Die innere Schleife wird dann verlassen,die FOR Schleife w"ahlt das n"achste $u_{i+1}$ aus(\# 4) und der Algorithmus l"auft \emph{ad infinitum}.% und der Algorithmus l"auft mit diesem $u_i$ weiter.
 \\Gilt aber f"ur alle Pr"afixe $v\notin W$, so erreicht die innere Schleife ihre Abbruchbedingung und wir akzeptieren die Eingabe $w$ (\# 5).
 
 
