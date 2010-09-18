@@ -26,7 +26,7 @@ $W\ff \pref(V) = W \cap \pref(V)$
 \end{eigen}
 \begin{proof}
 Die Inklusion $\supseteq$ folgt aus Eigenschaft \ref{klaro}.\\
-Zum Beweis der anderen Inklusion betrachten wir $w\in W\ff\pref(V)$. Es muss also ein $u\in W$ existieren, sodass $w\in \{u\}\ff\pref(V)$. Daraus folgt, dass $u$ ein Pr"afix von $w$ sein muss, was wiederum bedeutet, dass $u\in\pref(V)$. Damit haben wir $w\in\min(\{u\}\cdot X^*\cap \pref(V)) \to w\in \{u\}\cap \pref(V)$.
+Zum Beweis der anderen Inklusion betrachten wir $w\in W\ff\pref(V)$. Es existiert also ein $u\in W$ derart, dass $w\in \{u\}\ff\pref(V)$. Daraus folgt, dass $u$ ein Pr"afix von $w$ sein muss, was wiederum bedeutet, dass $u\in\pref(V)$. Damit haben wir $w\in\min(\{u\}\cdot X^*\cap \pref(V)) \to w\in \{u\}\cap \pref(V)$.
 %Es gen"ugt die Eigenschaft f"ur $W=\{w\}$ zu zeigen:\\
 %Aus der Definition wissen wir, dass $w\ff \pref(V)= \min ( \{w\} \cdot X^* \cap \pref(V) )$ gilt. 
 %ist $w'\in (\{w\} \cdot X^* \cap \pref(V))$, so sieht man, dass $w\sqsubseteq w'$ gilt. Also haben wir wegen $w'\in \pref(V)$ auch $w\in\pref(V)$.
@@ -56,7 +56,7 @@ $V\cdot X^* \ff W = V\cdot X^* \cap W$
 \end{eigen}
 \begin{proof}
 Die Inklusion $\supseteq$ folgt aus Eigenschaft \ref{klaro}.\\
-Zum Beweis der anderen Inklusion betrachten wir $w\in V\cdot X^* \ff W$. Es existiert also ein $v\in V\cdot X^*$, sodass $w\in \{v\}\ff W$ ist. Daraus folgt, dass $v$ ein Pr"afix von $w$ sein muss, was wiederum bedeutet, dass $w\in V\cdot X^*$. Somit gilt die Inklusion $V\cdot X^* \ff W \subseteq W\cap V\cdot X^*$.
+Zum Beweis der anderen Inklusion betrachten wir $w\in V\cdot X^* \ff W$. Es existiert also ein $v\in V\cdot X^*$ derart, dass $w\in \{v\}\ff W$ ist. Daraus folgt, dass $v$ ein Pr"afix von $w$ sein muss, was wiederum bedeutet, dass $w\in V\cdot X^*$. Somit gilt die Inklusion $V\cdot X^* \ff W \subseteq W\cap V\cdot X^*$.
 \end{proof}
 
 %\begin{eigen}
@@ -83,7 +83,7 @@ Es sei $L\subseteq X^*\setminus W\cdot X^*$, so gilt $L\ff W\cdot X^* = L\ff \mi
 \begin{proof}[Beweis Lemma \ref{eingeschr1}]:\\
 Es gilt für alle W"orter $w\in\min(W)$, dass kein Wort $w'\in W\cdot X^*$ ein echtes Präfix von $w$ sein kann.
 Daraus folgt unmittelbar die Inklusion $L\ff \min(W) \subseteq L\ff W\cdot X^*$.
-Zum Beweis der anderen Inklusion betrachten wir ein $w\in L\ff W\cdot X^*$. Es muss also ein $v\in L$ existieren, sodass $w\in \{v\}\ff W\cdot X^*$ und, nach Vorraussetzung, $v\notin W\cdot X^*$. Dann gilt f"ur kein $u$, $v\sqsubseteq u\sqsubset w$ oder $u\sqsubseteq v$ die Beziehung $u\in W\cdot X^*$.
+Zum Beweis der anderen Inklusion betrachten wir ein $w\in L\ff W\cdot X^*$. Es existiert also ein $v\in L$ derart, dass $w\in \{v\}\ff W\cdot X^*$ und, nach Vorraussetzung, $v\notin W\cdot X^*$. Dann gilt f"ur kein $u$, $v\sqsubseteq u\sqsubset w$ oder $u\sqsubseteq v$ die Beziehung $u\in W\cdot X^*$.
 Also haben wir $w\in\min(W\cdot X^*) = \min(W)$ und somit gilt auch die Inklusion $L\ff \min(W) \supseteq L\ff W\cdot X^*$.
 \end{proof}
 

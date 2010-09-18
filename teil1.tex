@@ -111,7 +111,7 @@ Es seien $L=\{b\}, W=\{bb\}$. Dann haben wir $L\ff W = W$, aber $L\not\supseteq 
 \end{beispiel}
 
 Da die Operation Fortsetzung nicht kommutativ ist, betrachten wir nun die Monotonie sowie die Stabilit"at der Operation bez"uglich Vorder- und Hinterglied getrennt.
-\subsection{Eigenschaften im Vorderglied}
+\subsection{Monotonie und Stabilit"at im Vorderglied}
 
 Wir betrachten zun"achst die Stabilit"at der Operation Fortsetzung bez"ulich $\cap$ und $\cup$ und die Monotonie bez"uglich $\subseteq$ im Vorderglied.\\\\
 Aus Eigenschaft \ref{cupeig} folgt
@@ -144,7 +144,7 @@ Dabei muss nicht notwendigerweise die Gleichheit gelten. Dazu geben wir wiederum
 Es seien $L= \{aa,bb\}\, ,V = \{aa,b\}\, ,W = \{aa,bb\}$. \\Dann haben wir $(L\cap V) \ff W = \{aa\} \subset \{aa,bb\} = (L\ff W) \cap (V\ff W)$.
 \end{beispiel}
 
-\subsection{Monotonie im Hinterglied}
+\subsection{Monotonie und Stabilit"at im Hinterglied}
 Jetzt betrachten wir die Stabilit"at der Operation Fortsetzung bezüglich $\cap$ und $\cup$ und die Monotonie bezüglich $\subseteq$ im Hinterglied.\\
 Anders als bei der vorherigen Betrachtung, können wir in diesem Abschnitt kaum Folgerungen direkt ableiten.
 So haben wir, im Gegensatz zu Eigenschaft \ref{cupeig},
@@ -166,7 +166,7 @@ $\min (A\cup B) \subseteq \min A \cup \min B$
 Es sei $w\in \min (A\cup B)$. Dann ist $w$ in $A$ oder in $B$ enthalten. Es sei o.B.d.A. $w\in A$. Es gilt au"serdem f"ur alle $v\sqsubset w$, dass $v\notin (A\cup B)$, also insbesondere $v\notin A$. Nach Definition von $\min$ gilt also $w\in\min(A)$. Gleiches gilt analog f"ur $B$.
 \end{proof}
 \begin{proof}[Beweis von Eigenschaft \ref{gl22}]
-Es gilt allgemein, wenn $v\in L\ff W$, dann muss ein $w\in L$ derart existieren, dass $v\in \{w\}\ff W$. 
+Es gilt allgemein, wenn $v\in L\ff W$, dann gibt es ein $w\in L$ derart, dass $v\in \{w\}\ff W$. 
 Daher gen"ugt es Eigenschaft \ref{gl22} f"ur $L=\{w\}$ zu zeigen.\\
 Es gilt $w \ff (W\cup V)=\min (w\cdot X^* \cap (W\cup V)) =\min ((w\cdot X^* \cap W) \cup (w\cdot X^* \cap V))$\\
 und mit Lemma 1 erhalten wir:\\
