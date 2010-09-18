@@ -29,7 +29,7 @@ Es existieren deterministisch kontextfreie, lineare Sprachen $L,W$ derart, dass 
 
 \begin{beispiel}
 Es seien $L=\{a^nb^nc^i:i,n>0\}$ und $W=\{a^ib^nc^n:i,n>0\}$. Sowohl $L$ als auch $W$ sind deterministische, kontextfreie und auch lineare Sprachen, da es je einen deterministischen Kellerautomaten gibt, der $L$ sowie $W$ akzeptiert und es lineare Grammatiken \\\\$G_L = (\{S,A,C\},\{a,b,c\},S,\{ (S,Cc),(C,Cc),(C,aAb),(A,aAb),(A,e)\})$ und \\$G_W = (\{S,A,B\},\{a,b,c\},S,\{ (S,aA),(A,aA),(A,bBc),(B,bBc),(B,e) \})$ derart gibt, dass \\$L(G_L) = L$ und $L(G_W) = W$ gilt.\\\\
-Betrachten wir nun ein Wort $u\in L\ff W$ so muss $u$ laut Definition folgende Struktur besitzen $u\in \min( v\cdot X^* \cap W)$ f"ur ein $v \in L$.
+Betrachten wir nun ein Wort $u\in L\ff W$, so muss $u$ laut Definition folgende Struktur besitzen $u\in \min( v\cdot X^* \cap W)$ f"ur ein $v \in L$.
 Damit sieht man leicht, dass $L\ff W= \{a^nb^nc^n:n>0\}$ gilt. Diese Sprache ist bekanntlich nicht einmal kontextfrei.
 \end{beispiel}
 
