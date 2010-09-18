@@ -9,14 +9,14 @@ Zu $p\in X^*$ und $b\in X^*\cup X^\omega$ bezeichne $p\cdot b$ die Konkatenation
 %Wir bezeichnen weiterhin die Menge $X^\omega$ als Menge aller unendlichen W"orter "uber dem Alphabet $X$.\\\\
 %F"ur $w\in X^*$ und $v\in X^* \cup X^\omega$ bezeichne $w\cdot v$ die Konkatenation von $w$ und $v$. Daraus ergibt sich in nat"urlicher Weise ein Produkt $L\cdot W$ von Mengen $L\subseteq X^*$ und $W\subseteq X^*\cup X^\omega$.
 F"ur eine Sprache $W$ ist $W^*=\bigcup_{i\in\mathbb{N}} W^i$. Weiterhin bezeichne $\vert w\vert$ die L"ange des Wortes $w\in X^*$.
-Wir definieren die Pr"afixrelation $\sqsubseteq$ wie "ublich mit $w\sqsubseteq b \Leftrightarrow w\cdot b' = b,$f"ur ein $b'\in X^*$.
+Wir definieren die Pr"afixrelation $\sqsubseteq$ wie "ublich mit $w\sqsubseteq b \Leftrightarrow w\cdot b' = b,$ f"ur ein $b'\in X^*$.
 Somit bildet $\pref(L) = \{v:v\sqsubseteq w \wedge w\in L\}$ die Menge aller Pr"afixe von W"ortern aus $L$.\\\\
 Weiterhin bezeichnen wir mit $\min(L) = \{w:w\in L \wedge \forall v( v\sqsubset w \to v\notin L)\}$ alle W"orter der Sprache $L$, in denen kein Wort Pr"afix eines anderen Wortes ist.
 Die Fortsetzung $\ff$ eines Wortes $w$ in $L$ definieren wir als $w\ff L = \min(w\cdot X^* \cap L)$. Diese Definition weiten wir auf Sprachen aus und definieren
-die Fortsetzung einer Sprache $L$ in die Sprache $W$ als $L\ff W = \bigcup_{u\in L} u\ff W$\\\\
-Wir definieren den $\delta$-Limes einer Wortmenge $W ^\delta$ wie in [St87] mit\\$W^\delta = \{\beta : \beta \in X^\omega \text{ und }\pref(\beta)\cap W \text{ ist unendlich}\}$
+die Fortsetzung einer Sprache $L$ in die Sprache $W$ als $L\ff W = \bigcup_{u\in L} u\ff W$.\\\\
+Wir definieren den $\delta$-Limes einer Wortmenge $W ^\delta$ wie in [St87] mit\\$W^\delta = \{\beta : \beta \in X^\omega \text{ und }\pref(\beta)\cap W \text{ ist unendlich}\}$.
 % also eine unendliche Aneinanderreihung von W"ortern aus ....
 Die Eigenschaft (13) aus [St87] ist leicht einzusehen: $(U \cup W)^\delta = U^\delta \cup W^\delta$.	Eine Sprache nennen wir eine $(\sigma,\delta)$-Teilmenge von $X^*$ genau dann, wenn f"ur alle $\beta \in X^\omega$ entweder $\pref(\beta)\cap W$ oder $\pref(\beta)\setminus W$ endlich ist.
 Beispiele f"ur $(\sigma,\delta)$-Teilmengen sind alle endlichen Sprachen und deren Komplemente. Weitere Beispiele sind Sprachen der Form $\pref(L)$ oder $W\cdot X^*$.\\
 F"ur den Durchschnitt gilt nur $(U\cap W)^\delta = U^\delta \cap W^\delta$, falls einer der beiden Operanden eine $(\sigma,\delta)$-Teilmenge ist.
-Die Operation der Fortsetzung $\ff$ wurde in [St87] eingefuehrt, um den Durchschnitt zweier $\delta$-Limites zu beschreiben.
+Die Operation der Fortsetzung $\ff$ wurde in [St87] eingef"uhrt, um den Durchschnitt zweier $\delta$-Limites zu beschreiben.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.5.7)  18 SEP 2010 13:53
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.5.7)  18 SEP 2010 14:23
 entering extended mode
  %&-line parsing enabled.
 **bachelor.tex
@@ -1274,13 +1274,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 LaTeX Font Info:    Font shape `T1/txss/bx/n' will be
 (Font)              scaled to size 13.67995pt on input line 6.
 
-Overfull \hbox (4.353pt too wide) in paragraph at lines 23--29
+Overfull \hbox (1.35226pt too wide) in paragraph at lines 24--30
 \T1/txr/m/n/12 Wir be-tra-cht-en, da $\OML/txmi/m/it/12 A$ \T1/txr/m/n/12 nicht
- kom-mu-ta-tiv ist, sowohl linksab-sorbierende, als auch rechtsab-sorbierende
+ kom-mu-ta-tiv ist, sowohl linksab-sorbierende als auch rechtsab-sorbierende
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--29
+Underfull \hbox (badness 10000) in paragraph at lines 24--30
 
  []
 
@@ -1288,26 +1288,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--29
 
 ]
 LaTeX Font Info:    Font shape `T1/txss/bx/it' in size <17.28> not available
-(Font)              Font shape `T1/txss/bx/sl' tried instead on input line 30.
+(Font)              Font shape `T1/txss/bx/sl' tried instead on input line 31.
 LaTeX Font Info:    Font shape `T1/txss/bx/sl' will be
-(Font)              scaled to size 16.41594pt on input line 30.
+(Font)              scaled to size 16.41594pt on input line 31.
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--33
+Underfull \hbox (badness 10000) in paragraph at lines 32--34
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 115--117
+Underfull \hbox (badness 10000) in paragraph at lines 116--118
 
  []
 
 [7] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 236--240
+Underfull \hbox (badness 10000) in paragraph at lines 237--241
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 275--276
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
 
  []
 
@@ -1318,8 +1318,8 @@ Kapitel 4.
 ]) [12]
 Kapitel 5.
 (./teil3.tex
-Overfull \hbox (19.41086pt too wide) in paragraph at lines 1--3
-\T1/txr/m/n/12 In diesem Ab-schnitt be-tra-cht-en wir die Abgeschlossen-heit-se
+Overfull \hbox (27.41486pt too wide) in paragraph at lines 1--3
+\T1/txr/m/n/12 In diesem Ab-schnitt un-ter-suchen wir die Abgeschlossen-heit-se
 igen-schaften der Klassen der CHOMSKY-
  []
 
@@ -1624,7 +1624,7 @@ Here is how much of TeX's memory you used:
  19221 multiletter control sequences out of 15000+50000
  82980 words of font info for 136 fonts, out of 1200000 for 2000
  28 hyphenation exceptions out of 8191
- 52i,10n,56p,802b,713s stack positions out of 5000i,500n,10000p,200000b,5000s
+ 52i,10n,56p,805b,713s stack positions out of 5000i,500n,10000p,200000b,5000s
 {/usr/share/texmf-texlive/fonts/enc/dvip
 s/base/8r.enc}</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pf
 b></usr/share/texmf-texlive/fonts/type1/public/mathpazo/fplmbb.pfb></usr/share/
@@ -1639,7 +1639,7 @@ usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-t
 exlive/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-texlive/fonts/type
 1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.p
 fb></usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on bachelor.pdf (20 pages, 202936 bytes).
+Output written on bachelor.pdf (20 pages, 202864 bytes).
 PDF statistics:
  413 PDF objects out of 1000 (max. 8388607)
  124 named destinations out of 1000 (max. 500000)
