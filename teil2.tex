@@ -25,7 +25,7 @@ Daher betrachten wir in diesem Abschnitt die Operation Fortsetzung, wenn eine de
 $W\ff \pref(V) = W \cap \pref(V)$
 \end{eigen}
 \begin{proof}
-Die Inklusion $\supseteq$ folgt aus Eigenschaft \ref{klaro}.\\
+Die Inklusion $\supseteq$ folgt aus Folgerung \ref{klaro}.\\
 Zum Beweis der anderen Inklusion betrachten wir $w\in W\ff\pref(V)$. Es existiert also ein $u\in W$ derart, dass $w\in \{u\}\ff\pref(V)$. Daraus folgt, dass $u$ ein Pr"afix von $w$ sein muss, was wiederum bedeutet, dass $u\in\pref(V)$. Damit haben wir $w\in\min(\{u\}\cdot X^*\cap \pref(V)) \to w\in \{u\}\cap \pref(V)$.
 %Es gen"ugt die Eigenschaft f"ur $W=\{w\}$ zu zeigen:\\
 %Aus der Definition wissen wir, dass $w\ff \pref(V)= \min ( \{w\} \cdot X^* \cap \pref(V) )$ gilt. 
@@ -34,7 +34,7 @@ Zum Beweis der anderen Inklusion betrachten wir $w\in W\ff\pref(V)$. Es existier
 \end{proof}
 
 
-Betrachten wir nun die Umkehrung von Eigenschaft \ref{spezeig1}: $\pref(V)\ff W$. Wir k"onnen mit Eigenschaft \ref{basiseigen} die Fortsetzung $\pref(V)\ff W$ aufspalten in $\pref(V)\ff W= (\pref(V)\cap W) \cup ((pref(V)\setminus W)\ff W)$, aber diese Gleichung lässt sich nicht weiter vereinfachen.
+Betrachten wir nun die Umkehrung von Eigenschaft \ref{spezeig1}: $\pref(V)\ff W$. Wir k"onnen mit Eigenschaft \ref{basiseigen} die Fortsetzung $\pref(V)\ff W$ aufspalten in $\pref(V)\ff W= (\pref(V)\cap W) \cup ((pref(V)\setminus W)\ff W)$.
 
 %\begin{eigen}
 %%$W\ff \pref(V) = W \cap \pref(V)$%
@@ -55,7 +55,7 @@ Betrachten wir nun die Umkehrung von Eigenschaft \ref{spezeig1}: $\pref(V)\ff W$
 $V\cdot X^* \ff W = V\cdot X^* \cap W$
 \end{eigen}
 \begin{proof}
-Die Inklusion $\supseteq$ folgt aus Eigenschaft \ref{klaro}.\\
+Die Inklusion $\supseteq$ folgt aus Folgerung \ref{klaro}.\\
 Zum Beweis der anderen Inklusion betrachten wir $w\in V\cdot X^* \ff W$. Es existiert also ein $v\in V\cdot X^*$ derart, dass $w\in \{v\}\ff W$ ist. Daraus folgt, dass $v$ ein Pr"afix von $w$ sein muss, was wiederum bedeutet, dass $w\in V\cdot X^*$. Somit gilt die Inklusion $V\cdot X^* \ff W \subseteq W\cap V\cdot X^*$.
 \end{proof}
 
@@ -78,17 +78,17 @@ Zum Beweis von Eigenschaft \ref{fooba} benutzen wir
 \vspace{2ex}
 
 \begin{lem}\label{eingeschr1}
-Es sei $L\subseteq X^*\setminus W\cdot X^*$, so gilt $L\ff W\cdot X^* = L\ff \min(W) $
+Es sei $L\subseteq X^*\setminus W\cdot X^*$. Dann gilt $L\ff W\cdot X^* = L\ff \min(W).$
 \end{lem}
 \begin{proof}[Beweis Lemma \ref{eingeschr1}]:\\
-Es gilt für alle W"orter $w\in\min(W)$, dass kein Wort $w'\in W\cdot X^*$ ein echtes Präfix von $w$ sein kann.
+Es gilt f"ur alle W"orter $w\in\min(W)$, dass kein Wort $w'\in W\cdot X^*$ ein echtes Präfix von $w$ sein kann.
 Daraus folgt unmittelbar die Inklusion $L\ff \min(W) \subseteq L\ff W\cdot X^*$.
-Zum Beweis der anderen Inklusion betrachten wir ein $w\in L\ff W\cdot X^*$. Es existiert also ein $v\in L$ derart, dass $w\in \{v\}\ff W\cdot X^*$ und, nach Vorraussetzung, $v\notin W\cdot X^*$. Dann gilt f"ur kein $u$, $v\sqsubseteq u\sqsubset w$ oder $u\sqsubseteq v$ die Beziehung $u\in W\cdot X^*$.
+Zum Beweis der anderen Inklusion betrachten wir ein $w\in L\ff W\cdot X^*$. Es existiert also ein $v\in L$ derart, dass $w\in \{v\}\ff W\cdot X^*$ und nach Vorraussetzung $v\notin W\cdot X^*$. Dann gilt f"ur kein $u$, $v\sqsubseteq u\sqsubset w$ oder $u\sqsubseteq v$ die Beziehung $u\in W\cdot X^*$.
 Also haben wir $w\in\min(W\cdot X^*) = \min(W)$ und somit gilt auch die Inklusion $L\ff \min(W) \supseteq L\ff W\cdot X^*$.
 \end{proof}
 
 \begin{proof}[Beweis von Eigenschaft \ref{fooba}]
-Die Fortsetzung von $W$ in $V\cdot X^*$ l"asst sich, mit Hilfe von Eigenschaft \ref{basiseigen}, in zwei Teile aufspalten (\ref{arr1}).
+Die Fortsetzung von $W$ in $V\cdot X^*$ l"asst sich mit Hilfe von Eigenschaft \ref{basiseigen} in zwei Teile aufspalten (\ref{arr1}).
 Da $W\setminus V\cdot X^* \subseteq X^*\setminus V\cdot X^*$, wenden wir Lemma \ref{eingeschr1} an und erhalten (\ref{arr3}), was sich zu (\ref{arr4}) vereinfachen l"asst.
 \setcounter{equation}{0}
 \begin{eqnarray}

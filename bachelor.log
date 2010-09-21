@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2010.9.14)  18 SEP 2010 20:41
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2010.9.14)  21 SEP 2010 10:23
 entering extended mode
 **C:/Users/Robert/Desktop/ba/bachelor.tex
 (C:/Users/Robert/Desktop/ba/bachelor.tex
@@ -1159,33 +1159,33 @@ LaTeX Info: Redefining \pageref on input line 42.
 \AtBeginShipoutBox=\box46
 
 (C:\Users\Robert\Desktop\ba\titlepage.tex
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 25.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 29.
 
 (C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\txfonts\ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 25.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 29.
 
 (C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\txfonts\utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 25.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 29.
 
 (C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\txfonts\utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 25.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 29.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\psnfss\ot1zplm.fd"
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 25.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 29.
 
 (C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\txfonts\utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 25.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 29.
 
 (C:\Users\Robert\AppData\Roaming\MiKTeX\2.8\tex\latex\txfonts\utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
@@ -1325,12 +1325,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--118
  []
 
 [7] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 237--241
+Underfull \hbox (badness 10000) in paragraph at lines 245--249
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 276--277
+Underfull \hbox (badness 10000) in paragraph at lines 284--285
 
  []
 
@@ -1344,15 +1344,6 @@ Kapitel 5.
 Overfull \hbox (27.41486pt too wide) in paragraph at lines 1--3
 \T1/txr/m/n/12 In die-sem Ab-schnitt un-ter-su-chen wir die Ab-ge-schlos-sen-he
 its-ei-gen-schaf-ten der Klas-sen der CHOMSKY-
- []
-
-
-Overfull \hbox (17.43732pt too wide) in paragraph at lines 9--15
-\T1/txr/m/n/12 ti-sche Au-to-mat $\OML/txmi/m/it/12 A[] \OT1/zplm/m/n/12 = (\OM
-L/txmi/m/it/12 X\OT1/txr/m/n/12 , \OML/txmi/m/it/12 S\OT1/txr/m/n/12 , \OML/txm
-i/m/it/12 s[]\OT1/txr/m/n/12 , \OML/txmi/m/it/12 f\OT1/txr/m/n/12 , \OML/txmi/m
-/it/12 S[]\OT1/zplm/m/n/12 )$ \T1/txr/m/n/12 ak-zep-tie-re $\OML/txmi/m/it/12 W
-$\T1/txr/m/n/12 . Wir kon-stru-ie-ren einen nicht-determninistischen
  []
 
 
@@ -1429,13 +1420,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--8
 (C:\Users\Robert\Desktop\ba\bachelor.aux
 (C:\Users\Robert\Desktop\ba\erklaerung.aux)) ) 
 Here is how much of TeX's memory you used:
- 16606 strings out of 495269
- 289613 string characters out of 3179645
- 393576 words of memory out of 3000000
- 19186 multiletter control sequences out of 15000+200000
+ 16607 strings out of 495269
+ 289628 string characters out of 3179645
+ 394622 words of memory out of 3000000
+ 19187 multiletter control sequences out of 15000+200000
  82980 words of font info for 136 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 52i,10n,56p,832b,722s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 52i,10n,56p,839b,722s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.
 8/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.8/fonts/type
 1/public/amsfonts/cm/cmr10.pfb><C:/Users/Robert/AppData/Roaming/MiKTeX/2.8/font
@@ -1453,9 +1444,9 @@ s/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/
 urw/palatino/uplr8a.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/urw/time
 s/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/urw/times/utmr8a.pf
 b><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/urw/times/utmri8a.pfb>
-Output written on bachelor.pdf (20 pages, 202785 bytes).
+Output written on bachelor.pdf (20 pages, 204533 bytes).
 PDF statistics:
- 414 PDF objects out of 1000 (max. 8388607)
+ 416 PDF objects out of 1000 (max. 8388607)
  122 named destinations out of 1000 (max. 500000)
  190 words of extra memory for PDF output out of 10000 (max. 10000000)
 

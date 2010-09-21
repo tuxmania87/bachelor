@@ -24,17 +24,17 @@ Class=CLatexEdit
 Document=bachelor.tex
 
 [Frame0_Row0]
-cyCur=494
+cyCur=168
 cyMin=10
 
 [Frame0_Col0]
-cxCur=1453
+cxCur=1087
 cxMin=10
 
 [Frame0_View0,0]
-Cursor.row=66
-Cursor.column=1
-TopSubLine=54
+Cursor.row=74
+Cursor.column=11
+TopSubLine=66
 
 [Frame1]
 Columns=1
@@ -63,7 +63,7 @@ cxMin=10
 [Frame1_View0,0]
 Cursor.row=103
 Cursor.column=247
-TopSubLine=124
+TopSubLine=121
 
 [Frame2]
 Columns=1
@@ -206,9 +206,9 @@ cxCur=1237
 cxMin=10
 
 [Frame6_View0,0]
-Cursor.row=114
-Cursor.column=118
-TopSubLine=127
+Cursor.row=0
+Cursor.column=0
+TopSubLine=0
 
 [Frame7]
 Columns=1
